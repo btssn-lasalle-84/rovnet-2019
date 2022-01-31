@@ -1,0 +1,366 @@
+\hypertarget{class_controle_rov}{}\subsection{Référence de la classe Controle\+Rov}
+\label{class_controle_rov}\index{Controle\+Rov@{Controle\+Rov}}
+
+
+Déclaration de la classe \hyperlink{class_controle_rov}{Controle\+Rov}. Permet le contrôle des éléments du rov, en reliant la manette aux méthodes de déplacement.  
+
+
+
+
+{\ttfamily \#include $<$controlerov.\+h$>$}
+
+
+
+Graphe de collaboration de Controle\+Rov\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_controle_rov__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_controle_rov_a206d52adf49b8510316b2885ea6b98b0}{change\+Mode} (bool appuye)
+\begin{DoxyCompactList}\small\item\em change le mode de la manette (\hyperlink{class_deplacement}{Deplacement} / \hyperlink{class_bras}{Bras}). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_controle_rov_a05506e1d8caf632b0394dcffd365c06f}{trame\+Cree} (Q\+String trame)
+\begin{DoxyCompactList}\small\item\em Signal émis lorsqu\textquotesingle{}une trame a été crée et est destinée à l\textquotesingle{}envoi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_controle_rov_acc4d5fea26770217df978d43df2ad51e}{Controle\+Rov} (Q\+Object $\ast$parent=nullptr, \hyperlink{class_rov}{Rov} $\ast$\hyperlink{class_controle_rov_a3620b701fbb3aebe6a57ca3f3f04c6ca}{rov}=nullptr)
+\item 
+\hyperlink{class_controle_rov_ab216ab83b9dfb738aa240c3846e65d39}{$\sim$\+Controle\+Rov} ()
+\item 
+bool \hyperlink{class_controle_rov_a9531520e50479fc2e339cd43f4c87066}{est\+Controle\+Rov\+Disponible} () const
+\begin{DoxyCompactList}\small\item\em Renvoi l\textquotesingle{}état de connexion de la manette. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_controle_rov_a400d5766b9acabb45c1af5f8b22bbe47}{change\+Connexions} (int \hyperlink{class_controle_rov_a5d1fb6ad14da49e3c587199ae86dc28d}{mode})
+\begin{DoxyCompactList}\small\item\em Permet de modifier les connexions entre la manette et les actions selon le mode de la manette. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_manette}{Manette} $\ast$ \hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}
+\begin{DoxyCompactList}\small\item\em manette utilisée \end{DoxyCompactList}\item 
+\hyperlink{class_deplacement}{Deplacement} $\ast$ \hyperlink{class_controle_rov_ae96443be0a82814b27958e6ceb0a0acf}{deplacement}
+\begin{DoxyCompactList}\small\item\em objet contenant les méthodes utilisées pour le déplacement du rov \end{DoxyCompactList}\item 
+\hyperlink{class_bras}{Bras} $\ast$ \hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras}
+\begin{DoxyCompactList}\small\item\em objet contenant les méthodes utilisées pour les mouvements du bras articulé \end{DoxyCompactList}\item 
+\hyperlink{class_controle_camera}{Controle\+Camera} $\ast$ \hyperlink{class_controle_rov_ac88fe7f2367cca5a24aeda187ee0bac2}{controle\+Camera}
+\begin{DoxyCompactList}\small\item\em objet contenant les méthodes utilisées pour les mouvements de la caméra \end{DoxyCompactList}\item 
+\hyperlink{class_rov}{Rov} $\ast$ \hyperlink{class_controle_rov_a3620b701fbb3aebe6a57ca3f3f04c6ca}{rov}
+\begin{DoxyCompactList}\small\item\em objet \hyperlink{class_rov}{Rov} contenant l\textquotesingle{}accès à la communication \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_controle_rov_a5d1fb6ad14da49e3c587199ae86dc28d}{mode}
+\begin{DoxyCompactList}\small\item\em Mode de la manette (0 pour déplacement, 1 pour bras) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+R\+E\+Y\+N\+I\+ER Jacques
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+Jeudi 13 Juin 2019 
+\end{DoxyDate}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_controle_rov_acc4d5fea26770217df978d43df2ad51e}\label{class_controle_rov_acc4d5fea26770217df978d43df2ad51e}} 
+\index{Controle\+Rov@{Controle\+Rov}!Controle\+Rov@{Controle\+Rov}}
+\index{Controle\+Rov@{Controle\+Rov}!Controle\+Rov@{Controle\+Rov}}
+\paragraph{\texorpdfstring{Controle\+Rov()}{ControleRov()}}
+{\footnotesize\ttfamily Controle\+Rov\+::\+Controle\+Rov (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr},  }\item[{\hyperlink{class_rov}{Rov} $\ast$}]{rov = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Références \hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras}, \hyperlink{class_controle_rov_a206d52adf49b8510316b2885ea6b98b0}{change\+Mode()}, \hyperlink{class_controle_rov_ac88fe7f2367cca5a24aeda187ee0bac2}{controle\+Camera}, \hyperlink{class_controle_rov_ae96443be0a82814b27958e6ceb0a0acf}{deplacement}, \hyperlink{class_communication_rov_ac243fcfb073f4ceaf58fab1d41207801}{Communication\+Rov\+::envoie\+Trame()}, \hyperlink{class_manette_a035c0a43a11e91889891b3c874f0a58d}{Manette\+::est\+Detecte()}, \hyperlink{class_rov_ad30543625f584e28bf785a80c59506dc}{Rov\+::get\+Communication\+Rov()}, \hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{Manette\+::get\+Manette()}, \hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}, \hyperlink{class_deplacement_a65a1c6adfe5114d3cfefa631e0c91618}{Deplacement\+::roule\+Avant\+Arriere()}, \hyperlink{class_controle_camera_aac294c4e98a912199ba32d686e52f7ef}{Controle\+Camera\+::tourne\+Camera\+Droite()}, \hyperlink{class_controle_camera_a119562aacbb4c0fbd4e5aa27a05ce7cc}{Controle\+Camera\+::tourne\+Camera\+Gauche()}, \hyperlink{class_deplacement_a164cc606a6c5b8d55c1e5475d4d112e0}{Deplacement\+::tourne\+Droite\+Gauche()}, \hyperlink{class_deplacement_ae1a6d4a98304dee19d426ceeb6b7d5bb}{Deplacement\+::trame\+Cree()}, \hyperlink{class_controle_rov_a05506e1d8caf632b0394dcffd365c06f}{trame\+Cree()}, et \hyperlink{class_bras_ab442bf8d3e389c051b26b4b0741e7924}{Bras\+::trame\+Cree()}.
+
+
+\begin{DoxyCode}
+00021                                                   : QObject(parent), \hyperlink{class_controle_rov_a3620b701fbb3aebe6a57ca3f3f04c6ca}{rov}(rov), 
+      \hyperlink{class_controle_rov_a5d1fb6ad14da49e3c587199ae86dc28d}{mode}(\hyperlink{controlerov_8h_a427f99e4fe2f812b0f49a09025623653}{MODE\_DEPLACEMENT})
+00022 \{
+00023     this->\hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras} = \textcolor{keyword}{new} \hyperlink{class_bras}{Bras}(\textcolor{keyword}{this});
+00024     this->\hyperlink{class_controle_rov_ae96443be0a82814b27958e6ceb0a0acf}{deplacement} = \textcolor{keyword}{new} \hyperlink{class_deplacement}{Deplacement}(\textcolor{keyword}{this});
+00025     this->\hyperlink{class_controle_rov_ac88fe7f2367cca5a24aeda187ee0bac2}{controleCamera} = \textcolor{keyword}{new} \hyperlink{class_controle_camera}{ControleCamera}(\textcolor{keyword}{this});
+00026     this->\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette} = \textcolor{keyword}{new} \hyperlink{class_manette}{Manette}(\textcolor{keyword}{this});
+00027 
+00028     \textcolor{keywordflow}{if}(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a035c0a43a11e91889891b3c874f0a58d}{estDetecte}())
+00029     \{
+00030         connect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::axisLeftXChanged, 
+      \hyperlink{class_controle_rov_ae96443be0a82814b27958e6ceb0a0acf}{deplacement}, &\hyperlink{class_deplacement_a164cc606a6c5b8d55c1e5475d4d112e0}{Deplacement::tourneDroiteGauche});
+00031         connect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::axisLeftYChanged, 
+      \hyperlink{class_controle_rov_ae96443be0a82814b27958e6ceb0a0acf}{deplacement}, &\hyperlink{class_deplacement_a65a1c6adfe5114d3cfefa631e0c91618}{Deplacement::rouleAvantArriere});
+00032         connect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::buttonLeftChanged, 
+      \hyperlink{class_controle_rov_ac88fe7f2367cca5a24aeda187ee0bac2}{controleCamera}, &\hyperlink{class_controle_camera_a119562aacbb4c0fbd4e5aa27a05ce7cc}{ControleCamera::tourneCameraGauche});
+00033         connect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::buttonRightChanged, 
+      \hyperlink{class_controle_rov_ac88fe7f2367cca5a24aeda187ee0bac2}{controleCamera}, &\hyperlink{class_controle_camera_aac294c4e98a912199ba32d686e52f7ef}{ControleCamera::tourneCameraDroite});
+00034         connect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::buttonSelectChanged, \textcolor{keyword}{this}, &
+      \hyperlink{class_controle_rov_a206d52adf49b8510316b2885ea6b98b0}{ControleRov::changeMode});
+00035     \}
+00036 
+00037     \textcolor{comment}{// Connexion entre le signal émis d'une trame à envoyer au slot d'envoi de trame de la classe
+       CommunicationRov.}
+00038     connect(\hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras}, &\hyperlink{class_bras_ab442bf8d3e389c051b26b4b0741e7924}{Bras::trameCree}, this->rov->
+      \hyperlink{class_rov_ad30543625f584e28bf785a80c59506dc}{getCommunicationRov}(), &\hyperlink{class_communication_rov_ac243fcfb073f4ceaf58fab1d41207801}{CommunicationRov::envoieTrame});
+00039     \textcolor{comment}{// Connexion entre le signal émis d'une trame à envoyer au slot d'envoi de trame de la classe
+       CommunicationRov.}
+00040     connect(deplacement, &\hyperlink{class_deplacement_ae1a6d4a98304dee19d426ceeb6b7d5bb}{Deplacement::trameCree}, this->rov->
+      \hyperlink{class_rov_ad30543625f584e28bf785a80c59506dc}{getCommunicationRov}(), &\hyperlink{class_communication_rov_ac243fcfb073f4ceaf58fab1d41207801}{CommunicationRov::envoieTrame});
+00041 
+00042     connect(\textcolor{keyword}{this}, &\hyperlink{class_controle_rov_a05506e1d8caf632b0394dcffd365c06f}{ControleRov::trameCree}, this->rov->
+      \hyperlink{class_rov_ad30543625f584e28bf785a80c59506dc}{getCommunicationRov}(), &\hyperlink{class_communication_rov_ac243fcfb073f4ceaf58fab1d41207801}{CommunicationRov::envoieTrame});
+00043 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controle_rov_ab216ab83b9dfb738aa240c3846e65d39}\label{class_controle_rov_ab216ab83b9dfb738aa240c3846e65d39}} 
+\index{Controle\+Rov@{Controle\+Rov}!````~Controle\+Rov@{$\sim$\+Controle\+Rov}}
+\index{````~Controle\+Rov@{$\sim$\+Controle\+Rov}!Controle\+Rov@{Controle\+Rov}}
+\paragraph{\texorpdfstring{$\sim$\+Controle\+Rov()}{~ControleRov()}}
+{\footnotesize\ttfamily Controle\+Rov\+::$\sim$\+Controle\+Rov (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00046 \{
+00047 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_controle_rov_a400d5766b9acabb45c1af5f8b22bbe47}\label{class_controle_rov_a400d5766b9acabb45c1af5f8b22bbe47}} 
+\index{Controle\+Rov@{Controle\+Rov}!change\+Connexions@{change\+Connexions}}
+\index{change\+Connexions@{change\+Connexions}!Controle\+Rov@{Controle\+Rov}}
+\paragraph{\texorpdfstring{change\+Connexions()}{changeConnexions()}}
+{\footnotesize\ttfamily Controle\+Rov\+::change\+Connexions (\begin{DoxyParamCaption}\item[{int}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mode} & int\\
+\hline
+{\em mode} & int Nouveau mode. \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_bras_a4b8e4791a454fcf884b1e7217a16a326}{Bras\+::baisse\+Coude()}, \hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras}, \hyperlink{class_controle_rov_ae96443be0a82814b27958e6ceb0a0acf}{deplacement}, \hyperlink{class_bras_a69d95616a74732e13b23bd90680d7d21}{Bras\+::depose()}, \hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{Manette\+::get\+Manette()}, \hyperlink{class_bras_a246e835f25bd61f0618c58aafea99ea1}{Bras\+::lache\+Pince()}, \hyperlink{class_bras_a197686a4ff55b4fe2384b2af44b8228b}{Bras\+::leve\+Coude()}, \hyperlink{class_bras_ac8f658db87d03bfbba6faa535326cc3a}{Bras\+::leve\+Epaule()}, \hyperlink{class_bras_ac95f54d8b02e7c88081f482fbbc40aef}{Bras\+::leve\+Poignet()}, \hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}, \hyperlink{controlerov_8h_aa7e25e50c4dd52bfc6abcb3e450686d4}{M\+O\+D\+E\+\_\+\+B\+R\+AS}, \hyperlink{controlerov_8h_a427f99e4fe2f812b0f49a09025623653}{M\+O\+D\+E\+\_\+\+D\+E\+P\+L\+A\+C\+E\+M\+E\+NT}, \hyperlink{class_deplacement_a65a1c6adfe5114d3cfefa631e0c91618}{Deplacement\+::roule\+Avant\+Arriere()}, \hyperlink{class_bras_a55e143cf8e696ed214809ae25fb558d5}{Bras\+::serre\+Pince()}, \hyperlink{class_deplacement_a164cc606a6c5b8d55c1e5475d4d112e0}{Deplacement\+::tourne\+Droite\+Gauche()}, \hyperlink{class_bras_aaeacb18f22532a63559fc8430118169e}{Bras\+::tourne\+Epaule()}, et \hyperlink{class_bras_a15beae8aa104c2e689614486646ab402}{Bras\+::tourne\+Poignet()}.
+
+
+
+Référencé par \hyperlink{class_controle_rov_a206d52adf49b8510316b2885ea6b98b0}{change\+Mode()}.
+
+
+\begin{DoxyCode}
+00093 \{
+00094     \textcolor{keywordflow}{if} (\hyperlink{class_controle_rov_a5d1fb6ad14da49e3c587199ae86dc28d}{mode} == \hyperlink{controlerov_8h_aa7e25e50c4dd52bfc6abcb3e450686d4}{MODE\_BRAS})
+00095     \{
+00096         disconnect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::axisLeftXChanged, 
+      \hyperlink{class_controle_rov_ae96443be0a82814b27958e6ceb0a0acf}{deplacement}, &\hyperlink{class_deplacement_a164cc606a6c5b8d55c1e5475d4d112e0}{Deplacement::tourneDroiteGauche});
+00097         disconnect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::axisLeftYChanged, 
+      \hyperlink{class_controle_rov_ae96443be0a82814b27958e6ceb0a0acf}{deplacement}, &\hyperlink{class_deplacement_a65a1c6adfe5114d3cfefa631e0c91618}{Deplacement::rouleAvantArriere});
+00098 
+00099         connect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::axisLeftXChanged, 
+      \hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras}, &\hyperlink{class_bras_a15beae8aa104c2e689614486646ab402}{Bras::tournePoignet});
+00100         connect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::axisLeftYChanged, 
+      \hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras}, &\hyperlink{class_bras_ac95f54d8b02e7c88081f482fbbc40aef}{Bras::levePoignet});
+00101 
+00102         connect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::axisRightXChanged, 
+      \hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras}, &\hyperlink{class_bras_aaeacb18f22532a63559fc8430118169e}{Bras::tourneEpaule});
+00103         connect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::axisRightYChanged, 
+      \hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras}, &\hyperlink{class_bras_ac8f658db87d03bfbba6faa535326cc3a}{Bras::leveEpaule});
+00104 
+00105         connect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::buttonUpChanged, 
+      \hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras}, &\hyperlink{class_bras_a197686a4ff55b4fe2384b2af44b8228b}{Bras::leveCoude});
+00106         connect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::buttonDownChanged, 
+      \hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras}, &\hyperlink{class_bras_a4b8e4791a454fcf884b1e7217a16a326}{Bras::baisseCoude});
+00107 
+00108         connect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::buttonR1Changed, 
+      \hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras}, &\hyperlink{class_bras_a55e143cf8e696ed214809ae25fb558d5}{Bras::serrePince});
+00109         connect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::buttonL1Changed, 
+      \hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras}, &\hyperlink{class_bras_a246e835f25bd61f0618c58aafea99ea1}{Bras::lachePince});
+00110 
+00111         connect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::buttonStartChanged, 
+      \hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras}, &\hyperlink{class_bras_a69d95616a74732e13b23bd90680d7d21}{Bras::depose});
+00112     \}
+00113     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\hyperlink{class_controle_rov_a5d1fb6ad14da49e3c587199ae86dc28d}{mode} == \hyperlink{controlerov_8h_a427f99e4fe2f812b0f49a09025623653}{MODE\_DEPLACEMENT})
+00114     \{
+00115         disconnect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::axisLeftXChanged, 
+      \hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras}, &\hyperlink{class_bras_a15beae8aa104c2e689614486646ab402}{Bras::tournePoignet});
+00116         disconnect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::axisLeftYChanged, 
+      \hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras}, &\hyperlink{class_bras_ac95f54d8b02e7c88081f482fbbc40aef}{Bras::levePoignet});
+00117 
+00118         disconnect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::axisRightXChanged, 
+      \hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras}, &\hyperlink{class_bras_aaeacb18f22532a63559fc8430118169e}{Bras::tourneEpaule});
+00119         disconnect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::axisRightYChanged, 
+      \hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras}, &\hyperlink{class_bras_ac8f658db87d03bfbba6faa535326cc3a}{Bras::leveEpaule});
+00120 
+00121         disconnect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::buttonUpChanged, 
+      \hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras}, &\hyperlink{class_bras_a197686a4ff55b4fe2384b2af44b8228b}{Bras::leveCoude});
+00122         disconnect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::buttonDownChanged, 
+      \hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras}, &\hyperlink{class_bras_a4b8e4791a454fcf884b1e7217a16a326}{Bras::baisseCoude});
+00123 
+00124         disconnect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::buttonR1Changed, 
+      \hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras}, &\hyperlink{class_bras_a55e143cf8e696ed214809ae25fb558d5}{Bras::serrePince});
+00125         disconnect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::buttonL1Changed, 
+      \hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras}, &\hyperlink{class_bras_a246e835f25bd61f0618c58aafea99ea1}{Bras::lachePince});
+00126 
+00127         disconnect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::buttonStartChanged, 
+      \hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras}, &\hyperlink{class_bras_a69d95616a74732e13b23bd90680d7d21}{Bras::depose});
+00128 
+00129         connect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::axisLeftXChanged, 
+      \hyperlink{class_controle_rov_ae96443be0a82814b27958e6ceb0a0acf}{deplacement}, &\hyperlink{class_deplacement_a164cc606a6c5b8d55c1e5475d4d112e0}{Deplacement::tourneDroiteGauche});
+00130         connect(\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}(), &QGamepad::axisLeftYChanged, 
+      \hyperlink{class_controle_rov_ae96443be0a82814b27958e6ceb0a0acf}{deplacement}, &\hyperlink{class_deplacement_a65a1c6adfe5114d3cfefa631e0c91618}{Deplacement::rouleAvantArriere});
+00131     \}
+00132     \textcolor{keywordflow}{else}
+00133     \{
+00134         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"ERREUR ! mode inconnu"};
+00135     \}
+00136 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controle_rov_a206d52adf49b8510316b2885ea6b98b0}\label{class_controle_rov_a206d52adf49b8510316b2885ea6b98b0}} 
+\index{Controle\+Rov@{Controle\+Rov}!change\+Mode@{change\+Mode}}
+\index{change\+Mode@{change\+Mode}!Controle\+Rov@{Controle\+Rov}}
+\paragraph{\texorpdfstring{change\+Mode}{changeMode}}
+{\footnotesize\ttfamily void Controle\+Rov\+::change\+Mode (\begin{DoxyParamCaption}\item[{bool}]{appuye }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Permet de changer le mode de la manette, à la réception du signal d\textquotesingle{}appui de la touche Select. 
+
+Références \hyperlink{class_controle_rov_a400d5766b9acabb45c1af5f8b22bbe47}{change\+Connexions()}, \hyperlink{class_controle_rov_a5d1fb6ad14da49e3c587199ae86dc28d}{mode}, \hyperlink{controlerov_8h_aa7e25e50c4dd52bfc6abcb3e450686d4}{M\+O\+D\+E\+\_\+\+B\+R\+AS}, \hyperlink{controlerov_8h_a427f99e4fe2f812b0f49a09025623653}{M\+O\+D\+E\+\_\+\+D\+E\+P\+L\+A\+C\+E\+M\+E\+NT}, et \hyperlink{class_controle_rov_a05506e1d8caf632b0394dcffd365c06f}{trame\+Cree()}.
+
+
+
+Référencé par \hyperlink{class_controle_rov_acc4d5fea26770217df978d43df2ad51e}{Controle\+Rov()}.
+
+
+\begin{DoxyCode}
+00064 \{
+00065     \textcolor{keywordflow}{if} (appuye == 1 && \hyperlink{class_controle_rov_a5d1fb6ad14da49e3c587199ae86dc28d}{mode} == \hyperlink{controlerov_8h_a427f99e4fe2f812b0f49a09025623653}{MODE\_DEPLACEMENT})
+00066     \{
+00067         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Passage en mode Bras"};
+00068         \hyperlink{class_controle_rov_a5d1fb6ad14da49e3c587199ae86dc28d}{mode} = \hyperlink{controlerov_8h_aa7e25e50c4dd52bfc6abcb3e450686d4}{MODE\_BRAS};
+00069         emit \hyperlink{class_controle_rov_a05506e1d8caf632b0394dcffd365c06f}{trameCree}(\textcolor{stringliteral}{"$CBR1\(\backslash\)n"});
+00070         \hyperlink{class_controle_rov_a400d5766b9acabb45c1af5f8b22bbe47}{changeConnexions}(\hyperlink{controlerov_8h_aa7e25e50c4dd52bfc6abcb3e450686d4}{MODE\_BRAS});
+00071     \}
+00072     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (appuye == 1 && \hyperlink{class_controle_rov_a5d1fb6ad14da49e3c587199ae86dc28d}{mode} == \hyperlink{controlerov_8h_aa7e25e50c4dd52bfc6abcb3e450686d4}{MODE\_BRAS})
+00073     \{
+00074         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Passage en mode Deplacement"};
+00075         \hyperlink{class_controle_rov_a5d1fb6ad14da49e3c587199ae86dc28d}{mode} = \hyperlink{controlerov_8h_a427f99e4fe2f812b0f49a09025623653}{MODE\_DEPLACEMENT};
+00076         emit \hyperlink{class_controle_rov_a05506e1d8caf632b0394dcffd365c06f}{trameCree}(\textcolor{stringliteral}{"$CRO1\(\backslash\)n"});
+00077         \hyperlink{class_controle_rov_a400d5766b9acabb45c1af5f8b22bbe47}{changeConnexions}(\hyperlink{controlerov_8h_a427f99e4fe2f812b0f49a09025623653}{MODE\_DEPLACEMENT});
+00078     \}
+00079     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\hyperlink{class_controle_rov_a5d1fb6ad14da49e3c587199ae86dc28d}{mode} != \hyperlink{controlerov_8h_a427f99e4fe2f812b0f49a09025623653}{MODE\_DEPLACEMENT} && \hyperlink{class_controle_rov_a5d1fb6ad14da49e3c587199ae86dc28d}{mode} != 
+      \hyperlink{controlerov_8h_aa7e25e50c4dd52bfc6abcb3e450686d4}{MODE\_BRAS})
+00080     \{
+00081         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Erreur de mode ! Retour au mode de déplacement"};
+00082         \hyperlink{class_controle_rov_a5d1fb6ad14da49e3c587199ae86dc28d}{mode} = \hyperlink{controlerov_8h_a427f99e4fe2f812b0f49a09025623653}{MODE\_DEPLACEMENT};
+00083         \hyperlink{class_controle_rov_a400d5766b9acabb45c1af5f8b22bbe47}{changeConnexions}(\hyperlink{controlerov_8h_a427f99e4fe2f812b0f49a09025623653}{MODE\_DEPLACEMENT});
+00084     \}
+00085 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controle_rov_a9531520e50479fc2e339cd43f4c87066}\label{class_controle_rov_a9531520e50479fc2e339cd43f4c87066}} 
+\index{Controle\+Rov@{Controle\+Rov}!est\+Controle\+Rov\+Disponible@{est\+Controle\+Rov\+Disponible}}
+\index{est\+Controle\+Rov\+Disponible@{est\+Controle\+Rov\+Disponible}!Controle\+Rov@{Controle\+Rov}}
+\paragraph{\texorpdfstring{est\+Controle\+Rov\+Disponible()}{estControleRovDisponible()}}
+{\footnotesize\ttfamily Controle\+Rov\+::est\+Controle\+Rov\+Disponible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Indique si le \hyperlink{class_rov}{Rov} est contrôlable, ou non.
+
+\begin{DoxyReturn}{Renvoie}
+bool Etat de la manette (connectée, ou non). 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_manette_a035c0a43a11e91889891b3c874f0a58d}{Manette\+::est\+Detecte()}, et \hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_abbfcdc154a6ae7f941d186f6c90a5a2b}{I\+H\+M\+Rov\+::actualise\+Icones\+Etat()}.
+
+
+\begin{DoxyCode}
+00055 \{
+00056     \textcolor{keywordflow}{return} \hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}->\hyperlink{class_manette_a035c0a43a11e91889891b3c874f0a58d}{estDetecte}();
+00057 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controle_rov_a05506e1d8caf632b0394dcffd365c06f}\label{class_controle_rov_a05506e1d8caf632b0394dcffd365c06f}} 
+\index{Controle\+Rov@{Controle\+Rov}!trame\+Cree@{trame\+Cree}}
+\index{trame\+Cree@{trame\+Cree}!Controle\+Rov@{Controle\+Rov}}
+\paragraph{\texorpdfstring{trame\+Cree}{trameCree}}
+{\footnotesize\ttfamily void Controle\+Rov\+::trame\+Cree (\begin{DoxyParamCaption}\item[{Q\+String}]{trame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_controle_rov_a206d52adf49b8510316b2885ea6b98b0}{change\+Mode()}, et \hyperlink{class_controle_rov_acc4d5fea26770217df978d43df2ad51e}{Controle\+Rov()}.
+
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}\label{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}} 
+\index{Controle\+Rov@{Controle\+Rov}!bras@{bras}}
+\index{bras@{bras}!Controle\+Rov@{Controle\+Rov}}
+\paragraph{\texorpdfstring{bras}{bras}}
+{\footnotesize\ttfamily \hyperlink{class_bras}{Bras}$\ast$ Controle\+Rov\+::bras\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_controle_rov_a400d5766b9acabb45c1af5f8b22bbe47}{change\+Connexions()}, et \hyperlink{class_controle_rov_acc4d5fea26770217df978d43df2ad51e}{Controle\+Rov()}.
+
+\mbox{\Hypertarget{class_controle_rov_ac88fe7f2367cca5a24aeda187ee0bac2}\label{class_controle_rov_ac88fe7f2367cca5a24aeda187ee0bac2}} 
+\index{Controle\+Rov@{Controle\+Rov}!controle\+Camera@{controle\+Camera}}
+\index{controle\+Camera@{controle\+Camera}!Controle\+Rov@{Controle\+Rov}}
+\paragraph{\texorpdfstring{controle\+Camera}{controleCamera}}
+{\footnotesize\ttfamily \hyperlink{class_controle_camera}{Controle\+Camera}$\ast$ Controle\+Rov\+::controle\+Camera\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_controle_rov_acc4d5fea26770217df978d43df2ad51e}{Controle\+Rov()}.
+
+\mbox{\Hypertarget{class_controle_rov_ae96443be0a82814b27958e6ceb0a0acf}\label{class_controle_rov_ae96443be0a82814b27958e6ceb0a0acf}} 
+\index{Controle\+Rov@{Controle\+Rov}!deplacement@{deplacement}}
+\index{deplacement@{deplacement}!Controle\+Rov@{Controle\+Rov}}
+\paragraph{\texorpdfstring{deplacement}{deplacement}}
+{\footnotesize\ttfamily \hyperlink{class_deplacement}{Deplacement}$\ast$ Controle\+Rov\+::deplacement\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_controle_rov_a400d5766b9acabb45c1af5f8b22bbe47}{change\+Connexions()}, et \hyperlink{class_controle_rov_acc4d5fea26770217df978d43df2ad51e}{Controle\+Rov()}.
+
+\mbox{\Hypertarget{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}\label{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}} 
+\index{Controle\+Rov@{Controle\+Rov}!manette@{manette}}
+\index{manette@{manette}!Controle\+Rov@{Controle\+Rov}}
+\paragraph{\texorpdfstring{manette}{manette}}
+{\footnotesize\ttfamily \hyperlink{class_manette}{Manette}$\ast$ Controle\+Rov\+::manette\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_controle_rov_a400d5766b9acabb45c1af5f8b22bbe47}{change\+Connexions()}, \hyperlink{class_controle_rov_acc4d5fea26770217df978d43df2ad51e}{Controle\+Rov()}, et \hyperlink{class_controle_rov_a9531520e50479fc2e339cd43f4c87066}{est\+Controle\+Rov\+Disponible()}.
+
+\mbox{\Hypertarget{class_controle_rov_a5d1fb6ad14da49e3c587199ae86dc28d}\label{class_controle_rov_a5d1fb6ad14da49e3c587199ae86dc28d}} 
+\index{Controle\+Rov@{Controle\+Rov}!mode@{mode}}
+\index{mode@{mode}!Controle\+Rov@{Controle\+Rov}}
+\paragraph{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily unsigned int Controle\+Rov\+::mode\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_controle_rov_a206d52adf49b8510316b2885ea6b98b0}{change\+Mode()}.
+
+\mbox{\Hypertarget{class_controle_rov_a3620b701fbb3aebe6a57ca3f3f04c6ca}\label{class_controle_rov_a3620b701fbb3aebe6a57ca3f3f04c6ca}} 
+\index{Controle\+Rov@{Controle\+Rov}!rov@{rov}}
+\index{rov@{rov}!Controle\+Rov@{Controle\+Rov}}
+\paragraph{\texorpdfstring{rov}{rov}}
+{\footnotesize\ttfamily \hyperlink{class_rov}{Rov}$\ast$ Controle\+Rov\+::rov\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{controlerov_8h}{controlerov.\+h}\item 
+\hyperlink{controlerov_8cpp}{controlerov.\+cpp}\end{DoxyCompactItemize}

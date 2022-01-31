@@ -1,0 +1,484 @@
+\hypertarget{class_bras}{}\subsection{Référence de la classe Bras}
+\label{class_bras}\index{Bras@{Bras}}
+
+
+Déclaration de la classe \hyperlink{class_bras}{Bras}. Réceptionne les signaux de la manette destiné aux mouvements du bras, et émet les trames correspondantes.  
+
+
+
+
+{\ttfamily \#include $<$bras.\+h$>$}
+
+
+
+Graphe de collaboration de Bras\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{class_bras__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_bras_aaeacb18f22532a63559fc8430118169e}{tourne\+Epaule} (double valeur)
+\begin{DoxyCompactList}\small\item\em Contrôle la rotation de l\textquotesingle{}épaule (entre autre, la direction du bras), en émettant la trame correspondante. Correspond au joystick droite de la manette. \end{DoxyCompactList}\item 
+void \hyperlink{class_bras_ac8f658db87d03bfbba6faa535326cc3a}{leve\+Epaule} (double valeur)
+\begin{DoxyCompactList}\small\item\em Contrôle l\textquotesingle{}angle de levé de l\textquotesingle{}épaule, en émettant la trame correspondante. Correspond au joystick droite de la manette. \end{DoxyCompactList}\item 
+void \hyperlink{class_bras_a197686a4ff55b4fe2384b2af44b8228b}{leve\+Coude} (bool appuye)
+\begin{DoxyCompactList}\small\item\em Permet de lever le coude, en émettant la trame correspondante. Correspond au bouton triangle de la manette. \end{DoxyCompactList}\item 
+void \hyperlink{class_bras_a4b8e4791a454fcf884b1e7217a16a326}{baisse\+Coude} (bool appuye)
+\begin{DoxyCompactList}\small\item\em Permet de plier le coude, en émettant la trame correspondante. Correspond au bouton X de la manette. \end{DoxyCompactList}\item 
+void \hyperlink{class_bras_a15beae8aa104c2e689614486646ab402}{tourne\+Poignet} (double valeur)
+\begin{DoxyCompactList}\small\item\em Permet de pivoter le poignet, en émettant la trame correspondante. Correspond au joystick gauche axe X de la manette. \end{DoxyCompactList}\item 
+void \hyperlink{class_bras_ac95f54d8b02e7c88081f482fbbc40aef}{leve\+Poignet} (double valeur)
+\begin{DoxyCompactList}\small\item\em Permet de lever ou baisser le poignet, en émettant la trame correspondante. Correspond au joystick gauche axe Y de la manette. \end{DoxyCompactList}\item 
+void \hyperlink{class_bras_a55e143cf8e696ed214809ae25fb558d5}{serre\+Pince} (bool appuye)
+\begin{DoxyCompactList}\small\item\em Permet de serrer la pince, en émettant la trame correspondante. Correspond au bouton R1 de la manette. \end{DoxyCompactList}\item 
+void \hyperlink{class_bras_a246e835f25bd61f0618c58aafea99ea1}{lache\+Pince} (bool appuye)
+\begin{DoxyCompactList}\small\item\em Permet de relâcher la pince, en émettant la trame correspondante. Correspond au bouton L1 de la manette. \end{DoxyCompactList}\item 
+void \hyperlink{class_bras_a69d95616a74732e13b23bd90680d7d21}{depose} (bool appuye)
+\begin{DoxyCompactList}\small\item\em Emet la trame \+: poser dans le bac le contenu de la pince. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_bras_ab442bf8d3e389c051b26b4b0741e7924}{trame\+Cree} (Q\+String trame)
+\begin{DoxyCompactList}\small\item\em Signal émis lorsqu\textquotesingle{}une trame a été créée et prête à être transmise. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_bras_aa194e94737e1e024e7f9a0cd6ecb6594}{Bras} (Q\+Object $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_bras}{Bras}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_bras_a7108c10b4e8f6ceb1ffb7543aeac55e1}{valeur\+Tourne\+Epaule\+Precedente}
+\begin{DoxyCompactList}\small\item\em Dernière valeur de la trame Tourne\+Epaule émise. \end{DoxyCompactList}\item 
+int \hyperlink{class_bras_ab9045906376dd797febdcb5956b155c1}{valeur\+Leve\+Epaule\+Precedente}
+\begin{DoxyCompactList}\small\item\em Dernière valeur de la trame Leve\+Epaule émise. \end{DoxyCompactList}\item 
+int \hyperlink{class_bras_aee3f364c582bb94e49be07f4f28c5ba4}{valeur\+Tourne\+Poignet\+Precedente}
+\begin{DoxyCompactList}\small\item\em Dernière valeur de la trame Tourne\+Poignet émise. \end{DoxyCompactList}\item 
+int \hyperlink{class_bras_a83bd1b995ba642e336c24151ba4964cf}{valeur\+Leve\+Poignet\+Precedente}
+\begin{DoxyCompactList}\small\item\em Dernière valeur de la trame Leve\+Poignet émise. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+R\+E\+Y\+N\+I\+ER Jacques
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+Jeudi 13 Juin 2019 
+\end{DoxyDate}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_bras_aa194e94737e1e024e7f9a0cd6ecb6594}\label{class_bras_aa194e94737e1e024e7f9a0cd6ecb6594}} 
+\index{Bras@{Bras}!Bras@{Bras}}
+\index{Bras@{Bras}!Bras@{Bras}}
+\paragraph{\texorpdfstring{Bras()}{Bras()}}
+{\footnotesize\ttfamily Bras\+::\+Bras (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & Q\+Object$\ast$ objet Qt parent \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+00023                           : QObject(parent), \hyperlink{class_bras_a7108c10b4e8f6ceb1ffb7543aeac55e1}{valeurTourneEpaulePrecedente}(0), 
+      \hyperlink{class_bras_ab9045906376dd797febdcb5956b155c1}{valeurLeveEpaulePrecedente}(0), 
+      \hyperlink{class_bras_aee3f364c582bb94e49be07f4f28c5ba4}{valeurTournePoignetPrecedente}(0), 
+      \hyperlink{class_bras_a83bd1b995ba642e336c24151ba4964cf}{valeurLevePoignetPrecedente}(0)
+00024 \{
+00025 
+00026 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_bras_a4b8e4791a454fcf884b1e7217a16a326}\label{class_bras_a4b8e4791a454fcf884b1e7217a16a326}} 
+\index{Bras@{Bras}!baisse\+Coude@{baisse\+Coude}}
+\index{baisse\+Coude@{baisse\+Coude}!Bras@{Bras}}
+\paragraph{\texorpdfstring{baisse\+Coude}{baisseCoude}}
+{\footnotesize\ttfamily Bras\+::baisse\+Coude (\begin{DoxyParamCaption}\item[{bool}]{appuye }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Emet la trame \+: plier le coude.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em appuye} & bool Bouton appuyé, ou non.\\
+\hline
+{\em appuye} & bool Touche appuyée ou non. \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_bras_ab442bf8d3e389c051b26b4b0741e7924}{trame\+Cree()}.
+
+
+
+Référencé par \hyperlink{class_controle_rov_a400d5766b9acabb45c1af5f8b22bbe47}{Controle\+Rov\+::change\+Connexions()}.
+
+
+\begin{DoxyCode}
+00098 \{
+00099     QString trame = \textcolor{stringliteral}{"$LCO"} + QString::number(-appuye) + \textcolor{stringliteral}{"\(\backslash\)n"};
+00100 
+00101     emit \hyperlink{class_bras_ab442bf8d3e389c051b26b4b0741e7924}{trameCree}(trame);
+00102 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_bras_a69d95616a74732e13b23bd90680d7d21}\label{class_bras_a69d95616a74732e13b23bd90680d7d21}} 
+\index{Bras@{Bras}!depose@{depose}}
+\index{depose@{depose}!Bras@{Bras}}
+\paragraph{\texorpdfstring{depose}{depose}}
+{\footnotesize\ttfamily Bras\+::depose (\begin{DoxyParamCaption}\item[{bool}]{appuye }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em appuye} & bool Touche appuyée ou non. \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_bras_ab442bf8d3e389c051b26b4b0741e7924}{trame\+Cree()}.
+
+
+
+Référencé par \hyperlink{class_controle_rov_a400d5766b9acabb45c1af5f8b22bbe47}{Controle\+Rov\+::change\+Connexions()}.
+
+
+\begin{DoxyCode}
+00182 \{
+00183     QString trame = \textcolor{stringliteral}{"$DEP"} + QString::number(appuye) + \textcolor{stringliteral}{"/"};
+00184 
+00185     emit \hyperlink{class_bras_ab442bf8d3e389c051b26b4b0741e7924}{trameCree}(trame);
+00186 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_bras_a246e835f25bd61f0618c58aafea99ea1}\label{class_bras_a246e835f25bd61f0618c58aafea99ea1}} 
+\index{Bras@{Bras}!lache\+Pince@{lache\+Pince}}
+\index{lache\+Pince@{lache\+Pince}!Bras@{Bras}}
+\paragraph{\texorpdfstring{lache\+Pince}{lachePince}}
+{\footnotesize\ttfamily Bras\+::lache\+Pince (\begin{DoxyParamCaption}\item[{bool}]{appuye }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Emet la trame \+: relâcher la pince.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em appuye} & bool Bouton appuyé, ou non.\\
+\hline
+{\em appuye} & bool Touche appuyée ou non. \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_bras_ab442bf8d3e389c051b26b4b0741e7924}{trame\+Cree()}.
+
+
+
+Référencé par \hyperlink{class_controle_rov_a400d5766b9acabb45c1af5f8b22bbe47}{Controle\+Rov\+::change\+Connexions()}.
+
+
+\begin{DoxyCode}
+00170 \{
+00171     QString trame = \textcolor{stringliteral}{"$OPI"} + QString::number(-appuye) + \textcolor{stringliteral}{"\(\backslash\)n"};
+00172 
+00173     emit \hyperlink{class_bras_ab442bf8d3e389c051b26b4b0741e7924}{trameCree}(trame);
+00174 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_bras_a197686a4ff55b4fe2384b2af44b8228b}\label{class_bras_a197686a4ff55b4fe2384b2af44b8228b}} 
+\index{Bras@{Bras}!leve\+Coude@{leve\+Coude}}
+\index{leve\+Coude@{leve\+Coude}!Bras@{Bras}}
+\paragraph{\texorpdfstring{leve\+Coude}{leveCoude}}
+{\footnotesize\ttfamily Bras\+::leve\+Coude (\begin{DoxyParamCaption}\item[{bool}]{appuye }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Emet la trame \+: lever le coude.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em appuye} & bool Bouton appuyé, ou non.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{A faire}
+\item[\hyperlink{todo__todo000001}{A faire}]Changer l\textquotesingle{}envoie de trame. Envoyer 1 quand Triangle, -\/1 quand Croix. -\/$>$ Diminution nombre code différents dans la trame, simplification du décodage des trames. \end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}{Paramètres}
+{\em appuye} & bool Touche appuyée ou non. \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_bras_ab442bf8d3e389c051b26b4b0741e7924}{trame\+Cree()}.
+
+
+
+Référencé par \hyperlink{class_controle_rov_a400d5766b9acabb45c1af5f8b22bbe47}{Controle\+Rov\+::change\+Connexions()}.
+
+
+\begin{DoxyCode}
+00086 \{
+00087     QString trame = \textcolor{stringliteral}{"$LCO"} + QString::number(appuye) + \textcolor{stringliteral}{"\(\backslash\)n"};
+00088 
+00089     emit \hyperlink{class_bras_ab442bf8d3e389c051b26b4b0741e7924}{trameCree}(trame);
+00090 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_bras_ac8f658db87d03bfbba6faa535326cc3a}\label{class_bras_ac8f658db87d03bfbba6faa535326cc3a}} 
+\index{Bras@{Bras}!leve\+Epaule@{leve\+Epaule}}
+\index{leve\+Epaule@{leve\+Epaule}!Bras@{Bras}}
+\paragraph{\texorpdfstring{leve\+Epaule}{leveEpaule}}
+{\footnotesize\ttfamily Bras\+::leve\+Epaule (\begin{DoxyParamCaption}\item[{double}]{valeur }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Emet la trame \+: lever ou baisser l\textquotesingle{}épaule du bras.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em valeur} & double Force de l\textquotesingle{}appui sur le joystick (entre -\/1 et 1).\\
+\hline
+{\em valeur} & double Force d\textquotesingle{}appui sur le joystick. \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_bras_ab442bf8d3e389c051b26b4b0741e7924}{trame\+Cree()}, et \hyperlink{class_bras_ab9045906376dd797febdcb5956b155c1}{valeur\+Leve\+Epaule\+Precedente}.
+
+
+
+Référencé par \hyperlink{class_controle_rov_a400d5766b9acabb45c1af5f8b22bbe47}{Controle\+Rov\+::change\+Connexions()}.
+
+
+\begin{DoxyCode}
+00060 \{
+00061     QString trame = \textcolor{stringliteral}{"$LEP"};
+00062     \textcolor{keywordtype}{int} direction = 0;      \textcolor{comment}{// Par défaut, la direction est indiquée à 0}
+00063 
+00064     \textcolor{keywordflow}{if} (valeur <= -0.5)
+00065         direction = 1;
+00066 
+00067     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (valeur >= 0.5)
+00068         direction = -1;
+00069 
+00070     \textcolor{keywordflow}{if} (\hyperlink{class_bras_ab9045906376dd797febdcb5956b155c1}{valeurLeveEpaulePrecedente} != direction)
+00071     \{
+00072         \hyperlink{class_bras_ab9045906376dd797febdcb5956b155c1}{valeurLeveEpaulePrecedente} = direction;
+00073         trame += QString::number(direction) + \textcolor{stringliteral}{"\(\backslash\)n"};
+00074        emit \hyperlink{class_bras_ab442bf8d3e389c051b26b4b0741e7924}{trameCree}(trame);
+00075     \}
+00076 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_bras_ac95f54d8b02e7c88081f482fbbc40aef}\label{class_bras_ac95f54d8b02e7c88081f482fbbc40aef}} 
+\index{Bras@{Bras}!leve\+Poignet@{leve\+Poignet}}
+\index{leve\+Poignet@{leve\+Poignet}!Bras@{Bras}}
+\paragraph{\texorpdfstring{leve\+Poignet}{levePoignet}}
+{\footnotesize\ttfamily Bras\+::leve\+Poignet (\begin{DoxyParamCaption}\item[{double}]{valeur }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em valeur} & double Force d\textquotesingle{}appui sur le joystick. \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_bras_ab442bf8d3e389c051b26b4b0741e7924}{trame\+Cree()}, et \hyperlink{class_bras_a83bd1b995ba642e336c24151ba4964cf}{valeur\+Leve\+Poignet\+Precedente}.
+
+
+
+Référencé par \hyperlink{class_controle_rov_a400d5766b9acabb45c1af5f8b22bbe47}{Controle\+Rov\+::change\+Connexions()}.
+
+
+\begin{DoxyCode}
+00134 \{
+00135     QString trame = \textcolor{stringliteral}{"$LPO"};
+00136     \textcolor{keywordtype}{int} direction = 0;      \textcolor{comment}{// Par défaut, la direction est indiquée à 0}
+00137 
+00138     \textcolor{keywordflow}{if} (valeur <= -0.5)
+00139         direction = 1;
+00140 
+00141     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (valeur >= 0.5)
+00142         direction = -1;
+00143 
+00144     \textcolor{keywordflow}{if} (\hyperlink{class_bras_a83bd1b995ba642e336c24151ba4964cf}{valeurLevePoignetPrecedente} != direction)
+00145     \{
+00146         \hyperlink{class_bras_a83bd1b995ba642e336c24151ba4964cf}{valeurLevePoignetPrecedente} = direction;
+00147         trame += QString::number(direction) + \textcolor{stringliteral}{"\(\backslash\)n"};
+00148         emit \hyperlink{class_bras_ab442bf8d3e389c051b26b4b0741e7924}{trameCree}(trame);
+00149     \}
+00150 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_bras_a55e143cf8e696ed214809ae25fb558d5}\label{class_bras_a55e143cf8e696ed214809ae25fb558d5}} 
+\index{Bras@{Bras}!serre\+Pince@{serre\+Pince}}
+\index{serre\+Pince@{serre\+Pince}!Bras@{Bras}}
+\paragraph{\texorpdfstring{serre\+Pince}{serrePince}}
+{\footnotesize\ttfamily Bras\+::serre\+Pince (\begin{DoxyParamCaption}\item[{bool}]{appuye }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Emet la trame \+: serrer la pince.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em appuye} & bool Bouton appuyé, ou non.\\
+\hline
+{\em appuye} & bool Touche appuyée ou non. \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_bras_ab442bf8d3e389c051b26b4b0741e7924}{trame\+Cree()}.
+
+
+
+Référencé par \hyperlink{class_controle_rov_a400d5766b9acabb45c1af5f8b22bbe47}{Controle\+Rov\+::change\+Connexions()}.
+
+
+\begin{DoxyCode}
+00158 \{
+00159     QString trame = \textcolor{stringliteral}{"$FPI"} + QString::number(appuye) + \textcolor{stringliteral}{"\(\backslash\)n"};
+00160 
+00161     emit \hyperlink{class_bras_ab442bf8d3e389c051b26b4b0741e7924}{trameCree}(trame);
+00162 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_bras_aaeacb18f22532a63559fc8430118169e}\label{class_bras_aaeacb18f22532a63559fc8430118169e}} 
+\index{Bras@{Bras}!tourne\+Epaule@{tourne\+Epaule}}
+\index{tourne\+Epaule@{tourne\+Epaule}!Bras@{Bras}}
+\paragraph{\texorpdfstring{tourne\+Epaule}{tourneEpaule}}
+{\footnotesize\ttfamily Bras\+::tourne\+Epaule (\begin{DoxyParamCaption}\item[{double}]{valeur }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Emet la trame \+: tourner l\textquotesingle{}épaule du bras à droite/gauche.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em valeur} & double Force de l\textquotesingle{}appui sur le joystick (entre -\/1 et 1).\\
+\hline
+{\em valeur} & double Force d\textquotesingle{}appui sur le joystick. \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_bras_ab442bf8d3e389c051b26b4b0741e7924}{trame\+Cree()}, et \hyperlink{class_bras_a7108c10b4e8f6ceb1ffb7543aeac55e1}{valeur\+Tourne\+Epaule\+Precedente}.
+
+
+
+Référencé par \hyperlink{class_controle_rov_a400d5766b9acabb45c1af5f8b22bbe47}{Controle\+Rov\+::change\+Connexions()}.
+
+
+\begin{DoxyCode}
+00035 \{
+00036     QString trame = \textcolor{stringliteral}{"$TEP"};
+00037     \textcolor{keywordtype}{int} direction = 0;      \textcolor{comment}{// Par défaut, la direction est indiquée à 0}
+00038 
+00039     \textcolor{keywordflow}{if} (valeur <= -0.5)
+00040         direction = 1;
+00041 
+00042     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (valeur >= 0.5)
+00043         direction = -1;
+00044 
+00045     \textcolor{keywordflow}{if} (\hyperlink{class_bras_a7108c10b4e8f6ceb1ffb7543aeac55e1}{valeurTourneEpaulePrecedente} != direction)
+00046     \{
+00047         \hyperlink{class_bras_a7108c10b4e8f6ceb1ffb7543aeac55e1}{valeurTourneEpaulePrecedente} = direction;
+00048         trame += QString::number(direction) + \textcolor{stringliteral}{"\(\backslash\)n"};
+00049         \textcolor{keywordflow}{if} (direction != 0)
+00050             emit \hyperlink{class_bras_ab442bf8d3e389c051b26b4b0741e7924}{trameCree}(trame);
+00051     \}
+00052 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_bras_a15beae8aa104c2e689614486646ab402}\label{class_bras_a15beae8aa104c2e689614486646ab402}} 
+\index{Bras@{Bras}!tourne\+Poignet@{tourne\+Poignet}}
+\index{tourne\+Poignet@{tourne\+Poignet}!Bras@{Bras}}
+\paragraph{\texorpdfstring{tourne\+Poignet}{tournePoignet}}
+{\footnotesize\ttfamily Bras\+::tourne\+Poignet (\begin{DoxyParamCaption}\item[{double}]{valeur }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em valeur} & double Force d\textquotesingle{}appui sur le joystick. \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_bras_ab442bf8d3e389c051b26b4b0741e7924}{trame\+Cree()}, et \hyperlink{class_bras_aee3f364c582bb94e49be07f4f28c5ba4}{valeur\+Tourne\+Poignet\+Precedente}.
+
+
+
+Référencé par \hyperlink{class_controle_rov_a400d5766b9acabb45c1af5f8b22bbe47}{Controle\+Rov\+::change\+Connexions()}.
+
+
+\begin{DoxyCode}
+00110 \{
+00111     QString trame = \textcolor{stringliteral}{"$TPO"};
+00112     \textcolor{keywordtype}{int} direction = 0;      \textcolor{comment}{// Par défaut, la direction est indiquée à 0}
+00113 
+00114     \textcolor{keywordflow}{if} (valeur <= -0.5)
+00115         direction = -1;
+00116 
+00117     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (valeur >= 0.5)
+00118         direction = 1;
+00119 
+00120     \textcolor{keywordflow}{if} (\hyperlink{class_bras_aee3f364c582bb94e49be07f4f28c5ba4}{valeurTournePoignetPrecedente} != direction)
+00121     \{
+00122         \hyperlink{class_bras_aee3f364c582bb94e49be07f4f28c5ba4}{valeurTournePoignetPrecedente} = direction;
+00123         trame += QString::number(direction) + \textcolor{stringliteral}{"\(\backslash\)n"};
+00124         emit \hyperlink{class_bras_ab442bf8d3e389c051b26b4b0741e7924}{trameCree}(trame);
+00125     \}
+00126 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_bras_ab442bf8d3e389c051b26b4b0741e7924}\label{class_bras_ab442bf8d3e389c051b26b4b0741e7924}} 
+\index{Bras@{Bras}!trame\+Cree@{trame\+Cree}}
+\index{trame\+Cree@{trame\+Cree}!Bras@{Bras}}
+\paragraph{\texorpdfstring{trame\+Cree}{trameCree}}
+{\footnotesize\ttfamily void Bras\+::trame\+Cree (\begin{DoxyParamCaption}\item[{Q\+String}]{trame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_bras_a4b8e4791a454fcf884b1e7217a16a326}{baisse\+Coude()}, \hyperlink{class_controle_rov_acc4d5fea26770217df978d43df2ad51e}{Controle\+Rov\+::\+Controle\+Rov()}, \hyperlink{class_bras_a69d95616a74732e13b23bd90680d7d21}{depose()}, \hyperlink{class_bras_a246e835f25bd61f0618c58aafea99ea1}{lache\+Pince()}, \hyperlink{class_bras_a197686a4ff55b4fe2384b2af44b8228b}{leve\+Coude()}, \hyperlink{class_bras_ac8f658db87d03bfbba6faa535326cc3a}{leve\+Epaule()}, \hyperlink{class_bras_ac95f54d8b02e7c88081f482fbbc40aef}{leve\+Poignet()}, \hyperlink{class_bras_a55e143cf8e696ed214809ae25fb558d5}{serre\+Pince()}, \hyperlink{class_bras_aaeacb18f22532a63559fc8430118169e}{tourne\+Epaule()}, et \hyperlink{class_bras_a15beae8aa104c2e689614486646ab402}{tourne\+Poignet()}.
+
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_bras_ab9045906376dd797febdcb5956b155c1}\label{class_bras_ab9045906376dd797febdcb5956b155c1}} 
+\index{Bras@{Bras}!valeur\+Leve\+Epaule\+Precedente@{valeur\+Leve\+Epaule\+Precedente}}
+\index{valeur\+Leve\+Epaule\+Precedente@{valeur\+Leve\+Epaule\+Precedente}!Bras@{Bras}}
+\paragraph{\texorpdfstring{valeur\+Leve\+Epaule\+Precedente}{valeurLeveEpaulePrecedente}}
+{\footnotesize\ttfamily int Bras\+::valeur\+Leve\+Epaule\+Precedente\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_bras_ac8f658db87d03bfbba6faa535326cc3a}{leve\+Epaule()}.
+
+\mbox{\Hypertarget{class_bras_a83bd1b995ba642e336c24151ba4964cf}\label{class_bras_a83bd1b995ba642e336c24151ba4964cf}} 
+\index{Bras@{Bras}!valeur\+Leve\+Poignet\+Precedente@{valeur\+Leve\+Poignet\+Precedente}}
+\index{valeur\+Leve\+Poignet\+Precedente@{valeur\+Leve\+Poignet\+Precedente}!Bras@{Bras}}
+\paragraph{\texorpdfstring{valeur\+Leve\+Poignet\+Precedente}{valeurLevePoignetPrecedente}}
+{\footnotesize\ttfamily int Bras\+::valeur\+Leve\+Poignet\+Precedente\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_bras_ac95f54d8b02e7c88081f482fbbc40aef}{leve\+Poignet()}.
+
+\mbox{\Hypertarget{class_bras_a7108c10b4e8f6ceb1ffb7543aeac55e1}\label{class_bras_a7108c10b4e8f6ceb1ffb7543aeac55e1}} 
+\index{Bras@{Bras}!valeur\+Tourne\+Epaule\+Precedente@{valeur\+Tourne\+Epaule\+Precedente}}
+\index{valeur\+Tourne\+Epaule\+Precedente@{valeur\+Tourne\+Epaule\+Precedente}!Bras@{Bras}}
+\paragraph{\texorpdfstring{valeur\+Tourne\+Epaule\+Precedente}{valeurTourneEpaulePrecedente}}
+{\footnotesize\ttfamily int Bras\+::valeur\+Tourne\+Epaule\+Precedente\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_bras_aaeacb18f22532a63559fc8430118169e}{tourne\+Epaule()}.
+
+\mbox{\Hypertarget{class_bras_aee3f364c582bb94e49be07f4f28c5ba4}\label{class_bras_aee3f364c582bb94e49be07f4f28c5ba4}} 
+\index{Bras@{Bras}!valeur\+Tourne\+Poignet\+Precedente@{valeur\+Tourne\+Poignet\+Precedente}}
+\index{valeur\+Tourne\+Poignet\+Precedente@{valeur\+Tourne\+Poignet\+Precedente}!Bras@{Bras}}
+\paragraph{\texorpdfstring{valeur\+Tourne\+Poignet\+Precedente}{valeurTournePoignetPrecedente}}
+{\footnotesize\ttfamily int Bras\+::valeur\+Tourne\+Poignet\+Precedente\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_bras_a15beae8aa104c2e689614486646ab402}{tourne\+Poignet()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{bras_8h}{bras.\+h}\item 
+\hyperlink{bras_8cpp}{bras.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,41 @@
+\hypertarget{communicationrov_8h_source}{}\subsection{communicationrov.\+h}
+
+\begin{DoxyCode}
+00001 
+00014 \textcolor{preprocessor}{#ifndef COMMUNICATIONROV\_H}
+00015 \textcolor{preprocessor}{#define COMMUNICATIONROV\_H}
+00016 
+00017 \textcolor{preprocessor}{#include <QObject>}
+00018 \textcolor{preprocessor}{#include <QtSerialPort/QSerialPort>}
+00019 
+\Hypertarget{communicationrov_8h_source_l00034}\hyperlink{class_communication_rov}{00034} \textcolor{keyword}{class }\hyperlink{class_communication_rov}{CommunicationRov} : \textcolor{keyword}{public} QObject
+00035 \{
+00036     Q\_OBJECT
+00037 
+00038     \textcolor{keyword}{private}:
+\Hypertarget{communicationrov_8h_source_l00039}\hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{00039}         QSerialPort *\hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port};   
+\Hypertarget{communicationrov_8h_source_l00040}\hyperlink{class_communication_rov_a7bd5d36d065005b27ed6cb421c7ffe42}{00040}         QString \hyperlink{class_communication_rov_a7bd5d36d065005b27ed6cb421c7ffe42}{adressePort}; 
+\Hypertarget{communicationrov_8h_source_l00041}\hyperlink{class_communication_rov_a7100b1be33860d235b45efd9010ac218}{00041}         QString \hyperlink{class_communication_rov_a7100b1be33860d235b45efd9010ac218}{trame};       
+\Hypertarget{communicationrov_8h_source_l00042}\hyperlink{class_communication_rov_acbb6939bb597179956c6f4bc5ca39f3f}{00042}         QByteArray \hyperlink{class_communication_rov_acbb6939bb597179956c6f4bc5ca39f3f}{donnees};  
+00043 
+00044     \textcolor{keyword}{public}:
+00045         \textcolor{keyword}{explicit} \hyperlink{class_communication_rov_a22b64c69228d392a212f543e071adc02}{CommunicationRov}(QObject *parent = \textcolor{keyword}{nullptr});
+00046         \hyperlink{class_communication_rov_a97e96f47dad6d47cbec4adc82756b49e}{~CommunicationRov}();
+00047 
+00053         \textcolor{keywordtype}{bool} \hyperlink{class_communication_rov_a513c26b04745fa2ae31b4533d656dfd4}{estCommunicationRovDisponible}();
+00054         \textcolor{keyword}{const} QString \hyperlink{class_communication_rov_a6226f9338fffc648cfca91c8e585a26b}{getPort}(); 
+00055         \textcolor{keyword}{const} QString \hyperlink{class_communication_rov_a810de691dfc6d305f77c92ccd90bb6db}{getBaudRate}(); 
+00056 
+00057     signals:
+00063         \textcolor{keywordtype}{void} \hyperlink{class_communication_rov_add205822378629204a4ee49ca74c6d56}{trameRecue}(QString trame);
+00064 
+00065     \textcolor{keyword}{public} slots:
+00070         \textcolor{keywordtype}{void} \hyperlink{class_communication_rov_a5822d2f41553221ea876ea09e148f859}{lireTrame}();
+00076         \textcolor{keywordtype}{bool} \hyperlink{class_communication_rov_ac243fcfb073f4ceaf58fab1d41207801}{envoieTrame}(QString trame);
+00077         \textcolor{keywordtype}{void} \hyperlink{class_communication_rov_ad46397a58ba7704fbd5ac5748e083004}{changePortCommunication}(QString nouveauPort); 
+00078         \textcolor{keywordtype}{void} \hyperlink{class_communication_rov_ac49ffc6f2e6ae22ea9f99e10ca0a4163}{changeBaudRate}(QString nouveauBaudRate); 
+00079 
+00080 \};
+00081 
+00082 \textcolor{preprocessor}{#endif // COMMUNICATIONROV\_H}
+\end{DoxyCode}

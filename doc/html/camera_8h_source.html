@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet ROV&#39;NET:  Fichier source de camera.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-rov.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet ROV&#39;NET
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">camera.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="camera_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CAMERA_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CAMERA_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="archives_8h.html">archives.h</a>&quot;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;QDateTime&gt;</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;QCamera&gt;</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;QCameraInfo&gt;</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;QCameraViewfinder&gt;</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;QCameraImageCapture&gt;</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="camera_8h.html#a1cdfce9d11c96526aaac6717f3ba10fc">   27</a></span>&#160;<span class="preprocessor">#define LARGEUR_RESOLUTION_IMAGE 1280</span></div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="camera_8h.html#ab6598f2bd4db8451b2077f23274656a4">   28</a></span>&#160;<span class="preprocessor">#define HAUTEUR_RESOLUTION_IMAGE 720</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_camera.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_camera.html">Camera</a> : <span class="keyword">public</span> QObject</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_camera.html#ae3aa4afd7a3d9ddc2bf710bc74dc293e">Camera</a>(QObject *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_camera.html#ad1897942d0ccf91052386388a497349f">~Camera</a>();</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_camera.html#afb73ab859802a143a1a00443e396143e">estCameraDisponible</a>();</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    QCameraViewfinder *<a class="code" href="class_camera.html#a67420d3ef14065a412327ada6193a2e0">getCadreFluxVideo</a>();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    QList&lt;QCameraInfo&gt; <a class="code" href="class_camera.html#ad8a2a21d3701375a553c7c90646c694f">getListeCamera</a>();</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera.html#a66b844eec2b721a6ac23b80cb3fe2426">setArchives</a>(<a class="code" href="class_archives.html">Archives</a> *<a class="code" href="class_camera.html#a5eb3a29aeeab2f2755d0b69ac7cf550a">archives</a>);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_camera.html#a282a199ddd33fe64bc27b32a55719054">   57</a></span>&#160;    QCamera *<a class="code" href="class_camera.html#a282a199ddd33fe64bc27b32a55719054">camera</a>; </div><div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_camera.html#a5eb3a29aeeab2f2755d0b69ac7cf550a">   58</a></span>&#160;    <a class="code" href="class_archives.html">Archives</a> *<a class="code" href="class_camera.html#a5eb3a29aeeab2f2755d0b69ac7cf550a">archives</a>; </div><div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_camera.html#abf5fd38d19f0f06dfd7ec9e37f73adb8">   59</a></span>&#160;    QCameraViewfinder *<a class="code" href="class_camera.html#abf5fd38d19f0f06dfd7ec9e37f73adb8">cadreFluxVideo</a>; </div><div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_camera.html#a482276c4fd0ba7172670006556322b62">   60</a></span>&#160;    QCameraImageCapture *<a class="code" href="class_camera.html#a482276c4fd0ba7172670006556322b62">captureImage</a>; </div><div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_camera.html#a1056fa6cffd2914d9e5a171bebf5ba7e">   61</a></span>&#160;    QString <a class="code" href="class_camera.html#a1056fa6cffd2914d9e5a171bebf5ba7e">formatSauvegardeTemps</a>; </div><div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_camera.html#a4433c250847de630592927b6c034f3c8">   62</a></span>&#160;    QString <a class="code" href="class_camera.html#a4433c250847de630592927b6c034f3c8">dateImage</a>; </div><div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_camera.html#a3bea5177e857533a53cb94135bee8c6b">   63</a></span>&#160;    QList&lt;QCameraInfo&gt; <a class="code" href="class_camera.html#a3bea5177e857533a53cb94135bee8c6b">cameras</a>; </div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    QString <a class="code" href="class_camera.html#a60d2c9f16b6f235ab6dd0360c883e0d0">nommerCapture</a>();</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera.html#a181773c87c3deaea9fa9844f8ac294e3">demarrerCamera</a>();</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera.html#a181773c87c3deaea9fa9844f8ac294e3">demarrerCamera</a>(QCameraInfo);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;signals:</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">public</span> slots:</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera.html#a3ca730dcbd7ea6bfba12931a15066f6c">capture</a>();</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera.html#a82a0dd06f1802dc0ec0ea8ff6fcbd231">changerCamera</a>(QString);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera.html#ac5b8c16f8edcb92569fab87185fc0500">erreurCapture</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, QCameraImageCapture::Error error, <span class="keyword">const</span> QString &amp;errorString);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif // CAMERA_H</span></div><div class="ttc" id="class_camera_html_a4433c250847de630592927b6c034f3c8"><div class="ttname"><a href="class_camera.html#a4433c250847de630592927b6c034f3c8">Camera::dateImage</a></div><div class="ttdeci">QString dateImage</div><div class="ttdoc">Stock la date de la prise de photo pour l&amp;#39;archivage. </div><div class="ttdef"><b>Definition:</b> camera.h:62</div></div>
+<div class="ttc" id="class_camera_html_a60d2c9f16b6f235ab6dd0360c883e0d0"><div class="ttname"><a href="class_camera.html#a60d2c9f16b6f235ab6dd0360c883e0d0">Camera::nommerCapture</a></div><div class="ttdeci">QString nommerCapture()</div><div class="ttdoc">Renomme la photo capturée au format : &quot;yyyy-MM-dd_HH:mm:ss&quot;. </div><div class="ttdef"><b>Definition:</b> camera.cpp:127</div></div>
+<div class="ttc" id="class_camera_html_a1056fa6cffd2914d9e5a171bebf5ba7e"><div class="ttname"><a href="class_camera.html#a1056fa6cffd2914d9e5a171bebf5ba7e">Camera::formatSauvegardeTemps</a></div><div class="ttdeci">QString formatSauvegardeTemps</div><div class="ttdoc">Le format de sauvegarde du temps pour l&amp;#39;archivages. </div><div class="ttdef"><b>Definition:</b> camera.h:61</div></div>
+<div class="ttc" id="class_camera_html_a282a199ddd33fe64bc27b32a55719054"><div class="ttname"><a href="class_camera.html#a282a199ddd33fe64bc27b32a55719054">Camera::camera</a></div><div class="ttdeci">QCamera * camera</div><div class="ttdoc">Permet la connexion avec la caméra. </div><div class="ttdef"><b>Definition:</b> camera.h:57</div></div>
+<div class="ttc" id="class_camera_html"><div class="ttname"><a href="class_camera.html">Camera</a></div><div class="ttdoc">Déclaration de la classe Camera. </div><div class="ttdef"><b>Definition:</b> camera.h:43</div></div>
+<div class="ttc" id="class_camera_html_afb73ab859802a143a1a00443e396143e"><div class="ttname"><a href="class_camera.html#afb73ab859802a143a1a00443e396143e">Camera::estCameraDisponible</a></div><div class="ttdeci">bool estCameraDisponible()</div><div class="ttdoc">Retourne un booléen sur l&amp;#39;état de disponibilité de la caméra. </div><div class="ttdef"><b>Definition:</b> camera.cpp:51</div></div>
+<div class="ttc" id="class_camera_html_a482276c4fd0ba7172670006556322b62"><div class="ttname"><a href="class_camera.html#a482276c4fd0ba7172670006556322b62">Camera::captureImage</a></div><div class="ttdeci">QCameraImageCapture * captureImage</div><div class="ttdoc">Permet la capture d&amp;#39;image. </div><div class="ttdef"><b>Definition:</b> camera.h:60</div></div>
+<div class="ttc" id="class_archives_html"><div class="ttname"><a href="class_archives.html">Archives</a></div><div class="ttdoc">Déclaration de la classe Archives. </div><div class="ttdef"><b>Definition:</b> archives.h:45</div></div>
+<div class="ttc" id="class_camera_html_a3bea5177e857533a53cb94135bee8c6b"><div class="ttname"><a href="class_camera.html#a3bea5177e857533a53cb94135bee8c6b">Camera::cameras</a></div><div class="ttdeci">QList&lt; QCameraInfo &gt; cameras</div><div class="ttdoc">Stock la liste des caméras disponibles. </div><div class="ttdef"><b>Definition:</b> camera.h:63</div></div>
+<div class="ttc" id="class_camera_html_ae3aa4afd7a3d9ddc2bf710bc74dc293e"><div class="ttname"><a href="class_camera.html#ae3aa4afd7a3d9ddc2bf710bc74dc293e">Camera::Camera</a></div><div class="ttdeci">Camera(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> camera.cpp:22</div></div>
+<div class="ttc" id="archives_8h_html"><div class="ttname"><a href="archives_8h.html">archives.h</a></div><div class="ttdoc">Déclaration de la classe Archives. </div></div>
+<div class="ttc" id="class_camera_html_a5eb3a29aeeab2f2755d0b69ac7cf550a"><div class="ttname"><a href="class_camera.html#a5eb3a29aeeab2f2755d0b69ac7cf550a">Camera::archives</a></div><div class="ttdeci">Archives * archives</div><div class="ttdoc">Permet la connexion avec les archives. </div><div class="ttdef"><b>Definition:</b> camera.h:58</div></div>
+<div class="ttc" id="class_camera_html_ad8a2a21d3701375a553c7c90646c694f"><div class="ttname"><a href="class_camera.html#ad8a2a21d3701375a553c7c90646c694f">Camera::getListeCamera</a></div><div class="ttdeci">QList&lt; QCameraInfo &gt; getListeCamera()</div><div class="ttdoc">retourne toute les caméras disponible </div><div class="ttdef"><b>Definition:</b> camera.cpp:62</div></div>
+<div class="ttc" id="class_camera_html_a3ca730dcbd7ea6bfba12931a15066f6c"><div class="ttname"><a href="class_camera.html#a3ca730dcbd7ea6bfba12931a15066f6c">Camera::capture</a></div><div class="ttdeci">void capture()</div><div class="ttdoc">Capture l&amp;#39;image du flux video. </div><div class="ttdef"><b>Definition:</b> camera.cpp:115</div></div>
+<div class="ttc" id="class_camera_html_a67420d3ef14065a412327ada6193a2e0"><div class="ttname"><a href="class_camera.html#a67420d3ef14065a412327ada6193a2e0">Camera::getCadreFluxVideo</a></div><div class="ttdeci">QCameraViewfinder * getCadreFluxVideo()</div><div class="ttdoc">retourne le flux video </div><div class="ttdef"><b>Definition:</b> camera.cpp:81</div></div>
+<div class="ttc" id="class_camera_html_ad1897942d0ccf91052386388a497349f"><div class="ttname"><a href="class_camera.html#ad1897942d0ccf91052386388a497349f">Camera::~Camera</a></div><div class="ttdeci">~Camera()</div><div class="ttdef"><b>Definition:</b> camera.cpp:40</div></div>
+<div class="ttc" id="class_camera_html_a82a0dd06f1802dc0ec0ea8ff6fcbd231"><div class="ttname"><a href="class_camera.html#a82a0dd06f1802dc0ec0ea8ff6fcbd231">Camera::changerCamera</a></div><div class="ttdeci">void changerCamera(QString)</div><div class="ttdoc">Permet de démarrer le flux vidéo de la caméra choisir dans le QComboBox sur l&amp;#39;IHM. </div><div class="ttdef"><b>Definition:</b> camera.cpp:141</div></div>
+<div class="ttc" id="class_camera_html_a181773c87c3deaea9fa9844f8ac294e3"><div class="ttname"><a href="class_camera.html#a181773c87c3deaea9fa9844f8ac294e3">Camera::demarrerCamera</a></div><div class="ttdeci">void demarrerCamera()</div></div>
+<div class="ttc" id="class_camera_html_a66b844eec2b721a6ac23b80cb3fe2426"><div class="ttname"><a href="class_camera.html#a66b844eec2b721a6ac23b80cb3fe2426">Camera::setArchives</a></div><div class="ttdeci">void setArchives(Archives *archives)</div><div class="ttdef"><b>Definition:</b> camera.cpp:72</div></div>
+<div class="ttc" id="class_camera_html_ac5b8c16f8edcb92569fab87185fc0500"><div class="ttname"><a href="class_camera.html#ac5b8c16f8edcb92569fab87185fc0500">Camera::erreurCapture</a></div><div class="ttdeci">void erreurCapture(int id, QCameraImageCapture::Error error, const QString &amp;errorString)</div><div class="ttdef"><b>Definition:</b> camera.cpp:155</div></div>
+<div class="ttc" id="class_camera_html_abf5fd38d19f0f06dfd7ec9e37f73adb8"><div class="ttname"><a href="class_camera.html#abf5fd38d19f0f06dfd7ec9e37f73adb8">Camera::cadreFluxVideo</a></div><div class="ttdeci">QCameraViewfinder * cadreFluxVideo</div><div class="ttdoc">Permet l&amp;#39;affichage du flux vidéo. </div><div class="ttdef"><b>Definition:</b> camera.h:59</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 05:35:33 pour Projet ROV&#39;NET par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

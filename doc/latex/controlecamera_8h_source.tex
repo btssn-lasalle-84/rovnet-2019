@@ -1,0 +1,26 @@
+\hypertarget{controlecamera_8h_source}{}\subsection{controlecamera.\+h}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef CONTROLECAMERA\_H}
+00002 \textcolor{preprocessor}{#define CONTROLECAMERA\_H}
+00003 
+00017 \textcolor{preprocessor}{#include <QObject>}
+00018 
+\Hypertarget{controlecamera_8h_source_l00031}\hyperlink{class_controle_camera}{00031} \textcolor{keyword}{class }\hyperlink{class_controle_camera}{ControleCamera} : \textcolor{keyword}{public} QObject
+00032 \{
+00033     Q\_OBJECT
+00034 \textcolor{keyword}{public}:
+00035     \textcolor{keyword}{explicit} \hyperlink{class_controle_camera_afe5dd4f7158c6c18c78b52253fe78327}{ControleCamera}(QObject *parent = \textcolor{keyword}{nullptr});
+00036 
+00037 \textcolor{keyword}{private}:
+00038 
+00039 signals:
+00040     \textcolor{keywordtype}{void} \hyperlink{class_controle_camera_ae6fda972cd90c8a14bc1c0171e1600e5}{trameCree}(QString trame); 
+00041 
+00042 \textcolor{keyword}{public} slots:
+00048     \textcolor{keywordtype}{void} \hyperlink{class_controle_camera_a119562aacbb4c0fbd4e5aa27a05ce7cc}{tourneCameraGauche}(\textcolor{keywordtype}{bool} boutonAppuye);
+00054     \textcolor{keywordtype}{void} \hyperlink{class_controle_camera_aac294c4e98a912199ba32d686e52f7ef}{tourneCameraDroite}(\textcolor{keywordtype}{bool} boutonAppuye);
+00055 \};
+00056 
+00057 \textcolor{preprocessor}{#endif // CONTROLECAMERA\_H}
+\end{DoxyCode}

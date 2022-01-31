@@ -1,0 +1,7 @@
+<map id="Rov" name="Rov">
+<area shape="rect" id="node2" href="$class_archives.html" title="Déclaration de la classe Archives. " alt="" coords="5,5,195,405"/>
+<area shape="rect" id="node3" href="$class_camera.html" title="Déclaration de la classe Camera. " alt="" coords="160,468,336,780"/>
+<area shape="rect" id="node4" href="$class_mesures.html" title="Déclaration de la classe Mesures. Gestion des mesures des capteurs (température, irradiation, et distance). " alt="" coords="360,497,563,751"/>
+<area shape="rect" id="node5" href="$class_base_de_donnees.html" title="Déclaration de la classe BaseDeDonnees. " alt="" coords="587,475,733,773"/>
+<area shape="rect" id="node6" href="$class_communication_rov.html" title="Déclaration de la classe CommunicationRov. Gère la communication entre le Rov et le Rov..." alt="" coords="886,505,1122,743"/>
+</map>

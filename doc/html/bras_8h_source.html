@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet ROV&#39;NET:  Fichier source de bras.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-rov.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet ROV&#39;NET
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">bras.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="bras_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef BRAS_H</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define BRAS_H</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_bras.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_bras.html">Bras</a> : <span class="keyword">public</span> QObject</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_bras.html#a7108c10b4e8f6ceb1ffb7543aeac55e1">   37</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_bras.html#a7108c10b4e8f6ceb1ffb7543aeac55e1">valeurTourneEpaulePrecedente</a>; </div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_bras.html#ab9045906376dd797febdcb5956b155c1">   38</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_bras.html#ab9045906376dd797febdcb5956b155c1">valeurLeveEpaulePrecedente</a>;   </div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_bras.html#aee3f364c582bb94e49be07f4f28c5ba4">   39</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_bras.html#aee3f364c582bb94e49be07f4f28c5ba4">valeurTournePoignetPrecedente</a>;</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_bras.html#a83bd1b995ba642e336c24151ba4964cf">   40</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_bras.html#a83bd1b995ba642e336c24151ba4964cf">valeurLevePoignetPrecedente</a>;  </div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="class_bras.html#aa194e94737e1e024e7f9a0cd6ecb6594">Bras</a>(QObject *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">public</span> slots:</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_bras.html#aaeacb18f22532a63559fc8430118169e">tourneEpaule</a>(<span class="keywordtype">double</span> valeur);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_bras.html#ac8f658db87d03bfbba6faa535326cc3a">leveEpaule</a>(<span class="keywordtype">double</span> valeur);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_bras.html#a197686a4ff55b4fe2384b2af44b8228b">leveCoude</a>(<span class="keywordtype">bool</span> appuye);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_bras.html#a4b8e4791a454fcf884b1e7217a16a326">baisseCoude</a>(<span class="keywordtype">bool</span> appuye);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_bras.html#a15beae8aa104c2e689614486646ab402">tournePoignet</a>(<span class="keywordtype">double</span> valeur);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_bras.html#ac95f54d8b02e7c88081f482fbbc40aef">levePoignet</a>(<span class="keywordtype">double</span> valeur);</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_bras.html#a55e143cf8e696ed214809ae25fb558d5">serrePince</a>(<span class="keywordtype">bool</span> appuye);</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_bras.html#a246e835f25bd61f0618c58aafea99ea1">lachePince</a>(<span class="keywordtype">bool</span> appuye);</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_bras.html#a69d95616a74732e13b23bd90680d7d21">depose</a>(<span class="keywordtype">bool</span> appuye);</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    signals:</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">trameCree</a>(QString trame); </div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif // BRAS_H</span></div><div class="ttc" id="class_bras_html_a246e835f25bd61f0618c58aafea99ea1"><div class="ttname"><a href="class_bras.html#a246e835f25bd61f0618c58aafea99ea1">Bras::lachePince</a></div><div class="ttdeci">void lachePince(bool appuye)</div><div class="ttdoc">Permet de relâcher la pince, en émettant la trame correspondante. Correspond au bouton L1 de la manet...</div><div class="ttdef"><b>Definition:</b> bras.cpp:169</div></div>
+<div class="ttc" id="class_bras_html_a69d95616a74732e13b23bd90680d7d21"><div class="ttname"><a href="class_bras.html#a69d95616a74732e13b23bd90680d7d21">Bras::depose</a></div><div class="ttdeci">void depose(bool appuye)</div><div class="ttdoc">Emet la trame : poser dans le bac le contenu de la pince. </div><div class="ttdef"><b>Definition:</b> bras.cpp:181</div></div>
+<div class="ttc" id="class_bras_html"><div class="ttname"><a href="class_bras.html">Bras</a></div><div class="ttdoc">Déclaration de la classe Bras. Réceptionne les signaux de la manette destiné aux mouvements du bras...</div><div class="ttdef"><b>Definition:</b> bras.h:32</div></div>
+<div class="ttc" id="class_bras_html_ac95f54d8b02e7c88081f482fbbc40aef"><div class="ttname"><a href="class_bras.html#ac95f54d8b02e7c88081f482fbbc40aef">Bras::levePoignet</a></div><div class="ttdeci">void levePoignet(double valeur)</div><div class="ttdoc">Permet de lever ou baisser le poignet, en émettant la trame correspondante. Correspond au joystick ga...</div><div class="ttdef"><b>Definition:</b> bras.cpp:133</div></div>
+<div class="ttc" id="class_bras_html_a197686a4ff55b4fe2384b2af44b8228b"><div class="ttname"><a href="class_bras.html#a197686a4ff55b4fe2384b2af44b8228b">Bras::leveCoude</a></div><div class="ttdeci">void leveCoude(bool appuye)</div><div class="ttdoc">Permet de lever le coude, en émettant la trame correspondante. Correspond au bouton triangle de la ma...</div><div class="ttdef"><b>Definition:</b> bras.cpp:85</div></div>
+<div class="ttc" id="class_bras_html_ab442bf8d3e389c051b26b4b0741e7924"><div class="ttname"><a href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">Bras::trameCree</a></div><div class="ttdeci">void trameCree(QString trame)</div><div class="ttdoc">Signal émis lorsqu&amp;#39;une trame a été créée et prête à être transmise. </div></div>
+<div class="ttc" id="class_bras_html_a4b8e4791a454fcf884b1e7217a16a326"><div class="ttname"><a href="class_bras.html#a4b8e4791a454fcf884b1e7217a16a326">Bras::baisseCoude</a></div><div class="ttdeci">void baisseCoude(bool appuye)</div><div class="ttdoc">Permet de plier le coude, en émettant la trame correspondante. Correspond au bouton X de la manette...</div><div class="ttdef"><b>Definition:</b> bras.cpp:97</div></div>
+<div class="ttc" id="class_bras_html_aa194e94737e1e024e7f9a0cd6ecb6594"><div class="ttname"><a href="class_bras.html#aa194e94737e1e024e7f9a0cd6ecb6594">Bras::Bras</a></div><div class="ttdeci">Bras(QObject *parent=nullptr)</div><div class="ttdoc">Constructeur de la classe Bras. </div><div class="ttdef"><b>Definition:</b> bras.cpp:23</div></div>
+<div class="ttc" id="class_bras_html_a15beae8aa104c2e689614486646ab402"><div class="ttname"><a href="class_bras.html#a15beae8aa104c2e689614486646ab402">Bras::tournePoignet</a></div><div class="ttdeci">void tournePoignet(double valeur)</div><div class="ttdoc">Permet de pivoter le poignet, en émettant la trame correspondante. Correspond au joystick gauche axe ...</div><div class="ttdef"><b>Definition:</b> bras.cpp:109</div></div>
+<div class="ttc" id="class_bras_html_aaeacb18f22532a63559fc8430118169e"><div class="ttname"><a href="class_bras.html#aaeacb18f22532a63559fc8430118169e">Bras::tourneEpaule</a></div><div class="ttdeci">void tourneEpaule(double valeur)</div><div class="ttdoc">Contrôle la rotation de l&amp;#39;épaule (entre autre, la direction du bras), en émettant la trame correspond...</div><div class="ttdef"><b>Definition:</b> bras.cpp:34</div></div>
+<div class="ttc" id="class_bras_html_aee3f364c582bb94e49be07f4f28c5ba4"><div class="ttname"><a href="class_bras.html#aee3f364c582bb94e49be07f4f28c5ba4">Bras::valeurTournePoignetPrecedente</a></div><div class="ttdeci">int valeurTournePoignetPrecedente</div><div class="ttdoc">Dernière valeur de la trame TournePoignet émise. </div><div class="ttdef"><b>Definition:</b> bras.h:39</div></div>
+<div class="ttc" id="class_bras_html_a7108c10b4e8f6ceb1ffb7543aeac55e1"><div class="ttname"><a href="class_bras.html#a7108c10b4e8f6ceb1ffb7543aeac55e1">Bras::valeurTourneEpaulePrecedente</a></div><div class="ttdeci">int valeurTourneEpaulePrecedente</div><div class="ttdoc">Dernière valeur de la trame TourneEpaule émise. </div><div class="ttdef"><b>Definition:</b> bras.h:37</div></div>
+<div class="ttc" id="class_bras_html_a55e143cf8e696ed214809ae25fb558d5"><div class="ttname"><a href="class_bras.html#a55e143cf8e696ed214809ae25fb558d5">Bras::serrePince</a></div><div class="ttdeci">void serrePince(bool appuye)</div><div class="ttdoc">Permet de serrer la pince, en émettant la trame correspondante. Correspond au bouton R1 de la manette...</div><div class="ttdef"><b>Definition:</b> bras.cpp:157</div></div>
+<div class="ttc" id="class_bras_html_a83bd1b995ba642e336c24151ba4964cf"><div class="ttname"><a href="class_bras.html#a83bd1b995ba642e336c24151ba4964cf">Bras::valeurLevePoignetPrecedente</a></div><div class="ttdeci">int valeurLevePoignetPrecedente</div><div class="ttdoc">Dernière valeur de la trame LevePoignet émise. </div><div class="ttdef"><b>Definition:</b> bras.h:40</div></div>
+<div class="ttc" id="class_bras_html_ac8f658db87d03bfbba6faa535326cc3a"><div class="ttname"><a href="class_bras.html#ac8f658db87d03bfbba6faa535326cc3a">Bras::leveEpaule</a></div><div class="ttdeci">void leveEpaule(double valeur)</div><div class="ttdoc">Contrôle l&amp;#39;angle de levé de l&amp;#39;épaule, en émettant la trame correspondante. Correspond au joystick dro...</div><div class="ttdef"><b>Definition:</b> bras.cpp:59</div></div>
+<div class="ttc" id="class_bras_html_ab9045906376dd797febdcb5956b155c1"><div class="ttname"><a href="class_bras.html#ab9045906376dd797febdcb5956b155c1">Bras::valeurLeveEpaulePrecedente</a></div><div class="ttdeci">int valeurLeveEpaulePrecedente</div><div class="ttdoc">Dernière valeur de la trame LeveEpaule émise. </div><div class="ttdef"><b>Definition:</b> bras.h:38</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 05:35:33 pour Projet ROV&#39;NET par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

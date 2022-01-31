@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet ROV&#39;NET:  Fichier source de manette.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-rov.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet ROV&#39;NET
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">manette.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="manette_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MANETTE_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MANETTE_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;QtCore/QObject&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;QtCore/QTimer&gt;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rov_8h.html">rov.h</a>&quot;</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="deplacement_8h.html">deplacement.h</a>&quot;</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="bras_8h.html">bras.h</a>&quot;</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;QT_BEGIN_NAMESPACE</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span>QGamepad;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;QT_END_NAMESPACE</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">//#define DEBUG_MANETTE</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_manette.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_manette.html">Manette</a> : <span class="keyword">public</span> QObject</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_manette.html#adc9690756093748bb851d4c1d3ba82ea">   48</a></span>&#160;        QGamepad *<a class="code" href="class_manette.html#adc9690756093748bb851d4c1d3ba82ea">manette</a>;  </div><div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_manette.html#a2b9c2c380a7bce40d2c6353d534ba6a9">   49</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_manette.html#a2b9c2c380a7bce40d2c6353d534ba6a9">detecte</a>;       </div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="class_manette.html#a9a7b00a30cd6a7eea503c8bcfe5bbcbb">Manette</a>(QObject *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="class_manette.html#a86a0cab49599b27d86c2e77f13fa54a2">~Manette</a>();</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_manette.html#a035c0a43a11e91889891b3c874f0a58d">estDetecte</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        QGamepad * <a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>();</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif // MANETTE_H</span></div><div class="ttc" id="class_manette_html"><div class="ttname"><a href="class_manette.html">Manette</a></div><div class="ttdoc">Déclaration de la classe Manette. Liaison avec la manette, permettant d&amp;#39;en recevoir les signaux...</div><div class="ttdef"><b>Definition:</b> manette.h:43</div></div>
+<div class="ttc" id="class_manette_html_a2b9c2c380a7bce40d2c6353d534ba6a9"><div class="ttname"><a href="class_manette.html#a2b9c2c380a7bce40d2c6353d534ba6a9">Manette::detecte</a></div><div class="ttdeci">bool detecte</div><div class="ttdoc">Manette connectée, ou non. </div><div class="ttdef"><b>Definition:</b> manette.h:49</div></div>
+<div class="ttc" id="class_manette_html_adc9690756093748bb851d4c1d3ba82ea"><div class="ttname"><a href="class_manette.html#adc9690756093748bb851d4c1d3ba82ea">Manette::manette</a></div><div class="ttdeci">QGamepad * manette</div><div class="ttdoc">Contient la manette actuellement connectée. </div><div class="ttdef"><b>Definition:</b> manette.h:48</div></div>
+<div class="ttc" id="bras_8h_html"><div class="ttname"><a href="bras_8h.html">bras.h</a></div><div class="ttdoc">Déclaration de la classe Bras. Réceptionne les signaux de la manette destiné aux mouvements du bras...</div></div>
+<div class="ttc" id="class_manette_html_a86a0cab49599b27d86c2e77f13fa54a2"><div class="ttname"><a href="class_manette.html#a86a0cab49599b27d86c2e77f13fa54a2">Manette::~Manette</a></div><div class="ttdeci">~Manette()</div><div class="ttdef"><b>Definition:</b> manette.cpp:45</div></div>
+<div class="ttc" id="class_manette_html_a9a7b00a30cd6a7eea503c8bcfe5bbcbb"><div class="ttname"><a href="class_manette.html#a9a7b00a30cd6a7eea503c8bcfe5bbcbb">Manette::Manette</a></div><div class="ttdeci">Manette(QObject *parent=nullptr)</div><div class="ttdoc">Constructeur de la classe GestionnaireManette. La connexion entre les évènements de la manette et les...</div><div class="ttdef"><b>Definition:</b> manette.cpp:25</div></div>
+<div class="ttc" id="rov_8h_html"><div class="ttname"><a href="rov_8h.html">rov.h</a></div><div class="ttdoc">Déclaration de la classe Rov. Gestion des liaisons entre les différentes classes, et paramètres de la...</div></div>
+<div class="ttc" id="class_manette_html_a035c0a43a11e91889891b3c874f0a58d"><div class="ttname"><a href="class_manette.html#a035c0a43a11e91889891b3c874f0a58d">Manette::estDetecte</a></div><div class="ttdeci">bool estDetecte() const</div><div class="ttdoc">estDetecte </div><div class="ttdef"><b>Definition:</b> manette.cpp:55</div></div>
+<div class="ttc" id="deplacement_8h_html"><div class="ttname"><a href="deplacement_8h.html">deplacement.h</a></div><div class="ttdoc">Déclaration de la classe Deplacement. Réceptionne les signaux de la manette destiné aux déplacements ...</div></div>
+<div class="ttc" id="class_manette_html_a708eccb66e967e0fe575b19e9899ff5a"><div class="ttname"><a href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">Manette::getManette</a></div><div class="ttdeci">QGamepad * getManette()</div><div class="ttdoc">getManette </div><div class="ttdef"><b>Definition:</b> manette.cpp:65</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 05:35:33 pour Projet ROV&#39;NET par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

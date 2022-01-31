@@ -1,0 +1,567 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet ROV&#39;NET: Référence de la classe CommunicationRov</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-rov.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet ROV&#39;NET
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Connecteurs publics</a> &#124;
+<a href="#signals">Signaux</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="class_communication_rov-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe CommunicationRov</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Déclaration de la classe <a class="el" href="class_communication_rov.html" title="Déclaration de la classe CommunicationRov. Gère la communication entre le Rov et le Rov...">CommunicationRov</a>. Gère la communication entre le <a class="el" href="class_rov.html" title="Déclaration de la classe Rov. Gestion des liaisons entre les différentes classes, et paramètres de la...">Rov</a> et le <a class="el" href="class_rov.html" title="Déclaration de la classe Rov. Gestion des liaisons entre les différentes classes, et paramètres de la...">Rov</a>.  
+ <a href="class_communication_rov.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="communicationrov_8h_source.html">communicationrov.h</a>&gt;</code></p>
+<div class="dynheader">
+Graphe de collaboration de CommunicationRov:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_communication_rov__coll__graph.png" border="0" usemap="#_communication_rov_coll__map" alt="Collaboration graph"/></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Connecteurs publics</h2></td></tr>
+<tr class="memitem:a5822d2f41553221ea876ea09e148f859"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication_rov.html#a5822d2f41553221ea876ea09e148f859">lireTrame</a> ()</td></tr>
+<tr class="memdesc:a5822d2f41553221ea876ea09e148f859"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère la trame envoyée par le <a class="el" href="class_rov.html" title="Déclaration de la classe Rov. Gestion des liaisons entre les différentes classes, et paramètres de la...">Rov</a>, et la renvoie sous un signal si cette dernière est complète.  <a href="#a5822d2f41553221ea876ea09e148f859">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5822d2f41553221ea876ea09e148f859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac243fcfb073f4ceaf58fab1d41207801"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication_rov.html#ac243fcfb073f4ceaf58fab1d41207801">envoieTrame</a> (QString <a class="el" href="class_communication_rov.html#a7100b1be33860d235b45efd9010ac218">trame</a>)</td></tr>
+<tr class="memdesc:ac243fcfb073f4ceaf58fab1d41207801"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envoie une trame au <a class="el" href="class_rov.html" title="Déclaration de la classe Rov. Gestion des liaisons entre les différentes classes, et paramètres de la...">Rov</a>.  <a href="#ac243fcfb073f4ceaf58fab1d41207801">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac243fcfb073f4ceaf58fab1d41207801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad46397a58ba7704fbd5ac5748e083004"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication_rov.html#ad46397a58ba7704fbd5ac5748e083004">changePortCommunication</a> (QString nouveauPort)</td></tr>
+<tr class="memdesc:ad46397a58ba7704fbd5ac5748e083004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifie le port de communication du rov.  <a href="#ad46397a58ba7704fbd5ac5748e083004">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad46397a58ba7704fbd5ac5748e083004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac49ffc6f2e6ae22ea9f99e10ca0a4163"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication_rov.html#ac49ffc6f2e6ae22ea9f99e10ca0a4163">changeBaudRate</a> (QString nouveauBaudRate)</td></tr>
+<tr class="memdesc:ac49ffc6f2e6ae22ea9f99e10ca0a4163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifie le baudrate utilisé.  <a href="#ac49ffc6f2e6ae22ea9f99e10ca0a4163">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac49ffc6f2e6ae22ea9f99e10ca0a4163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signaux</h2></td></tr>
+<tr class="memitem:add205822378629204a4ee49ca74c6d56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication_rov.html#add205822378629204a4ee49ca74c6d56">trameRecue</a> (QString <a class="el" href="class_communication_rov.html#a7100b1be33860d235b45efd9010ac218">trame</a>)</td></tr>
+<tr class="memdesc:add205822378629204a4ee49ca74c6d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal émis lorsque des nouvelles données ont été reçues.  <a href="#add205822378629204a4ee49ca74c6d56">Plus de détails...</a><br /></td></tr>
+<tr class="separator:add205822378629204a4ee49ca74c6d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a22b64c69228d392a212f543e071adc02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication_rov.html#a22b64c69228d392a212f543e071adc02">CommunicationRov</a> (QObject *parent=nullptr)</td></tr>
+<tr class="separator:a22b64c69228d392a212f543e071adc02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97e96f47dad6d47cbec4adc82756b49e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication_rov.html#a97e96f47dad6d47cbec4adc82756b49e">~CommunicationRov</a> ()</td></tr>
+<tr class="separator:a97e96f47dad6d47cbec4adc82756b49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a513c26b04745fa2ae31b4533d656dfd4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication_rov.html#a513c26b04745fa2ae31b4533d656dfd4">estCommunicationRovDisponible</a> ()</td></tr>
+<tr class="memdesc:a513c26b04745fa2ae31b4533d656dfd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne l'é&amp;tat d'ouverture du port de communication vers le <a class="el" href="class_rov.html" title="Déclaration de la classe Rov. Gestion des liaisons entre les différentes classes, et paramètres de la...">Rov</a>.  <a href="#a513c26b04745fa2ae31b4533d656dfd4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a513c26b04745fa2ae31b4533d656dfd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6226f9338fffc648cfca91c8e585a26b"><td class="memItemLeft" align="right" valign="top">const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication_rov.html#a6226f9338fffc648cfca91c8e585a26b">getPort</a> ()</td></tr>
+<tr class="memdesc:a6226f9338fffc648cfca91c8e585a26b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne le port de communication utilisé.  <a href="#a6226f9338fffc648cfca91c8e585a26b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a6226f9338fffc648cfca91c8e585a26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a810de691dfc6d305f77c92ccd90bb6db"><td class="memItemLeft" align="right" valign="top">const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication_rov.html#a810de691dfc6d305f77c92ccd90bb6db">getBaudRate</a> ()</td></tr>
+<tr class="memdesc:a810de691dfc6d305f77c92ccd90bb6db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne le baudrate utilisé.  <a href="#a810de691dfc6d305f77c92ccd90bb6db">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a810de691dfc6d305f77c92ccd90bb6db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a21b62067ef0b2a6aec339df60b4abd72"><td class="memItemLeft" align="right" valign="top">QSerialPort *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a></td></tr>
+<tr class="memdesc:a21b62067ef0b2a6aec339df60b4abd72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Port série pour la communication le programme et le <a class="el" href="class_rov.html" title="Déclaration de la classe Rov. Gestion des liaisons entre les différentes classes, et paramètres de la...">Rov</a>.  <a href="#a21b62067ef0b2a6aec339df60b4abd72">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a21b62067ef0b2a6aec339df60b4abd72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bd5d36d065005b27ed6cb421c7ffe42"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication_rov.html#a7bd5d36d065005b27ed6cb421c7ffe42">adressePort</a></td></tr>
+<tr class="memdesc:a7bd5d36d065005b27ed6cb421c7ffe42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adresse du port de communication.  <a href="#a7bd5d36d065005b27ed6cb421c7ffe42">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7bd5d36d065005b27ed6cb421c7ffe42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7100b1be33860d235b45efd9010ac218"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication_rov.html#a7100b1be33860d235b45efd9010ac218">trame</a></td></tr>
+<tr class="memdesc:a7100b1be33860d235b45efd9010ac218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trame reçue par le port.  <a href="#a7100b1be33860d235b45efd9010ac218">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7100b1be33860d235b45efd9010ac218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbb6939bb597179956c6f4bc5ca39f3f"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication_rov.html#acbb6939bb597179956c6f4bc5ca39f3f">donnees</a></td></tr>
+<tr class="memdesc:acbb6939bb597179956c6f4bc5ca39f3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dernière donnée reçue (ou en cours de réception)  <a href="#acbb6939bb597179956c6f4bc5ca39f3f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:acbb6939bb597179956c6f4bc5ca39f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><dl class="section author"><dt>Auteur</dt><dd>REYNIER Jacques</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.1</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Jeudi 13 Juin 2019 </dd></dl>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="a22b64c69228d392a212f543e071adc02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22b64c69228d392a212f543e071adc02">&#9670;&nbsp;</a></span>CommunicationRov()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CommunicationRov::CommunicationRov </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_communication_rov.html#a7bd5d36d065005b27ed6cb421c7ffe42">adressePort</a>, <a class="el" href="class_communication_rov.html#a5822d2f41553221ea876ea09e148f859">lireTrame()</a>, et <a class="el" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>.</p>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                                  : QObject(parent), <a class="code" href="class_communication_rov.html#a7bd5d36d065005b27ed6cb421c7ffe42">adressePort</a>(<span class="stringliteral">&quot;/dev/ttyUSB0&quot;</span>)</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a> = <span class="keyword">new</span> QSerialPort(<a class="code" href="class_communication_rov.html#a7bd5d36d065005b27ed6cb421c7ffe42">adressePort</a>);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>-&gt;setBaudRate(QSerialPort::Baud38400);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>-&gt;open(QIODevice::ReadWrite);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;Port ouvert :&quot;</span> &lt;&lt; <a class="code" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>-&gt;isOpen();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>-&gt;isOpen())</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        connect(<a class="code" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>, SIGNAL(readyRead()), <span class="keyword">this</span>, SLOT(<a class="code" href="class_communication_rov.html#a5822d2f41553221ea876ea09e148f859">lireTrame</a>()));</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div><div class="ttc" id="class_communication_rov_html_a5822d2f41553221ea876ea09e148f859"><div class="ttname"><a href="class_communication_rov.html#a5822d2f41553221ea876ea09e148f859">CommunicationRov::lireTrame</a></div><div class="ttdeci">void lireTrame()</div><div class="ttdoc">Récupère la trame envoyée par le Rov, et la renvoie sous un signal si cette dernière est complète...</div><div class="ttdef"><b>Definition:</b> communicationrov.cpp:95</div></div>
+<div class="ttc" id="class_communication_rov_html_a21b62067ef0b2a6aec339df60b4abd72"><div class="ttname"><a href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">CommunicationRov::port</a></div><div class="ttdeci">QSerialPort * port</div><div class="ttdoc">Port série pour la communication le programme et le Rov. </div><div class="ttdef"><b>Definition:</b> communicationrov.h:39</div></div>
+<div class="ttc" id="class_communication_rov_html_a7bd5d36d065005b27ed6cb421c7ffe42"><div class="ttname"><a href="class_communication_rov.html#a7bd5d36d065005b27ed6cb421c7ffe42">CommunicationRov::adressePort</a></div><div class="ttdeci">QString adressePort</div><div class="ttdoc">Adresse du port de communication. </div><div class="ttdef"><b>Definition:</b> communicationrov.h:40</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a97e96f47dad6d47cbec4adc82756b49e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97e96f47dad6d47cbec4adc82756b49e">&#9670;&nbsp;</a></span>~CommunicationRov()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CommunicationRov::~CommunicationRov </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>-&gt;close();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">delete</span> <a class="code" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div><div class="ttc" id="class_communication_rov_html_a21b62067ef0b2a6aec339df60b4abd72"><div class="ttname"><a href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">CommunicationRov::port</a></div><div class="ttdeci">QSerialPort * port</div><div class="ttdoc">Port série pour la communication le programme et le Rov. </div><div class="ttdef"><b>Definition:</b> communicationrov.h:39</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="ac49ffc6f2e6ae22ea9f99e10ca0a4163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac49ffc6f2e6ae22ea9f99e10ca0a4163">&#9670;&nbsp;</a></span>changeBaudRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CommunicationRov::changeBaudRate </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>nouveauBaudRate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Change le débit (baudrate) utilisé pour la communication avec le rov.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nouveauBaudRate</td><td>QString le nouveau baudrate à utiliser. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Références <a class="el" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_i_h_m_rov.html#aed451139ac09ef18b7c92637761d80ce">IHMRov::creerFenetreParametres()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>-&gt;setBaudRate(nouveauBaudRate.toInt());</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; nouveauBaudRate.toInt();</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div><div class="ttc" id="class_communication_rov_html_a21b62067ef0b2a6aec339df60b4abd72"><div class="ttname"><a href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">CommunicationRov::port</a></div><div class="ttdeci">QSerialPort * port</div><div class="ttdoc">Port série pour la communication le programme et le Rov. </div><div class="ttdef"><b>Definition:</b> communicationrov.h:39</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad46397a58ba7704fbd5ac5748e083004"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad46397a58ba7704fbd5ac5748e083004">&#9670;&nbsp;</a></span>changePortCommunication</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CommunicationRov::changePortCommunication </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>nouveauPort</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Change le port de communication utilisé pour la liaison avec le rov.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nouveauPort</td><td>QString le nouveau port auquel se connecter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Références <a class="el" href="class_communication_rov.html#a7bd5d36d065005b27ed6cb421c7ffe42">adressePort</a>, et <a class="el" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_i_h_m_rov.html#aed451139ac09ef18b7c92637761d80ce">IHMRov::creerFenetreParametres()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>-&gt;close();</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>-&gt;setPortName(nouveauPort);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>-&gt;open(QIODevice::ReadWrite);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="class_communication_rov.html#a7bd5d36d065005b27ed6cb421c7ffe42">adressePort</a> = nouveauPort;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    qDebug() &lt;&lt; <span class="stringliteral">&quot;Port : &quot;</span> &lt;&lt; <a class="code" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>-&gt;portName() &lt;&lt; <span class="stringliteral">&quot;Ouvert : &quot;</span> &lt;&lt; <a class="code" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>-&gt;isOpen();</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div><div class="ttc" id="class_communication_rov_html_a21b62067ef0b2a6aec339df60b4abd72"><div class="ttname"><a href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">CommunicationRov::port</a></div><div class="ttdeci">QSerialPort * port</div><div class="ttdoc">Port série pour la communication le programme et le Rov. </div><div class="ttdef"><b>Definition:</b> communicationrov.h:39</div></div>
+<div class="ttc" id="class_communication_rov_html_a7bd5d36d065005b27ed6cb421c7ffe42"><div class="ttname"><a href="class_communication_rov.html#a7bd5d36d065005b27ed6cb421c7ffe42">CommunicationRov::adressePort</a></div><div class="ttdeci">QString adressePort</div><div class="ttdoc">Adresse du port de communication. </div><div class="ttdef"><b>Definition:</b> communicationrov.h:40</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac243fcfb073f4ceaf58fab1d41207801"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac243fcfb073f4ceaf58fab1d41207801">&#9670;&nbsp;</a></span>envoieTrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CommunicationRov::envoieTrame </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>trame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Envoie la trame passée en argument au <a class="el" href="class_rov.html" title="Déclaration de la classe Rov. Gestion des liaisons entre les différentes classes, et paramètres de la...">Rov</a> par liaison série.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">trame</td><td>QString Trame à envoyer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>bool envoye, vrai si la trame a été envoyée, sinon faux</dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">trame</td><td>QString le contenu de la trame envoyée au <a class="el" href="class_rov.html" title="Déclaration de la classe Rov. Gestion des liaisons entre les différentes classes, et paramètres de la...">Rov</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Références <a class="el" href="class_communication_rov.html#a513c26b04745fa2ae31b4533d656dfd4">estCommunicationRovDisponible()</a>, <a class="el" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>, et <a class="el" href="class_communication_rov.html#a7100b1be33860d235b45efd9010ac218">trame</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_controle_rov.html#acc4d5fea26770217df978d43df2ad51e">ControleRov::ControleRov()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="class_communication_rov.html#a513c26b04745fa2ae31b4533d656dfd4">estCommunicationRovDisponible</a>())</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;trame&quot;</span> &lt;&lt; <a class="code" href="class_communication_rov.html#a7100b1be33860d235b45efd9010ac218">trame</a>;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    qint64 nbEnvoyes = <a class="code" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>-&gt;write(trame.toLocal8Bit());</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="comment">//port-&gt;waitForReadyRead(1100);</span></div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">if</span>(nbEnvoyes &gt; 0)</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div><div class="ttc" id="class_communication_rov_html_a513c26b04745fa2ae31b4533d656dfd4"><div class="ttname"><a href="class_communication_rov.html#a513c26b04745fa2ae31b4533d656dfd4">CommunicationRov::estCommunicationRovDisponible</a></div><div class="ttdeci">bool estCommunicationRovDisponible()</div><div class="ttdoc">Retourne l&amp;#39;é&amp;tat d&amp;#39;ouverture du port de communication vers le Rov. </div><div class="ttdef"><b>Definition:</b> communicationrov.cpp:86</div></div>
+<div class="ttc" id="class_communication_rov_html_a21b62067ef0b2a6aec339df60b4abd72"><div class="ttname"><a href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">CommunicationRov::port</a></div><div class="ttdeci">QSerialPort * port</div><div class="ttdoc">Port série pour la communication le programme et le Rov. </div><div class="ttdef"><b>Definition:</b> communicationrov.h:39</div></div>
+<div class="ttc" id="class_communication_rov_html_a7100b1be33860d235b45efd9010ac218"><div class="ttname"><a href="class_communication_rov.html#a7100b1be33860d235b45efd9010ac218">CommunicationRov::trame</a></div><div class="ttdeci">QString trame</div><div class="ttdoc">Trame reçue par le port. </div><div class="ttdef"><b>Definition:</b> communicationrov.h:41</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a513c26b04745fa2ae31b4533d656dfd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a513c26b04745fa2ae31b4533d656dfd4">&#9670;&nbsp;</a></span>estCommunicationRovDisponible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CommunicationRov::estCommunicationRovDisponible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Renvoie</dt><dd>bool disponible, vrai si le port vers le <a class="el" href="class_rov.html" title="Déclaration de la classe Rov. Gestion des liaisons entre les différentes classes, et paramètres de la...">Rov</a> est ouvert sinon faux</dd>
+<dd>
+bool vrai si le port vers le <a class="el" href="class_rov.html" title="Déclaration de la classe Rov. Gestion des liaisons entre les différentes classes, et paramètres de la...">Rov</a> est ouvert sinon faux </dd></dl>
+
+<p class="reference">Références <a class="el" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_i_h_m_rov.html#abbfcdc154a6ae7f941d186f6c90a5a2b">IHMRov::actualiseIconesEtat()</a>, <a class="el" href="class_rov.html#ae1306036b067e9ad50a09f9dd607a092">Rov::creerNouvelleCampagne()</a>, <a class="el" href="class_i_h_m_rov.html#a94d31f4e748f3e4549eab42c8bc7e367">IHMRov::enregistrerParametres()</a>, et <a class="el" href="class_communication_rov.html#ac243fcfb073f4ceaf58fab1d41207801">envoieTrame()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>-&gt;isOpen();</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div><div class="ttc" id="class_communication_rov_html_a21b62067ef0b2a6aec339df60b4abd72"><div class="ttname"><a href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">CommunicationRov::port</a></div><div class="ttdeci">QSerialPort * port</div><div class="ttdoc">Port série pour la communication le programme et le Rov. </div><div class="ttdef"><b>Definition:</b> communicationrov.h:39</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a810de691dfc6d305f77c92ccd90bb6db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a810de691dfc6d305f77c92ccd90bb6db">&#9670;&nbsp;</a></span>getBaudRate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString CommunicationRov::getBaudRate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Indique le Baudrate utilisé pour la communication avec le rov.</p>
+<dl class="section return"><dt>Renvoie</dt><dd>baudrate QString le baudrate utilisé actuellement pour la communication. </dd></dl>
+
+<p class="reference">Références <a class="el" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_i_h_m_rov.html#aed451139ac09ef18b7c92637761d80ce">IHMRov::creerFenetreParametres()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> QString::number(<a class="code" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>-&gt;baudRate());</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div><div class="ttc" id="class_communication_rov_html_a21b62067ef0b2a6aec339df60b4abd72"><div class="ttname"><a href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">CommunicationRov::port</a></div><div class="ttdeci">QSerialPort * port</div><div class="ttdoc">Port série pour la communication le programme et le Rov. </div><div class="ttdef"><b>Definition:</b> communicationrov.h:39</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6226f9338fffc648cfca91c8e585a26b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6226f9338fffc648cfca91c8e585a26b">&#9670;&nbsp;</a></span>getPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString CommunicationRov::getPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Indique le port utilisé pour la communication avec le rov.</p>
+<dl class="section return"><dt>Renvoie</dt><dd>adressePort QString le port de communication utilisé actuellement. </dd></dl>
+
+<p class="reference">Références <a class="el" href="class_communication_rov.html#a7bd5d36d065005b27ed6cb421c7ffe42">adressePort</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_i_h_m_rov.html#aed451139ac09ef18b7c92637761d80ce">IHMRov::creerFenetreParametres()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_communication_rov.html#a7bd5d36d065005b27ed6cb421c7ffe42">adressePort</a>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div><div class="ttc" id="class_communication_rov_html_a7bd5d36d065005b27ed6cb421c7ffe42"><div class="ttname"><a href="class_communication_rov.html#a7bd5d36d065005b27ed6cb421c7ffe42">CommunicationRov::adressePort</a></div><div class="ttdeci">QString adressePort</div><div class="ttdoc">Adresse du port de communication. </div><div class="ttdef"><b>Definition:</b> communicationrov.h:40</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5822d2f41553221ea876ea09e148f859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5822d2f41553221ea876ea09e148f859">&#9670;&nbsp;</a></span>lireTrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CommunicationRov::lireTrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Récupère la trame envoyée par le rov, et émet un signal. </p>
+
+<p class="reference">Références <a class="el" href="class_communication_rov.html#acbb6939bb597179956c6f4bc5ca39f3f">donnees</a>, <a class="el" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>, et <a class="el" href="class_communication_rov.html#add205822378629204a4ee49ca74c6d56">trameRecue()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_communication_rov.html#a22b64c69228d392a212f543e071adc02">CommunicationRov()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="class_communication_rov.html#acbb6939bb597179956c6f4bc5ca39f3f">donnees</a> += <a class="code" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>-&gt;readAll();</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    qDebug() &lt;&lt; <a class="code" href="class_communication_rov.html#acbb6939bb597179956c6f4bc5ca39f3f">donnees</a>;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_communication_rov.html#acbb6939bb597179956c6f4bc5ca39f3f">donnees</a>.endsWith(<span class="stringliteral">&quot;\n&quot;</span>))</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    {</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_communication_rov.html#acbb6939bb597179956c6f4bc5ca39f3f">donnees</a>.startsWith(<span class="stringliteral">&quot;$&quot;</span>))</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        {</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <a class="code" href="class_communication_rov.html#acbb6939bb597179956c6f4bc5ca39f3f">donnees</a>;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            emit <a class="code" href="class_communication_rov.html#add205822378629204a4ee49ca74c6d56">trameRecue</a>(donnees);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="class_communication_rov.html#acbb6939bb597179956c6f4bc5ca39f3f">donnees</a>.clear();</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div><div class="ttc" id="class_communication_rov_html_a21b62067ef0b2a6aec339df60b4abd72"><div class="ttname"><a href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">CommunicationRov::port</a></div><div class="ttdeci">QSerialPort * port</div><div class="ttdoc">Port série pour la communication le programme et le Rov. </div><div class="ttdef"><b>Definition:</b> communicationrov.h:39</div></div>
+<div class="ttc" id="class_communication_rov_html_add205822378629204a4ee49ca74c6d56"><div class="ttname"><a href="class_communication_rov.html#add205822378629204a4ee49ca74c6d56">CommunicationRov::trameRecue</a></div><div class="ttdeci">void trameRecue(QString trame)</div><div class="ttdoc">Signal émis lorsque des nouvelles données ont été reçues. </div></div>
+<div class="ttc" id="class_communication_rov_html_acbb6939bb597179956c6f4bc5ca39f3f"><div class="ttname"><a href="class_communication_rov.html#acbb6939bb597179956c6f4bc5ca39f3f">CommunicationRov::donnees</a></div><div class="ttdeci">QByteArray donnees</div><div class="ttdoc">Dernière donnée reçue (ou en cours de réception) </div><div class="ttdef"><b>Definition:</b> communicationrov.h:42</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="add205822378629204a4ee49ca74c6d56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add205822378629204a4ee49ca74c6d56">&#9670;&nbsp;</a></span>trameRecue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CommunicationRov::trameRecue </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>trame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">trame</td><td>QString le contenu de la trame reçue du <a class="el" href="class_rov.html" title="Déclaration de la classe Rov. Gestion des liaisons entre les différentes classes, et paramètres de la...">Rov</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Référencé par <a class="el" href="class_communication_rov.html#a5822d2f41553221ea876ea09e148f859">lireTrame()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="a7bd5d36d065005b27ed6cb421c7ffe42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bd5d36d065005b27ed6cb421c7ffe42">&#9670;&nbsp;</a></span>adressePort</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString CommunicationRov::adressePort</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_communication_rov.html#ad46397a58ba7704fbd5ac5748e083004">changePortCommunication()</a>, <a class="el" href="class_communication_rov.html#a22b64c69228d392a212f543e071adc02">CommunicationRov()</a>, et <a class="el" href="class_communication_rov.html#a6226f9338fffc648cfca91c8e585a26b">getPort()</a>.</p>
+
+</div>
+</div>
+<a id="acbb6939bb597179956c6f4bc5ca39f3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbb6939bb597179956c6f4bc5ca39f3f">&#9670;&nbsp;</a></span>donnees</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray CommunicationRov::donnees</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_communication_rov.html#a5822d2f41553221ea876ea09e148f859">lireTrame()</a>.</p>
+
+</div>
+</div>
+<a id="a21b62067ef0b2a6aec339df60b4abd72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21b62067ef0b2a6aec339df60b4abd72">&#9670;&nbsp;</a></span>port</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSerialPort* CommunicationRov::port</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_communication_rov.html#ac49ffc6f2e6ae22ea9f99e10ca0a4163">changeBaudRate()</a>, <a class="el" href="class_communication_rov.html#ad46397a58ba7704fbd5ac5748e083004">changePortCommunication()</a>, <a class="el" href="class_communication_rov.html#a22b64c69228d392a212f543e071adc02">CommunicationRov()</a>, <a class="el" href="class_communication_rov.html#ac243fcfb073f4ceaf58fab1d41207801">envoieTrame()</a>, <a class="el" href="class_communication_rov.html#a513c26b04745fa2ae31b4533d656dfd4">estCommunicationRovDisponible()</a>, <a class="el" href="class_communication_rov.html#a810de691dfc6d305f77c92ccd90bb6db">getBaudRate()</a>, <a class="el" href="class_communication_rov.html#a5822d2f41553221ea876ea09e148f859">lireTrame()</a>, et <a class="el" href="class_communication_rov.html#a97e96f47dad6d47cbec4adc82756b49e">~CommunicationRov()</a>.</p>
+
+</div>
+</div>
+<a id="a7100b1be33860d235b45efd9010ac218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7100b1be33860d235b45efd9010ac218">&#9670;&nbsp;</a></span>trame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString CommunicationRov::trame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_communication_rov.html#ac243fcfb073f4ceaf58fab1d41207801">envoieTrame()</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li><a class="el" href="communicationrov_8h_source.html">communicationrov.h</a></li>
+<li><a class="el" href="communicationrov_8cpp.html">communicationrov.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 05:35:33 pour Projet ROV&#39;NET par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

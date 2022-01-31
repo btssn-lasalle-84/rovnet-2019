@@ -1,0 +1,204 @@
+\hypertarget{class_deplacement}{}\subsection{Référence de la classe Deplacement}
+\label{class_deplacement}\index{Deplacement@{Deplacement}}
+
+
+Déclaration de la classe \hyperlink{class_deplacement}{Deplacement}. Réceptionne les signaux de la manette destiné aux déplacements du \hyperlink{class_rov}{Rov}, et émet les trames correspondantes.  
+
+
+
+
+{\ttfamily \#include $<$deplacement.\+h$>$}
+
+
+
+Graphe de collaboration de Deplacement\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_deplacement__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_deplacement_a164cc606a6c5b8d55c1e5475d4d112e0}{tourne\+Droite\+Gauche} (double valeur)
+\begin{DoxyCompactList}\small\item\em Slot activé lorsque le joystick gauche est poussé à droite ou gauche. Emet un signal contenant la trame correspondante (déplacement \+: tourner à droite/gauche). \end{DoxyCompactList}\item 
+void \hyperlink{class_deplacement_a65a1c6adfe5114d3cfefa631e0c91618}{roule\+Avant\+Arriere} (double valeur)
+\begin{DoxyCompactList}\small\item\em Slot activé lorsque le joystick gauche est poussé en avant ou arrière. Emet un signal contenant la trame correspondante (déplacement \+: avancer/reculer). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_deplacement_ae1a6d4a98304dee19d426ceeb6b7d5bb}{trame\+Cree} (Q\+String trame)
+\begin{DoxyCompactList}\small\item\em Signal émis lorsqu\textquotesingle{}une trame est prête à être transmise. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_deplacement_a473f623358ffa95ac7385b49f128d23c}{Deplacement} (Q\+Object $\ast$parent=nullptr)
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_deplacement_a419b8bb201dc4a4e927beed68923f8eb}{valeur\+Avancer\+Precedente}
+\begin{DoxyCompactList}\small\item\em Dernière valeur de la trame Avancer émise. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_deplacement_a9d9b191747038f0f410626f38c4e75be}{valeur\+Tourner\+Precedente}
+\begin{DoxyCompactList}\small\item\em Dernière valeur de la trame Tourner émise. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+R\+E\+Y\+N\+I\+ER Jacques
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+Jeudi 13 Juin 2019 
+\end{DoxyDate}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_deplacement_a473f623358ffa95ac7385b49f128d23c}\label{class_deplacement_a473f623358ffa95ac7385b49f128d23c}} 
+\index{Deplacement@{Deplacement}!Deplacement@{Deplacement}}
+\index{Deplacement@{Deplacement}!Deplacement@{Deplacement}}
+\paragraph{\texorpdfstring{Deplacement()}{Deplacement()}}
+{\footnotesize\ttfamily Deplacement\+::\+Deplacement (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00018                                         : QObject(parent), 
+      \hyperlink{class_deplacement_a419b8bb201dc4a4e927beed68923f8eb}{valeurAvancerPrecedente}(\textcolor{stringliteral}{"0"}), \hyperlink{class_deplacement_a9d9b191747038f0f410626f38c4e75be}{valeurTournerPrecedente}(\textcolor{stringliteral}{"0"})
+00019 \{
+00020 
+00021 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_deplacement_a65a1c6adfe5114d3cfefa631e0c91618}\label{class_deplacement_a65a1c6adfe5114d3cfefa631e0c91618}} 
+\index{Deplacement@{Deplacement}!roule\+Avant\+Arriere@{roule\+Avant\+Arriere}}
+\index{roule\+Avant\+Arriere@{roule\+Avant\+Arriere}!Deplacement@{Deplacement}}
+\paragraph{\texorpdfstring{roule\+Avant\+Arriere}{rouleAvantArriere}}
+{\footnotesize\ttfamily Deplacement\+::roule\+Avant\+Arriere (\begin{DoxyParamCaption}\item[{double}]{valeur }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Emet la trame \+: avancer/reculer.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em valeur} & double Force de l\textquotesingle{}appui sur le joystick (compris entre -\/1 et 1). \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_deplacement_ae1a6d4a98304dee19d426ceeb6b7d5bb}{trame\+Cree()}, et \hyperlink{class_deplacement_a419b8bb201dc4a4e927beed68923f8eb}{valeur\+Avancer\+Precedente}.
+
+
+
+Référencé par \hyperlink{class_controle_rov_a400d5766b9acabb45c1af5f8b22bbe47}{Controle\+Rov\+::change\+Connexions()}, et \hyperlink{class_controle_rov_acc4d5fea26770217df978d43df2ad51e}{Controle\+Rov\+::\+Controle\+Rov()}.
+
+
+\begin{DoxyCode}
+00055 \{
+00056     QString trame = \textcolor{stringliteral}{""};
+00057     valeur = round(valeur * 3);
+00058 
+00059     \textcolor{keywordflow}{if}(valeur > 0)
+00060         trame = \textcolor{stringliteral}{"$RRO"} + QString::number(-valeur) + \textcolor{stringliteral}{"\(\backslash\)n"};
+00061     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(valeur < 0)
+00062         trame = \textcolor{stringliteral}{"$ARO"} + QString::number(-valeur) + \textcolor{stringliteral}{"\(\backslash\)n"};
+00063     \textcolor{keywordflow}{else}
+00064         trame = \textcolor{stringliteral}{"$ARO0\(\backslash\)n"};
+00065 
+00066     \textcolor{keywordflow}{if} (QString::number(valeur) != \hyperlink{class_deplacement_a419b8bb201dc4a4e927beed68923f8eb}{valeurAvancerPrecedente})
+00067     \{
+00068         emit \hyperlink{class_deplacement_ae1a6d4a98304dee19d426ceeb6b7d5bb}{trameCree}(trame);
+00069         \hyperlink{class_deplacement_a419b8bb201dc4a4e927beed68923f8eb}{valeurAvancerPrecedente} = QString::number(valeur);
+00070     \}
+00071 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_deplacement_a164cc606a6c5b8d55c1e5475d4d112e0}\label{class_deplacement_a164cc606a6c5b8d55c1e5475d4d112e0}} 
+\index{Deplacement@{Deplacement}!tourne\+Droite\+Gauche@{tourne\+Droite\+Gauche}}
+\index{tourne\+Droite\+Gauche@{tourne\+Droite\+Gauche}!Deplacement@{Deplacement}}
+\paragraph{\texorpdfstring{tourne\+Droite\+Gauche}{tourneDroiteGauche}}
+{\footnotesize\ttfamily Deplacement\+::tourne\+Droite\+Gauche (\begin{DoxyParamCaption}\item[{double}]{valeur }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Emet la trame \+: tourner à droite/gauche.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em valeur} & double Force de l\textquotesingle{}appui sur le joystick (compris entre -\/1 et 1). \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_deplacement_ae1a6d4a98304dee19d426ceeb6b7d5bb}{trame\+Cree()}, et \hyperlink{class_deplacement_a9d9b191747038f0f410626f38c4e75be}{valeur\+Tourner\+Precedente}.
+
+
+
+Référencé par \hyperlink{class_controle_rov_a400d5766b9acabb45c1af5f8b22bbe47}{Controle\+Rov\+::change\+Connexions()}, et \hyperlink{class_controle_rov_acc4d5fea26770217df978d43df2ad51e}{Controle\+Rov\+::\+Controle\+Rov()}.
+
+
+\begin{DoxyCode}
+00030 \{
+00031     QString trame = \textcolor{stringliteral}{""};
+00032 
+00033     valeur = round(valeur);
+00034 
+00035     \textcolor{keywordflow}{if}(valeur > 0)
+00036         trame = \textcolor{stringliteral}{"$DRO"} + QString::number(valeur) + \textcolor{stringliteral}{"\(\backslash\)n"};
+00037     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(valeur < 0)
+00038         trame = \textcolor{stringliteral}{"$GRO"} + QString::number(-valeur) + \textcolor{stringliteral}{"\(\backslash\)n"};
+00039     \textcolor{keywordflow}{else}
+00040         trame = \textcolor{stringliteral}{"$DRO0\(\backslash\)n"};
+00041 
+00042     \textcolor{keywordflow}{if} (QString::number(valeur) != \hyperlink{class_deplacement_a9d9b191747038f0f410626f38c4e75be}{valeurTournerPrecedente})
+00043     \{
+00044         emit \hyperlink{class_deplacement_ae1a6d4a98304dee19d426ceeb6b7d5bb}{trameCree}(trame);
+00045         \hyperlink{class_deplacement_a9d9b191747038f0f410626f38c4e75be}{valeurTournerPrecedente} = QString::number(valeur);
+00046     \}
+00047 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_deplacement_ae1a6d4a98304dee19d426ceeb6b7d5bb}\label{class_deplacement_ae1a6d4a98304dee19d426ceeb6b7d5bb}} 
+\index{Deplacement@{Deplacement}!trame\+Cree@{trame\+Cree}}
+\index{trame\+Cree@{trame\+Cree}!Deplacement@{Deplacement}}
+\paragraph{\texorpdfstring{trame\+Cree}{trameCree}}
+{\footnotesize\ttfamily void Deplacement\+::trame\+Cree (\begin{DoxyParamCaption}\item[{Q\+String}]{trame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em trame} & Q\+String Trame à transmettre. \\
+\hline
+\end{DoxyParams}
+
+
+Référencé par \hyperlink{class_controle_rov_acc4d5fea26770217df978d43df2ad51e}{Controle\+Rov\+::\+Controle\+Rov()}, \hyperlink{class_deplacement_a65a1c6adfe5114d3cfefa631e0c91618}{roule\+Avant\+Arriere()}, et \hyperlink{class_deplacement_a164cc606a6c5b8d55c1e5475d4d112e0}{tourne\+Droite\+Gauche()}.
+
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_deplacement_a419b8bb201dc4a4e927beed68923f8eb}\label{class_deplacement_a419b8bb201dc4a4e927beed68923f8eb}} 
+\index{Deplacement@{Deplacement}!valeur\+Avancer\+Precedente@{valeur\+Avancer\+Precedente}}
+\index{valeur\+Avancer\+Precedente@{valeur\+Avancer\+Precedente}!Deplacement@{Deplacement}}
+\paragraph{\texorpdfstring{valeur\+Avancer\+Precedente}{valeurAvancerPrecedente}}
+{\footnotesize\ttfamily Q\+String Deplacement\+::valeur\+Avancer\+Precedente\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_deplacement_a65a1c6adfe5114d3cfefa631e0c91618}{roule\+Avant\+Arriere()}.
+
+\mbox{\Hypertarget{class_deplacement_a9d9b191747038f0f410626f38c4e75be}\label{class_deplacement_a9d9b191747038f0f410626f38c4e75be}} 
+\index{Deplacement@{Deplacement}!valeur\+Tourner\+Precedente@{valeur\+Tourner\+Precedente}}
+\index{valeur\+Tourner\+Precedente@{valeur\+Tourner\+Precedente}!Deplacement@{Deplacement}}
+\paragraph{\texorpdfstring{valeur\+Tourner\+Precedente}{valeurTournerPrecedente}}
+{\footnotesize\ttfamily Q\+String Deplacement\+::valeur\+Tourner\+Precedente\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_deplacement_a164cc606a6c5b8d55c1e5475d4d112e0}{tourne\+Droite\+Gauche()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{deplacement_8h}{deplacement.\+h}\item 
+\hyperlink{deplacement_8cpp}{deplacement.\+cpp}\end{DoxyCompactItemize}

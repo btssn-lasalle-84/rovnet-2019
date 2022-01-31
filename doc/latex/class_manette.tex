@@ -1,0 +1,190 @@
+\hypertarget{class_manette}{}\subsection{Référence de la classe Manette}
+\label{class_manette}\index{Manette@{Manette}}
+
+
+Déclaration de la classe \hyperlink{class_manette}{Manette}. Liaison avec la manette, permettant d\textquotesingle{}en recevoir les signaux.  
+
+
+
+
+{\ttfamily \#include $<$manette.\+h$>$}
+
+
+
+Graphe de collaboration de Manette\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_manette__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_manette_a9a7b00a30cd6a7eea503c8bcfe5bbcbb}{Manette} (Q\+Object $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe Gestionnaire\+Manette. La connexion entre les évènements de la manette et les méthodes cibles sont réalisées ici. \end{DoxyCompactList}\item 
+\hyperlink{class_manette_a86a0cab49599b27d86c2e77f13fa54a2}{$\sim$\+Manette} ()
+\item 
+bool \hyperlink{class_manette_a035c0a43a11e91889891b3c874f0a58d}{est\+Detecte} () const
+\begin{DoxyCompactList}\small\item\em est\+Detecte \end{DoxyCompactList}\item 
+Q\+Gamepad $\ast$ \hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{get\+Manette} ()
+\begin{DoxyCompactList}\small\item\em get\+Manette \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Gamepad $\ast$ \hyperlink{class_manette_adc9690756093748bb851d4c1d3ba82ea}{manette}
+\begin{DoxyCompactList}\small\item\em Contient la manette actuellement connectée. \end{DoxyCompactList}\item 
+bool \hyperlink{class_manette_a2b9c2c380a7bce40d2c6353d534ba6a9}{detecte}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_manette}{Manette} connectée, ou non. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+R\+E\+Y\+N\+I\+ER Jacques \& Nicolas B\+O\+F\+F\+R\+E\+DO
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+Jeudi 13 Juin 2019 
+\end{DoxyDate}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_manette_a9a7b00a30cd6a7eea503c8bcfe5bbcbb}\label{class_manette_a9a7b00a30cd6a7eea503c8bcfe5bbcbb}} 
+\index{Manette@{Manette}!Manette@{Manette}}
+\index{Manette@{Manette}!Manette@{Manette}}
+\paragraph{\texorpdfstring{Manette()}{Manette()}}
+{\footnotesize\ttfamily Manette\+::\+Manette (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_manette_a2b9c2c380a7bce40d2c6353d534ba6a9}{detecte}, et \hyperlink{class_manette_adc9690756093748bb851d4c1d3ba82ea}{manette}.
+
+
+\begin{DoxyCode}
+00025                                 : QObject(parent), \hyperlink{class_manette_adc9690756093748bb851d4c1d3ba82ea}{manette}(\textcolor{keyword}{nullptr}), 
+      \hyperlink{class_manette_a2b9c2c380a7bce40d2c6353d534ba6a9}{detecte}(\textcolor{keyword}{false})
+00026 \{
+00027 \textcolor{preprocessor}{    #ifndef QT\_NO\_DEBUG\_OUTPUT}
+00028     QLoggingCategory::setFilterRules(QStringLiteral(\textcolor{stringliteral}{"qt.gamepad.debug=true"}));
+00029 \textcolor{preprocessor}{    #endif}
+00030 
+00031     \textcolor{keyword}{auto} manettes = QGamepadManager::instance()->connectedGamepads();
+00032 
+00033     \textcolor{keywordflow}{if} (manettes.isEmpty())
+00034     \{
+00035         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Aucune manette détectée !"};
+00036         \hyperlink{class_manette_a2b9c2c380a7bce40d2c6353d534ba6a9}{detecte} = \textcolor{keyword}{false};
+00037     \}
+00038     \textcolor{keywordflow}{else}
+00039     \{
+00040         \hyperlink{class_manette_adc9690756093748bb851d4c1d3ba82ea}{manette} = \textcolor{keyword}{new} QGamepad(*manettes.begin(), \textcolor{keyword}{this});
+00041         \hyperlink{class_manette_a2b9c2c380a7bce40d2c6353d534ba6a9}{detecte} = \textcolor{keyword}{true};
+00042     \}
+00043 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_manette_a86a0cab49599b27d86c2e77f13fa54a2}\label{class_manette_a86a0cab49599b27d86c2e77f13fa54a2}} 
+\index{Manette@{Manette}!````~Manette@{$\sim$\+Manette}}
+\index{````~Manette@{$\sim$\+Manette}!Manette@{Manette}}
+\paragraph{\texorpdfstring{$\sim$\+Manette()}{~Manette()}}
+{\footnotesize\ttfamily Manette\+::$\sim$\+Manette (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00046 \{
+00047 
+00048 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_manette_a035c0a43a11e91889891b3c874f0a58d}\label{class_manette_a035c0a43a11e91889891b3c874f0a58d}} 
+\index{Manette@{Manette}!est\+Detecte@{est\+Detecte}}
+\index{est\+Detecte@{est\+Detecte}!Manette@{Manette}}
+\paragraph{\texorpdfstring{est\+Detecte()}{estDetecte()}}
+{\footnotesize\ttfamily bool Manette\+::est\+Detecte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Renvoie l\textquotesingle{}état de la manette (connectée, ou non).
+
+\begin{DoxyReturn}{Renvoie}
+detecte bool Etat de l\textquotesingle{}attribut detecte de l\textquotesingle{}objet.
+
+detecte bool Indique si une manette est connectée ou non. 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_manette_a2b9c2c380a7bce40d2c6353d534ba6a9}{detecte}.
+
+
+
+Référencé par \hyperlink{class_controle_rov_acc4d5fea26770217df978d43df2ad51e}{Controle\+Rov\+::\+Controle\+Rov()}, et \hyperlink{class_controle_rov_a9531520e50479fc2e339cd43f4c87066}{Controle\+Rov\+::est\+Controle\+Rov\+Disponible()}.
+
+
+\begin{DoxyCode}
+00056 \{
+00057     \textcolor{keywordflow}{return} \hyperlink{class_manette_a2b9c2c380a7bce40d2c6353d534ba6a9}{detecte};
+00058 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_manette_a708eccb66e967e0fe575b19e9899ff5a}\label{class_manette_a708eccb66e967e0fe575b19e9899ff5a}} 
+\index{Manette@{Manette}!get\+Manette@{get\+Manette}}
+\index{get\+Manette@{get\+Manette}!Manette@{Manette}}
+\paragraph{\texorpdfstring{get\+Manette()}{getManette()}}
+{\footnotesize\ttfamily Q\+Gamepad $\ast$ Manette\+::get\+Manette (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Renvoie la manette actuellement connectée.
+
+\begin{DoxyReturn}{Renvoie}
+manette Q\+Gamepad \hyperlink{class_manette}{Manette} actuellement connectée.
+
+manette Q\+Gamepad$\ast$ \hyperlink{class_manette}{Manette} connectée. 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_manette_adc9690756093748bb851d4c1d3ba82ea}{manette}.
+
+
+
+Référencé par \hyperlink{class_controle_rov_a400d5766b9acabb45c1af5f8b22bbe47}{Controle\+Rov\+::change\+Connexions()}, et \hyperlink{class_controle_rov_acc4d5fea26770217df978d43df2ad51e}{Controle\+Rov\+::\+Controle\+Rov()}.
+
+
+\begin{DoxyCode}
+00066 \{
+00067     \textcolor{keywordflow}{return} \hyperlink{class_manette_adc9690756093748bb851d4c1d3ba82ea}{manette};
+00068 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_manette_a2b9c2c380a7bce40d2c6353d534ba6a9}\label{class_manette_a2b9c2c380a7bce40d2c6353d534ba6a9}} 
+\index{Manette@{Manette}!detecte@{detecte}}
+\index{detecte@{detecte}!Manette@{Manette}}
+\paragraph{\texorpdfstring{detecte}{detecte}}
+{\footnotesize\ttfamily bool Manette\+::detecte\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_manette_a035c0a43a11e91889891b3c874f0a58d}{est\+Detecte()}, et \hyperlink{class_manette_a9a7b00a30cd6a7eea503c8bcfe5bbcbb}{Manette()}.
+
+\mbox{\Hypertarget{class_manette_adc9690756093748bb851d4c1d3ba82ea}\label{class_manette_adc9690756093748bb851d4c1d3ba82ea}} 
+\index{Manette@{Manette}!manette@{manette}}
+\index{manette@{manette}!Manette@{Manette}}
+\paragraph{\texorpdfstring{manette}{manette}}
+{\footnotesize\ttfamily Q\+Gamepad$\ast$ Manette\+::manette\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{get\+Manette()}, et \hyperlink{class_manette_a9a7b00a30cd6a7eea503c8bcfe5bbcbb}{Manette()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{manette_8h}{manette.\+h}\item 
+\hyperlink{manette_8cpp}{manette.\+cpp}\end{DoxyCompactItemize}

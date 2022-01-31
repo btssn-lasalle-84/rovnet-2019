@@ -1,0 +1,39 @@
+\hypertarget{bras_8h_source}{}\subsection{bras.\+h}
+
+\begin{DoxyCode}
+00001 
+00014 \textcolor{preprocessor}{#ifndef BRAS\_H}
+00015 \textcolor{preprocessor}{#define BRAS\_H}
+00016 
+00017 \textcolor{preprocessor}{#include <QObject>}
+00018 
+\Hypertarget{bras_8h_source_l00032}\hyperlink{class_bras}{00032} \textcolor{keyword}{class }\hyperlink{class_bras}{Bras} : \textcolor{keyword}{public} QObject
+00033 \{
+00034     Q\_OBJECT
+00035 
+00036     \textcolor{keyword}{private}:
+\Hypertarget{bras_8h_source_l00037}\hyperlink{class_bras_a7108c10b4e8f6ceb1ffb7543aeac55e1}{00037}         \textcolor{keywordtype}{int} \hyperlink{class_bras_a7108c10b4e8f6ceb1ffb7543aeac55e1}{valeurTourneEpaulePrecedente}; 
+\Hypertarget{bras_8h_source_l00038}\hyperlink{class_bras_ab9045906376dd797febdcb5956b155c1}{00038}         \textcolor{keywordtype}{int} \hyperlink{class_bras_ab9045906376dd797febdcb5956b155c1}{valeurLeveEpaulePrecedente};   
+\Hypertarget{bras_8h_source_l00039}\hyperlink{class_bras_aee3f364c582bb94e49be07f4f28c5ba4}{00039}         \textcolor{keywordtype}{int} \hyperlink{class_bras_aee3f364c582bb94e49be07f4f28c5ba4}{valeurTournePoignetPrecedente};
+\Hypertarget{bras_8h_source_l00040}\hyperlink{class_bras_a83bd1b995ba642e336c24151ba4964cf}{00040}         \textcolor{keywordtype}{int} \hyperlink{class_bras_a83bd1b995ba642e336c24151ba4964cf}{valeurLevePoignetPrecedente};  
+00041 
+00042     \textcolor{keyword}{public}:
+00043         \hyperlink{class_bras_aa194e94737e1e024e7f9a0cd6ecb6594}{Bras}(QObject *parent = \textcolor{keyword}{nullptr});
+00044 
+00045     \textcolor{keyword}{public} slots:
+00051         \textcolor{keywordtype}{void} \hyperlink{class_bras_aaeacb18f22532a63559fc8430118169e}{tourneEpaule}(\textcolor{keywordtype}{double} valeur);
+00057         \textcolor{keywordtype}{void} \hyperlink{class_bras_ac8f658db87d03bfbba6faa535326cc3a}{leveEpaule}(\textcolor{keywordtype}{double} valeur);
+00063         \textcolor{keywordtype}{void} \hyperlink{class_bras_a197686a4ff55b4fe2384b2af44b8228b}{leveCoude}(\textcolor{keywordtype}{bool} appuye);
+00069         \textcolor{keywordtype}{void} \hyperlink{class_bras_a4b8e4791a454fcf884b1e7217a16a326}{baisseCoude}(\textcolor{keywordtype}{bool} appuye);
+00075         \textcolor{keywordtype}{void} \hyperlink{class_bras_a15beae8aa104c2e689614486646ab402}{tournePoignet}(\textcolor{keywordtype}{double} valeur);
+00081         \textcolor{keywordtype}{void} \hyperlink{class_bras_ac95f54d8b02e7c88081f482fbbc40aef}{levePoignet}(\textcolor{keywordtype}{double} valeur);
+00087         \textcolor{keywordtype}{void} \hyperlink{class_bras_a55e143cf8e696ed214809ae25fb558d5}{serrePince}(\textcolor{keywordtype}{bool} appuye);
+00093         \textcolor{keywordtype}{void} \hyperlink{class_bras_a246e835f25bd61f0618c58aafea99ea1}{lachePince}(\textcolor{keywordtype}{bool} appuye);
+00099         \textcolor{keywordtype}{void} \hyperlink{class_bras_a69d95616a74732e13b23bd90680d7d21}{depose}(\textcolor{keywordtype}{bool} appuye);
+00100 
+00101     signals:
+00102         \textcolor{keywordtype}{void} \hyperlink{class_bras_ab442bf8d3e389c051b26b4b0741e7924}{trameCree}(QString trame); 
+00103 \};
+00104 
+00105 \textcolor{preprocessor}{#endif // BRAS\_H}
+\end{DoxyCode}

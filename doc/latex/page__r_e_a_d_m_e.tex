@@ -1,0 +1,40 @@
+\subsubsection*{Nom \+: R\+OV\textquotesingle{}N\+ET}
+
+Le système R\+OV\textquotesingle{}N\+ET est capable d\textquotesingle{}obtenir et gérer des données d\textquotesingle{}entrée afin de définir un environnement T\+QC (Tel Que Construit) en se déplaçant dans un milieu contaminé.
+
+\subsubsection*{Numéro de version \+: 1.\+0}
+
+\subsubsection*{Auteurs}
+
+\begin{DoxyAuthor}{Auteur}
+{\itshape B\+O\+F\+F\+R\+E\+DO} Nicolas \href{mailto:nboffredo@gmail.com}{\tt nboffredo@gmail.\+com}
+
+{\itshape R\+E\+Y\+N\+I\+ER} Jacques \href{mailto:reynier.jacques@gmail.com}{\tt reynier.\+jacques@gmail.\+com}
+\end{DoxyAuthor}
+\subsubsection*{Dépôt S\+VN}
+
+\href{https://svn.riouxsvn.com/rov-net}{\tt https\+://svn.\+riouxsvn.\+com/rov-\/net}
+
+\subsubsection*{Recette IR}
+
+
+\begin{DoxyItemize}
+\item Étudiant \+: B\+O\+F\+F\+R\+E\+DO Nicolas
+\item Étudiant \+: R\+E\+Y\+N\+I\+ER Jacques
+\end{DoxyItemize}
+
+\subsubsection*{Base de données S\+Q\+Lite}
+
+
+\begin{DoxyCode}
+CREATE TABLE 'campagnes' ( 'nom' VARCHAR, 'description' VARCHAR, 'date' DATETIME, 'cheminArchives' VARCHAR,
+       'idOperateur' INTEGER, 'idCampagne' INTEGER PRIMARY KEY AUTOINCREMENT, FOREIGN KEY(idOperateur) REFERENCES
+       operateurs(idOperateur) )
+
+CREATE TABLE 'mesures' ( 'date' DATETIME, 'temperature' DOUBLE, 'irradiation' DOUBLE, 'idCampagne' INTEGER,
+       FOREIGN KEY(idCampagne) REFERENCES campagnes(idCampagne) )
+
+CREATE TABLE 'operateurs' ( 'nom' VARCHAR, 'prenom' VARCHAR, 'idOperateur' INTEGER PRIMARY KEY
+       AUTOINCREMENT )
+\end{DoxyCode}
+ 

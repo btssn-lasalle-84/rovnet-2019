@@ -1,0 +1,48 @@
+\hypertarget{controlerov_8h_source}{}\subsection{controlerov.\+h}
+
+\begin{DoxyCode}
+00001 
+00014 \textcolor{preprocessor}{#ifndef CONTROLEROV\_H}
+00015 \textcolor{preprocessor}{#define CONTROLEROV\_H}
+00016 
+00017 \textcolor{preprocessor}{#include <QObject>}
+00018 
+00019 \textcolor{preprocessor}{#include "\hyperlink{manette_8h}{manette.h}"}
+00020 \textcolor{preprocessor}{#include "\hyperlink{deplacement_8h}{deplacement.h}"}
+00021 \textcolor{preprocessor}{#include "\hyperlink{bras_8h}{bras.h}"}
+00022 \textcolor{preprocessor}{#include "\hyperlink{controlecamera_8h}{controlecamera.h}"}
+00023 \textcolor{preprocessor}{#include "\hyperlink{rov_8h}{rov.h}"}
+00024 
+\Hypertarget{controlerov_8h_source_l00025}\hyperlink{controlerov_8h_a427f99e4fe2f812b0f49a09025623653}{00025} \textcolor{preprocessor}{#define MODE\_DEPLACEMENT    0}
+\Hypertarget{controlerov_8h_source_l00026}\hyperlink{controlerov_8h_aa7e25e50c4dd52bfc6abcb3e450686d4}{00026} \textcolor{preprocessor}{#define MODE\_BRAS           1}
+00027 
+\Hypertarget{controlerov_8h_source_l00041}\hyperlink{class_controle_rov}{00041} \textcolor{keyword}{class }\hyperlink{class_controle_rov}{ControleRov} : \textcolor{keyword}{public} QObject
+00042 \{
+00043     Q\_OBJECT
+00044 
+00045     \textcolor{keyword}{private}:
+\Hypertarget{controlerov_8h_source_l00046}\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{00046}         \hyperlink{class_manette}{Manette} *\hyperlink{class_controle_rov_af5caffd78d06f90d045b53ee87ad76df}{manette}; 
+\Hypertarget{controlerov_8h_source_l00047}\hyperlink{class_controle_rov_ae96443be0a82814b27958e6ceb0a0acf}{00047}         \hyperlink{class_deplacement}{Deplacement} *\hyperlink{class_controle_rov_ae96443be0a82814b27958e6ceb0a0acf}{deplacement}; 
+\Hypertarget{controlerov_8h_source_l00048}\hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{00048}         \hyperlink{class_bras}{Bras} *\hyperlink{class_controle_rov_a1b2e394dd6332b2acd1be0770451e140}{bras}; 
+\Hypertarget{controlerov_8h_source_l00049}\hyperlink{class_controle_rov_ac88fe7f2367cca5a24aeda187ee0bac2}{00049}         \hyperlink{class_controle_camera}{ControleCamera} *\hyperlink{class_controle_rov_ac88fe7f2367cca5a24aeda187ee0bac2}{controleCamera}; 
+\Hypertarget{controlerov_8h_source_l00050}\hyperlink{class_controle_rov_a3620b701fbb3aebe6a57ca3f3f04c6ca}{00050}         \hyperlink{class_rov}{Rov} *\hyperlink{class_controle_rov_a3620b701fbb3aebe6a57ca3f3f04c6ca}{rov}; 
+00051 
+\Hypertarget{controlerov_8h_source_l00052}\hyperlink{class_controle_rov_a5d1fb6ad14da49e3c587199ae86dc28d}{00052}         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \hyperlink{class_controle_rov_a5d1fb6ad14da49e3c587199ae86dc28d}{mode}; 
+00053 
+00058         \textcolor{keywordtype}{void} \hyperlink{class_controle_rov_a400d5766b9acabb45c1af5f8b22bbe47}{changeConnexions}(\textcolor{keywordtype}{int} mode);
+00059 
+00060     \textcolor{keyword}{public}:
+00061         \textcolor{keyword}{explicit} \hyperlink{class_controle_rov_acc4d5fea26770217df978d43df2ad51e}{ControleRov}(QObject *parent = \textcolor{keyword}{nullptr}, \hyperlink{class_rov}{Rov} * rov = \textcolor{keyword}{nullptr});
+00062         \hyperlink{class_controle_rov_ab216ab83b9dfb738aa240c3846e65d39}{~ControleRov}();
+00063 
+00069         \textcolor{keywordtype}{bool} \hyperlink{class_controle_rov_a9531520e50479fc2e339cd43f4c87066}{estControleRovDisponible}() \textcolor{keyword}{const};
+00070 
+00071     signals:
+00072         \textcolor{keywordtype}{void} \hyperlink{class_controle_rov_a05506e1d8caf632b0394dcffd365c06f}{trameCree}(QString trame); 
+00073 
+00074     \textcolor{keyword}{public} slots:
+00075         \textcolor{keywordtype}{void} \hyperlink{class_controle_rov_a206d52adf49b8510316b2885ea6b98b0}{changeMode}(\textcolor{keywordtype}{bool} appuye); 
+00076 \};
+00077 
+00078 \textcolor{preprocessor}{#endif // CONTROLEROV\_H}
+\end{DoxyCode}

@@ -1,0 +1,668 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet ROV&#39;NET: Référence de la classe Bras</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-rov.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet ROV&#39;NET
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Connecteurs publics</a> &#124;
+<a href="#signals">Signaux</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="class_bras-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe Bras</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Déclaration de la classe <a class="el" href="class_bras.html" title="Déclaration de la classe Bras. Réceptionne les signaux de la manette destiné aux mouvements du bras...">Bras</a>. Réceptionne les signaux de la manette destiné aux mouvements du bras, et émet les trames correspondantes.  
+ <a href="class_bras.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="bras_8h_source.html">bras.h</a>&gt;</code></p>
+<div class="dynheader">
+Graphe de collaboration de Bras:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_bras__coll__graph.png" border="0" usemap="#_bras_coll__map" alt="Collaboration graph"/></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Connecteurs publics</h2></td></tr>
+<tr class="memitem:aaeacb18f22532a63559fc8430118169e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bras.html#aaeacb18f22532a63559fc8430118169e">tourneEpaule</a> (double valeur)</td></tr>
+<tr class="memdesc:aaeacb18f22532a63559fc8430118169e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contrôle la rotation de l'épaule (entre autre, la direction du bras), en émettant la trame correspondante. Correspond au joystick droite de la manette.  <a href="#aaeacb18f22532a63559fc8430118169e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aaeacb18f22532a63559fc8430118169e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8f658db87d03bfbba6faa535326cc3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bras.html#ac8f658db87d03bfbba6faa535326cc3a">leveEpaule</a> (double valeur)</td></tr>
+<tr class="memdesc:ac8f658db87d03bfbba6faa535326cc3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contrôle l'angle de levé de l'épaule, en émettant la trame correspondante. Correspond au joystick droite de la manette.  <a href="#ac8f658db87d03bfbba6faa535326cc3a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac8f658db87d03bfbba6faa535326cc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a197686a4ff55b4fe2384b2af44b8228b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bras.html#a197686a4ff55b4fe2384b2af44b8228b">leveCoude</a> (bool appuye)</td></tr>
+<tr class="memdesc:a197686a4ff55b4fe2384b2af44b8228b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de lever le coude, en émettant la trame correspondante. Correspond au bouton triangle de la manette.  <a href="#a197686a4ff55b4fe2384b2af44b8228b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a197686a4ff55b4fe2384b2af44b8228b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8e4791a454fcf884b1e7217a16a326"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bras.html#a4b8e4791a454fcf884b1e7217a16a326">baisseCoude</a> (bool appuye)</td></tr>
+<tr class="memdesc:a4b8e4791a454fcf884b1e7217a16a326"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de plier le coude, en émettant la trame correspondante. Correspond au bouton X de la manette.  <a href="#a4b8e4791a454fcf884b1e7217a16a326">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a4b8e4791a454fcf884b1e7217a16a326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15beae8aa104c2e689614486646ab402"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bras.html#a15beae8aa104c2e689614486646ab402">tournePoignet</a> (double valeur)</td></tr>
+<tr class="memdesc:a15beae8aa104c2e689614486646ab402"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de pivoter le poignet, en émettant la trame correspondante. Correspond au joystick gauche axe X de la manette.  <a href="#a15beae8aa104c2e689614486646ab402">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a15beae8aa104c2e689614486646ab402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac95f54d8b02e7c88081f482fbbc40aef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bras.html#ac95f54d8b02e7c88081f482fbbc40aef">levePoignet</a> (double valeur)</td></tr>
+<tr class="memdesc:ac95f54d8b02e7c88081f482fbbc40aef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de lever ou baisser le poignet, en émettant la trame correspondante. Correspond au joystick gauche axe Y de la manette.  <a href="#ac95f54d8b02e7c88081f482fbbc40aef">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac95f54d8b02e7c88081f482fbbc40aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55e143cf8e696ed214809ae25fb558d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bras.html#a55e143cf8e696ed214809ae25fb558d5">serrePince</a> (bool appuye)</td></tr>
+<tr class="memdesc:a55e143cf8e696ed214809ae25fb558d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de serrer la pince, en émettant la trame correspondante. Correspond au bouton R1 de la manette.  <a href="#a55e143cf8e696ed214809ae25fb558d5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a55e143cf8e696ed214809ae25fb558d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a246e835f25bd61f0618c58aafea99ea1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bras.html#a246e835f25bd61f0618c58aafea99ea1">lachePince</a> (bool appuye)</td></tr>
+<tr class="memdesc:a246e835f25bd61f0618c58aafea99ea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de relâcher la pince, en émettant la trame correspondante. Correspond au bouton L1 de la manette.  <a href="#a246e835f25bd61f0618c58aafea99ea1">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a246e835f25bd61f0618c58aafea99ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d95616a74732e13b23bd90680d7d21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bras.html#a69d95616a74732e13b23bd90680d7d21">depose</a> (bool appuye)</td></tr>
+<tr class="memdesc:a69d95616a74732e13b23bd90680d7d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emet la trame : poser dans le bac le contenu de la pince.  <a href="#a69d95616a74732e13b23bd90680d7d21">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a69d95616a74732e13b23bd90680d7d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signaux</h2></td></tr>
+<tr class="memitem:ab442bf8d3e389c051b26b4b0741e7924"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">trameCree</a> (QString trame)</td></tr>
+<tr class="memdesc:ab442bf8d3e389c051b26b4b0741e7924"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal émis lorsqu'une trame a été créée et prête à être transmise.  <a href="#ab442bf8d3e389c051b26b4b0741e7924">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab442bf8d3e389c051b26b4b0741e7924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:aa194e94737e1e024e7f9a0cd6ecb6594"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bras.html#aa194e94737e1e024e7f9a0cd6ecb6594">Bras</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:aa194e94737e1e024e7f9a0cd6ecb6594"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la classe <a class="el" href="class_bras.html" title="Déclaration de la classe Bras. Réceptionne les signaux de la manette destiné aux mouvements du bras...">Bras</a>.  <a href="#aa194e94737e1e024e7f9a0cd6ecb6594">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa194e94737e1e024e7f9a0cd6ecb6594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a7108c10b4e8f6ceb1ffb7543aeac55e1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bras.html#a7108c10b4e8f6ceb1ffb7543aeac55e1">valeurTourneEpaulePrecedente</a></td></tr>
+<tr class="memdesc:a7108c10b4e8f6ceb1ffb7543aeac55e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dernière valeur de la trame TourneEpaule émise.  <a href="#a7108c10b4e8f6ceb1ffb7543aeac55e1">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7108c10b4e8f6ceb1ffb7543aeac55e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9045906376dd797febdcb5956b155c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bras.html#ab9045906376dd797febdcb5956b155c1">valeurLeveEpaulePrecedente</a></td></tr>
+<tr class="memdesc:ab9045906376dd797febdcb5956b155c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dernière valeur de la trame LeveEpaule émise.  <a href="#ab9045906376dd797febdcb5956b155c1">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab9045906376dd797febdcb5956b155c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee3f364c582bb94e49be07f4f28c5ba4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bras.html#aee3f364c582bb94e49be07f4f28c5ba4">valeurTournePoignetPrecedente</a></td></tr>
+<tr class="memdesc:aee3f364c582bb94e49be07f4f28c5ba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dernière valeur de la trame TournePoignet émise.  <a href="#aee3f364c582bb94e49be07f4f28c5ba4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aee3f364c582bb94e49be07f4f28c5ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83bd1b995ba642e336c24151ba4964cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bras.html#a83bd1b995ba642e336c24151ba4964cf">valeurLevePoignetPrecedente</a></td></tr>
+<tr class="memdesc:a83bd1b995ba642e336c24151ba4964cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dernière valeur de la trame LevePoignet émise.  <a href="#a83bd1b995ba642e336c24151ba4964cf">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a83bd1b995ba642e336c24151ba4964cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><dl class="section author"><dt>Auteur</dt><dd>REYNIER Jacques</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.1</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Jeudi 13 Juin 2019 </dd></dl>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="aa194e94737e1e024e7f9a0cd6ecb6594"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa194e94737e1e024e7f9a0cd6ecb6594">&#9670;&nbsp;</a></span>Bras()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bras::Bras </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>QObject* objet Qt parent </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                          : QObject(parent), <a class="code" href="class_bras.html#a7108c10b4e8f6ceb1ffb7543aeac55e1">valeurTourneEpaulePrecedente</a>(0), <a class="code" href="class_bras.html#ab9045906376dd797febdcb5956b155c1">valeurLeveEpaulePrecedente</a>(0), <a class="code" href="class_bras.html#aee3f364c582bb94e49be07f4f28c5ba4">valeurTournePoignetPrecedente</a>(0), <a class="code" href="class_bras.html#a83bd1b995ba642e336c24151ba4964cf">valeurLevePoignetPrecedente</a>(0)</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div><div class="ttc" id="class_bras_html_aee3f364c582bb94e49be07f4f28c5ba4"><div class="ttname"><a href="class_bras.html#aee3f364c582bb94e49be07f4f28c5ba4">Bras::valeurTournePoignetPrecedente</a></div><div class="ttdeci">int valeurTournePoignetPrecedente</div><div class="ttdoc">Dernière valeur de la trame TournePoignet émise. </div><div class="ttdef"><b>Definition:</b> bras.h:39</div></div>
+<div class="ttc" id="class_bras_html_a7108c10b4e8f6ceb1ffb7543aeac55e1"><div class="ttname"><a href="class_bras.html#a7108c10b4e8f6ceb1ffb7543aeac55e1">Bras::valeurTourneEpaulePrecedente</a></div><div class="ttdeci">int valeurTourneEpaulePrecedente</div><div class="ttdoc">Dernière valeur de la trame TourneEpaule émise. </div><div class="ttdef"><b>Definition:</b> bras.h:37</div></div>
+<div class="ttc" id="class_bras_html_a83bd1b995ba642e336c24151ba4964cf"><div class="ttname"><a href="class_bras.html#a83bd1b995ba642e336c24151ba4964cf">Bras::valeurLevePoignetPrecedente</a></div><div class="ttdeci">int valeurLevePoignetPrecedente</div><div class="ttdoc">Dernière valeur de la trame LevePoignet émise. </div><div class="ttdef"><b>Definition:</b> bras.h:40</div></div>
+<div class="ttc" id="class_bras_html_ab9045906376dd797febdcb5956b155c1"><div class="ttname"><a href="class_bras.html#ab9045906376dd797febdcb5956b155c1">Bras::valeurLeveEpaulePrecedente</a></div><div class="ttdeci">int valeurLeveEpaulePrecedente</div><div class="ttdoc">Dernière valeur de la trame LeveEpaule émise. </div><div class="ttdef"><b>Definition:</b> bras.h:38</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a4b8e4791a454fcf884b1e7217a16a326"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b8e4791a454fcf884b1e7217a16a326">&#9670;&nbsp;</a></span>baisseCoude</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bras::baisseCoude </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>appuye</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Emet la trame : plier le coude.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">appuye</td><td>bool Bouton appuyé, ou non.</td></tr>
+    <tr><td class="paramname">appuye</td><td>bool Touche appuyée ou non. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Références <a class="el" href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">trameCree()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_controle_rov.html#a400d5766b9acabb45c1af5f8b22bbe47">ControleRov::changeConnexions()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    QString trame = <span class="stringliteral">&quot;$LCO&quot;</span> + QString::number(-appuye) + <span class="stringliteral">&quot;\n&quot;</span>;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    emit <a class="code" href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">trameCree</a>(trame);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div><div class="ttc" id="class_bras_html_ab442bf8d3e389c051b26b4b0741e7924"><div class="ttname"><a href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">Bras::trameCree</a></div><div class="ttdeci">void trameCree(QString trame)</div><div class="ttdoc">Signal émis lorsqu&amp;#39;une trame a été créée et prête à être transmise. </div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a69d95616a74732e13b23bd90680d7d21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69d95616a74732e13b23bd90680d7d21">&#9670;&nbsp;</a></span>depose</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bras::depose </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>appuye</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">appuye</td><td>bool Touche appuyée ou non. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Références <a class="el" href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">trameCree()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_controle_rov.html#a400d5766b9acabb45c1af5f8b22bbe47">ControleRov::changeConnexions()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;{</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    QString trame = <span class="stringliteral">&quot;$DEP&quot;</span> + QString::number(appuye) + <span class="stringliteral">&quot;/&quot;</span>;</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    emit <a class="code" href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">trameCree</a>(trame);</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div><div class="ttc" id="class_bras_html_ab442bf8d3e389c051b26b4b0741e7924"><div class="ttname"><a href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">Bras::trameCree</a></div><div class="ttdeci">void trameCree(QString trame)</div><div class="ttdoc">Signal émis lorsqu&amp;#39;une trame a été créée et prête à être transmise. </div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a246e835f25bd61f0618c58aafea99ea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a246e835f25bd61f0618c58aafea99ea1">&#9670;&nbsp;</a></span>lachePince</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bras::lachePince </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>appuye</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Emet la trame : relâcher la pince.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">appuye</td><td>bool Bouton appuyé, ou non.</td></tr>
+    <tr><td class="paramname">appuye</td><td>bool Touche appuyée ou non. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Références <a class="el" href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">trameCree()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_controle_rov.html#a400d5766b9acabb45c1af5f8b22bbe47">ControleRov::changeConnexions()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;{</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    QString trame = <span class="stringliteral">&quot;$OPI&quot;</span> + QString::number(-appuye) + <span class="stringliteral">&quot;\n&quot;</span>;</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    emit <a class="code" href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">trameCree</a>(trame);</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;}</div><div class="ttc" id="class_bras_html_ab442bf8d3e389c051b26b4b0741e7924"><div class="ttname"><a href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">Bras::trameCree</a></div><div class="ttdeci">void trameCree(QString trame)</div><div class="ttdoc">Signal émis lorsqu&amp;#39;une trame a été créée et prête à être transmise. </div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a197686a4ff55b4fe2384b2af44b8228b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a197686a4ff55b4fe2384b2af44b8228b">&#9670;&nbsp;</a></span>leveCoude</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bras::leveCoude </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>appuye</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Emet la trame : lever le coude.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">appuye</td><td>bool Bouton appuyé, ou non.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">A faire:</a></b></dt><dd>Changer l'envoie de trame. Envoyer 1 quand Triangle, -1 quand Croix. -&gt; Diminution nombre code différents dans la trame, simplification du décodage des trames. </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">appuye</td><td>bool Touche appuyée ou non. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Références <a class="el" href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">trameCree()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_controle_rov.html#a400d5766b9acabb45c1af5f8b22bbe47">ControleRov::changeConnexions()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    QString trame = <span class="stringliteral">&quot;$LCO&quot;</span> + QString::number(appuye) + <span class="stringliteral">&quot;\n&quot;</span>;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    emit <a class="code" href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">trameCree</a>(trame);</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div><div class="ttc" id="class_bras_html_ab442bf8d3e389c051b26b4b0741e7924"><div class="ttname"><a href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">Bras::trameCree</a></div><div class="ttdeci">void trameCree(QString trame)</div><div class="ttdoc">Signal émis lorsqu&amp;#39;une trame a été créée et prête à être transmise. </div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac8f658db87d03bfbba6faa535326cc3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8f658db87d03bfbba6faa535326cc3a">&#9670;&nbsp;</a></span>leveEpaule</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bras::leveEpaule </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>valeur</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Emet la trame : lever ou baisser l'épaule du bras.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">valeur</td><td>double Force de l'appui sur le joystick (entre -1 et 1).</td></tr>
+    <tr><td class="paramname">valeur</td><td>double Force d'appui sur le joystick. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Références <a class="el" href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">trameCree()</a>, et <a class="el" href="class_bras.html#ab9045906376dd797febdcb5956b155c1">valeurLeveEpaulePrecedente</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_controle_rov.html#a400d5766b9acabb45c1af5f8b22bbe47">ControleRov::changeConnexions()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    QString trame = <span class="stringliteral">&quot;$LEP&quot;</span>;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> direction = 0;      <span class="comment">// Par défaut, la direction est indiquée à 0</span></div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span> (valeur &lt;= -0.5)</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        direction = 1;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (valeur &gt;= 0.5)</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        direction = -1;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_bras.html#ab9045906376dd797febdcb5956b155c1">valeurLeveEpaulePrecedente</a> != direction)</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="class_bras.html#ab9045906376dd797febdcb5956b155c1">valeurLeveEpaulePrecedente</a> = direction;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        trame += QString::number(direction) + <span class="stringliteral">&quot;\n&quot;</span>;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;       emit <a class="code" href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">trameCree</a>(trame);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div><div class="ttc" id="class_bras_html_ab442bf8d3e389c051b26b4b0741e7924"><div class="ttname"><a href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">Bras::trameCree</a></div><div class="ttdeci">void trameCree(QString trame)</div><div class="ttdoc">Signal émis lorsqu&amp;#39;une trame a été créée et prête à être transmise. </div></div>
+<div class="ttc" id="class_bras_html_ab9045906376dd797febdcb5956b155c1"><div class="ttname"><a href="class_bras.html#ab9045906376dd797febdcb5956b155c1">Bras::valeurLeveEpaulePrecedente</a></div><div class="ttdeci">int valeurLeveEpaulePrecedente</div><div class="ttdoc">Dernière valeur de la trame LeveEpaule émise. </div><div class="ttdef"><b>Definition:</b> bras.h:38</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac95f54d8b02e7c88081f482fbbc40aef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac95f54d8b02e7c88081f482fbbc40aef">&#9670;&nbsp;</a></span>levePoignet</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bras::levePoignet </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>valeur</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">valeur</td><td>double Force d'appui sur le joystick. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Références <a class="el" href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">trameCree()</a>, et <a class="el" href="class_bras.html#a83bd1b995ba642e336c24151ba4964cf">valeurLevePoignetPrecedente</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_controle_rov.html#a400d5766b9acabb45c1af5f8b22bbe47">ControleRov::changeConnexions()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;{</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    QString trame = <span class="stringliteral">&quot;$LPO&quot;</span>;</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">int</span> direction = 0;      <span class="comment">// Par défaut, la direction est indiquée à 0</span></div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">if</span> (valeur &lt;= -0.5)</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        direction = 1;</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (valeur &gt;= 0.5)</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        direction = -1;</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_bras.html#a83bd1b995ba642e336c24151ba4964cf">valeurLevePoignetPrecedente</a> != direction)</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    {</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <a class="code" href="class_bras.html#a83bd1b995ba642e336c24151ba4964cf">valeurLevePoignetPrecedente</a> = direction;</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        trame += QString::number(direction) + <span class="stringliteral">&quot;\n&quot;</span>;</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        emit <a class="code" href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">trameCree</a>(trame);</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    }</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;}</div><div class="ttc" id="class_bras_html_ab442bf8d3e389c051b26b4b0741e7924"><div class="ttname"><a href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">Bras::trameCree</a></div><div class="ttdeci">void trameCree(QString trame)</div><div class="ttdoc">Signal émis lorsqu&amp;#39;une trame a été créée et prête à être transmise. </div></div>
+<div class="ttc" id="class_bras_html_a83bd1b995ba642e336c24151ba4964cf"><div class="ttname"><a href="class_bras.html#a83bd1b995ba642e336c24151ba4964cf">Bras::valeurLevePoignetPrecedente</a></div><div class="ttdeci">int valeurLevePoignetPrecedente</div><div class="ttdoc">Dernière valeur de la trame LevePoignet émise. </div><div class="ttdef"><b>Definition:</b> bras.h:40</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a55e143cf8e696ed214809ae25fb558d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55e143cf8e696ed214809ae25fb558d5">&#9670;&nbsp;</a></span>serrePince</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bras::serrePince </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>appuye</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Emet la trame : serrer la pince.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">appuye</td><td>bool Bouton appuyé, ou non.</td></tr>
+    <tr><td class="paramname">appuye</td><td>bool Touche appuyée ou non. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Références <a class="el" href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">trameCree()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_controle_rov.html#a400d5766b9acabb45c1af5f8b22bbe47">ControleRov::changeConnexions()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;{</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    QString trame = <span class="stringliteral">&quot;$FPI&quot;</span> + QString::number(appuye) + <span class="stringliteral">&quot;\n&quot;</span>;</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    emit <a class="code" href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">trameCree</a>(trame);</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div><div class="ttc" id="class_bras_html_ab442bf8d3e389c051b26b4b0741e7924"><div class="ttname"><a href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">Bras::trameCree</a></div><div class="ttdeci">void trameCree(QString trame)</div><div class="ttdoc">Signal émis lorsqu&amp;#39;une trame a été créée et prête à être transmise. </div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aaeacb18f22532a63559fc8430118169e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeacb18f22532a63559fc8430118169e">&#9670;&nbsp;</a></span>tourneEpaule</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bras::tourneEpaule </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>valeur</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Emet la trame : tourner l'épaule du bras à droite/gauche.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">valeur</td><td>double Force de l'appui sur le joystick (entre -1 et 1).</td></tr>
+    <tr><td class="paramname">valeur</td><td>double Force d'appui sur le joystick. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Références <a class="el" href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">trameCree()</a>, et <a class="el" href="class_bras.html#a7108c10b4e8f6ceb1ffb7543aeac55e1">valeurTourneEpaulePrecedente</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_controle_rov.html#a400d5766b9acabb45c1af5f8b22bbe47">ControleRov::changeConnexions()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    QString trame = <span class="stringliteral">&quot;$TEP&quot;</span>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> direction = 0;      <span class="comment">// Par défaut, la direction est indiquée à 0</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">if</span> (valeur &lt;= -0.5)</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        direction = 1;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (valeur &gt;= 0.5)</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        direction = -1;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_bras.html#a7108c10b4e8f6ceb1ffb7543aeac55e1">valeurTourneEpaulePrecedente</a> != direction)</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="class_bras.html#a7108c10b4e8f6ceb1ffb7543aeac55e1">valeurTourneEpaulePrecedente</a> = direction;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        trame += QString::number(direction) + <span class="stringliteral">&quot;\n&quot;</span>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">if</span> (direction != 0)</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            emit <a class="code" href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">trameCree</a>(trame);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div><div class="ttc" id="class_bras_html_ab442bf8d3e389c051b26b4b0741e7924"><div class="ttname"><a href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">Bras::trameCree</a></div><div class="ttdeci">void trameCree(QString trame)</div><div class="ttdoc">Signal émis lorsqu&amp;#39;une trame a été créée et prête à être transmise. </div></div>
+<div class="ttc" id="class_bras_html_a7108c10b4e8f6ceb1ffb7543aeac55e1"><div class="ttname"><a href="class_bras.html#a7108c10b4e8f6ceb1ffb7543aeac55e1">Bras::valeurTourneEpaulePrecedente</a></div><div class="ttdeci">int valeurTourneEpaulePrecedente</div><div class="ttdoc">Dernière valeur de la trame TourneEpaule émise. </div><div class="ttdef"><b>Definition:</b> bras.h:37</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a15beae8aa104c2e689614486646ab402"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15beae8aa104c2e689614486646ab402">&#9670;&nbsp;</a></span>tournePoignet</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bras::tournePoignet </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>valeur</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">valeur</td><td>double Force d'appui sur le joystick. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Références <a class="el" href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">trameCree()</a>, et <a class="el" href="class_bras.html#aee3f364c582bb94e49be07f4f28c5ba4">valeurTournePoignetPrecedente</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_controle_rov.html#a400d5766b9acabb45c1af5f8b22bbe47">ControleRov::changeConnexions()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    QString trame = <span class="stringliteral">&quot;$TPO&quot;</span>;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">int</span> direction = 0;      <span class="comment">// Par défaut, la direction est indiquée à 0</span></div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">if</span> (valeur &lt;= -0.5)</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        direction = -1;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (valeur &gt;= 0.5)</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        direction = 1;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_bras.html#aee3f364c582bb94e49be07f4f28c5ba4">valeurTournePoignetPrecedente</a> != direction)</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    {</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <a class="code" href="class_bras.html#aee3f364c582bb94e49be07f4f28c5ba4">valeurTournePoignetPrecedente</a> = direction;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        trame += QString::number(direction) + <span class="stringliteral">&quot;\n&quot;</span>;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        emit <a class="code" href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">trameCree</a>(trame);</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div><div class="ttc" id="class_bras_html_ab442bf8d3e389c051b26b4b0741e7924"><div class="ttname"><a href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">Bras::trameCree</a></div><div class="ttdeci">void trameCree(QString trame)</div><div class="ttdoc">Signal émis lorsqu&amp;#39;une trame a été créée et prête à être transmise. </div></div>
+<div class="ttc" id="class_bras_html_aee3f364c582bb94e49be07f4f28c5ba4"><div class="ttname"><a href="class_bras.html#aee3f364c582bb94e49be07f4f28c5ba4">Bras::valeurTournePoignetPrecedente</a></div><div class="ttdeci">int valeurTournePoignetPrecedente</div><div class="ttdoc">Dernière valeur de la trame TournePoignet émise. </div><div class="ttdef"><b>Definition:</b> bras.h:39</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab442bf8d3e389c051b26b4b0741e7924"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab442bf8d3e389c051b26b4b0741e7924">&#9670;&nbsp;</a></span>trameCree</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Bras::trameCree </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>trame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_bras.html#a4b8e4791a454fcf884b1e7217a16a326">baisseCoude()</a>, <a class="el" href="class_controle_rov.html#acc4d5fea26770217df978d43df2ad51e">ControleRov::ControleRov()</a>, <a class="el" href="class_bras.html#a69d95616a74732e13b23bd90680d7d21">depose()</a>, <a class="el" href="class_bras.html#a246e835f25bd61f0618c58aafea99ea1">lachePince()</a>, <a class="el" href="class_bras.html#a197686a4ff55b4fe2384b2af44b8228b">leveCoude()</a>, <a class="el" href="class_bras.html#ac8f658db87d03bfbba6faa535326cc3a">leveEpaule()</a>, <a class="el" href="class_bras.html#ac95f54d8b02e7c88081f482fbbc40aef">levePoignet()</a>, <a class="el" href="class_bras.html#a55e143cf8e696ed214809ae25fb558d5">serrePince()</a>, <a class="el" href="class_bras.html#aaeacb18f22532a63559fc8430118169e">tourneEpaule()</a>, et <a class="el" href="class_bras.html#a15beae8aa104c2e689614486646ab402">tournePoignet()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="ab9045906376dd797febdcb5956b155c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9045906376dd797febdcb5956b155c1">&#9670;&nbsp;</a></span>valeurLeveEpaulePrecedente</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Bras::valeurLeveEpaulePrecedente</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_bras.html#ac8f658db87d03bfbba6faa535326cc3a">leveEpaule()</a>.</p>
+
+</div>
+</div>
+<a id="a83bd1b995ba642e336c24151ba4964cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83bd1b995ba642e336c24151ba4964cf">&#9670;&nbsp;</a></span>valeurLevePoignetPrecedente</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Bras::valeurLevePoignetPrecedente</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_bras.html#ac95f54d8b02e7c88081f482fbbc40aef">levePoignet()</a>.</p>
+
+</div>
+</div>
+<a id="a7108c10b4e8f6ceb1ffb7543aeac55e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7108c10b4e8f6ceb1ffb7543aeac55e1">&#9670;&nbsp;</a></span>valeurTourneEpaulePrecedente</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Bras::valeurTourneEpaulePrecedente</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_bras.html#aaeacb18f22532a63559fc8430118169e">tourneEpaule()</a>.</p>
+
+</div>
+</div>
+<a id="aee3f364c582bb94e49be07f4f28c5ba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee3f364c582bb94e49be07f4f28c5ba4">&#9670;&nbsp;</a></span>valeurTournePoignetPrecedente</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Bras::valeurTournePoignetPrecedente</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_bras.html#a15beae8aa104c2e689614486646ab402">tournePoignet()</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li><a class="el" href="bras_8h_source.html">bras.h</a></li>
+<li><a class="el" href="bras_8cpp.html">bras.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 05:35:33 pour Projet ROV&#39;NET par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

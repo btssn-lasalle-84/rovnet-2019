@@ -1,0 +1,590 @@
+\hypertarget{class_archives}{}\subsection{Référence de la classe Archives}
+\label{class_archives}\index{Archives@{Archives}}
+
+
+Déclaration de la classe \hyperlink{class_archives}{Archives}.  
+
+
+
+
+{\ttfamily \#include $<$archives.\+h$>$}
+
+
+
+Graphe de collaboration de Archives\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{class_archives__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_archives_a0001d8b6a783f1f424965832e89a1f6f}{fermer\+Archives} ()
+\begin{DoxyCompactList}\small\item\em Ferme la fenetre des archives. \end{DoxyCompactList}\item 
+void \hyperlink{class_archives_a14d4f834ea05cf421161336607b4bb31}{ouvrir\+Fenetre\+Archives} ()
+\begin{DoxyCompactList}\small\item\em Ouvre une fenetre menant aux archives des captures d\textquotesingle{}écrans. \end{DoxyCompactList}\item 
+void \hyperlink{class_archives_a0e12a12774643d96831be4daba73976e}{afficher\+Image} (const Q\+Model\+Index \&\hyperlink{class_archives_a31cba52f3979585ee5e2b9390d21322b}{index\+Archives})
+\begin{DoxyCompactList}\small\item\em Affiche l\textquotesingle{}image séléctionnée et les informations correspondantes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_archives_ac30edd63c3f6c0df583bab7b9b9b4c76}{Archives} (Q\+Object $\ast$parent=nullptr)
+\item 
+\hyperlink{class_archives_a08c9ded9bb3da731991c5526dcdb2548}{$\sim$\+Archives} ()
+\item 
+Q\+String \hyperlink{class_archives_a9e35a0ff2d5823819cd2a9f8019c7b33}{get\+Image} (const Q\+Model\+Index \&\hyperlink{class_archives_a31cba52f3979585ee5e2b9390d21322b}{index\+Archives})
+\begin{DoxyCompactList}\small\item\em Renvoie l\textquotesingle{}image des archives. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_archives_a5c1d731519acde8b59bc79973c4c1287}{get\+Date\+Image} (const Q\+Model\+Index \&\hyperlink{class_archives_a31cba52f3979585ee5e2b9390d21322b}{index\+Archives})
+\begin{DoxyCompactList}\small\item\em Retourne la date de prise de l\textquotesingle{}image sélectionnée. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_archives_a91604a37aa9d4024ed79a71b12438003}{get\+Heure\+Image} (const Q\+Model\+Index \&\hyperlink{class_archives_a31cba52f3979585ee5e2b9390d21322b}{index\+Archives})
+\begin{DoxyCompactList}\small\item\em Retourne l\textquotesingle{}heure de prise de l\textquotesingle{}image sélectionnée. \end{DoxyCompactList}\item 
+Q\+File\+System\+Model $\ast$ \hyperlink{class_archives_ab5a55ac2e810cfdec3ce19af14087ceb}{get\+Modele\+Archives} ()
+\begin{DoxyCompactList}\small\item\em Accesseur renvoyant le modèle de données. \end{DoxyCompactList}\item 
+Q\+Model\+Index \hyperlink{class_archives_a3df83e6dd301afe331d7e75bd1b84a57}{get\+Index\+Archives} ()
+\begin{DoxyCompactList}\small\item\em Accesseur renvoyant l\textquotesingle{}index du modèle de données. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_archives_a65dfbaba0123e6530b03bfb70e614c90}{get\+Chemin\+Archives} ()
+\begin{DoxyCompactList}\small\item\em Accesseur renvoyant le chemin du dossier de stockage des photos. \end{DoxyCompactList}\item 
+void \hyperlink{class_archives_a899e95a34c2a6f79b9a25355b5bf9cb6}{set\+Chemin\+Archives} (Q\+String nouveau\+Chemin\+Archives)
+\begin{DoxyCompactList}\small\item\em Accesseur permettant de modifier le chemin vers les \hyperlink{class_archives}{Archives}. \end{DoxyCompactList}\item 
+void \hyperlink{class_archives_a380ac387d773b07ea5138347dbaca65a}{actualiser\+Vue\+Archives} ()
+\begin{DoxyCompactList}\small\item\em Actualise la vue des archives. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_archives_a1842ebad3721929949bc07be5144b79c}{initialiser\+Fenetre\+Archives} ()
+\begin{DoxyCompactList}\small\item\em Initialise la fenetre pour naviguer dans les archives. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_archives_af155e5062883030cddaa05623a34854b}{chemin\+Dossier\+Archives}
+\begin{DoxyCompactList}\small\item\em le chemin du dossier de stockage des photos \end{DoxyCompactList}\item 
+Q\+File\+System\+Model $\ast$ \hyperlink{class_archives_a61376e4ec330aea053fede230a1bc786}{modele\+Archives}
+\begin{DoxyCompactList}\small\item\em le modèle de données \end{DoxyCompactList}\item 
+Q\+Model\+Index \hyperlink{class_archives_a31cba52f3979585ee5e2b9390d21322b}{index\+Archives}
+\begin{DoxyCompactList}\small\item\em l\textquotesingle{}index du modèle de données \end{DoxyCompactList}\item 
+Q\+Dialog $\ast$ \hyperlink{class_archives_ad7c8209637b01f638b64530020d18b8e}{fenetre\+Archives}
+\begin{DoxyCompactList}\small\item\em fenetre pour naviguer dans les archives \end{DoxyCompactList}\item 
+Q\+List\+View $\ast$ \hyperlink{class_archives_a28fe566dcac396079d064460b17293b9}{vue\+Archives}
+\begin{DoxyCompactList}\small\item\em la vue de la liste des archives \end{DoxyCompactList}\item 
+bool \hyperlink{class_archives_a2b268dd292da50166988ad698af2b0fd}{est\+Fenetre\+Archives\+Ouverte}
+\begin{DoxyCompactList}\small\item\em booléen indiquant si la fenêtre est ouverte \end{DoxyCompactList}\item 
+Q\+Label $\ast$ \hyperlink{class_archives_af311679d957985d956a4ee5ad28a5988}{label\+Image}
+\begin{DoxyCompactList}\small\item\em label pour l\textquotesingle{}affichage de la photo sélectionnée \end{DoxyCompactList}\item 
+Q\+Label $\ast$ \hyperlink{class_archives_accb81477f1edca94691ae630ddc1f3f9}{label\+Image\+Date}
+\begin{DoxyCompactList}\small\item\em label pour l\textquotesingle{}affichage de la date de la photo sélectionnée \end{DoxyCompactList}\item 
+Q\+Label $\ast$ \hyperlink{class_archives_ab678af24ff4c67b8791ab52e998c79cb}{label\+Image\+Heure}
+\begin{DoxyCompactList}\small\item\em label pour l\textquotesingle{}affichage de l\textquotesingle{}heure de la photo sélectionnée \end{DoxyCompactList}\item 
+Q\+Push\+Button $\ast$ \hyperlink{class_archives_a598e607e203aee9386f85d55f20d8fda}{bouton\+Fermer\+Archives}
+\begin{DoxyCompactList}\small\item\em bouton de fermeture de la fenêtre \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Nicolas B\+O\+F\+F\+R\+E\+DO
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+Mercredi 12 Juin 2019 
+\end{DoxyDate}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_archives_ac30edd63c3f6c0df583bab7b9b9b4c76}\label{class_archives_ac30edd63c3f6c0df583bab7b9b9b4c76}} 
+\index{Archives@{Archives}!Archives@{Archives}}
+\index{Archives@{Archives}!Archives@{Archives}}
+\paragraph{\texorpdfstring{Archives()}{Archives()}}
+{\footnotesize\ttfamily Archives\+::\+Archives (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructeur de la classe \hyperlink{class_archives}{Archives} 
+\begin{DoxyParams}{Paramètres}
+{\em parent} & Q\+Object$\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_archives_a1842ebad3721929949bc07be5144b79c}{initialiser\+Fenetre\+Archives()}.
+
+
+\begin{DoxyCode}
+00021                                   : QObject(parent), \hyperlink{class_archives_af155e5062883030cddaa05623a34854b}{cheminDossierArchives}(\textcolor{stringliteral}{" "}), 
+      \hyperlink{class_archives_a61376e4ec330aea053fede230a1bc786}{modeleArchives}(\textcolor{keyword}{nullptr})
+00022 \{
+00023     \hyperlink{class_archives_a1842ebad3721929949bc07be5144b79c}{initialiserFenetreArchives}();
+00024 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_archives_a08c9ded9bb3da731991c5526dcdb2548}\label{class_archives_a08c9ded9bb3da731991c5526dcdb2548}} 
+\index{Archives@{Archives}!````~Archives@{$\sim$\+Archives}}
+\index{````~Archives@{$\sim$\+Archives}!Archives@{Archives}}
+\paragraph{\texorpdfstring{$\sim$\+Archives()}{~Archives()}}
+{\footnotesize\ttfamily Archives\+::$\sim$\+Archives (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructeur de la classe \hyperlink{class_archives}{Archives} 
+\begin{DoxyCode}
+00031 \{
+00032 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_archives_a380ac387d773b07ea5138347dbaca65a}\label{class_archives_a380ac387d773b07ea5138347dbaca65a}} 
+\index{Archives@{Archives}!actualiser\+Vue\+Archives@{actualiser\+Vue\+Archives}}
+\index{actualiser\+Vue\+Archives@{actualiser\+Vue\+Archives}!Archives@{Archives}}
+\paragraph{\texorpdfstring{actualiser\+Vue\+Archives()}{actualiserVueArchives()}}
+{\footnotesize\ttfamily void Archives\+::actualiser\+Vue\+Archives (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Est appellée à chaque fois que la fenêtre de navigation dans les archives est ouverte. 
+
+Références \hyperlink{class_archives_a65dfbaba0123e6530b03bfb70e614c90}{get\+Chemin\+Archives()}, \hyperlink{class_archives_a3df83e6dd301afe331d7e75bd1b84a57}{get\+Index\+Archives()}, \hyperlink{class_archives_ab5a55ac2e810cfdec3ce19af14087ceb}{get\+Modele\+Archives()}, \hyperlink{class_archives_a31cba52f3979585ee5e2b9390d21322b}{index\+Archives}, \hyperlink{class_archives_a61376e4ec330aea053fede230a1bc786}{modele\+Archives}, et \hyperlink{class_archives_a28fe566dcac396079d064460b17293b9}{vue\+Archives}.
+
+
+
+Référencé par \hyperlink{class_archives_a14d4f834ea05cf421161336607b4bb31}{ouvrir\+Fenetre\+Archives()}.
+
+
+\begin{DoxyCode}
+00186 \{
+00187     \hyperlink{class_archives_a61376e4ec330aea053fede230a1bc786}{modeleArchives}->setRootPath(\hyperlink{class_archives_a65dfbaba0123e6530b03bfb70e614c90}{getCheminArchives}());
+00188     \hyperlink{class_archives_a31cba52f3979585ee5e2b9390d21322b}{indexArchives} = \hyperlink{class_archives_a61376e4ec330aea053fede230a1bc786}{modeleArchives}->index(
+      \hyperlink{class_archives_a65dfbaba0123e6530b03bfb70e614c90}{getCheminArchives}());
+00189 
+00190     \hyperlink{class_archives_a28fe566dcac396079d064460b17293b9}{vueArchives}->setModel(this->\hyperlink{class_archives_ab5a55ac2e810cfdec3ce19af14087ceb}{getModeleArchives}());
+00191     \hyperlink{class_archives_a28fe566dcac396079d064460b17293b9}{vueArchives}->setRootIndex(this->\hyperlink{class_archives_a3df83e6dd301afe331d7e75bd1b84a57}{getIndexArchives}());
+00192 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_archives_a0e12a12774643d96831be4daba73976e}\label{class_archives_a0e12a12774643d96831be4daba73976e}} 
+\index{Archives@{Archives}!afficher\+Image@{afficher\+Image}}
+\index{afficher\+Image@{afficher\+Image}!Archives@{Archives}}
+\paragraph{\texorpdfstring{afficher\+Image}{afficherImage}}
+{\footnotesize\ttfamily void Archives\+::afficher\+Image (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{index\+Archives }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em index\+Archives} & Q\+Model\+Index \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_archives_a5c1d731519acde8b59bc79973c4c1287}{get\+Date\+Image()}, \hyperlink{class_archives_a91604a37aa9d4024ed79a71b12438003}{get\+Heure\+Image()}, \hyperlink{class_archives_a9e35a0ff2d5823819cd2a9f8019c7b33}{get\+Image()}, \hyperlink{class_archives_af311679d957985d956a4ee5ad28a5988}{label\+Image}, \hyperlink{class_archives_accb81477f1edca94691ae630ddc1f3f9}{label\+Image\+Date}, et \hyperlink{class_archives_ab678af24ff4c67b8791ab52e998c79cb}{label\+Image\+Heure}.
+
+
+
+Référencé par \hyperlink{class_archives_a1842ebad3721929949bc07be5144b79c}{initialiser\+Fenetre\+Archives()}.
+
+
+\begin{DoxyCode}
+00210 \{
+00211     \hyperlink{class_archives_af311679d957985d956a4ee5ad28a5988}{labelImage}->setPixmap(QPixmap(this->\hyperlink{class_archives_a9e35a0ff2d5823819cd2a9f8019c7b33}{getImage}(\hyperlink{class_archives_a31cba52f3979585ee5e2b9390d21322b}{indexArchives})));
+00212     \hyperlink{class_archives_af311679d957985d956a4ee5ad28a5988}{labelImage}->setScaledContents(\textcolor{keyword}{true});
+00213     \hyperlink{class_archives_accb81477f1edca94691ae630ddc1f3f9}{labelImageDate}->setText(\textcolor{stringliteral}{"Date : "} + this->\hyperlink{class_archives_a5c1d731519acde8b59bc79973c4c1287}{getDateImage}(
+      \hyperlink{class_archives_a31cba52f3979585ee5e2b9390d21322b}{indexArchives}));
+00214     \hyperlink{class_archives_ab678af24ff4c67b8791ab52e998c79cb}{labelImageHeure}->setText(\textcolor{stringliteral}{"Heure : "} + this->\hyperlink{class_archives_a91604a37aa9d4024ed79a71b12438003}{getHeureImage}(
+      \hyperlink{class_archives_a31cba52f3979585ee5e2b9390d21322b}{indexArchives}));
+00215 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_archives_a0001d8b6a783f1f424965832e89a1f6f}\label{class_archives_a0001d8b6a783f1f424965832e89a1f6f}} 
+\index{Archives@{Archives}!fermer\+Archives@{fermer\+Archives}}
+\index{fermer\+Archives@{fermer\+Archives}!Archives@{Archives}}
+\paragraph{\texorpdfstring{fermer\+Archives}{fermerArchives}}
+{\footnotesize\ttfamily void Archives\+::fermer\+Archives (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_archives_ad7c8209637b01f638b64530020d18b8e}{fenetre\+Archives}.
+
+
+
+Référencé par \hyperlink{class_archives_a1842ebad3721929949bc07be5144b79c}{initialiser\+Fenetre\+Archives()}.
+
+
+\begin{DoxyCode}
+00222 \{
+00223     \hyperlink{class_archives_ad7c8209637b01f638b64530020d18b8e}{fenetreArchives}->close();
+00224 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_archives_a65dfbaba0123e6530b03bfb70e614c90}\label{class_archives_a65dfbaba0123e6530b03bfb70e614c90}} 
+\index{Archives@{Archives}!get\+Chemin\+Archives@{get\+Chemin\+Archives}}
+\index{get\+Chemin\+Archives@{get\+Chemin\+Archives}!Archives@{Archives}}
+\paragraph{\texorpdfstring{get\+Chemin\+Archives()}{getCheminArchives()}}
+{\footnotesize\ttfamily Q\+String Archives\+::get\+Chemin\+Archives (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+Un {\itshape Q\+String} indiquant le chemin du dossier de stockage des photos. 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_archives_af155e5062883030cddaa05623a34854b}{chemin\+Dossier\+Archives}.
+
+
+
+Référencé par \hyperlink{class_archives_a380ac387d773b07ea5138347dbaca65a}{actualiser\+Vue\+Archives()}, \hyperlink{class_rov_ae1306036b067e9ad50a09f9dd607a092}{Rov\+::creer\+Nouvelle\+Campagne()}, \hyperlink{class_archives_a9e35a0ff2d5823819cd2a9f8019c7b33}{get\+Image()}, \hyperlink{class_archives_a1842ebad3721929949bc07be5144b79c}{initialiser\+Fenetre\+Archives()}, et \hyperlink{class_camera_a60d2c9f16b6f235ab6dd0360c883e0d0}{Camera\+::nommer\+Capture()}.
+
+
+\begin{DoxyCode}
+00040 \{
+00041     qDebug() << Q\_FUNC\_INFO;
+00042     \textcolor{keywordflow}{return} \hyperlink{class_archives_af155e5062883030cddaa05623a34854b}{cheminDossierArchives};
+00043 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_archives_a5c1d731519acde8b59bc79973c4c1287}\label{class_archives_a5c1d731519acde8b59bc79973c4c1287}} 
+\index{Archives@{Archives}!get\+Date\+Image@{get\+Date\+Image}}
+\index{get\+Date\+Image@{get\+Date\+Image}!Archives@{Archives}}
+\paragraph{\texorpdfstring{get\+Date\+Image()}{getDateImage()}}
+{\footnotesize\ttfamily Q\+String Archives\+::get\+Date\+Image (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{index\+Archives }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em index\+Archives} & const Q\+Model\+Index \&, L\textquotesingle{}index de l\textquotesingle{}image des archives \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un {\itshape Q\+String} indiquant la date de prise de l\textquotesingle{}image sélectionnée 
+\end{DoxyReturn}
+
+
+Référencé par \hyperlink{class_archives_a0e12a12774643d96831be4daba73976e}{afficher\+Image()}.
+
+
+\begin{DoxyCode}
+00096 \{
+00097     QString dateImage = \hyperlink{class_archives_a31cba52f3979585ee5e2b9390d21322b}{indexArchives}.data().toString().left(10);
+00098     QStringList mois;
+00099 
+00100     dateImage.replace(2, 1, \textcolor{stringliteral}{" "});
+00101     dateImage.replace(5, 1, \textcolor{stringliteral}{" "});
+00102 
+00103     mois << QString::fromUtf8(\textcolor{stringliteral}{"Janvier"}) << QString::fromUtf8(\textcolor{stringliteral}{"Février"}) << QString::fromUtf8(\textcolor{stringliteral}{"Mars"}) << 
+      QString::fromUtf8(\textcolor{stringliteral}{"Avril"}) << QString::fromUtf8(\textcolor{stringliteral}{"Mai"}) << QString::fromUtf8(\textcolor{stringliteral}{"Juin"}) << QString::fromUtf8(\textcolor{stringliteral}{"
+      Juillet"}) << QString::fromUtf8(\textcolor{stringliteral}{"Août"}) << QString::fromUtf8(\textcolor{stringliteral}{"Septembre"}) << QString::fromUtf8(\textcolor{stringliteral}{"Octobre"}) << 
+      QString::fromUtf8(\textcolor{stringliteral}{"Novembre"}) << QString::fromUtf8(\textcolor{stringliteral}{"Décembre"});
+00104     dateImage.replace(3, 2, mois.at(dateImage.left(5).right(3).toInt() - 1));
+00105 
+00106     \textcolor{keywordflow}{return} dateImage;
+00107 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_archives_a91604a37aa9d4024ed79a71b12438003}\label{class_archives_a91604a37aa9d4024ed79a71b12438003}} 
+\index{Archives@{Archives}!get\+Heure\+Image@{get\+Heure\+Image}}
+\index{get\+Heure\+Image@{get\+Heure\+Image}!Archives@{Archives}}
+\paragraph{\texorpdfstring{get\+Heure\+Image()}{getHeureImage()}}
+{\footnotesize\ttfamily Q\+String Archives\+::get\+Heure\+Image (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{index\+Archives }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em index\+Archives} & const Q\+Model\+Index \&, L\textquotesingle{}index de l\textquotesingle{}images des archives \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un {\itshape Q\+String} indiquant l\textquotesingle{}heure de prise de l\textquotesingle{}image sélectionnée 
+\end{DoxyReturn}
+
+
+Référencé par \hyperlink{class_archives_a0e12a12774643d96831be4daba73976e}{afficher\+Image()}.
+
+
+\begin{DoxyCode}
+00116 \{
+00117     QString heureImage = \hyperlink{class_archives_a31cba52f3979585ee5e2b9390d21322b}{indexArchives}.data().toString().remove(19, 4).right(8);
+00118     heureImage.replace(2, 1, \textcolor{stringliteral}{"h "});
+00119     heureImage.replace(6, 1, \textcolor{stringliteral}{"m "});
+00120     heureImage.append(\textcolor{charliteral}{'s'});
+00121 
+00122     \textcolor{keywordflow}{return} heureImage;
+00123 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_archives_a9e35a0ff2d5823819cd2a9f8019c7b33}\label{class_archives_a9e35a0ff2d5823819cd2a9f8019c7b33}} 
+\index{Archives@{Archives}!get\+Image@{get\+Image}}
+\index{get\+Image@{get\+Image}!Archives@{Archives}}
+\paragraph{\texorpdfstring{get\+Image()}{getImage()}}
+{\footnotesize\ttfamily Q\+String Archives\+::get\+Image (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{index\+Archives }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em index\+Archives} & Q\+Model\+Index \& index sur le modèle des fichiers contenus dans le Q\+List\+View \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+un {\itshape Q\+String} indiquant le nom de l\textquotesingle{}image 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_archives_a65dfbaba0123e6530b03bfb70e614c90}{get\+Chemin\+Archives()}.
+
+
+
+Référencé par \hyperlink{class_archives_a0e12a12774643d96831be4daba73976e}{afficher\+Image()}.
+
+
+\begin{DoxyCode}
+00063 \{
+00064     QString cheminImage = \hyperlink{class_archives_a65dfbaba0123e6530b03bfb70e614c90}{getCheminArchives}() + \hyperlink{class_archives_a31cba52f3979585ee5e2b9390d21322b}{indexArchives}.data().toString
+      ();
+00065     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"cheminImage"} << cheminImage;
+00066     \textcolor{keywordflow}{return} cheminImage;
+00067 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_archives_a3df83e6dd301afe331d7e75bd1b84a57}\label{class_archives_a3df83e6dd301afe331d7e75bd1b84a57}} 
+\index{Archives@{Archives}!get\+Index\+Archives@{get\+Index\+Archives}}
+\index{get\+Index\+Archives@{get\+Index\+Archives}!Archives@{Archives}}
+\paragraph{\texorpdfstring{get\+Index\+Archives()}{getIndexArchives()}}
+{\footnotesize\ttfamily Q\+Model\+Index Archives\+::get\+Index\+Archives (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+Un {\itshape Q\+Model\+Index} indiquant l\textquotesingle{}index du modèle de données. 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_archives_a31cba52f3979585ee5e2b9390d21322b}{index\+Archives}.
+
+
+
+Référencé par \hyperlink{class_archives_a380ac387d773b07ea5138347dbaca65a}{actualiser\+Vue\+Archives()}, et \hyperlink{class_archives_a1842ebad3721929949bc07be5144b79c}{initialiser\+Fenetre\+Archives()}.
+
+
+\begin{DoxyCode}
+00085 \{
+00086     \textcolor{keywordflow}{return} \hyperlink{class_archives_a31cba52f3979585ee5e2b9390d21322b}{indexArchives};
+00087 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_archives_ab5a55ac2e810cfdec3ce19af14087ceb}\label{class_archives_ab5a55ac2e810cfdec3ce19af14087ceb}} 
+\index{Archives@{Archives}!get\+Modele\+Archives@{get\+Modele\+Archives}}
+\index{get\+Modele\+Archives@{get\+Modele\+Archives}!Archives@{Archives}}
+\paragraph{\texorpdfstring{get\+Modele\+Archives()}{getModeleArchives()}}
+{\footnotesize\ttfamily Q\+File\+System\+Model $\ast$ Archives\+::get\+Modele\+Archives (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+Un {\itshape Q\+File\+System\+Model$\ast$} indiquant le modèle de données. 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_archives_a61376e4ec330aea053fede230a1bc786}{modele\+Archives}.
+
+
+
+Référencé par \hyperlink{class_archives_a380ac387d773b07ea5138347dbaca65a}{actualiser\+Vue\+Archives()}, et \hyperlink{class_archives_a1842ebad3721929949bc07be5144b79c}{initialiser\+Fenetre\+Archives()}.
+
+
+\begin{DoxyCode}
+00075 \{
+00076     \textcolor{keywordflow}{return} \hyperlink{class_archives_a61376e4ec330aea053fede230a1bc786}{modeleArchives};
+00077 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_archives_a1842ebad3721929949bc07be5144b79c}\label{class_archives_a1842ebad3721929949bc07be5144b79c}} 
+\index{Archives@{Archives}!initialiser\+Fenetre\+Archives@{initialiser\+Fenetre\+Archives}}
+\index{initialiser\+Fenetre\+Archives@{initialiser\+Fenetre\+Archives}!Archives@{Archives}}
+\paragraph{\texorpdfstring{initialiser\+Fenetre\+Archives()}{initialiserFenetreArchives()}}
+{\footnotesize\ttfamily void Archives\+::initialiser\+Fenetre\+Archives (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+La taille de la fenetre est fixer en fonction de la resolution des photos prises. 
+
+Références \hyperlink{class_archives_a0e12a12774643d96831be4daba73976e}{afficher\+Image()}, \hyperlink{class_archives_a598e607e203aee9386f85d55f20d8fda}{bouton\+Fermer\+Archives}, \hyperlink{class_archives_ad7c8209637b01f638b64530020d18b8e}{fenetre\+Archives}, \hyperlink{class_archives_a0001d8b6a783f1f424965832e89a1f6f}{fermer\+Archives()}, \hyperlink{class_archives_a65dfbaba0123e6530b03bfb70e614c90}{get\+Chemin\+Archives()}, \hyperlink{class_archives_a3df83e6dd301afe331d7e75bd1b84a57}{get\+Index\+Archives()}, \hyperlink{class_archives_ab5a55ac2e810cfdec3ce19af14087ceb}{get\+Modele\+Archives()}, \hyperlink{class_archives_a31cba52f3979585ee5e2b9390d21322b}{index\+Archives}, \hyperlink{class_archives_af311679d957985d956a4ee5ad28a5988}{label\+Image}, \hyperlink{class_archives_accb81477f1edca94691ae630ddc1f3f9}{label\+Image\+Date}, \hyperlink{class_archives_ab678af24ff4c67b8791ab52e998c79cb}{label\+Image\+Heure}, \hyperlink{class_archives_a61376e4ec330aea053fede230a1bc786}{modele\+Archives}, et \hyperlink{class_archives_a28fe566dcac396079d064460b17293b9}{vue\+Archives}.
+
+
+
+Référencé par \hyperlink{class_archives_ac30edd63c3f6c0df583bab7b9b9b4c76}{Archives()}.
+
+
+\begin{DoxyCode}
+00131 \{
+00132     \hyperlink{class_archives_a61376e4ec330aea053fede230a1bc786}{modeleArchives} = \textcolor{keyword}{new} QFileSystemModel;
+00133     \hyperlink{class_archives_a61376e4ec330aea053fede230a1bc786}{modeleArchives}->setRootPath(\hyperlink{class_archives_a65dfbaba0123e6530b03bfb70e614c90}{getCheminArchives}());
+00134     \hyperlink{class_archives_a31cba52f3979585ee5e2b9390d21322b}{indexArchives} = \hyperlink{class_archives_a61376e4ec330aea053fede230a1bc786}{modeleArchives}->index(
+      \hyperlink{class_archives_a65dfbaba0123e6530b03bfb70e614c90}{getCheminArchives}());
+00135 
+00136     \hyperlink{class_archives_ad7c8209637b01f638b64530020d18b8e}{fenetreArchives} = \textcolor{keyword}{new} QDialog();
+00137     \hyperlink{class_archives_a28fe566dcac396079d064460b17293b9}{vueArchives} = \textcolor{keyword}{new} QListView;
+00138     \hyperlink{class_archives_af311679d957985d956a4ee5ad28a5988}{labelImage} = \textcolor{keyword}{new} QLabel;
+00139     \hyperlink{class_archives_accb81477f1edca94691ae630ddc1f3f9}{labelImageDate} = \textcolor{keyword}{new} QLabel;
+00140     \hyperlink{class_archives_ab678af24ff4c67b8791ab52e998c79cb}{labelImageHeure} = \textcolor{keyword}{new} QLabel;
+00141     \hyperlink{class_archives_a598e607e203aee9386f85d55f20d8fda}{boutonFermerArchives} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"&Fermer"});
+00142 
+00143     \textcolor{keyword}{const} \textcolor{keywordtype}{int} hauteurImage = 480;
+00144     \textcolor{keyword}{const} \textcolor{keywordtype}{int} largeurImage = 640;
+00145     \textcolor{keyword}{const} \textcolor{keywordtype}{int} hauteurInformations = (hauteurImage/10);
+00146     \textcolor{keyword}{const} \textcolor{keywordtype}{int} largeurMAX = largeurImage + largeurImage/2;
+00147     \textcolor{keyword}{const} \textcolor{keywordtype}{int} hauteurMAX = hauteurImage + hauteurInformations;
+00148 
+00149     \hyperlink{class_archives_a28fe566dcac396079d064460b17293b9}{vueArchives}->setModel(this->\hyperlink{class_archives_ab5a55ac2e810cfdec3ce19af14087ceb}{getModeleArchives}());
+00150     \hyperlink{class_archives_a28fe566dcac396079d064460b17293b9}{vueArchives}->setRootIndex(this->\hyperlink{class_archives_a3df83e6dd301afe331d7e75bd1b84a57}{getIndexArchives}());
+00151 
+00152     QHBoxLayout *hLayoutPrincipalArchives = \textcolor{keyword}{new} QHBoxLayout;
+00153     QVBoxLayout *vLayoutSelections = \textcolor{keyword}{new} QVBoxLayout;
+00154     QVBoxLayout *vLayoutImage = \textcolor{keyword}{new} QVBoxLayout;
+00155     QHBoxLayout *hLayoutInformationsImage = \textcolor{keyword}{new} QHBoxLayout;
+00156 
+00157     hLayoutPrincipalArchives->addLayout(vLayoutImage);
+00158     hLayoutPrincipalArchives->addLayout(vLayoutSelections);
+00159     vLayoutSelections->addWidget(\hyperlink{class_archives_a28fe566dcac396079d064460b17293b9}{vueArchives});
+00160     vLayoutSelections->addWidget(\hyperlink{class_archives_a598e607e203aee9386f85d55f20d8fda}{boutonFermerArchives});
+00161     vLayoutImage->addLayout(hLayoutInformationsImage);
+00162     vLayoutImage->addWidget(\hyperlink{class_archives_af311679d957985d956a4ee5ad28a5988}{labelImage});
+00163     hLayoutInformationsImage->addWidget(\hyperlink{class_archives_accb81477f1edca94691ae630ddc1f3f9}{labelImageDate});
+00164     hLayoutInformationsImage->addWidget(\hyperlink{class_archives_ab678af24ff4c67b8791ab52e998c79cb}{labelImageHeure});
+00165 
+00166     \hyperlink{class_archives_ad7c8209637b01f638b64530020d18b8e}{fenetreArchives}->setWindowTitle(\textcolor{stringliteral}{"Archives Photo"});
+00167     \hyperlink{class_archives_ad7c8209637b01f638b64530020d18b8e}{fenetreArchives}->setFixedSize(largeurMAX, hauteurMAX);
+00168     \hyperlink{class_archives_ad7c8209637b01f638b64530020d18b8e}{fenetreArchives}->setLayout(hLayoutPrincipalArchives);
+00169     \hyperlink{class_archives_af311679d957985d956a4ee5ad28a5988}{labelImage}->setFixedHeight(hauteurImage);
+00170     \hyperlink{class_archives_af311679d957985d956a4ee5ad28a5988}{labelImage}->setFixedWidth(largeurImage);
+00171     \hyperlink{class_archives_accb81477f1edca94691ae630ddc1f3f9}{labelImageDate}->setFixedHeight(hauteurInformations);
+00172     \hyperlink{class_archives_ab678af24ff4c67b8791ab52e998c79cb}{labelImageHeure}->setFixedHeight(hauteurInformations);
+00173 
+00174     connect(\hyperlink{class_archives_a28fe566dcac396079d064460b17293b9}{vueArchives}, SIGNAL(doubleClicked(\textcolor{keyword}{const} QModelIndex)), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_archives_a0e12a12774643d96831be4daba73976e}{afficherImage}(\textcolor{keyword}{const} QModelIndex)));
+00175     connect(\hyperlink{class_archives_a598e607e203aee9386f85d55f20d8fda}{boutonFermerArchives}, SIGNAL(clicked()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_archives_a0001d8b6a783f1f424965832e89a1f6f}{fermerArchives}()));
+00176 
+00177     \hyperlink{class_archives_ad7c8209637b01f638b64530020d18b8e}{fenetreArchives}->setWindowFlags(Qt::Dialog | Qt::WindowCloseButtonHint);
+00178 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_archives_a14d4f834ea05cf421161336607b4bb31}\label{class_archives_a14d4f834ea05cf421161336607b4bb31}} 
+\index{Archives@{Archives}!ouvrir\+Fenetre\+Archives@{ouvrir\+Fenetre\+Archives}}
+\index{ouvrir\+Fenetre\+Archives@{ouvrir\+Fenetre\+Archives}!Archives@{Archives}}
+\paragraph{\texorpdfstring{ouvrir\+Fenetre\+Archives}{ouvrirFenetreArchives}}
+{\footnotesize\ttfamily void Archives\+::ouvrir\+Fenetre\+Archives (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_archives_a380ac387d773b07ea5138347dbaca65a}{actualiser\+Vue\+Archives()}, et \hyperlink{class_archives_ad7c8209637b01f638b64530020d18b8e}{fenetre\+Archives}.
+
+
+\begin{DoxyCode}
+00199 \{
+00200     \hyperlink{class_archives_a380ac387d773b07ea5138347dbaca65a}{actualiserVueArchives}();
+00201     \hyperlink{class_archives_ad7c8209637b01f638b64530020d18b8e}{fenetreArchives}->exec();
+00202 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_archives_a899e95a34c2a6f79b9a25355b5bf9cb6}\label{class_archives_a899e95a34c2a6f79b9a25355b5bf9cb6}} 
+\index{Archives@{Archives}!set\+Chemin\+Archives@{set\+Chemin\+Archives}}
+\index{set\+Chemin\+Archives@{set\+Chemin\+Archives}!Archives@{Archives}}
+\paragraph{\texorpdfstring{set\+Chemin\+Archives()}{setCheminArchives()}}
+{\footnotesize\ttfamily void Archives\+::set\+Chemin\+Archives (\begin{DoxyParamCaption}\item[{Q\+String}]{nouveau\+Chemin\+Archives }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nouveau\+Chemin\+Archives} & Q\+String le nouveau chemin des \hyperlink{class_archives}{Archives}. \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_archives_af155e5062883030cddaa05623a34854b}{chemin\+Dossier\+Archives}.
+
+
+
+Référencé par \hyperlink{class_rov_a53f656be57fa1eb7b93e03095a597439}{Rov\+::creer\+Dossier\+Archives()}.
+
+
+\begin{DoxyCode}
+00051 \{
+00052     qDebug() << Q\_FUNC\_INFO << nouveauCheminArchives;
+00053     \hyperlink{class_archives_af155e5062883030cddaa05623a34854b}{cheminDossierArchives} = nouveauCheminArchives;
+00054 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_archives_a598e607e203aee9386f85d55f20d8fda}\label{class_archives_a598e607e203aee9386f85d55f20d8fda}} 
+\index{Archives@{Archives}!bouton\+Fermer\+Archives@{bouton\+Fermer\+Archives}}
+\index{bouton\+Fermer\+Archives@{bouton\+Fermer\+Archives}!Archives@{Archives}}
+\paragraph{\texorpdfstring{bouton\+Fermer\+Archives}{boutonFermerArchives}}
+{\footnotesize\ttfamily Q\+Push\+Button$\ast$ Archives\+::bouton\+Fermer\+Archives\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_archives_a1842ebad3721929949bc07be5144b79c}{initialiser\+Fenetre\+Archives()}.
+
+\mbox{\Hypertarget{class_archives_af155e5062883030cddaa05623a34854b}\label{class_archives_af155e5062883030cddaa05623a34854b}} 
+\index{Archives@{Archives}!chemin\+Dossier\+Archives@{chemin\+Dossier\+Archives}}
+\index{chemin\+Dossier\+Archives@{chemin\+Dossier\+Archives}!Archives@{Archives}}
+\paragraph{\texorpdfstring{chemin\+Dossier\+Archives}{cheminDossierArchives}}
+{\footnotesize\ttfamily Q\+String Archives\+::chemin\+Dossier\+Archives\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_archives_a65dfbaba0123e6530b03bfb70e614c90}{get\+Chemin\+Archives()}, et \hyperlink{class_archives_a899e95a34c2a6f79b9a25355b5bf9cb6}{set\+Chemin\+Archives()}.
+
+\mbox{\Hypertarget{class_archives_a2b268dd292da50166988ad698af2b0fd}\label{class_archives_a2b268dd292da50166988ad698af2b0fd}} 
+\index{Archives@{Archives}!est\+Fenetre\+Archives\+Ouverte@{est\+Fenetre\+Archives\+Ouverte}}
+\index{est\+Fenetre\+Archives\+Ouverte@{est\+Fenetre\+Archives\+Ouverte}!Archives@{Archives}}
+\paragraph{\texorpdfstring{est\+Fenetre\+Archives\+Ouverte}{estFenetreArchivesOuverte}}
+{\footnotesize\ttfamily bool Archives\+::est\+Fenetre\+Archives\+Ouverte\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_archives_ad7c8209637b01f638b64530020d18b8e}\label{class_archives_ad7c8209637b01f638b64530020d18b8e}} 
+\index{Archives@{Archives}!fenetre\+Archives@{fenetre\+Archives}}
+\index{fenetre\+Archives@{fenetre\+Archives}!Archives@{Archives}}
+\paragraph{\texorpdfstring{fenetre\+Archives}{fenetreArchives}}
+{\footnotesize\ttfamily Q\+Dialog$\ast$ Archives\+::fenetre\+Archives\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_archives_a0001d8b6a783f1f424965832e89a1f6f}{fermer\+Archives()}, \hyperlink{class_archives_a1842ebad3721929949bc07be5144b79c}{initialiser\+Fenetre\+Archives()}, et \hyperlink{class_archives_a14d4f834ea05cf421161336607b4bb31}{ouvrir\+Fenetre\+Archives()}.
+
+\mbox{\Hypertarget{class_archives_a31cba52f3979585ee5e2b9390d21322b}\label{class_archives_a31cba52f3979585ee5e2b9390d21322b}} 
+\index{Archives@{Archives}!index\+Archives@{index\+Archives}}
+\index{index\+Archives@{index\+Archives}!Archives@{Archives}}
+\paragraph{\texorpdfstring{index\+Archives}{indexArchives}}
+{\footnotesize\ttfamily Q\+Model\+Index Archives\+::index\+Archives\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_archives_a380ac387d773b07ea5138347dbaca65a}{actualiser\+Vue\+Archives()}, \hyperlink{class_archives_a3df83e6dd301afe331d7e75bd1b84a57}{get\+Index\+Archives()}, et \hyperlink{class_archives_a1842ebad3721929949bc07be5144b79c}{initialiser\+Fenetre\+Archives()}.
+
+\mbox{\Hypertarget{class_archives_af311679d957985d956a4ee5ad28a5988}\label{class_archives_af311679d957985d956a4ee5ad28a5988}} 
+\index{Archives@{Archives}!label\+Image@{label\+Image}}
+\index{label\+Image@{label\+Image}!Archives@{Archives}}
+\paragraph{\texorpdfstring{label\+Image}{labelImage}}
+{\footnotesize\ttfamily Q\+Label$\ast$ Archives\+::label\+Image\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_archives_a0e12a12774643d96831be4daba73976e}{afficher\+Image()}, et \hyperlink{class_archives_a1842ebad3721929949bc07be5144b79c}{initialiser\+Fenetre\+Archives()}.
+
+\mbox{\Hypertarget{class_archives_accb81477f1edca94691ae630ddc1f3f9}\label{class_archives_accb81477f1edca94691ae630ddc1f3f9}} 
+\index{Archives@{Archives}!label\+Image\+Date@{label\+Image\+Date}}
+\index{label\+Image\+Date@{label\+Image\+Date}!Archives@{Archives}}
+\paragraph{\texorpdfstring{label\+Image\+Date}{labelImageDate}}
+{\footnotesize\ttfamily Q\+Label$\ast$ Archives\+::label\+Image\+Date\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_archives_a0e12a12774643d96831be4daba73976e}{afficher\+Image()}, et \hyperlink{class_archives_a1842ebad3721929949bc07be5144b79c}{initialiser\+Fenetre\+Archives()}.
+
+\mbox{\Hypertarget{class_archives_ab678af24ff4c67b8791ab52e998c79cb}\label{class_archives_ab678af24ff4c67b8791ab52e998c79cb}} 
+\index{Archives@{Archives}!label\+Image\+Heure@{label\+Image\+Heure}}
+\index{label\+Image\+Heure@{label\+Image\+Heure}!Archives@{Archives}}
+\paragraph{\texorpdfstring{label\+Image\+Heure}{labelImageHeure}}
+{\footnotesize\ttfamily Q\+Label$\ast$ Archives\+::label\+Image\+Heure\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_archives_a0e12a12774643d96831be4daba73976e}{afficher\+Image()}, et \hyperlink{class_archives_a1842ebad3721929949bc07be5144b79c}{initialiser\+Fenetre\+Archives()}.
+
+\mbox{\Hypertarget{class_archives_a61376e4ec330aea053fede230a1bc786}\label{class_archives_a61376e4ec330aea053fede230a1bc786}} 
+\index{Archives@{Archives}!modele\+Archives@{modele\+Archives}}
+\index{modele\+Archives@{modele\+Archives}!Archives@{Archives}}
+\paragraph{\texorpdfstring{modele\+Archives}{modeleArchives}}
+{\footnotesize\ttfamily Q\+File\+System\+Model$\ast$ Archives\+::modele\+Archives\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_archives_a380ac387d773b07ea5138347dbaca65a}{actualiser\+Vue\+Archives()}, \hyperlink{class_archives_ab5a55ac2e810cfdec3ce19af14087ceb}{get\+Modele\+Archives()}, et \hyperlink{class_archives_a1842ebad3721929949bc07be5144b79c}{initialiser\+Fenetre\+Archives()}.
+
+\mbox{\Hypertarget{class_archives_a28fe566dcac396079d064460b17293b9}\label{class_archives_a28fe566dcac396079d064460b17293b9}} 
+\index{Archives@{Archives}!vue\+Archives@{vue\+Archives}}
+\index{vue\+Archives@{vue\+Archives}!Archives@{Archives}}
+\paragraph{\texorpdfstring{vue\+Archives}{vueArchives}}
+{\footnotesize\ttfamily Q\+List\+View$\ast$ Archives\+::vue\+Archives\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_archives_a380ac387d773b07ea5138347dbaca65a}{actualiser\+Vue\+Archives()}, et \hyperlink{class_archives_a1842ebad3721929949bc07be5144b79c}{initialiser\+Fenetre\+Archives()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{archives_8h}{archives.\+h}\item 
+\hyperlink{archives_8cpp}{archives.\+cpp}\end{DoxyCompactItemize}

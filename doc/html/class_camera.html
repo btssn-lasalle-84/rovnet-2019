@@ -1,0 +1,688 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet ROV&#39;NET: Référence de la classe Camera</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-rov.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet ROV&#39;NET
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Connecteurs publics</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-methods">Fonctions membres privées</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="class_camera-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe Camera</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Déclaration de la classe <a class="el" href="class_camera.html" title="Déclaration de la classe Camera. ">Camera</a>.  
+ <a href="class_camera.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="camera_8h_source.html">camera.h</a>&gt;</code></p>
+<div class="dynheader">
+Graphe de collaboration de Camera:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera__coll__graph.png" border="0" usemap="#_camera_coll__map" alt="Collaboration graph"/></div>
+<map name="_camera_coll__map" id="_camera_coll__map">
+<area shape="rect" id="node2" href="class_archives.html" title="Déclaration de la classe Archives. " alt="" coords="5,5,195,405"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Connecteurs publics</h2></td></tr>
+<tr class="memitem:a3ca730dcbd7ea6bfba12931a15066f6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a3ca730dcbd7ea6bfba12931a15066f6c">capture</a> ()</td></tr>
+<tr class="memdesc:a3ca730dcbd7ea6bfba12931a15066f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capture l'image du flux video.  <a href="#a3ca730dcbd7ea6bfba12931a15066f6c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3ca730dcbd7ea6bfba12931a15066f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82a0dd06f1802dc0ec0ea8ff6fcbd231"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a82a0dd06f1802dc0ec0ea8ff6fcbd231">changerCamera</a> (QString)</td></tr>
+<tr class="memdesc:a82a0dd06f1802dc0ec0ea8ff6fcbd231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de démarrer le flux vidéo de la caméra choisir dans le QComboBox sur l'IHM.  <a href="#a82a0dd06f1802dc0ec0ea8ff6fcbd231">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a82a0dd06f1802dc0ec0ea8ff6fcbd231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5b8c16f8edcb92569fab87185fc0500"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#ac5b8c16f8edcb92569fab87185fc0500">erreurCapture</a> (int id, QCameraImageCapture::Error error, const QString &amp;errorString)</td></tr>
+<tr class="separator:ac5b8c16f8edcb92569fab87185fc0500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:ae3aa4afd7a3d9ddc2bf710bc74dc293e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#ae3aa4afd7a3d9ddc2bf710bc74dc293e">Camera</a> (QObject *parent=nullptr)</td></tr>
+<tr class="separator:ae3aa4afd7a3d9ddc2bf710bc74dc293e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1897942d0ccf91052386388a497349f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#ad1897942d0ccf91052386388a497349f">~Camera</a> ()</td></tr>
+<tr class="separator:ad1897942d0ccf91052386388a497349f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb73ab859802a143a1a00443e396143e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#afb73ab859802a143a1a00443e396143e">estCameraDisponible</a> ()</td></tr>
+<tr class="memdesc:afb73ab859802a143a1a00443e396143e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne un booléen sur l'état de disponibilité de la caméra.  <a href="#afb73ab859802a143a1a00443e396143e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:afb73ab859802a143a1a00443e396143e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67420d3ef14065a412327ada6193a2e0"><td class="memItemLeft" align="right" valign="top">QCameraViewfinder *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a67420d3ef14065a412327ada6193a2e0">getCadreFluxVideo</a> ()</td></tr>
+<tr class="memdesc:a67420d3ef14065a412327ada6193a2e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">retourne le flux video  <a href="#a67420d3ef14065a412327ada6193a2e0">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a67420d3ef14065a412327ada6193a2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a2a21d3701375a553c7c90646c694f"><td class="memItemLeft" align="right" valign="top">QList&lt; QCameraInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#ad8a2a21d3701375a553c7c90646c694f">getListeCamera</a> ()</td></tr>
+<tr class="memdesc:ad8a2a21d3701375a553c7c90646c694f"><td class="mdescLeft">&#160;</td><td class="mdescRight">retourne toute les caméras disponible  <a href="#ad8a2a21d3701375a553c7c90646c694f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad8a2a21d3701375a553c7c90646c694f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66b844eec2b721a6ac23b80cb3fe2426"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a66b844eec2b721a6ac23b80cb3fe2426">setArchives</a> (<a class="el" href="class_archives.html">Archives</a> *<a class="el" href="class_camera.html#a5eb3a29aeeab2f2755d0b69ac7cf550a">archives</a>)</td></tr>
+<tr class="separator:a66b844eec2b721a6ac23b80cb3fe2426"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Fonctions membres privées</h2></td></tr>
+<tr class="memitem:a60d2c9f16b6f235ab6dd0360c883e0d0"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a60d2c9f16b6f235ab6dd0360c883e0d0">nommerCapture</a> ()</td></tr>
+<tr class="memdesc:a60d2c9f16b6f235ab6dd0360c883e0d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renomme la photo capturée au format : "yyyy-MM-dd_HH:mm:ss".  <a href="#a60d2c9f16b6f235ab6dd0360c883e0d0">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a60d2c9f16b6f235ab6dd0360c883e0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a181773c87c3deaea9fa9844f8ac294e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a181773c87c3deaea9fa9844f8ac294e3">demarrerCamera</a> ()</td></tr>
+<tr class="separator:a181773c87c3deaea9fa9844f8ac294e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb23e1a5fe67c61f36b8a97ff1f882c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a7eb23e1a5fe67c61f36b8a97ff1f882c">demarrerCamera</a> (QCameraInfo)</td></tr>
+<tr class="memdesc:a7eb23e1a5fe67c61f36b8a97ff1f882c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Demarre le retour vidéo sur l'IHM.  <a href="#a7eb23e1a5fe67c61f36b8a97ff1f882c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7eb23e1a5fe67c61f36b8a97ff1f882c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a282a199ddd33fe64bc27b32a55719054"><td class="memItemLeft" align="right" valign="top">QCamera *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a282a199ddd33fe64bc27b32a55719054">camera</a></td></tr>
+<tr class="memdesc:a282a199ddd33fe64bc27b32a55719054"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet la connexion avec la caméra.  <a href="#a282a199ddd33fe64bc27b32a55719054">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a282a199ddd33fe64bc27b32a55719054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eb3a29aeeab2f2755d0b69ac7cf550a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_archives.html">Archives</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a5eb3a29aeeab2f2755d0b69ac7cf550a">archives</a></td></tr>
+<tr class="memdesc:a5eb3a29aeeab2f2755d0b69ac7cf550a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet la connexion avec les archives.  <a href="#a5eb3a29aeeab2f2755d0b69ac7cf550a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5eb3a29aeeab2f2755d0b69ac7cf550a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf5fd38d19f0f06dfd7ec9e37f73adb8"><td class="memItemLeft" align="right" valign="top">QCameraViewfinder *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#abf5fd38d19f0f06dfd7ec9e37f73adb8">cadreFluxVideo</a></td></tr>
+<tr class="memdesc:abf5fd38d19f0f06dfd7ec9e37f73adb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet l'affichage du flux vidéo.  <a href="#abf5fd38d19f0f06dfd7ec9e37f73adb8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:abf5fd38d19f0f06dfd7ec9e37f73adb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a482276c4fd0ba7172670006556322b62"><td class="memItemLeft" align="right" valign="top">QCameraImageCapture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a482276c4fd0ba7172670006556322b62">captureImage</a></td></tr>
+<tr class="memdesc:a482276c4fd0ba7172670006556322b62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet la capture d'image.  <a href="#a482276c4fd0ba7172670006556322b62">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a482276c4fd0ba7172670006556322b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1056fa6cffd2914d9e5a171bebf5ba7e"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a1056fa6cffd2914d9e5a171bebf5ba7e">formatSauvegardeTemps</a></td></tr>
+<tr class="memdesc:a1056fa6cffd2914d9e5a171bebf5ba7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le format de sauvegarde du temps pour l'archivages.  <a href="#a1056fa6cffd2914d9e5a171bebf5ba7e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1056fa6cffd2914d9e5a171bebf5ba7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4433c250847de630592927b6c034f3c8"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a4433c250847de630592927b6c034f3c8">dateImage</a></td></tr>
+<tr class="memdesc:a4433c250847de630592927b6c034f3c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stock la date de la prise de photo pour l'archivage.  <a href="#a4433c250847de630592927b6c034f3c8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a4433c250847de630592927b6c034f3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bea5177e857533a53cb94135bee8c6b"><td class="memItemLeft" align="right" valign="top">QList&lt; QCameraInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a3bea5177e857533a53cb94135bee8c6b">cameras</a></td></tr>
+<tr class="memdesc:a3bea5177e857533a53cb94135bee8c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stock la liste des caméras disponibles.  <a href="#a3bea5177e857533a53cb94135bee8c6b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3bea5177e857533a53cb94135bee8c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><dl class="section author"><dt>Auteur</dt><dd>Nicolas BOFFREDO</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.1</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Jeudi 13 Juin 2019 </dd></dl>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="ae3aa4afd7a3d9ddc2bf710bc74dc293e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3aa4afd7a3d9ddc2bf710bc74dc293e">&#9670;&nbsp;</a></span>Camera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Camera::Camera </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_camera.html#abf5fd38d19f0f06dfd7ec9e37f73adb8">cadreFluxVideo</a>, <a class="el" href="class_camera.html#a282a199ddd33fe64bc27b32a55719054">camera</a>, <a class="el" href="class_camera.html#a3bea5177e857533a53cb94135bee8c6b">cameras</a>, <a class="el" href="class_camera.html#a482276c4fd0ba7172670006556322b62">captureImage</a>, <a class="el" href="class_camera.html#a181773c87c3deaea9fa9844f8ac294e3">demarrerCamera()</a>, et <a class="el" href="class_camera.html#afb73ab859802a143a1a00443e396143e">estCameraDisponible()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                              : QObject(parent),</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="class_camera.html#a282a199ddd33fe64bc27b32a55719054">camera</a>(<span class="keyword">nullptr</span>),</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="class_camera.html#a5eb3a29aeeab2f2755d0b69ac7cf550a">archives</a>(<span class="keyword">nullptr</span>),</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="class_camera.html#abf5fd38d19f0f06dfd7ec9e37f73adb8">cadreFluxVideo</a>(<span class="keyword">nullptr</span>),</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="class_camera.html#a482276c4fd0ba7172670006556322b62">captureImage</a>(<span class="keyword">nullptr</span>),</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="class_camera.html#a1056fa6cffd2914d9e5a171bebf5ba7e">formatSauvegardeTemps</a>(<span class="stringliteral">&quot;dd-MM-yyyy_HH:mm:ss&quot;</span>)</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_camera.html#abf5fd38d19f0f06dfd7ec9e37f73adb8">cadreFluxVideo</a> = <span class="keyword">new</span> QCameraViewfinder;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_camera.html#a282a199ddd33fe64bc27b32a55719054">camera</a> = <span class="keyword">new</span> QCamera;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_camera.html#a482276c4fd0ba7172670006556322b62">captureImage</a> = <span class="keyword">new</span> QCameraImageCapture(<a class="code" href="class_camera.html#a282a199ddd33fe64bc27b32a55719054">camera</a>);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_camera.html#a3bea5177e857533a53cb94135bee8c6b">cameras</a> = QCameraInfo::availableCameras();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_camera.html#afb73ab859802a143a1a00443e396143e">estCameraDisponible</a>())</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="class_camera.html#a181773c87c3deaea9fa9844f8ac294e3">demarrerCamera</a>(<a class="code" href="class_camera.html#a3bea5177e857533a53cb94135bee8c6b">cameras</a>[0]);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <a class="code" href="class_camera.html#a3bea5177e857533a53cb94135bee8c6b">cameras</a>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div><div class="ttc" id="class_camera_html_a1056fa6cffd2914d9e5a171bebf5ba7e"><div class="ttname"><a href="class_camera.html#a1056fa6cffd2914d9e5a171bebf5ba7e">Camera::formatSauvegardeTemps</a></div><div class="ttdeci">QString formatSauvegardeTemps</div><div class="ttdoc">Le format de sauvegarde du temps pour l&amp;#39;archivages. </div><div class="ttdef"><b>Definition:</b> camera.h:61</div></div>
+<div class="ttc" id="class_camera_html_a282a199ddd33fe64bc27b32a55719054"><div class="ttname"><a href="class_camera.html#a282a199ddd33fe64bc27b32a55719054">Camera::camera</a></div><div class="ttdeci">QCamera * camera</div><div class="ttdoc">Permet la connexion avec la caméra. </div><div class="ttdef"><b>Definition:</b> camera.h:57</div></div>
+<div class="ttc" id="class_camera_html_afb73ab859802a143a1a00443e396143e"><div class="ttname"><a href="class_camera.html#afb73ab859802a143a1a00443e396143e">Camera::estCameraDisponible</a></div><div class="ttdeci">bool estCameraDisponible()</div><div class="ttdoc">Retourne un booléen sur l&amp;#39;état de disponibilité de la caméra. </div><div class="ttdef"><b>Definition:</b> camera.cpp:51</div></div>
+<div class="ttc" id="class_camera_html_a482276c4fd0ba7172670006556322b62"><div class="ttname"><a href="class_camera.html#a482276c4fd0ba7172670006556322b62">Camera::captureImage</a></div><div class="ttdeci">QCameraImageCapture * captureImage</div><div class="ttdoc">Permet la capture d&amp;#39;image. </div><div class="ttdef"><b>Definition:</b> camera.h:60</div></div>
+<div class="ttc" id="class_camera_html_a3bea5177e857533a53cb94135bee8c6b"><div class="ttname"><a href="class_camera.html#a3bea5177e857533a53cb94135bee8c6b">Camera::cameras</a></div><div class="ttdeci">QList&lt; QCameraInfo &gt; cameras</div><div class="ttdoc">Stock la liste des caméras disponibles. </div><div class="ttdef"><b>Definition:</b> camera.h:63</div></div>
+<div class="ttc" id="class_camera_html_a5eb3a29aeeab2f2755d0b69ac7cf550a"><div class="ttname"><a href="class_camera.html#a5eb3a29aeeab2f2755d0b69ac7cf550a">Camera::archives</a></div><div class="ttdeci">Archives * archives</div><div class="ttdoc">Permet la connexion avec les archives. </div><div class="ttdef"><b>Definition:</b> camera.h:58</div></div>
+<div class="ttc" id="class_camera_html_a181773c87c3deaea9fa9844f8ac294e3"><div class="ttname"><a href="class_camera.html#a181773c87c3deaea9fa9844f8ac294e3">Camera::demarrerCamera</a></div><div class="ttdeci">void demarrerCamera()</div></div>
+<div class="ttc" id="class_camera_html_abf5fd38d19f0f06dfd7ec9e37f73adb8"><div class="ttname"><a href="class_camera.html#abf5fd38d19f0f06dfd7ec9e37f73adb8">Camera::cadreFluxVideo</a></div><div class="ttdeci">QCameraViewfinder * cadreFluxVideo</div><div class="ttdoc">Permet l&amp;#39;affichage du flux vidéo. </div><div class="ttdef"><b>Definition:</b> camera.h:59</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad1897942d0ccf91052386388a497349f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1897942d0ccf91052386388a497349f">&#9670;&nbsp;</a></span>~Camera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Camera::~Camera </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_camera.html#abf5fd38d19f0f06dfd7ec9e37f73adb8">cadreFluxVideo</a>, et <a class="el" href="class_camera.html#a282a199ddd33fe64bc27b32a55719054">camera</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">delete</span> <a class="code" href="class_camera.html#abf5fd38d19f0f06dfd7ec9e37f73adb8">cadreFluxVideo</a>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">delete</span> <a class="code" href="class_camera.html#a282a199ddd33fe64bc27b32a55719054">camera</a>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div><div class="ttc" id="class_camera_html_a282a199ddd33fe64bc27b32a55719054"><div class="ttname"><a href="class_camera.html#a282a199ddd33fe64bc27b32a55719054">Camera::camera</a></div><div class="ttdeci">QCamera * camera</div><div class="ttdoc">Permet la connexion avec la caméra. </div><div class="ttdef"><b>Definition:</b> camera.h:57</div></div>
+<div class="ttc" id="class_camera_html_abf5fd38d19f0f06dfd7ec9e37f73adb8"><div class="ttname"><a href="class_camera.html#abf5fd38d19f0f06dfd7ec9e37f73adb8">Camera::cadreFluxVideo</a></div><div class="ttdeci">QCameraViewfinder * cadreFluxVideo</div><div class="ttdoc">Permet l&amp;#39;affichage du flux vidéo. </div><div class="ttdef"><b>Definition:</b> camera.h:59</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a3ca730dcbd7ea6bfba12931a15066f6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ca730dcbd7ea6bfba12931a15066f6c">&#9670;&nbsp;</a></span>capture</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Camera::capture </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_camera.html#a482276c4fd0ba7172670006556322b62">captureImage</a>, et <a class="el" href="class_camera.html#a60d2c9f16b6f235ab6dd0360c883e0d0">nommerCapture()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;{</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    QString nomCapture = this-&gt;<a class="code" href="class_camera.html#a60d2c9f16b6f235ab6dd0360c883e0d0">nommerCapture</a>();</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;nomCapture&quot;</span> &lt;&lt; nomCapture;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="code" href="class_camera.html#a482276c4fd0ba7172670006556322b62">captureImage</a>-&gt;capture(nomCapture);</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div><div class="ttc" id="class_camera_html_a60d2c9f16b6f235ab6dd0360c883e0d0"><div class="ttname"><a href="class_camera.html#a60d2c9f16b6f235ab6dd0360c883e0d0">Camera::nommerCapture</a></div><div class="ttdeci">QString nommerCapture()</div><div class="ttdoc">Renomme la photo capturée au format : &quot;yyyy-MM-dd_HH:mm:ss&quot;. </div><div class="ttdef"><b>Definition:</b> camera.cpp:127</div></div>
+<div class="ttc" id="class_camera_html_a482276c4fd0ba7172670006556322b62"><div class="ttname"><a href="class_camera.html#a482276c4fd0ba7172670006556322b62">Camera::captureImage</a></div><div class="ttdeci">QCameraImageCapture * captureImage</div><div class="ttdoc">Permet la capture d&amp;#39;image. </div><div class="ttdef"><b>Definition:</b> camera.h:60</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a82a0dd06f1802dc0ec0ea8ff6fcbd231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82a0dd06f1802dc0ec0ea8ff6fcbd231">&#9670;&nbsp;</a></span>changerCamera</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Camera::changerCamera </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>nomCamera</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nomCamera</td><td>Un <em>QString</em>, le nom de la caméra </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Références <a class="el" href="class_camera.html#a3bea5177e857533a53cb94135bee8c6b">cameras</a>, et <a class="el" href="class_camera.html#a181773c87c3deaea9fa9844f8ac294e3">demarrerCamera()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;{</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    QString cameraTrouvee;</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    QList&lt;QCameraInfo&gt; <a class="code" href="class_camera.html#a3bea5177e857533a53cb94135bee8c6b">cameras</a> = QCameraInfo::availableCameras();</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">foreach</span> (<span class="keyword">const</span> QCameraInfo &amp;cameraInfo, cameras)</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    {</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        cameraTrouvee = cameraInfo.description() + <span class="stringliteral">&quot; (&quot;</span> + cameraInfo.deviceName()+ <span class="stringliteral">&quot;)&quot;</span>;</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordflow">if</span> (cameraTrouvee == nomCamera)</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        {</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            this-&gt;<a class="code" href="class_camera.html#a181773c87c3deaea9fa9844f8ac294e3">demarrerCamera</a>(cameraInfo);</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        }</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;}</div><div class="ttc" id="class_camera_html_a3bea5177e857533a53cb94135bee8c6b"><div class="ttname"><a href="class_camera.html#a3bea5177e857533a53cb94135bee8c6b">Camera::cameras</a></div><div class="ttdeci">QList&lt; QCameraInfo &gt; cameras</div><div class="ttdoc">Stock la liste des caméras disponibles. </div><div class="ttdef"><b>Definition:</b> camera.h:63</div></div>
+<div class="ttc" id="class_camera_html_a181773c87c3deaea9fa9844f8ac294e3"><div class="ttname"><a href="class_camera.html#a181773c87c3deaea9fa9844f8ac294e3">Camera::demarrerCamera</a></div><div class="ttdeci">void demarrerCamera()</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a181773c87c3deaea9fa9844f8ac294e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a181773c87c3deaea9fa9844f8ac294e3">&#9670;&nbsp;</a></span>demarrerCamera() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Camera::demarrerCamera </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_camera.html#ae3aa4afd7a3d9ddc2bf710bc74dc293e">Camera()</a>, et <a class="el" href="class_camera.html#a82a0dd06f1802dc0ec0ea8ff6fcbd231">changerCamera()</a>.</p>
+
+</div>
+</div>
+<a id="a7eb23e1a5fe67c61f36b8a97ff1f882c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eb23e1a5fe67c61f36b8a97ff1f882c">&#9670;&nbsp;</a></span>demarrerCamera() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Camera::demarrerCamera </td>
+          <td>(</td>
+          <td class="paramtype">QCameraInfo&#160;</td>
+          <td class="paramname"><em>cameraSelectionnee</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Par défaut la méthode reçoit la première caméra trouvée </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cameraSelectionnee</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Références <a class="el" href="class_camera.html#abf5fd38d19f0f06dfd7ec9e37f73adb8">cadreFluxVideo</a>, <a class="el" href="class_camera.html#a282a199ddd33fe64bc27b32a55719054">camera</a>, <a class="el" href="class_camera.html#a482276c4fd0ba7172670006556322b62">captureImage</a>, <a class="el" href="class_camera.html#ac5b8c16f8edcb92569fab87185fc0500">erreurCapture()</a>, et <a class="el" href="class_camera.html#afb73ab859802a143a1a00443e396143e">estCameraDisponible()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_camera.html#a282a199ddd33fe64bc27b32a55719054">camera</a> != <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keyword">delete</span> <a class="code" href="class_camera.html#a282a199ddd33fe64bc27b32a55719054">camera</a>;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_camera.html#a482276c4fd0ba7172670006556322b62">captureImage</a> != <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keyword">delete</span> <a class="code" href="class_camera.html#a482276c4fd0ba7172670006556322b62">captureImage</a>;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_camera.html#afb73ab859802a143a1a00443e396143e">estCameraDisponible</a>())</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;cameraSelectionnee&quot;</span> &lt;&lt; cameraSelectionnee.deviceName();</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="class_camera.html#a282a199ddd33fe64bc27b32a55719054">camera</a> = <span class="keyword">new</span> QCamera(cameraSelectionnee);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="class_camera.html#a282a199ddd33fe64bc27b32a55719054">camera</a>-&gt;setViewfinder(<a class="code" href="class_camera.html#abf5fd38d19f0f06dfd7ec9e37f73adb8">cadreFluxVideo</a>);</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="class_camera.html#a282a199ddd33fe64bc27b32a55719054">camera</a>-&gt;setCaptureMode(QCamera::CaptureStillImage);</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="class_camera.html#a482276c4fd0ba7172670006556322b62">captureImage</a> = <span class="keyword">new</span> QCameraImageCapture(<a class="code" href="class_camera.html#a282a199ddd33fe64bc27b32a55719054">camera</a>);</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="class_camera.html#a482276c4fd0ba7172670006556322b62">captureImage</a>-&gt;setCaptureDestination(QCameraImageCapture::CaptureToBuffer);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        connect(<a class="code" href="class_camera.html#a482276c4fd0ba7172670006556322b62">captureImage</a>, SIGNAL(error(<span class="keywordtype">int</span>,QCameraImageCapture::Error,QString)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_camera.html#ac5b8c16f8edcb92569fab87185fc0500">erreurCapture</a>(<span class="keywordtype">int</span>,QCameraImageCapture::Error,QString)));</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="class_camera.html#a282a199ddd33fe64bc27b32a55719054">camera</a>-&gt;start();</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div><div class="ttc" id="class_camera_html_a282a199ddd33fe64bc27b32a55719054"><div class="ttname"><a href="class_camera.html#a282a199ddd33fe64bc27b32a55719054">Camera::camera</a></div><div class="ttdeci">QCamera * camera</div><div class="ttdoc">Permet la connexion avec la caméra. </div><div class="ttdef"><b>Definition:</b> camera.h:57</div></div>
+<div class="ttc" id="class_camera_html_afb73ab859802a143a1a00443e396143e"><div class="ttname"><a href="class_camera.html#afb73ab859802a143a1a00443e396143e">Camera::estCameraDisponible</a></div><div class="ttdeci">bool estCameraDisponible()</div><div class="ttdoc">Retourne un booléen sur l&amp;#39;état de disponibilité de la caméra. </div><div class="ttdef"><b>Definition:</b> camera.cpp:51</div></div>
+<div class="ttc" id="class_camera_html_a482276c4fd0ba7172670006556322b62"><div class="ttname"><a href="class_camera.html#a482276c4fd0ba7172670006556322b62">Camera::captureImage</a></div><div class="ttdeci">QCameraImageCapture * captureImage</div><div class="ttdoc">Permet la capture d&amp;#39;image. </div><div class="ttdef"><b>Definition:</b> camera.h:60</div></div>
+<div class="ttc" id="class_camera_html_ac5b8c16f8edcb92569fab87185fc0500"><div class="ttname"><a href="class_camera.html#ac5b8c16f8edcb92569fab87185fc0500">Camera::erreurCapture</a></div><div class="ttdeci">void erreurCapture(int id, QCameraImageCapture::Error error, const QString &amp;errorString)</div><div class="ttdef"><b>Definition:</b> camera.cpp:155</div></div>
+<div class="ttc" id="class_camera_html_abf5fd38d19f0f06dfd7ec9e37f73adb8"><div class="ttname"><a href="class_camera.html#abf5fd38d19f0f06dfd7ec9e37f73adb8">Camera::cadreFluxVideo</a></div><div class="ttdeci">QCameraViewfinder * cadreFluxVideo</div><div class="ttdoc">Permet l&amp;#39;affichage du flux vidéo. </div><div class="ttdef"><b>Definition:</b> camera.h:59</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac5b8c16f8edcb92569fab87185fc0500"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5b8c16f8edcb92569fab87185fc0500">&#9670;&nbsp;</a></span>erreurCapture</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Camera::erreurCapture </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QCameraImageCapture::Error&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>errorString</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_camera.html#a7eb23e1a5fe67c61f36b8a97ff1f882c">demarrerCamera()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;{</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    Q_UNUSED(<span class="keywordtype">id</span>)</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    Q_UNUSED(error)</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; errorString;</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="afb73ab859802a143a1a00443e396143e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb73ab859802a143a1a00443e396143e">&#9670;&nbsp;</a></span>estCameraDisponible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Camera::estCameraDisponible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Renvoie</dt><dd>Un <em>booléen</em>, vrai si la caméra est disponible, faux sinon. </dd></dl>
+
+<p class="reference">Références <a class="el" href="class_camera.html#a3bea5177e857533a53cb94135bee8c6b">cameras</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_i_h_m_rov.html#abbfcdc154a6ae7f941d186f6c90a5a2b">IHMRov::actualiseIconesEtat()</a>, <a class="el" href="class_camera.html#ae3aa4afd7a3d9ddc2bf710bc74dc293e">Camera()</a>, et <a class="el" href="class_camera.html#a7eb23e1a5fe67c61f36b8a97ff1f882c">demarrerCamera()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_camera.html#a3bea5177e857533a53cb94135bee8c6b">cameras</a>.count() &gt; 0)</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div><div class="ttc" id="class_camera_html_a3bea5177e857533a53cb94135bee8c6b"><div class="ttname"><a href="class_camera.html#a3bea5177e857533a53cb94135bee8c6b">Camera::cameras</a></div><div class="ttdeci">QList&lt; QCameraInfo &gt; cameras</div><div class="ttdoc">Stock la liste des caméras disponibles. </div><div class="ttdef"><b>Definition:</b> camera.h:63</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a67420d3ef14065a412327ada6193a2e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67420d3ef14065a412327ada6193a2e0">&#9670;&nbsp;</a></span>getCadreFluxVideo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QCameraViewfinder * Camera::getCadreFluxVideo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Un assesseur permettant d'avoir le retour vidéo </p>
+
+<p class="reference">Références <a class="el" href="class_camera.html#abf5fd38d19f0f06dfd7ec9e37f73adb8">cadreFluxVideo</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_i_h_m_rov.html#a5dac1fb4612866cc61f699a415e0ef6b">IHMRov::IHMRov()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_camera.html#abf5fd38d19f0f06dfd7ec9e37f73adb8">cadreFluxVideo</a>;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div><div class="ttc" id="class_camera_html_abf5fd38d19f0f06dfd7ec9e37f73adb8"><div class="ttname"><a href="class_camera.html#abf5fd38d19f0f06dfd7ec9e37f73adb8">Camera::cadreFluxVideo</a></div><div class="ttdeci">QCameraViewfinder * cadreFluxVideo</div><div class="ttdoc">Permet l&amp;#39;affichage du flux vidéo. </div><div class="ttdef"><b>Definition:</b> camera.h:59</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad8a2a21d3701375a553c7c90646c694f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8a2a21d3701375a553c7c90646c694f">&#9670;&nbsp;</a></span>getListeCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; QCameraInfo &gt; Camera::getListeCamera </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_camera.html#a3bea5177e857533a53cb94135bee8c6b">cameras</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_i_h_m_rov.html#af3e46f174ab2fdeaebb2d00e6b8bcb33">IHMRov::initialiserListeCamera()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    QList&lt;QCameraInfo&gt; listeCamera;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">foreach</span> (<span class="keyword">const</span> QCameraInfo &amp;cameraInfo, <a class="code" href="class_camera.html#a3bea5177e857533a53cb94135bee8c6b">cameras</a>)</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        listeCamera.append(cameraInfo);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> listeCamera;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div><div class="ttc" id="class_camera_html_a3bea5177e857533a53cb94135bee8c6b"><div class="ttname"><a href="class_camera.html#a3bea5177e857533a53cb94135bee8c6b">Camera::cameras</a></div><div class="ttdeci">QList&lt; QCameraInfo &gt; cameras</div><div class="ttdoc">Stock la liste des caméras disponibles. </div><div class="ttdef"><b>Definition:</b> camera.h:63</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a60d2c9f16b6f235ab6dd0360c883e0d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60d2c9f16b6f235ab6dd0360c883e0d0">&#9670;&nbsp;</a></span>nommerCapture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Camera::nommerCapture </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indique le chemin vers un dossier de stockage des photos, à l'emplacement de l'éxécutable. </p>
+
+<p class="reference">Références <a class="el" href="class_camera.html#a5eb3a29aeeab2f2755d0b69ac7cf550a">archives</a>, <a class="el" href="class_camera.html#a4433c250847de630592927b6c034f3c8">dateImage</a>, <a class="el" href="class_camera.html#a1056fa6cffd2914d9e5a171bebf5ba7e">formatSauvegardeTemps</a>, et <a class="el" href="class_archives.html#a65dfbaba0123e6530b03bfb70e614c90">Archives::getCheminArchives()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_camera.html#a3ca730dcbd7ea6bfba12931a15066f6c">capture()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;{</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    QString nom = QApplication::applicationDirPath() + <span class="stringliteral">&quot;/defaut&quot;</span>;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    QDateTime dateCapture = QDateTime::currentDateTime();</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <a class="code" href="class_camera.html#a4433c250847de630592927b6c034f3c8">dateImage</a> = dateCapture.toString(<a class="code" href="class_camera.html#a1056fa6cffd2914d9e5a171bebf5ba7e">formatSauvegardeTemps</a>);</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    nom = <a class="code" href="class_camera.html#a5eb3a29aeeab2f2755d0b69ac7cf550a">archives</a>-&gt;<a class="code" href="class_archives.html#a65dfbaba0123e6530b03bfb70e614c90">getCheminArchives</a>() + <span class="stringliteral">&quot;/&quot;</span> + <a class="code" href="class_camera.html#a4433c250847de630592927b6c034f3c8">dateImage</a>;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; nom;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">return</span> nom;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div><div class="ttc" id="class_camera_html_a4433c250847de630592927b6c034f3c8"><div class="ttname"><a href="class_camera.html#a4433c250847de630592927b6c034f3c8">Camera::dateImage</a></div><div class="ttdeci">QString dateImage</div><div class="ttdoc">Stock la date de la prise de photo pour l&amp;#39;archivage. </div><div class="ttdef"><b>Definition:</b> camera.h:62</div></div>
+<div class="ttc" id="class_camera_html_a1056fa6cffd2914d9e5a171bebf5ba7e"><div class="ttname"><a href="class_camera.html#a1056fa6cffd2914d9e5a171bebf5ba7e">Camera::formatSauvegardeTemps</a></div><div class="ttdeci">QString formatSauvegardeTemps</div><div class="ttdoc">Le format de sauvegarde du temps pour l&amp;#39;archivages. </div><div class="ttdef"><b>Definition:</b> camera.h:61</div></div>
+<div class="ttc" id="class_camera_html_a5eb3a29aeeab2f2755d0b69ac7cf550a"><div class="ttname"><a href="class_camera.html#a5eb3a29aeeab2f2755d0b69ac7cf550a">Camera::archives</a></div><div class="ttdeci">Archives * archives</div><div class="ttdoc">Permet la connexion avec les archives. </div><div class="ttdef"><b>Definition:</b> camera.h:58</div></div>
+<div class="ttc" id="class_archives_html_a65dfbaba0123e6530b03bfb70e614c90"><div class="ttname"><a href="class_archives.html#a65dfbaba0123e6530b03bfb70e614c90">Archives::getCheminArchives</a></div><div class="ttdeci">QString getCheminArchives()</div><div class="ttdoc">Accesseur renvoyant le chemin du dossier de stockage des photos. </div><div class="ttdef"><b>Definition:</b> archives.cpp:39</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a66b844eec2b721a6ac23b80cb3fe2426"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66b844eec2b721a6ac23b80cb3fe2426">&#9670;&nbsp;</a></span>setArchives()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Camera::setArchives </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_archives.html">Archives</a> *&#160;</td>
+          <td class="paramname"><em>archives</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_camera.html#a5eb3a29aeeab2f2755d0b69ac7cf550a">archives</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_i_h_m_rov.html#a5dac1fb4612866cc61f699a415e0ef6b">IHMRov::IHMRov()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    this-&gt;archives = <a class="code" href="class_camera.html#a5eb3a29aeeab2f2755d0b69ac7cf550a">archives</a>;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div><div class="ttc" id="class_camera_html_a5eb3a29aeeab2f2755d0b69ac7cf550a"><div class="ttname"><a href="class_camera.html#a5eb3a29aeeab2f2755d0b69ac7cf550a">Camera::archives</a></div><div class="ttdeci">Archives * archives</div><div class="ttdoc">Permet la connexion avec les archives. </div><div class="ttdef"><b>Definition:</b> camera.h:58</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="a5eb3a29aeeab2f2755d0b69ac7cf550a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eb3a29aeeab2f2755d0b69ac7cf550a">&#9670;&nbsp;</a></span>archives</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_archives.html">Archives</a>* Camera::archives</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_camera.html#a60d2c9f16b6f235ab6dd0360c883e0d0">nommerCapture()</a>, et <a class="el" href="class_camera.html#a66b844eec2b721a6ac23b80cb3fe2426">setArchives()</a>.</p>
+
+</div>
+</div>
+<a id="abf5fd38d19f0f06dfd7ec9e37f73adb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf5fd38d19f0f06dfd7ec9e37f73adb8">&#9670;&nbsp;</a></span>cadreFluxVideo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QCameraViewfinder* Camera::cadreFluxVideo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_camera.html#ae3aa4afd7a3d9ddc2bf710bc74dc293e">Camera()</a>, <a class="el" href="class_camera.html#a7eb23e1a5fe67c61f36b8a97ff1f882c">demarrerCamera()</a>, <a class="el" href="class_camera.html#a67420d3ef14065a412327ada6193a2e0">getCadreFluxVideo()</a>, et <a class="el" href="class_camera.html#ad1897942d0ccf91052386388a497349f">~Camera()</a>.</p>
+
+</div>
+</div>
+<a id="a282a199ddd33fe64bc27b32a55719054"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a282a199ddd33fe64bc27b32a55719054">&#9670;&nbsp;</a></span>camera</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QCamera* Camera::camera</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_camera.html#ae3aa4afd7a3d9ddc2bf710bc74dc293e">Camera()</a>, <a class="el" href="class_camera.html#a7eb23e1a5fe67c61f36b8a97ff1f882c">demarrerCamera()</a>, et <a class="el" href="class_camera.html#ad1897942d0ccf91052386388a497349f">~Camera()</a>.</p>
+
+</div>
+</div>
+<a id="a3bea5177e857533a53cb94135bee8c6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bea5177e857533a53cb94135bee8c6b">&#9670;&nbsp;</a></span>cameras</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;QCameraInfo&gt; Camera::cameras</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_camera.html#ae3aa4afd7a3d9ddc2bf710bc74dc293e">Camera()</a>, <a class="el" href="class_camera.html#a82a0dd06f1802dc0ec0ea8ff6fcbd231">changerCamera()</a>, <a class="el" href="class_camera.html#afb73ab859802a143a1a00443e396143e">estCameraDisponible()</a>, et <a class="el" href="class_camera.html#ad8a2a21d3701375a553c7c90646c694f">getListeCamera()</a>.</p>
+
+</div>
+</div>
+<a id="a482276c4fd0ba7172670006556322b62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a482276c4fd0ba7172670006556322b62">&#9670;&nbsp;</a></span>captureImage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QCameraImageCapture* Camera::captureImage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_camera.html#ae3aa4afd7a3d9ddc2bf710bc74dc293e">Camera()</a>, <a class="el" href="class_camera.html#a3ca730dcbd7ea6bfba12931a15066f6c">capture()</a>, et <a class="el" href="class_camera.html#a7eb23e1a5fe67c61f36b8a97ff1f882c">demarrerCamera()</a>.</p>
+
+</div>
+</div>
+<a id="a4433c250847de630592927b6c034f3c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4433c250847de630592927b6c034f3c8">&#9670;&nbsp;</a></span>dateImage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Camera::dateImage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_camera.html#a60d2c9f16b6f235ab6dd0360c883e0d0">nommerCapture()</a>.</p>
+
+</div>
+</div>
+<a id="a1056fa6cffd2914d9e5a171bebf5ba7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1056fa6cffd2914d9e5a171bebf5ba7e">&#9670;&nbsp;</a></span>formatSauvegardeTemps</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Camera::formatSauvegardeTemps</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_camera.html#a60d2c9f16b6f235ab6dd0360c883e0d0">nommerCapture()</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li><a class="el" href="camera_8h_source.html">camera.h</a></li>
+<li><a class="el" href="camera_8cpp.html">camera.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 05:35:33 pour Projet ROV&#39;NET par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

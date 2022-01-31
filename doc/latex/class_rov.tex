@@ -1,0 +1,783 @@
+\hypertarget{class_rov}{}\subsection{Référence de la classe Rov}
+\label{class_rov}\index{Rov@{Rov}}
+
+
+Déclaration de la classe \hyperlink{class_rov}{Rov}. Gestion des liaisons entre les différentes classes, et paramètres de la campagne et de la B\+DD.  
+
+
+
+
+{\ttfamily \#include $<$rov.\+h$>$}
+
+
+
+Graphe de collaboration de Rov\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rov__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_rov_adab08abfde381c2915695489b34da6b4}{stocke\+Mesures\+B\+DD} (double temperature, double irradiation)
+\begin{DoxyCompactList}\small\item\em Stocke les mesures dans la table mesures. \end{DoxyCompactList}\item 
+void \hyperlink{class_rov_a738965ca84678b506b3d6a326c48e9e3}{connecte\+Archivage\+Mesures} (bool \hyperlink{class_rov_a659da5fe3636356b006a8e08a8433dd3}{archivage\+Actif})
+\begin{DoxyCompactList}\small\item\em Active, ou désactive l\textquotesingle{}archivage des mesures dans la B\+DD. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_rov_a5dddd3bd156c134848078296087d090c}{Rov} (Q\+Object $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_rov}{Rov}. \end{DoxyCompactList}\item 
+\hyperlink{class_rov_a6e41f712195b9af74fd75b781745d1b5}{$\sim$\+Rov} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe \hyperlink{class_rov}{Rov}. \end{DoxyCompactList}\item 
+\hyperlink{class_communication_rov}{Communication\+Rov} $\ast$ \hyperlink{class_rov_ad30543625f584e28bf785a80c59506dc}{get\+Communication\+Rov} () const
+\begin{DoxyCompactList}\small\item\em Renvoie l\textquotesingle{}objet réalisant la connexion entre le rov et le programme. \end{DoxyCompactList}\item 
+\hyperlink{class_mesures}{Mesures} $\ast$ \hyperlink{class_rov_a0edd5f7db785bd856b8723fe49ca7848}{get\+Mesures} () const
+\begin{DoxyCompactList}\small\item\em Renvoie l\textquotesingle{}objet contenant les mesures et les méthodes affiliées. \end{DoxyCompactList}\item 
+\hyperlink{class_camera}{Camera} $\ast$ \hyperlink{class_rov_aae07e8ca2c4b3be6a0a378b6f072c60b}{get\+Camera} () const
+\begin{DoxyCompactList}\small\item\em Renvoie l\textquotesingle{}objet \hyperlink{class_camera}{Camera}. \end{DoxyCompactList}\item 
+Q\+Vector$<$ Q\+String $>$ \hyperlink{class_rov_ab585cb1f82344ba0a64a28488910b262}{get\+Liste\+Noms\+Operateurs} ()
+\begin{DoxyCompactList}\small\item\em Accesseur retournant la liste des noms des opérateurs. \end{DoxyCompactList}\item 
+Q\+Vector$<$ Q\+String $>$ \hyperlink{class_rov_a128cae6dc19025017dea26663adde765}{get\+Liste\+Prenoms\+Operateurs} ()
+\begin{DoxyCompactList}\small\item\em Accesseur retournant la liste des noms des opérateurs. \end{DoxyCompactList}\item 
+void \hyperlink{class_rov_a0eba2119b89406948976ae92781c4629}{set\+Camera} (\hyperlink{class_camera}{Camera} $\ast$\hyperlink{class_rov_ad0461ecece812497ee9b4a962f168c18}{camera})
+\begin{DoxyCompactList}\small\item\em Accesseur affectant une instance de la classe \hyperlink{class_camera}{Camera}. \end{DoxyCompactList}\item 
+\hyperlink{class_archives}{Archives} $\ast$ \hyperlink{class_rov_af0936fd10d04851d53f28575ecd1da3f}{get\+Archives} () const
+\begin{DoxyCompactList}\small\item\em Accesseur retournant une instance de la classe \hyperlink{class_archives}{Archives}. \end{DoxyCompactList}\item 
+void \hyperlink{class_rov_acb3ecbb04ace455526206d3c05b712fd}{set\+Archives} (\hyperlink{class_archives}{Archives} $\ast$\hyperlink{class_rov_ad41ed46f169f28da226a979f70c4d8a4}{archives})
+\begin{DoxyCompactList}\small\item\em Accesseur affectant une instance de la classe \hyperlink{class_archives}{Archives}. \end{DoxyCompactList}\item 
+void \hyperlink{class_rov_a9bbaec4a59dae307440bfeefbc56190b}{set\+Id\+Campagne} (Q\+String \hyperlink{class_rov_aaaed58cd7ee9edbeab5251cd413a1bae}{id\+Campagne})
+\begin{DoxyCompactList}\small\item\em Remplace l\textquotesingle{}id\+Campagne. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_rov_aaf98d93ef9b164a2e1766494d9577b57}{get\+Id\+Campagne} ()
+\begin{DoxyCompactList}\small\item\em Renvoie id\+Campagne. \end{DoxyCompactList}\item 
+bool \hyperlink{class_rov_ae1306036b067e9ad50a09f9dd607a092}{creer\+Nouvelle\+Campagne} (Q\+String nom, Q\+String description, Q\+String id\+Operateur)
+\begin{DoxyCompactList}\small\item\em Crée une nouvelle campagne. \end{DoxyCompactList}\item 
+bool \hyperlink{class_rov_a970f36e93f9dbd22734db571b21ceb04}{creer\+Dossiers\+Nouvelle\+Campagne} (Q\+String nom\+Nouvelle\+Campagne)
+\begin{DoxyCompactList}\small\item\em Crée un dossier correspondant au nom de la campagne créée. \end{DoxyCompactList}\item 
+void \hyperlink{class_rov_abbe2eb87a00b651c8259c0c7abca3edd}{set\+Archivage\+Actif} (bool)
+\begin{DoxyCompactList}\small\item\em Modifie la valeur de archivage\+Actif. \end{DoxyCompactList}\item 
+bool \hyperlink{class_rov_ac24b94eaac569252bdc0b1919489a761}{get\+Archivage\+Actif} () const
+\begin{DoxyCompactList}\small\item\em Retourne l\textquotesingle{}état de archivage\+Actif. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_rov_a53f656be57fa1eb7b93e03095a597439}{creer\+Dossier\+Archives} (Q\+String chemin\+Dossier\+Campagne)
+\begin{DoxyCompactList}\small\item\em Crée le dossier des archives correspondant à la campagne créée. \end{DoxyCompactList}\item 
+void \hyperlink{class_rov_a490eefb90bf28e83f181d770f0f52446}{recuperer\+Liste\+Noms\+Operateurs} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de récuperer la liste des noms opérateurs. \end{DoxyCompactList}\item 
+void \hyperlink{class_rov_a84dece742f5c4c903ada4f25c869597f}{recuperer\+Liste\+Prenoms\+Operateurs} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de récuperer la liste des prenoms opérateurs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_communication_rov}{Communication\+Rov} $\ast$ \hyperlink{class_rov_a8e7aaa17ee2134f26d57241d11ab2a99}{communication\+Rov}
+\begin{DoxyCompactList}\small\item\em Communication via le port série avec le rov. \end{DoxyCompactList}\item 
+\hyperlink{class_mesures}{Mesures} $\ast$ \hyperlink{class_rov_af37589b38493e4bd99702587db2d28a8}{mesures}
+\begin{DoxyCompactList}\small\item\em Les mesures des capteurs. \end{DoxyCompactList}\item 
+\hyperlink{class_camera}{Camera} $\ast$ \hyperlink{class_rov_ad0461ecece812497ee9b4a962f168c18}{camera}
+\begin{DoxyCompactList}\small\item\em La caméra. \end{DoxyCompactList}\item 
+\hyperlink{class_archives}{Archives} $\ast$ \hyperlink{class_rov_ad41ed46f169f28da226a979f70c4d8a4}{archives}
+\begin{DoxyCompactList}\small\item\em Les archives. \end{DoxyCompactList}\item 
+\hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_rov_a5a9a824cd100947c75d0951eb9e1f90c}{base\+De\+Donnees}
+\begin{DoxyCompactList}\small\item\em La base de données. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_rov_aaaed58cd7ee9edbeab5251cd413a1bae}{id\+Campagne}
+\begin{DoxyCompactList}\small\item\em Numéro d\textquotesingle{}id de la campagne en cours. \end{DoxyCompactList}\item 
+Q\+Vector$<$ Q\+String $>$ \hyperlink{class_rov_a3d424033e0ff00f480a711358ef4fde6}{liste\+Noms\+Operateurs}
+\begin{DoxyCompactList}\small\item\em Liste des noms des opérateurs. \end{DoxyCompactList}\item 
+Q\+Vector$<$ Q\+String $>$ \hyperlink{class_rov_a1e059749c13ed4ee9c0ec9168e79a3be}{liste\+Prenoms\+Operateurs}
+\begin{DoxyCompactList}\small\item\em Liste des prenoms des opérateurs. \end{DoxyCompactList}\item 
+bool \hyperlink{class_rov_a659da5fe3636356b006a8e08a8433dd3}{archivage\+Actif}
+\begin{DoxyCompactList}\small\item\em L\textquotesingle{}archivage des mesures est demandé. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+R\+E\+Y\+N\+I\+ER Jacques \& Nicolas B\+O\+F\+F\+R\+E\+DO
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+Jeudi 13 Juin 2019 
+\end{DoxyDate}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_rov_a5dddd3bd156c134848078296087d090c}\label{class_rov_a5dddd3bd156c134848078296087d090c}} 
+\index{Rov@{Rov}!Rov@{Rov}}
+\index{Rov@{Rov}!Rov@{Rov}}
+\paragraph{\texorpdfstring{Rov()}{Rov()}}
+{\footnotesize\ttfamily Rov\+::\+Rov (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Instancie des objets \hyperlink{class_archives}{Archives}, \hyperlink{class_communication_rov}{Communication\+Rov}, \hyperlink{class_mesures}{Mesures}, et \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}. Se connecte à la B\+DD, et connecte les trames reçues à l\textquotesingle{}objet \hyperlink{class_mesures}{Mesures}.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_rov_a659da5fe3636356b006a8e08a8433dd3}{archivage\+Actif}, \hyperlink{class_rov_ad41ed46f169f28da226a979f70c4d8a4}{archives}, \hyperlink{class_rov_a5a9a824cd100947c75d0951eb9e1f90c}{base\+De\+Donnees}, \hyperlink{class_rov_a8e7aaa17ee2134f26d57241d11ab2a99}{communication\+Rov}, \hyperlink{class_rov_a738965ca84678b506b3d6a326c48e9e3}{connecte\+Archivage\+Mesures()}, \hyperlink{class_base_de_donnees_af9ac332082ffd0dd35e412cefabe5e9c}{Base\+De\+Donnees\+::est\+Ouvert()}, \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{Base\+De\+Donnees\+::get\+Instance()}, \hyperlink{class_rov_af37589b38493e4bd99702587db2d28a8}{mesures}, \hyperlink{class_base_de_donnees_a7f6a5510b08017b0d99115a84252f186}{Base\+De\+Donnees\+::ouvrir()}, \hyperlink{class_rov_a490eefb90bf28e83f181d770f0f52446}{recuperer\+Liste\+Noms\+Operateurs()}, et \hyperlink{class_rov_a84dece742f5c4c903ada4f25c869597f}{recuperer\+Liste\+Prenoms\+Operateurs()}.
+
+
+\begin{DoxyCode}
+00024                         : QObject(parent), \hyperlink{class_rov_a8e7aaa17ee2134f26d57241d11ab2a99}{communicationRov}(\textcolor{keyword}{nullptr}), 
+      \hyperlink{class_rov_af37589b38493e4bd99702587db2d28a8}{mesures}(\textcolor{keyword}{nullptr}), \hyperlink{class_rov_ad0461ecece812497ee9b4a962f168c18}{camera}(\textcolor{keyword}{nullptr}), \hyperlink{class_rov_a3d424033e0ff00f480a711358ef4fde6}{listeNomsOperateurs}(0), 
+      \hyperlink{class_rov_a1e059749c13ed4ee9c0ec9168e79a3be}{listePrenomsOperateurs}(0), \hyperlink{class_rov_a659da5fe3636356b006a8e08a8433dd3}{archivageActif}(1)
+00025 \{
+00026     qDebug() << Q\_FUNC\_INFO;
+00027     \hyperlink{class_rov_ad41ed46f169f28da226a979f70c4d8a4}{archives} = \textcolor{keyword}{new} \hyperlink{class_archives}{Archives}(\textcolor{keyword}{this});
+00028     \hyperlink{class_rov_a8e7aaa17ee2134f26d57241d11ab2a99}{communicationRov} = \textcolor{keyword}{new} \hyperlink{class_communication_rov}{CommunicationRov}(\textcolor{keyword}{this});
+00029     \hyperlink{class_rov_af37589b38493e4bd99702587db2d28a8}{mesures} = \textcolor{keyword}{new} \hyperlink{class_mesures}{Mesures}(\textcolor{keyword}{this});
+00030     \hyperlink{class_rov_a5a9a824cd100947c75d0951eb9e1f90c}{baseDeDonnees} = \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{BaseDeDonnees::getInstance}(\textcolor{stringliteral}{"QSQLITE"});
+00031 
+00032     \hyperlink{class_rov_a5a9a824cd100947c75d0951eb9e1f90c}{baseDeDonnees}->\hyperlink{class_base_de_donnees_a7f6a5510b08017b0d99115a84252f186}{ouvrir}(\textcolor{stringliteral}{"rovnet.sqlite"});
+00033     \textcolor{keywordflow}{if}(\hyperlink{class_rov_a5a9a824cd100947c75d0951eb9e1f90c}{baseDeDonnees}->\hyperlink{class_base_de_donnees_af9ac332082ffd0dd35e412cefabe5e9c}{estOuvert}())
+00034         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"ouverture réussie BD"};
+00035     \textcolor{keywordflow}{else}
+00036         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"echec ouverture BD"};
+00037 
+00038     \textcolor{comment}{// Connexions}
+00039     connect(\hyperlink{class_rov_a8e7aaa17ee2134f26d57241d11ab2a99}{communicationRov}, SIGNAL(trameRecue(QString)), 
+      \hyperlink{class_rov_af37589b38493e4bd99702587db2d28a8}{mesures}, SLOT(traiteTrame(QString)));
+00040 
+00041     \hyperlink{class_rov_a738965ca84678b506b3d6a326c48e9e3}{connecteArchivageMesures}(\hyperlink{class_rov_a659da5fe3636356b006a8e08a8433dd3}{archivageActif});
+00042 
+00043     \hyperlink{class_rov_a490eefb90bf28e83f181d770f0f52446}{recupererListeNomsOperateurs}();
+00044     \hyperlink{class_rov_a84dece742f5c4c903ada4f25c869597f}{recupererListePrenomsOperateurs}();
+00045 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_rov_a6e41f712195b9af74fd75b781745d1b5}\label{class_rov_a6e41f712195b9af74fd75b781745d1b5}} 
+\index{Rov@{Rov}!````~Rov@{$\sim$\+Rov}}
+\index{````~Rov@{$\sim$\+Rov}!Rov@{Rov}}
+\paragraph{\texorpdfstring{$\sim$\+Rov()}{~Rov()}}
+{\footnotesize\ttfamily Rov\+::$\sim$\+Rov (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{Base\+De\+Donnees\+::detruire\+Instance()}.
+
+
+\begin{DoxyCode}
+00052 \{
+00053     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}();
+00054     qDebug() << Q\_FUNC\_INFO;
+00055 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_rov_a738965ca84678b506b3d6a326c48e9e3}\label{class_rov_a738965ca84678b506b3d6a326c48e9e3}} 
+\index{Rov@{Rov}!connecte\+Archivage\+Mesures@{connecte\+Archivage\+Mesures}}
+\index{connecte\+Archivage\+Mesures@{connecte\+Archivage\+Mesures}!Rov@{Rov}}
+\paragraph{\texorpdfstring{connecte\+Archivage\+Mesures}{connecteArchivageMesures}}
+{\footnotesize\ttfamily void Rov\+::connecte\+Archivage\+Mesures (\begin{DoxyParamCaption}\item[{bool}]{archivage\+Actif }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Active ou désactive l\textquotesingle{}archivage des mesures dans la B\+DD.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em archivage\+Actif} & bool nouvel état d\textquotesingle{}activation. \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_rov_af37589b38493e4bd99702587db2d28a8}{mesures}, et \hyperlink{class_rov_adab08abfde381c2915695489b34da6b4}{stocke\+Mesures\+B\+D\+D()}.
+
+
+
+Référencé par \hyperlink{class_rov_a5dddd3bd156c134848078296087d090c}{Rov()}, et \hyperlink{class_rov_abbe2eb87a00b651c8259c0c7abca3edd}{set\+Archivage\+Actif()}.
+
+
+\begin{DoxyCode}
+00085 \{
+00086     \textcolor{keywordflow}{if}(\hyperlink{class_rov_a659da5fe3636356b006a8e08a8433dd3}{archivageActif})
+00087         connect(\hyperlink{class_rov_af37589b38493e4bd99702587db2d28a8}{mesures}, SIGNAL(mesuresBDDPrete(\textcolor{keywordtype}{double}, \textcolor{keywordtype}{double})), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_rov_adab08abfde381c2915695489b34da6b4}{stockeMesuresBDD}(\textcolor{keywordtype}{double}, \textcolor{keywordtype}{double})));
+00088     \textcolor{keywordflow}{else}
+00089         disconnect(\hyperlink{class_rov_af37589b38493e4bd99702587db2d28a8}{mesures}, SIGNAL(mesuresBDDPrete(\textcolor{keywordtype}{double}, \textcolor{keywordtype}{double})), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_rov_adab08abfde381c2915695489b34da6b4}{stockeMesuresBDD}(\textcolor{keywordtype}{double}, \textcolor{keywordtype}{double})));
+00090 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_rov_a53f656be57fa1eb7b93e03095a597439}\label{class_rov_a53f656be57fa1eb7b93e03095a597439}} 
+\index{Rov@{Rov}!creer\+Dossier\+Archives@{creer\+Dossier\+Archives}}
+\index{creer\+Dossier\+Archives@{creer\+Dossier\+Archives}!Rov@{Rov}}
+\paragraph{\texorpdfstring{creer\+Dossier\+Archives()}{creerDossierArchives()}}
+{\footnotesize\ttfamily bool Rov\+::creer\+Dossier\+Archives (\begin{DoxyParamCaption}\item[{Q\+String}]{chemin\+Dossier\+Campagne }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_rov_ad41ed46f169f28da226a979f70c4d8a4}{archives}, et \hyperlink{class_archives_a899e95a34c2a6f79b9a25355b5bf9cb6}{Archives\+::set\+Chemin\+Archives()}.
+
+
+
+Référencé par \hyperlink{class_rov_a970f36e93f9dbd22734db571b21ceb04}{creer\+Dossiers\+Nouvelle\+Campagne()}.
+
+
+\begin{DoxyCode}
+00247 \{
+00248     qDebug() << Q\_FUNC\_INFO;
+00249     QDir dossierArchives(cheminDossierCampagne);
+00250     \textcolor{keywordflow}{if}(dossierArchives.mkdir(\textcolor{stringliteral}{"Archives"}))
+00251     \{
+00252         QString cheminDossierArchives = cheminDossierCampagne + \textcolor{stringliteral}{"/Archives/"};
+00253         qDebug() << Q\_FUNC\_INFO << \hyperlink{class_rov_ad41ed46f169f28da226a979f70c4d8a4}{archives} << cheminDossierArchives;
+00254         \hyperlink{class_rov_ad41ed46f169f28da226a979f70c4d8a4}{archives}->\hyperlink{class_archives_a899e95a34c2a6f79b9a25355b5bf9cb6}{setCheminArchives}(cheminDossierArchives);
+00255         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00256     \}
+00257     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00258 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_rov_a970f36e93f9dbd22734db571b21ceb04}\label{class_rov_a970f36e93f9dbd22734db571b21ceb04}} 
+\index{Rov@{Rov}!creer\+Dossiers\+Nouvelle\+Campagne@{creer\+Dossiers\+Nouvelle\+Campagne}}
+\index{creer\+Dossiers\+Nouvelle\+Campagne@{creer\+Dossiers\+Nouvelle\+Campagne}!Rov@{Rov}}
+\paragraph{\texorpdfstring{creer\+Dossiers\+Nouvelle\+Campagne()}{creerDossiersNouvelleCampagne()}}
+{\footnotesize\ttfamily bool Rov\+::creer\+Dossiers\+Nouvelle\+Campagne (\begin{DoxyParamCaption}\item[{Q\+String}]{nom\+Nouvelle\+Campagne }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_rov_a53f656be57fa1eb7b93e03095a597439}{creer\+Dossier\+Archives()}.
+
+
+
+Référencé par \hyperlink{class_rov_ae1306036b067e9ad50a09f9dd607a092}{creer\+Nouvelle\+Campagne()}.
+
+
+\begin{DoxyCode}
+00231 \{
+00232     QDir dossierApplication(QApplication::applicationDirPath());
+00233     \textcolor{keywordflow}{if}(dossierApplication.mkdir(nomNouvelleCampagne))
+00234     \{
+00235         QString cheminDossierCampagne = QApplication::applicationDirPath() + \textcolor{stringliteral}{"/"} + nomNouvelleCampagne;
+00236         qDebug() << Q\_FUNC\_INFO << cheminDossierCampagne;
+00237         \textcolor{keywordflow}{return} \hyperlink{class_rov_a53f656be57fa1eb7b93e03095a597439}{creerDossierArchives}(cheminDossierCampagne);
+00238     \}
+00239     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00240 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_rov_ae1306036b067e9ad50a09f9dd607a092}\label{class_rov_ae1306036b067e9ad50a09f9dd607a092}} 
+\index{Rov@{Rov}!creer\+Nouvelle\+Campagne@{creer\+Nouvelle\+Campagne}}
+\index{creer\+Nouvelle\+Campagne@{creer\+Nouvelle\+Campagne}!Rov@{Rov}}
+\paragraph{\texorpdfstring{creer\+Nouvelle\+Campagne()}{creerNouvelleCampagne()}}
+{\footnotesize\ttfamily bool Rov\+::creer\+Nouvelle\+Campagne (\begin{DoxyParamCaption}\item[{Q\+String}]{nom,  }\item[{Q\+String}]{description,  }\item[{Q\+String}]{id\+Operateur }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nom} & Q\+String \\
+\hline
+{\em description} & Q\+String \\
+\hline
+{\em id\+Operateur} & Q\+String \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+bool 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_rov_ad41ed46f169f28da226a979f70c4d8a4}{archives}, \hyperlink{class_rov_a5a9a824cd100947c75d0951eb9e1f90c}{base\+De\+Donnees}, \hyperlink{class_rov_a8e7aaa17ee2134f26d57241d11ab2a99}{communication\+Rov}, \hyperlink{class_rov_a970f36e93f9dbd22734db571b21ceb04}{creer\+Dossiers\+Nouvelle\+Campagne()}, \hyperlink{class_communication_rov_a513c26b04745fa2ae31b4533d656dfd4}{Communication\+Rov\+::est\+Communication\+Rov\+Disponible()}, \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{Base\+De\+Donnees\+::executer()}, \hyperlink{class_archives_a65dfbaba0123e6530b03bfb70e614c90}{Archives\+::get\+Chemin\+Archives()}, \hyperlink{class_rov_aaaed58cd7ee9edbeab5251cd413a1bae}{id\+Campagne}, \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}, et \hyperlink{class_rov_a9bbaec4a59dae307440bfeefbc56190b}{set\+Id\+Campagne()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a229194814bfb1fc94ab3cc86d6411921}{I\+H\+M\+Rov\+::enregistrer\+Parametres\+Campagne()}.
+
+
+\begin{DoxyCode}
+00178 \{
+00179     \textcolor{keywordflow}{if}(\hyperlink{class_rov_a8e7aaa17ee2134f26d57241d11ab2a99}{communicationRov}->\hyperlink{class_communication_rov_a513c26b04745fa2ae31b4533d656dfd4}{estCommunicationRovDisponible}())
+00180     \{
+00181         \textcolor{keywordflow}{if}(\hyperlink{class_rov_a970f36e93f9dbd22734db571b21ceb04}{creerDossiersNouvelleCampagne}(nom))
+00182         \{
+00183             QString cheminArchives = \hyperlink{class_rov_ad41ed46f169f28da226a979f70c4d8a4}{archives}->\hyperlink{class_archives_a65dfbaba0123e6530b03bfb70e614c90}{getCheminArchives}();
+00184             QString requete = \textcolor{stringliteral}{"INSERT INTO 'campagnes'(nom, description, date, cheminArchives, idOperateur)
+       VALUES ('"} + nom + \textcolor{stringliteral}{"', '"} + description + \textcolor{stringliteral}{"', datetime('now', 'localtime'), '"} + cheminArchives + \textcolor{stringliteral}{"', '"} + 
+      idOperateur + \textcolor{stringliteral}{"')"};
+00185             \textcolor{keywordtype}{bool} retour = \hyperlink{class_rov_a5a9a824cd100947c75d0951eb9e1f90c}{baseDeDonnees}->\hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(requete);
+00186             \textcolor{keywordflow}{if}(!retour)
+00187             \{
+00188                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00189             \}
+00190 
+00191             QString \hyperlink{class_rov_aaaed58cd7ee9edbeab5251cd413a1bae}{idCampagne};
+00192             \textcolor{keywordtype}{bool} requeteRecupIdCampagne = \hyperlink{class_rov_a5a9a824cd100947c75d0951eb9e1f90c}{baseDeDonnees}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(\textcolor{stringliteral}{"SELECT idCampagne
+       FROM campagnes WHERE cheminArchives = '"} + cheminArchives + \textcolor{stringliteral}{"';"}, idCampagne);
+00193             \textcolor{keywordflow}{if}(requeteRecupIdCampagne)
+00194             \{
+00195                 \hyperlink{class_rov_a9bbaec4a59dae307440bfeefbc56190b}{setIdCampagne}(idCampagne);
+00196             \}
+00197             \textcolor{keywordflow}{else}
+00198             \{
+00199                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00200             \}
+00201             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00202         \}
+00203         \textcolor{keywordflow}{else}
+00204             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00205     \}
+00206     \textcolor{keywordflow}{else}
+00207         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00208 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_rov_ac24b94eaac569252bdc0b1919489a761}\label{class_rov_ac24b94eaac569252bdc0b1919489a761}} 
+\index{Rov@{Rov}!get\+Archivage\+Actif@{get\+Archivage\+Actif}}
+\index{get\+Archivage\+Actif@{get\+Archivage\+Actif}!Rov@{Rov}}
+\paragraph{\texorpdfstring{get\+Archivage\+Actif()}{getArchivageActif()}}
+{\footnotesize\ttfamily bool Rov\+::get\+Archivage\+Actif (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Indique si l\textquotesingle{}archivage des mesures dans la B\+DD est activé ou non.
+
+\begin{DoxyReturn}{Renvoie}
+bool archivage\+Actif état d\textquotesingle{}activation de l\textquotesingle{}archivage des mesures. 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_rov_a659da5fe3636356b006a8e08a8433dd3}{archivage\+Actif}.
+
+
+\begin{DoxyCode}
+00075 \{
+00076     \textcolor{keywordflow}{return} this->\hyperlink{class_rov_a659da5fe3636356b006a8e08a8433dd3}{archivageActif};
+00077 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_rov_af0936fd10d04851d53f28575ecd1da3f}\label{class_rov_af0936fd10d04851d53f28575ecd1da3f}} 
+\index{Rov@{Rov}!get\+Archives@{get\+Archives}}
+\index{get\+Archives@{get\+Archives}!Rov@{Rov}}
+\paragraph{\texorpdfstring{get\+Archives()}{getArchives()}}
+{\footnotesize\ttfamily \hyperlink{class_archives}{Archives} $\ast$ Rov\+::get\+Archives (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Renvoie}
+une instance de la classe {\itshape \hyperlink{class_archives}{Archives}} 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_rov_ad41ed46f169f28da226a979f70c4d8a4}{archives}.
+
+
+\begin{DoxyCode}
+00128 \{
+00129     \textcolor{keywordflow}{return} \hyperlink{class_rov_ad41ed46f169f28da226a979f70c4d8a4}{archives};
+00130 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_rov_aae07e8ca2c4b3be6a0a378b6f072c60b}\label{class_rov_aae07e8ca2c4b3be6a0a378b6f072c60b}} 
+\index{Rov@{Rov}!get\+Camera@{get\+Camera}}
+\index{get\+Camera@{get\+Camera}!Rov@{Rov}}
+\paragraph{\texorpdfstring{get\+Camera()}{getCamera()}}
+{\footnotesize\ttfamily \hyperlink{class_camera}{Camera} $\ast$ Rov\+::get\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Accesseur retournant une instance de la classe \hyperlink{class_camera}{Camera}.
+
+\begin{DoxyReturn}{Renvoie}
+une instance de la classe {\itshape \hyperlink{class_camera}{Camera}} 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_rov_ad0461ecece812497ee9b4a962f168c18}{camera}.
+
+
+\begin{DoxyCode}
+00118 \{
+00119     \textcolor{keywordflow}{return} \hyperlink{class_rov_ad0461ecece812497ee9b4a962f168c18}{camera};
+00120 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_rov_ad30543625f584e28bf785a80c59506dc}\label{class_rov_ad30543625f584e28bf785a80c59506dc}} 
+\index{Rov@{Rov}!get\+Communication\+Rov@{get\+Communication\+Rov}}
+\index{get\+Communication\+Rov@{get\+Communication\+Rov}!Rov@{Rov}}
+\paragraph{\texorpdfstring{get\+Communication\+Rov()}{getCommunicationRov()}}
+{\footnotesize\ttfamily \hyperlink{class_communication_rov}{Communication\+Rov} $\ast$ Rov\+::get\+Communication\+Rov (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Accesseur retournant une instance de la classe \hyperlink{class_communication_rov}{Communication\+Rov}.
+
+\begin{DoxyReturn}{Renvoie}
+une instance de la classe {\itshape \hyperlink{class_communication_rov}{Communication\+Rov}} 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_rov_a8e7aaa17ee2134f26d57241d11ab2a99}{communication\+Rov}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_abbfcdc154a6ae7f941d186f6c90a5a2b}{I\+H\+M\+Rov\+::actualise\+Icones\+Etat()}, \hyperlink{class_controle_rov_acc4d5fea26770217df978d43df2ad51e}{Controle\+Rov\+::\+Controle\+Rov()}, \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{I\+H\+M\+Rov\+::creer\+Fenetre\+Parametres()}, et \hyperlink{class_i_h_m_rov_a94d31f4e748f3e4549eab42c8bc7e367}{I\+H\+M\+Rov\+::enregistrer\+Parametres()}.
+
+
+\begin{DoxyCode}
+00098 \{
+00099     \textcolor{keywordflow}{return} this->\hyperlink{class_rov_a8e7aaa17ee2134f26d57241d11ab2a99}{communicationRov};
+00100 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_rov_aaf98d93ef9b164a2e1766494d9577b57}\label{class_rov_aaf98d93ef9b164a2e1766494d9577b57}} 
+\index{Rov@{Rov}!get\+Id\+Campagne@{get\+Id\+Campagne}}
+\index{get\+Id\+Campagne@{get\+Id\+Campagne}!Rov@{Rov}}
+\paragraph{\texorpdfstring{get\+Id\+Campagne()}{getIdCampagne()}}
+{\footnotesize\ttfamily Q\+String Rov\+::get\+Id\+Campagne (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Accesseur retournant l\textquotesingle{}id de la campagne en cours.
+
+\begin{DoxyReturn}{Renvoie}
+un {\itshape Q\+String} correspondant à l\textquotesingle{}id de la campagne en cours. 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_rov_aaaed58cd7ee9edbeab5251cd413a1bae}{id\+Campagne}.
+
+
+\begin{DoxyCode}
+00165 \{
+00166     \textcolor{keywordflow}{return} this->\hyperlink{class_rov_aaaed58cd7ee9edbeab5251cd413a1bae}{idCampagne};
+00167 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_rov_ab585cb1f82344ba0a64a28488910b262}\label{class_rov_ab585cb1f82344ba0a64a28488910b262}} 
+\index{Rov@{Rov}!get\+Liste\+Noms\+Operateurs@{get\+Liste\+Noms\+Operateurs}}
+\index{get\+Liste\+Noms\+Operateurs@{get\+Liste\+Noms\+Operateurs}!Rov@{Rov}}
+\paragraph{\texorpdfstring{get\+Liste\+Noms\+Operateurs()}{getListeNomsOperateurs()}}
+{\footnotesize\ttfamily Q\+Vector$<$ Q\+String $>$ Rov\+::get\+Liste\+Noms\+Operateurs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+un {\itshape Q\+Vector} de {\itshape Q\+String}, la liste des noms des opérateurs 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_rov_a3d424033e0ff00f480a711358ef4fde6}{liste\+Noms\+Operateurs}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a752a8dc2b3b68d536e94ff8bfb62f46f}{I\+H\+M\+Rov\+::remplir\+Combo\+Box\+Liste\+Operateurs()}.
+
+
+\begin{DoxyCode}
+00283 \{
+00284     \textcolor{keywordflow}{return} \hyperlink{class_rov_a3d424033e0ff00f480a711358ef4fde6}{listeNomsOperateurs};
+00285 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_rov_a128cae6dc19025017dea26663adde765}\label{class_rov_a128cae6dc19025017dea26663adde765}} 
+\index{Rov@{Rov}!get\+Liste\+Prenoms\+Operateurs@{get\+Liste\+Prenoms\+Operateurs}}
+\index{get\+Liste\+Prenoms\+Operateurs@{get\+Liste\+Prenoms\+Operateurs}!Rov@{Rov}}
+\paragraph{\texorpdfstring{get\+Liste\+Prenoms\+Operateurs()}{getListePrenomsOperateurs()}}
+{\footnotesize\ttfamily Q\+Vector$<$ Q\+String $>$ Rov\+::get\+Liste\+Prenoms\+Operateurs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+un {\itshape Q\+Vector} de {\itshape Q\+String}, la liste des noms des opérateurs 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_rov_a1e059749c13ed4ee9c0ec9168e79a3be}{liste\+Prenoms\+Operateurs}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a752a8dc2b3b68d536e94ff8bfb62f46f}{I\+H\+M\+Rov\+::remplir\+Combo\+Box\+Liste\+Operateurs()}.
+
+
+\begin{DoxyCode}
+00310 \{
+00311     \textcolor{keywordflow}{return} \hyperlink{class_rov_a1e059749c13ed4ee9c0ec9168e79a3be}{listePrenomsOperateurs};
+00312 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_rov_a0edd5f7db785bd856b8723fe49ca7848}\label{class_rov_a0edd5f7db785bd856b8723fe49ca7848}} 
+\index{Rov@{Rov}!get\+Mesures@{get\+Mesures}}
+\index{get\+Mesures@{get\+Mesures}!Rov@{Rov}}
+\paragraph{\texorpdfstring{get\+Mesures()}{getMesures()}}
+{\footnotesize\ttfamily \hyperlink{class_mesures}{Mesures} $\ast$ Rov\+::get\+Mesures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Accesseur retournant une instance de la classe \hyperlink{class_mesures}{Mesures}.
+
+\begin{DoxyReturn}{Renvoie}
+une instance de la classe {\itshape \hyperlink{class_mesures}{Mesures}} 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_rov_af37589b38493e4bd99702587db2d28a8}{mesures}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{I\+H\+M\+Rov\+::creer\+Fenetre\+Parametres()}, et \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov\+::\+I\+H\+M\+Rov()}.
+
+
+\begin{DoxyCode}
+00108 \{
+00109     \textcolor{keywordflow}{return} \hyperlink{class_rov_af37589b38493e4bd99702587db2d28a8}{mesures};
+00110 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_rov_a490eefb90bf28e83f181d770f0f52446}\label{class_rov_a490eefb90bf28e83f181d770f0f52446}} 
+\index{Rov@{Rov}!recuperer\+Liste\+Noms\+Operateurs@{recuperer\+Liste\+Noms\+Operateurs}}
+\index{recuperer\+Liste\+Noms\+Operateurs@{recuperer\+Liste\+Noms\+Operateurs}!Rov@{Rov}}
+\paragraph{\texorpdfstring{recuperer\+Liste\+Noms\+Operateurs()}{recupererListeNomsOperateurs()}}
+{\footnotesize\ttfamily void Rov\+::recuperer\+Liste\+Noms\+Operateurs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_rov_a5a9a824cd100947c75d0951eb9e1f90c}{base\+De\+Donnees}, \hyperlink{class_rov_a3d424033e0ff00f480a711358ef4fde6}{liste\+Noms\+Operateurs}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_rov_a5dddd3bd156c134848078296087d090c}{Rov()}.
+
+
+\begin{DoxyCode}
+00265 \{
+00266     QString requete = \textcolor{stringliteral}{"SELECT nom FROM operateurs"};
+00267     \textcolor{keywordtype}{bool} reussi = \hyperlink{class_rov_a5a9a824cd100947c75d0951eb9e1f90c}{baseDeDonnees}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, 
+      \hyperlink{class_rov_a3d424033e0ff00f480a711358ef4fde6}{listeNomsOperateurs});
+00268     qDebug() << requete << \hyperlink{class_rov_a3d424033e0ff00f480a711358ef4fde6}{listeNomsOperateurs};
+00269 
+00270     \textcolor{keywordflow}{if}(reussi)
+00271         qDebug() << Q\_FUNC\_INFO << \hyperlink{class_rov_a3d424033e0ff00f480a711358ef4fde6}{listeNomsOperateurs};
+00272 
+00273     \textcolor{keywordflow}{else}
+00274         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"erreur SQL"} << requete;
+00275 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_rov_a84dece742f5c4c903ada4f25c869597f}\label{class_rov_a84dece742f5c4c903ada4f25c869597f}} 
+\index{Rov@{Rov}!recuperer\+Liste\+Prenoms\+Operateurs@{recuperer\+Liste\+Prenoms\+Operateurs}}
+\index{recuperer\+Liste\+Prenoms\+Operateurs@{recuperer\+Liste\+Prenoms\+Operateurs}!Rov@{Rov}}
+\paragraph{\texorpdfstring{recuperer\+Liste\+Prenoms\+Operateurs()}{recupererListePrenomsOperateurs()}}
+{\footnotesize\ttfamily void Rov\+::recuperer\+Liste\+Prenoms\+Operateurs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_rov_a5a9a824cd100947c75d0951eb9e1f90c}{base\+De\+Donnees}, \hyperlink{class_rov_a1e059749c13ed4ee9c0ec9168e79a3be}{liste\+Prenoms\+Operateurs}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_rov_a5dddd3bd156c134848078296087d090c}{Rov()}.
+
+
+\begin{DoxyCode}
+00292 \{
+00293     QString requete = \textcolor{stringliteral}{"SELECT prenom FROM operateurs"};
+00294     \textcolor{keywordtype}{bool} reussi = \hyperlink{class_rov_a5a9a824cd100947c75d0951eb9e1f90c}{baseDeDonnees}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, 
+      \hyperlink{class_rov_a1e059749c13ed4ee9c0ec9168e79a3be}{listePrenomsOperateurs});
+00295     qDebug() << requete << \hyperlink{class_rov_a1e059749c13ed4ee9c0ec9168e79a3be}{listePrenomsOperateurs};
+00296 
+00297     \textcolor{keywordflow}{if}(reussi)
+00298         qDebug() << Q\_FUNC\_INFO << \hyperlink{class_rov_a1e059749c13ed4ee9c0ec9168e79a3be}{listePrenomsOperateurs};
+00299 
+00300     \textcolor{keywordflow}{else}
+00301         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"erreur SQL"} << requete;
+00302 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_rov_abbe2eb87a00b651c8259c0c7abca3edd}\label{class_rov_abbe2eb87a00b651c8259c0c7abca3edd}} 
+\index{Rov@{Rov}!set\+Archivage\+Actif@{set\+Archivage\+Actif}}
+\index{set\+Archivage\+Actif@{set\+Archivage\+Actif}!Rov@{Rov}}
+\paragraph{\texorpdfstring{set\+Archivage\+Actif()}{setArchivageActif()}}
+{\footnotesize\ttfamily void Rov\+::set\+Archivage\+Actif (\begin{DoxyParamCaption}\item[{bool}]{archivage\+Actif }\end{DoxyParamCaption})}
+
+Rend l\textquotesingle{}archivage des mesures actif, ou non.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em archivage\+Actif} & bool vrai si l\textquotesingle{}archivage des mesures est demandé, sinon faux. \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_rov_a659da5fe3636356b006a8e08a8433dd3}{archivage\+Actif}, et \hyperlink{class_rov_a738965ca84678b506b3d6a326c48e9e3}{connecte\+Archivage\+Mesures()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a94d31f4e748f3e4549eab42c8bc7e367}{I\+H\+M\+Rov\+::enregistrer\+Parametres()}.
+
+
+\begin{DoxyCode}
+00063 \{
+00064     qDebug() << Q\_FUNC\_INFO << \hyperlink{class_rov_a659da5fe3636356b006a8e08a8433dd3}{archivageActif};
+00065     this->archivageActif = \hyperlink{class_rov_a659da5fe3636356b006a8e08a8433dd3}{archivageActif};
+00066     \hyperlink{class_rov_a738965ca84678b506b3d6a326c48e9e3}{connecteArchivageMesures}(archivageActif);
+00067 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_rov_acb3ecbb04ace455526206d3c05b712fd}\label{class_rov_acb3ecbb04ace455526206d3c05b712fd}} 
+\index{Rov@{Rov}!set\+Archives@{set\+Archives}}
+\index{set\+Archives@{set\+Archives}!Rov@{Rov}}
+\paragraph{\texorpdfstring{set\+Archives()}{setArchives()}}
+{\footnotesize\ttfamily void Rov\+::set\+Archives (\begin{DoxyParamCaption}\item[{\hyperlink{class_archives}{Archives} $\ast$}]{archives }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_rov_ad41ed46f169f28da226a979f70c4d8a4}{archives}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov\+::\+I\+H\+M\+Rov()}.
+
+
+\begin{DoxyCode}
+00146 \{
+00147     this->archives = \hyperlink{class_rov_ad41ed46f169f28da226a979f70c4d8a4}{archives};
+00148 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_rov_a0eba2119b89406948976ae92781c4629}\label{class_rov_a0eba2119b89406948976ae92781c4629}} 
+\index{Rov@{Rov}!set\+Camera@{set\+Camera}}
+\index{set\+Camera@{set\+Camera}!Rov@{Rov}}
+\paragraph{\texorpdfstring{set\+Camera()}{setCamera()}}
+{\footnotesize\ttfamily void Rov\+::set\+Camera (\begin{DoxyParamCaption}\item[{\hyperlink{class_camera}{Camera} $\ast$}]{camera }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_rov_ad0461ecece812497ee9b4a962f168c18}{camera}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov\+::\+I\+H\+M\+Rov()}.
+
+
+\begin{DoxyCode}
+00137 \{
+00138     this->camera = \hyperlink{class_rov_ad0461ecece812497ee9b4a962f168c18}{camera};
+00139 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_rov_a9bbaec4a59dae307440bfeefbc56190b}\label{class_rov_a9bbaec4a59dae307440bfeefbc56190b}} 
+\index{Rov@{Rov}!set\+Id\+Campagne@{set\+Id\+Campagne}}
+\index{set\+Id\+Campagne@{set\+Id\+Campagne}!Rov@{Rov}}
+\paragraph{\texorpdfstring{set\+Id\+Campagne()}{setIdCampagne()}}
+{\footnotesize\ttfamily void Rov\+::set\+Id\+Campagne (\begin{DoxyParamCaption}\item[{Q\+String}]{id\+Campagne }\end{DoxyParamCaption})}
+
+Accesseur affectant l\textquotesingle{}id de la campagne en cours. 
+
+Références \hyperlink{class_rov_aaaed58cd7ee9edbeab5251cd413a1bae}{id\+Campagne}.
+
+
+
+Référencé par \hyperlink{class_rov_ae1306036b067e9ad50a09f9dd607a092}{creer\+Nouvelle\+Campagne()}.
+
+
+\begin{DoxyCode}
+00155 \{
+00156     this->\hyperlink{class_rov_aaaed58cd7ee9edbeab5251cd413a1bae}{idCampagne} = \hyperlink{class_rov_aaaed58cd7ee9edbeab5251cd413a1bae}{idCampagne};
+00157 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_rov_adab08abfde381c2915695489b34da6b4}\label{class_rov_adab08abfde381c2915695489b34da6b4}} 
+\index{Rov@{Rov}!stocke\+Mesures\+B\+DD@{stocke\+Mesures\+B\+DD}}
+\index{stocke\+Mesures\+B\+DD@{stocke\+Mesures\+B\+DD}!Rov@{Rov}}
+\paragraph{\texorpdfstring{stocke\+Mesures\+B\+DD}{stockeMesuresBDD}}
+{\footnotesize\ttfamily void Rov\+::stocke\+Mesures\+B\+DD (\begin{DoxyParamCaption}\item[{double}]{temperature,  }\item[{double}]{irradiation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Stocke les mesures dans la B\+DD.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em temperature} & double \\
+\hline
+{\em irradiation} & double \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_rov_a5a9a824cd100947c75d0951eb9e1f90c}{base\+De\+Donnees}, \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{Base\+De\+Donnees\+::executer()}, et \hyperlink{class_rov_aaaed58cd7ee9edbeab5251cd413a1bae}{id\+Campagne}.
+
+
+
+Référencé par \hyperlink{class_rov_a738965ca84678b506b3d6a326c48e9e3}{connecte\+Archivage\+Mesures()}.
+
+
+\begin{DoxyCode}
+00217 \{
+00218     QString requete = \textcolor{stringliteral}{"INSERT INTO mesures VALUES(datetime('now', 'localtime'), "} + QString::number(
+      temperature) + \textcolor{stringliteral}{", "} + QString::number(irradiation) + \textcolor{stringliteral}{", "} + \hyperlink{class_rov_aaaed58cd7ee9edbeab5251cd413a1bae}{idCampagne} + \textcolor{stringliteral}{");"};
+00219     \textcolor{keywordtype}{bool} reussi = \hyperlink{class_rov_a5a9a824cd100947c75d0951eb9e1f90c}{baseDeDonnees}->\hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(requete);
+00220     qDebug() << requete;
+00221 
+00222     \textcolor{keywordflow}{if} (!reussi)
+00223         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"ERREUR ! Echec de l'envoi des mesures dans la BDD !"};
+00224 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_rov_a659da5fe3636356b006a8e08a8433dd3}\label{class_rov_a659da5fe3636356b006a8e08a8433dd3}} 
+\index{Rov@{Rov}!archivage\+Actif@{archivage\+Actif}}
+\index{archivage\+Actif@{archivage\+Actif}!Rov@{Rov}}
+\paragraph{\texorpdfstring{archivage\+Actif}{archivageActif}}
+{\footnotesize\ttfamily bool Rov\+::archivage\+Actif\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_rov_ac24b94eaac569252bdc0b1919489a761}{get\+Archivage\+Actif()}, \hyperlink{class_rov_a5dddd3bd156c134848078296087d090c}{Rov()}, et \hyperlink{class_rov_abbe2eb87a00b651c8259c0c7abca3edd}{set\+Archivage\+Actif()}.
+
+\mbox{\Hypertarget{class_rov_ad41ed46f169f28da226a979f70c4d8a4}\label{class_rov_ad41ed46f169f28da226a979f70c4d8a4}} 
+\index{Rov@{Rov}!archives@{archives}}
+\index{archives@{archives}!Rov@{Rov}}
+\paragraph{\texorpdfstring{archives}{archives}}
+{\footnotesize\ttfamily \hyperlink{class_archives}{Archives}$\ast$ Rov\+::archives\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_rov_a53f656be57fa1eb7b93e03095a597439}{creer\+Dossier\+Archives()}, \hyperlink{class_rov_ae1306036b067e9ad50a09f9dd607a092}{creer\+Nouvelle\+Campagne()}, \hyperlink{class_rov_af0936fd10d04851d53f28575ecd1da3f}{get\+Archives()}, \hyperlink{class_rov_a5dddd3bd156c134848078296087d090c}{Rov()}, et \hyperlink{class_rov_acb3ecbb04ace455526206d3c05b712fd}{set\+Archives()}.
+
+\mbox{\Hypertarget{class_rov_a5a9a824cd100947c75d0951eb9e1f90c}\label{class_rov_a5a9a824cd100947c75d0951eb9e1f90c}} 
+\index{Rov@{Rov}!base\+De\+Donnees@{base\+De\+Donnees}}
+\index{base\+De\+Donnees@{base\+De\+Donnees}!Rov@{Rov}}
+\paragraph{\texorpdfstring{base\+De\+Donnees}{baseDeDonnees}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}$\ast$ Rov\+::base\+De\+Donnees\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_rov_ae1306036b067e9ad50a09f9dd607a092}{creer\+Nouvelle\+Campagne()}, \hyperlink{class_rov_a490eefb90bf28e83f181d770f0f52446}{recuperer\+Liste\+Noms\+Operateurs()}, \hyperlink{class_rov_a84dece742f5c4c903ada4f25c869597f}{recuperer\+Liste\+Prenoms\+Operateurs()}, \hyperlink{class_rov_a5dddd3bd156c134848078296087d090c}{Rov()}, et \hyperlink{class_rov_adab08abfde381c2915695489b34da6b4}{stocke\+Mesures\+B\+D\+D()}.
+
+\mbox{\Hypertarget{class_rov_ad0461ecece812497ee9b4a962f168c18}\label{class_rov_ad0461ecece812497ee9b4a962f168c18}} 
+\index{Rov@{Rov}!camera@{camera}}
+\index{camera@{camera}!Rov@{Rov}}
+\paragraph{\texorpdfstring{camera}{camera}}
+{\footnotesize\ttfamily \hyperlink{class_camera}{Camera}$\ast$ Rov\+::camera\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_rov_aae07e8ca2c4b3be6a0a378b6f072c60b}{get\+Camera()}, et \hyperlink{class_rov_a0eba2119b89406948976ae92781c4629}{set\+Camera()}.
+
+\mbox{\Hypertarget{class_rov_a8e7aaa17ee2134f26d57241d11ab2a99}\label{class_rov_a8e7aaa17ee2134f26d57241d11ab2a99}} 
+\index{Rov@{Rov}!communication\+Rov@{communication\+Rov}}
+\index{communication\+Rov@{communication\+Rov}!Rov@{Rov}}
+\paragraph{\texorpdfstring{communication\+Rov}{communicationRov}}
+{\footnotesize\ttfamily \hyperlink{class_communication_rov}{Communication\+Rov}$\ast$ Rov\+::communication\+Rov\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_rov_ae1306036b067e9ad50a09f9dd607a092}{creer\+Nouvelle\+Campagne()}, \hyperlink{class_rov_ad30543625f584e28bf785a80c59506dc}{get\+Communication\+Rov()}, et \hyperlink{class_rov_a5dddd3bd156c134848078296087d090c}{Rov()}.
+
+\mbox{\Hypertarget{class_rov_aaaed58cd7ee9edbeab5251cd413a1bae}\label{class_rov_aaaed58cd7ee9edbeab5251cd413a1bae}} 
+\index{Rov@{Rov}!id\+Campagne@{id\+Campagne}}
+\index{id\+Campagne@{id\+Campagne}!Rov@{Rov}}
+\paragraph{\texorpdfstring{id\+Campagne}{idCampagne}}
+{\footnotesize\ttfamily Q\+String Rov\+::id\+Campagne\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_rov_ae1306036b067e9ad50a09f9dd607a092}{creer\+Nouvelle\+Campagne()}, \hyperlink{class_rov_aaf98d93ef9b164a2e1766494d9577b57}{get\+Id\+Campagne()}, \hyperlink{class_rov_a9bbaec4a59dae307440bfeefbc56190b}{set\+Id\+Campagne()}, et \hyperlink{class_rov_adab08abfde381c2915695489b34da6b4}{stocke\+Mesures\+B\+D\+D()}.
+
+\mbox{\Hypertarget{class_rov_a3d424033e0ff00f480a711358ef4fde6}\label{class_rov_a3d424033e0ff00f480a711358ef4fde6}} 
+\index{Rov@{Rov}!liste\+Noms\+Operateurs@{liste\+Noms\+Operateurs}}
+\index{liste\+Noms\+Operateurs@{liste\+Noms\+Operateurs}!Rov@{Rov}}
+\paragraph{\texorpdfstring{liste\+Noms\+Operateurs}{listeNomsOperateurs}}
+{\footnotesize\ttfamily Q\+Vector$<$Q\+String$>$ Rov\+::liste\+Noms\+Operateurs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_rov_ab585cb1f82344ba0a64a28488910b262}{get\+Liste\+Noms\+Operateurs()}, et \hyperlink{class_rov_a490eefb90bf28e83f181d770f0f52446}{recuperer\+Liste\+Noms\+Operateurs()}.
+
+\mbox{\Hypertarget{class_rov_a1e059749c13ed4ee9c0ec9168e79a3be}\label{class_rov_a1e059749c13ed4ee9c0ec9168e79a3be}} 
+\index{Rov@{Rov}!liste\+Prenoms\+Operateurs@{liste\+Prenoms\+Operateurs}}
+\index{liste\+Prenoms\+Operateurs@{liste\+Prenoms\+Operateurs}!Rov@{Rov}}
+\paragraph{\texorpdfstring{liste\+Prenoms\+Operateurs}{listePrenomsOperateurs}}
+{\footnotesize\ttfamily Q\+Vector$<$Q\+String$>$ Rov\+::liste\+Prenoms\+Operateurs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_rov_a128cae6dc19025017dea26663adde765}{get\+Liste\+Prenoms\+Operateurs()}, et \hyperlink{class_rov_a84dece742f5c4c903ada4f25c869597f}{recuperer\+Liste\+Prenoms\+Operateurs()}.
+
+\mbox{\Hypertarget{class_rov_af37589b38493e4bd99702587db2d28a8}\label{class_rov_af37589b38493e4bd99702587db2d28a8}} 
+\index{Rov@{Rov}!mesures@{mesures}}
+\index{mesures@{mesures}!Rov@{Rov}}
+\paragraph{\texorpdfstring{mesures}{mesures}}
+{\footnotesize\ttfamily \hyperlink{class_mesures}{Mesures}$\ast$ Rov\+::mesures\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_rov_a738965ca84678b506b3d6a326c48e9e3}{connecte\+Archivage\+Mesures()}, \hyperlink{class_rov_a0edd5f7db785bd856b8723fe49ca7848}{get\+Mesures()}, et \hyperlink{class_rov_a5dddd3bd156c134848078296087d090c}{Rov()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{rov_8h}{rov.\+h}\item 
+\hyperlink{rov_8cpp}{rov.\+cpp}\end{DoxyCompactItemize}

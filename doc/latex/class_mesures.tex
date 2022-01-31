@@ -1,0 +1,445 @@
+\hypertarget{class_mesures}{}\subsection{Référence de la classe Mesures}
+\label{class_mesures}\index{Mesures@{Mesures}}
+
+
+Déclaration de la classe \hyperlink{class_mesures}{Mesures}. Gestion des mesures des capteurs (température, irradiation, et distance).  
+
+
+
+
+{\ttfamily \#include $<$mesures.\+h$>$}
+
+
+
+Graphe de collaboration de Mesures\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{class_mesures__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_mesures_a43b121b67418802b3332b195d8541481}{traite\+Trame} (Q\+String trame)
+\begin{DoxyCompactList}\small\item\em Vérifie la validité, et découpe la trame reçue. \end{DoxyCompactList}\item 
+void \hyperlink{class_mesures_a9eb8d49c9f60b3801110a5c3d0c50149}{envoie\+Mesures\+B\+DD} ()
+\begin{DoxyCompactList}\small\item\em Envoie un signal toutes les 30 secondes contenant la température et l\textquotesingle{}irradiation. \end{DoxyCompactList}\item 
+void \hyperlink{class_mesures_ac1d2ea97f648264ebd690fba8f7020cc}{modifie\+Frequence\+Archivage} (int)
+\begin{DoxyCompactList}\small\item\em Modifie l\textquotesingle{}interval du timer correspondant à l\textquotesingle{}archivage des mesures dans la B\+DD. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_mesures_a8a6e4db8850930d8e4e96c98d5aa95b8}{irradiation\+Actualisee} (double)
+\begin{DoxyCompactList}\small\item\em Signal émis lorsqu\textquotesingle{}une nouvelle valeur d\textquotesingle{}irradiation est reçue. \end{DoxyCompactList}\item 
+void \hyperlink{class_mesures_ab13d5e64ff21fd869fe347ec1c5a246f}{temperature\+Actualisee} (double)
+\begin{DoxyCompactList}\small\item\em Signal émis lorsqu\textquotesingle{}une nouvelle valeur de température est reçue. \end{DoxyCompactList}\item 
+void \hyperlink{class_mesures_a6073f147fb08d7c5cc2ce1c9880becbe}{distance\+Actualisee} (double)
+\begin{DoxyCompactList}\small\item\em Signal émis lorsqu\textquotesingle{}une nouvelle valeur de distance est reçue. \end{DoxyCompactList}\item 
+void \hyperlink{class_mesures_a97d8dbd7742519d1f3ce959661d8aede}{mesures\+B\+D\+D\+Prete} (double \hyperlink{class_mesures_a2688d0da4acf9d91ea0befd6ed0bd140}{temperature}, double \hyperlink{class_mesures_a77cde7672dac5e544b7288364ec7c7b5}{irradiation})
+\begin{DoxyCompactList}\small\item\em Signal émis toutes les x secondes visant à stocker les valeurs de température et d\textquotesingle{}irradiation (en argument) dans la B\+DD. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mesures_aa24ed1e055242fab5adab3f8f057c9b1}{Mesures} (Q\+Object $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_mesures}{Mesures}. \end{DoxyCompactList}\item 
+\hyperlink{class_mesures_a4bb192b80fbf2c0f9aea5911ce29c652}{$\sim$\+Mesures} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe \hyperlink{class_mesures}{Mesures}. \end{DoxyCompactList}\item 
+double \hyperlink{class_mesures_a5e5e61c6bbdd2fd891b66ee494183dcd}{get\+Temperature} () const
+\begin{DoxyCompactList}\small\item\em Retourne la température stockée dans l\textquotesingle{}objet. \end{DoxyCompactList}\item 
+double \hyperlink{class_mesures_af260c8f685e3519681b3ca0086d70b31}{get\+Irradiation} () const
+\begin{DoxyCompactList}\small\item\em Retourne le taux d\textquotesingle{}irradiation stocké dans l\textquotesingle{}objet. \end{DoxyCompactList}\item 
+double \hyperlink{class_mesures_aa40d78428855bab861cc9a57582c8d42}{get\+Distance} () const
+\begin{DoxyCompactList}\small\item\em Renvoie le dernier relevé du capteur de proximité. \end{DoxyCompactList}\item 
+int \hyperlink{class_mesures_ae969e38402b8d19fe9b484f368200578}{get\+Frequence\+Archivage} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la fréquence d\textquotesingle{}archivage des données. \end{DoxyCompactList}\item 
+void \hyperlink{class_mesures_a77652c2332a9234bf08b463d1d389aa5}{stocke\+Donnees} (Q\+String type, Q\+String donnee)
+\begin{DoxyCompactList}\small\item\em Stocke la donnee passée en argument. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_mesures_a2688d0da4acf9d91ea0befd6ed0bd140}{temperature}
+\begin{DoxyCompactList}\small\item\em Dernière température relevée. \end{DoxyCompactList}\item 
+double \hyperlink{class_mesures_a77cde7672dac5e544b7288364ec7c7b5}{irradiation}
+\begin{DoxyCompactList}\small\item\em Dernier taux d\textquotesingle{}irradiation relevé. \end{DoxyCompactList}\item 
+double \hyperlink{class_mesures_a276f71168b1dcecf2051631d19aa8eeb}{distance}
+\begin{DoxyCompactList}\small\item\em Dernière mesure du capteur de proximité relevé. \end{DoxyCompactList}\item 
+Q\+Timer $\ast$ \hyperlink{class_mesures_a89af5f279d21cf10f5d6bd58bbc33173}{compteur}
+\begin{DoxyCompactList}\small\item\em Compteur envoyant toutes les x secondes un signal timeout. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+R\+E\+Y\+N\+I\+ER Jacques \& Nicolas B\+O\+F\+F\+R\+E\+DO
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+Jeudi 13 Juin 2019 
+\end{DoxyDate}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_mesures_aa24ed1e055242fab5adab3f8f057c9b1}\label{class_mesures_aa24ed1e055242fab5adab3f8f057c9b1}} 
+\index{Mesures@{Mesures}!Mesures@{Mesures}}
+\index{Mesures@{Mesures}!Mesures@{Mesures}}
+\paragraph{\texorpdfstring{Mesures()}{Mesures()}}
+{\footnotesize\ttfamily Mesures\+::\+Mesures (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Crée un compteur émettant un signal toutes les 30 secondes (modifiable par l\textquotesingle{}utilisateur), permettant l\textquotesingle{}envoi des mesures dans la B\+DD.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & Q\+Object$\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_mesures_a89af5f279d21cf10f5d6bd58bbc33173}{compteur}, et \hyperlink{class_mesures_a9eb8d49c9f60b3801110a5c3d0c50149}{envoie\+Mesures\+B\+D\+D()}.
+
+
+\begin{DoxyCode}
+00023                                 : QObject(parent), \hyperlink{class_mesures_a2688d0da4acf9d91ea0befd6ed0bd140}{temperature}(-999.0), 
+      \hyperlink{class_mesures_a77cde7672dac5e544b7288364ec7c7b5}{irradiation}(-999.0), \hyperlink{class_mesures_a276f71168b1dcecf2051631d19aa8eeb}{distance}(-999.0)
+00024 \{
+00025     \hyperlink{class_mesures_a89af5f279d21cf10f5d6bd58bbc33173}{compteur} = \textcolor{keyword}{new} QTimer(\textcolor{keyword}{this});
+00026     connect(\hyperlink{class_mesures_a89af5f279d21cf10f5d6bd58bbc33173}{compteur}, SIGNAL(timeout()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_mesures_a9eb8d49c9f60b3801110a5c3d0c50149}{envoieMesuresBDD}()));
+00027     \hyperlink{class_mesures_a89af5f279d21cf10f5d6bd58bbc33173}{compteur}->start(30000);
+00028 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_mesures_a4bb192b80fbf2c0f9aea5911ce29c652}\label{class_mesures_a4bb192b80fbf2c0f9aea5911ce29c652}} 
+\index{Mesures@{Mesures}!````~Mesures@{$\sim$\+Mesures}}
+\index{````~Mesures@{$\sim$\+Mesures}!Mesures@{Mesures}}
+\paragraph{\texorpdfstring{$\sim$\+Mesures()}{~Mesures()}}
+{\footnotesize\ttfamily Mesures\+::$\sim$\+Mesures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00035 \{
+00036 
+00037 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_mesures_a6073f147fb08d7c5cc2ce1c9880becbe}\label{class_mesures_a6073f147fb08d7c5cc2ce1c9880becbe}} 
+\index{Mesures@{Mesures}!distance\+Actualisee@{distance\+Actualisee}}
+\index{distance\+Actualisee@{distance\+Actualisee}!Mesures@{Mesures}}
+\paragraph{\texorpdfstring{distance\+Actualisee}{distanceActualisee}}
+{\footnotesize\ttfamily void Mesures\+::distance\+Actualisee (\begin{DoxyParamCaption}\item[{double}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_mesures_a77652c2332a9234bf08b463d1d389aa5}{stocke\+Donnees()}.
+
+\mbox{\Hypertarget{class_mesures_a9eb8d49c9f60b3801110a5c3d0c50149}\label{class_mesures_a9eb8d49c9f60b3801110a5c3d0c50149}} 
+\index{Mesures@{Mesures}!envoie\+Mesures\+B\+DD@{envoie\+Mesures\+B\+DD}}
+\index{envoie\+Mesures\+B\+DD@{envoie\+Mesures\+B\+DD}!Mesures@{Mesures}}
+\paragraph{\texorpdfstring{envoie\+Mesures\+B\+DD}{envoieMesuresBDD}}
+{\footnotesize\ttfamily void Mesures\+::envoie\+Mesures\+B\+DD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Envoie un signal comprenant les mesures de température et d\textquotesingle{}irradiation à destination de la B\+DD, émis toutes les x secondes (fréquence d\textquotesingle{}archivage). 
+
+Références \hyperlink{class_mesures_a77cde7672dac5e544b7288364ec7c7b5}{irradiation}, \hyperlink{class_mesures_a97d8dbd7742519d1f3ce959661d8aede}{mesures\+B\+D\+D\+Prete()}, et \hyperlink{class_mesures_a2688d0da4acf9d91ea0befd6ed0bd140}{temperature}.
+
+
+
+Référencé par \hyperlink{class_mesures_aa24ed1e055242fab5adab3f8f057c9b1}{Mesures()}.
+
+
+\begin{DoxyCode}
+00150 \{
+00151     emit \hyperlink{class_mesures_a97d8dbd7742519d1f3ce959661d8aede}{mesuresBDDPrete}(this->\hyperlink{class_mesures_a2688d0da4acf9d91ea0befd6ed0bd140}{temperature}, this->
+      \hyperlink{class_mesures_a77cde7672dac5e544b7288364ec7c7b5}{irradiation});
+00152 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_mesures_aa40d78428855bab861cc9a57582c8d42}\label{class_mesures_aa40d78428855bab861cc9a57582c8d42}} 
+\index{Mesures@{Mesures}!get\+Distance@{get\+Distance}}
+\index{get\+Distance@{get\+Distance}!Mesures@{Mesures}}
+\paragraph{\texorpdfstring{get\+Distance()}{getDistance()}}
+{\footnotesize\ttfamily Mesures\+::get\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Renvoie}
+distance double Dernier relevé du capteur de proximité. 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_mesures_a276f71168b1dcecf2051631d19aa8eeb}{distance}.
+
+
+\begin{DoxyCode}
+00065 \{
+00066     \textcolor{keywordflow}{return} this->\hyperlink{class_mesures_a276f71168b1dcecf2051631d19aa8eeb}{distance};
+00067 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_mesures_ae969e38402b8d19fe9b484f368200578}\label{class_mesures_ae969e38402b8d19fe9b484f368200578}} 
+\index{Mesures@{Mesures}!get\+Frequence\+Archivage@{get\+Frequence\+Archivage}}
+\index{get\+Frequence\+Archivage@{get\+Frequence\+Archivage}!Mesures@{Mesures}}
+\paragraph{\texorpdfstring{get\+Frequence\+Archivage()}{getFrequenceArchivage()}}
+{\footnotesize\ttfamily int Mesures\+::get\+Frequence\+Archivage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Renvoie la fréquence d\textquotesingle{}archivage des mesures dans la B\+DD en secondes.
+
+\begin{DoxyReturn}{Renvoie}
+frequence int Fréquence d\textquotesingle{}archivage en secondes. 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_mesures_a89af5f279d21cf10f5d6bd58bbc33173}{compteur}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{I\+H\+M\+Rov\+::creer\+Fenetre\+Parametres()}.
+
+
+\begin{DoxyCode}
+00075 \{
+00076     \textcolor{keywordflow}{return} (\hyperlink{class_mesures_a89af5f279d21cf10f5d6bd58bbc33173}{compteur}->interval() / 1000);
+00077 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_mesures_af260c8f685e3519681b3ca0086d70b31}\label{class_mesures_af260c8f685e3519681b3ca0086d70b31}} 
+\index{Mesures@{Mesures}!get\+Irradiation@{get\+Irradiation}}
+\index{get\+Irradiation@{get\+Irradiation}!Mesures@{Mesures}}
+\paragraph{\texorpdfstring{get\+Irradiation()}{getIrradiation()}}
+{\footnotesize\ttfamily Mesures\+::get\+Irradiation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Renvoie le dernier taux d\textquotesingle{}irradiation reçu.
+
+\begin{DoxyReturn}{Renvoie}
+irradiation int Dernier taux d\textquotesingle{}irradiation relevé. 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_mesures_a77cde7672dac5e544b7288364ec7c7b5}{irradiation}.
+
+
+\begin{DoxyCode}
+00055 \{
+00056     \textcolor{keywordflow}{return} this->\hyperlink{class_mesures_a77cde7672dac5e544b7288364ec7c7b5}{irradiation};
+00057 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_mesures_a5e5e61c6bbdd2fd891b66ee494183dcd}\label{class_mesures_a5e5e61c6bbdd2fd891b66ee494183dcd}} 
+\index{Mesures@{Mesures}!get\+Temperature@{get\+Temperature}}
+\index{get\+Temperature@{get\+Temperature}!Mesures@{Mesures}}
+\paragraph{\texorpdfstring{get\+Temperature()}{getTemperature()}}
+{\footnotesize\ttfamily Mesures\+::get\+Temperature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Renvoie la dernière température reçue.
+
+\begin{DoxyReturn}{Renvoie}
+temperature int Dernière température relevée. 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_mesures_a2688d0da4acf9d91ea0befd6ed0bd140}{temperature}.
+
+
+\begin{DoxyCode}
+00045 \{
+00046     \textcolor{keywordflow}{return} this->\hyperlink{class_mesures_a2688d0da4acf9d91ea0befd6ed0bd140}{temperature};
+00047 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_mesures_a8a6e4db8850930d8e4e96c98d5aa95b8}\label{class_mesures_a8a6e4db8850930d8e4e96c98d5aa95b8}} 
+\index{Mesures@{Mesures}!irradiation\+Actualisee@{irradiation\+Actualisee}}
+\index{irradiation\+Actualisee@{irradiation\+Actualisee}!Mesures@{Mesures}}
+\paragraph{\texorpdfstring{irradiation\+Actualisee}{irradiationActualisee}}
+{\footnotesize\ttfamily void Mesures\+::irradiation\+Actualisee (\begin{DoxyParamCaption}\item[{double}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_mesures_a77652c2332a9234bf08b463d1d389aa5}{stocke\+Donnees()}.
+
+\mbox{\Hypertarget{class_mesures_a97d8dbd7742519d1f3ce959661d8aede}\label{class_mesures_a97d8dbd7742519d1f3ce959661d8aede}} 
+\index{Mesures@{Mesures}!mesures\+B\+D\+D\+Prete@{mesures\+B\+D\+D\+Prete}}
+\index{mesures\+B\+D\+D\+Prete@{mesures\+B\+D\+D\+Prete}!Mesures@{Mesures}}
+\paragraph{\texorpdfstring{mesures\+B\+D\+D\+Prete}{mesuresBDDPrete}}
+{\footnotesize\ttfamily void Mesures\+::mesures\+B\+D\+D\+Prete (\begin{DoxyParamCaption}\item[{double}]{temperature,  }\item[{double}]{irradiation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_mesures_a9eb8d49c9f60b3801110a5c3d0c50149}{envoie\+Mesures\+B\+D\+D()}.
+
+\mbox{\Hypertarget{class_mesures_ac1d2ea97f648264ebd690fba8f7020cc}\label{class_mesures_ac1d2ea97f648264ebd690fba8f7020cc}} 
+\index{Mesures@{Mesures}!modifie\+Frequence\+Archivage@{modifie\+Frequence\+Archivage}}
+\index{modifie\+Frequence\+Archivage@{modifie\+Frequence\+Archivage}!Mesures@{Mesures}}
+\paragraph{\texorpdfstring{modifie\+Frequence\+Archivage}{modifieFrequenceArchivage}}
+{\footnotesize\ttfamily void Mesures\+::modifie\+Frequence\+Archivage (\begin{DoxyParamCaption}\item[{int}]{frequence }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Modifie la fréquence.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em frequence} & \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_mesures_a89af5f279d21cf10f5d6bd58bbc33173}{compteur}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{I\+H\+M\+Rov\+::creer\+Fenetre\+Parametres()}.
+
+
+\begin{DoxyCode}
+00160 \{
+00161     \hyperlink{class_mesures_a89af5f279d21cf10f5d6bd58bbc33173}{compteur}->setInterval(frequence * 1000);
+00162 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_mesures_a77652c2332a9234bf08b463d1d389aa5}\label{class_mesures_a77652c2332a9234bf08b463d1d389aa5}} 
+\index{Mesures@{Mesures}!stocke\+Donnees@{stocke\+Donnees}}
+\index{stocke\+Donnees@{stocke\+Donnees}!Mesures@{Mesures}}
+\paragraph{\texorpdfstring{stocke\+Donnees()}{stockeDonnees()}}
+{\footnotesize\ttfamily void Mesures\+::stocke\+Donnees (\begin{DoxyParamCaption}\item[{Q\+String}]{type,  }\item[{Q\+String}]{donnee }\end{DoxyParamCaption})}
+
+Stocke les donnees passés en argument dans l\textquotesingle{}objet mesures.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em type} & Q\+String Type de donnée à stocker. \\
+\hline
+{\em donnee} & Q\+String Valeur de la donnée à stocker. \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_mesures_a276f71168b1dcecf2051631d19aa8eeb}{distance}, \hyperlink{class_mesures_a6073f147fb08d7c5cc2ce1c9880becbe}{distance\+Actualisee()}, \hyperlink{class_mesures_a77cde7672dac5e544b7288364ec7c7b5}{irradiation}, \hyperlink{class_mesures_a8a6e4db8850930d8e4e96c98d5aa95b8}{irradiation\+Actualisee()}, \hyperlink{class_mesures_a2688d0da4acf9d91ea0befd6ed0bd140}{temperature}, et \hyperlink{class_mesures_ab13d5e64ff21fd869fe347ec1c5a246f}{temperature\+Actualisee()}.
+
+
+
+Référencé par \hyperlink{class_mesures_a43b121b67418802b3332b195d8541481}{traite\+Trame()}.
+
+
+\begin{DoxyCode}
+00125 \{
+00126     \textcolor{keywordflow}{if} (type == \textcolor{stringliteral}{"irradiation"})
+00127     \{
+00128         this->\hyperlink{class_mesures_a77cde7672dac5e544b7288364ec7c7b5}{irradiation} = donnee.toDouble();
+00129         emit \hyperlink{class_mesures_a8a6e4db8850930d8e4e96c98d5aa95b8}{irradiationActualisee}(this->\hyperlink{class_mesures_a77cde7672dac5e544b7288364ec7c7b5}{irradiation});
+00130     \}
+00131 
+00132     \textcolor{keywordflow}{if} (type == \textcolor{stringliteral}{"temperature"})
+00133     \{
+00134         this->\hyperlink{class_mesures_a2688d0da4acf9d91ea0befd6ed0bd140}{temperature} = donnee.toDouble();
+00135         emit \hyperlink{class_mesures_ab13d5e64ff21fd869fe347ec1c5a246f}{temperatureActualisee}(this->\hyperlink{class_mesures_a2688d0da4acf9d91ea0befd6ed0bd140}{temperature});
+00136     \}
+00137 
+00138     \textcolor{keywordflow}{if} (type == \textcolor{stringliteral}{"distance"})
+00139     \{
+00140         this->\hyperlink{class_mesures_a276f71168b1dcecf2051631d19aa8eeb}{distance} = donnee.toDouble();
+00141         emit \hyperlink{class_mesures_a6073f147fb08d7c5cc2ce1c9880becbe}{distanceActualisee}(this->\hyperlink{class_mesures_a276f71168b1dcecf2051631d19aa8eeb}{distance});
+00142     \}
+00143 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_mesures_ab13d5e64ff21fd869fe347ec1c5a246f}\label{class_mesures_ab13d5e64ff21fd869fe347ec1c5a246f}} 
+\index{Mesures@{Mesures}!temperature\+Actualisee@{temperature\+Actualisee}}
+\index{temperature\+Actualisee@{temperature\+Actualisee}!Mesures@{Mesures}}
+\paragraph{\texorpdfstring{temperature\+Actualisee}{temperatureActualisee}}
+{\footnotesize\ttfamily void Mesures\+::temperature\+Actualisee (\begin{DoxyParamCaption}\item[{double}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_mesures_a77652c2332a9234bf08b463d1d389aa5}{stocke\+Donnees()}.
+
+\mbox{\Hypertarget{class_mesures_a43b121b67418802b3332b195d8541481}\label{class_mesures_a43b121b67418802b3332b195d8541481}} 
+\index{Mesures@{Mesures}!traite\+Trame@{traite\+Trame}}
+\index{traite\+Trame@{traite\+Trame}!Mesures@{Mesures}}
+\paragraph{\texorpdfstring{traite\+Trame}{traiteTrame}}
+{\footnotesize\ttfamily void Mesures\+::traite\+Trame (\begin{DoxyParamCaption}\item[{Q\+String}]{trame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em trame} & Q\+String Trame reçue. \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_mesures_a77652c2332a9234bf08b463d1d389aa5}{stocke\+Donnees()}.
+
+
+\begin{DoxyCode}
+00085 \{
+00086     \textcolor{keywordtype}{bool} trameValide = \textcolor{keyword}{true};
+00087 
+00088     \textcolor{keywordflow}{if} (trame.startsWith(\textcolor{stringliteral}{"$"}) && trame.endsWith(\textcolor{stringliteral}{"\(\backslash\)n"}))
+00089     \{
+00090         trame.remove(QChar(\textcolor{charliteral}{'$'}));
+00091         trame.remove(QChar(\textcolor{charliteral}{'\(\backslash\)n'}));
+00092 
+00093         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 1; i < trame.length(); i++)     \textcolor{comment}{// Parcours la trame et vérifie si le contenu après le
+       caractère de type est bien un chiffre (filtre les erreurs exemple : "$TX4\(\backslash\)n").}
+00094         \{
+00095             \textcolor{keywordflow}{if}(!trame[i].isDigit() && trame[i] != \textcolor{stringliteral}{"."} && trame[i] != \textcolor{stringliteral}{"-"})
+00096                 trameValide = \textcolor{keyword}{false};
+00097         \}
+00098     \}
+00099     \textcolor{keywordflow}{else}
+00100         trameValide = \textcolor{keyword}{false};
+00101 
+00102     \textcolor{keywordflow}{if}(trameValide)
+00103     \{
+00104         \textcolor{keywordflow}{if}(trame.startsWith(\textcolor{charliteral}{'T'}))
+00105             \hyperlink{class_mesures_a77652c2332a9234bf08b463d1d389aa5}{stockeDonnees}(\textcolor{stringliteral}{"temperature"}, trame.remove(\textcolor{charliteral}{'T'}));
+00106         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(trame.startsWith(\textcolor{charliteral}{'R'}))
+00107             \hyperlink{class_mesures_a77652c2332a9234bf08b463d1d389aa5}{stockeDonnees}(\textcolor{stringliteral}{"irradiation"}, trame.remove(\textcolor{charliteral}{'R'}));
+00108         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(trame.startsWith(\textcolor{charliteral}{'D'}))
+00109             \hyperlink{class_mesures_a77652c2332a9234bf08b463d1d389aa5}{stockeDonnees}(\textcolor{stringliteral}{"distance"}, trame.remove(\textcolor{charliteral}{'D'}));
+00110         \textcolor{keywordflow}{else}
+00111             trameValide = \textcolor{keyword}{false};
+00112     \}
+00113 
+00114     \textcolor{keywordflow}{if}(!trameValide)
+00115         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"ERREUR ! Trame invalide"};
+00116 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_mesures_a89af5f279d21cf10f5d6bd58bbc33173}\label{class_mesures_a89af5f279d21cf10f5d6bd58bbc33173}} 
+\index{Mesures@{Mesures}!compteur@{compteur}}
+\index{compteur@{compteur}!Mesures@{Mesures}}
+\paragraph{\texorpdfstring{compteur}{compteur}}
+{\footnotesize\ttfamily Q\+Timer$\ast$ Mesures\+::compteur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_mesures_ae969e38402b8d19fe9b484f368200578}{get\+Frequence\+Archivage()}, \hyperlink{class_mesures_aa24ed1e055242fab5adab3f8f057c9b1}{Mesures()}, et \hyperlink{class_mesures_ac1d2ea97f648264ebd690fba8f7020cc}{modifie\+Frequence\+Archivage()}.
+
+\mbox{\Hypertarget{class_mesures_a276f71168b1dcecf2051631d19aa8eeb}\label{class_mesures_a276f71168b1dcecf2051631d19aa8eeb}} 
+\index{Mesures@{Mesures}!distance@{distance}}
+\index{distance@{distance}!Mesures@{Mesures}}
+\paragraph{\texorpdfstring{distance}{distance}}
+{\footnotesize\ttfamily double Mesures\+::distance\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_mesures_aa40d78428855bab861cc9a57582c8d42}{get\+Distance()}, et \hyperlink{class_mesures_a77652c2332a9234bf08b463d1d389aa5}{stocke\+Donnees()}.
+
+\mbox{\Hypertarget{class_mesures_a77cde7672dac5e544b7288364ec7c7b5}\label{class_mesures_a77cde7672dac5e544b7288364ec7c7b5}} 
+\index{Mesures@{Mesures}!irradiation@{irradiation}}
+\index{irradiation@{irradiation}!Mesures@{Mesures}}
+\paragraph{\texorpdfstring{irradiation}{irradiation}}
+{\footnotesize\ttfamily double Mesures\+::irradiation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_mesures_a9eb8d49c9f60b3801110a5c3d0c50149}{envoie\+Mesures\+B\+D\+D()}, \hyperlink{class_mesures_af260c8f685e3519681b3ca0086d70b31}{get\+Irradiation()}, et \hyperlink{class_mesures_a77652c2332a9234bf08b463d1d389aa5}{stocke\+Donnees()}.
+
+\mbox{\Hypertarget{class_mesures_a2688d0da4acf9d91ea0befd6ed0bd140}\label{class_mesures_a2688d0da4acf9d91ea0befd6ed0bd140}} 
+\index{Mesures@{Mesures}!temperature@{temperature}}
+\index{temperature@{temperature}!Mesures@{Mesures}}
+\paragraph{\texorpdfstring{temperature}{temperature}}
+{\footnotesize\ttfamily double Mesures\+::temperature\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_mesures_a9eb8d49c9f60b3801110a5c3d0c50149}{envoie\+Mesures\+B\+D\+D()}, \hyperlink{class_mesures_a5e5e61c6bbdd2fd891b66ee494183dcd}{get\+Temperature()}, et \hyperlink{class_mesures_a77652c2332a9234bf08b463d1d389aa5}{stocke\+Donnees()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mesures_8h}{mesures.\+h}\item 
+\hyperlink{mesures_8cpp}{mesures.\+cpp}\end{DoxyCompactItemize}

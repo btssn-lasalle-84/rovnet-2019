@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/logos">
+        <file>Images/logo_radioactive.png</file>
+        <file>Images/logo_temperature.png</file>
+        <file>Images/off.png</file>
+        <file>Images/on.png</file>
+        <file>Images/down.png</file>
+        <file>Images/left.png</file>
+        <file>Images/right.png</file>
+        <file>Images/up.png</file>
+        <file>Images/warning.png</file>
+        <file>Images/logo_distance.png</file>
+        <file>Images/distance_danger.png</file>
+        <file>Images/distance_defaut.png</file>
+        <file>Images/camera_deconnectee.png</file>
+        <file>Images/distance_proche.png</file>
+        <file>Images/distance_loin.png</file>
+    </qresource>
+</RCC>

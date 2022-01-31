@@ -1,0 +1,192 @@
+\hypertarget{ihmrov_8h_source}{}\subsection{ihmrov.\+h}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef IHMROV\_H}
+00002 \textcolor{preprocessor}{#define IHMROV\_H}
+00003 
+00017 \textcolor{preprocessor}{#include "\hyperlink{camera_8h}{camera.h}"}
+00018 \textcolor{preprocessor}{#include "\hyperlink{controlerov_8h}{controlerov.h}"}
+00019 \textcolor{preprocessor}{#include "\hyperlink{rov_8h}{rov.h}"}
+00020 
+00021 \textcolor{preprocessor}{#include <QtWidgets>}
+00022 \textcolor{preprocessor}{#include <QComboBox>}
+00023 \textcolor{preprocessor}{#include <QDialog>}
+00024 \textcolor{preprocessor}{#include <QTimer>}
+00025 \textcolor{preprocessor}{#include <QApplication>}
+00026 \textcolor{preprocessor}{#include <QListView>}
+00027 \textcolor{preprocessor}{#include <QFileSystemModel>}
+00028 \textcolor{preprocessor}{#include <QStackedWidget>}
+00029 \textcolor{preprocessor}{#include <QDebug>}
+00030 \textcolor{preprocessor}{#include <QMenuBar>}
+00031 \textcolor{preprocessor}{#include <QMenu>}
+00032 \textcolor{preprocessor}{#include <qwt\_thermo.h>}
+00033 
+00034 \textcolor{preprocessor}{#include <QMainWindow>}
+00035 
+\Hypertarget{ihmrov_8h_source_l00036}\hyperlink{ihmrov_8h_ab599af93fd63f0c5df05b03aa7448eb9}{00036} \textcolor{preprocessor}{#define APPLICATION\_TITRE           "Projet Rov'net - BTS SN IR 2019 (E6.2)"}
+\Hypertarget{ihmrov_8h_source_l00037}\hyperlink{ihmrov_8h_afbc72a1675bd9c5173820a3b874f1fa6}{00037} \textcolor{preprocessor}{#define APPLICATION\_INFORMATIONS    "Version : 1.0 \(\backslash\)nJacques Reynier & Boffredo Nicolas"}
+\Hypertarget{ihmrov_8h_source_l00038}\hyperlink{ihmrov_8h_ad0750d12e2f5f404ec458d4066a53fa4}{00038} \textcolor{preprocessor}{#define PERIODE                     1000}
+\Hypertarget{ihmrov_8h_source_l00039}\hyperlink{ihmrov_8h_a811ff9a6b410f748f13757277a45d1cd}{00039} \textcolor{preprocessor}{#define WIDGET\_CAMERA\_INDISPONIBLE  0}
+\Hypertarget{ihmrov_8h_source_l00040}\hyperlink{ihmrov_8h_a01e28fb5361c4789cfefd3682ad1c25b}{00040} \textcolor{preprocessor}{#define WIDGET\_CAMERA\_DISPONIBLE    1}
+\Hypertarget{ihmrov_8h_source_l00041}\hyperlink{ihmrov_8h_aa986e54d0a0e08e8e32fc991c2186c09}{00041} \textcolor{preprocessor}{#define DISTANCE\_LOIN               40}
+\Hypertarget{ihmrov_8h_source_l00042}\hyperlink{ihmrov_8h_a90b48491a3e4dbe15f8255efe530e41a}{00042} \textcolor{preprocessor}{#define DISTANCE\_PROCHE             25}
+00043 
+00044 \textcolor{keyword}{class }\hyperlink{class_base_de_donnees}{BaseDeDonnees};
+00045 \textcolor{keyword}{class }QAction;
+00046 \textcolor{keyword}{class }QActionGroup;
+00047 \textcolor{keyword}{class }QMenu;
+00048 
+\Hypertarget{ihmrov_8h_source_l00062}\hyperlink{class_i_h_m_rov}{00062} \textcolor{keyword}{class }\hyperlink{class_i_h_m_rov}{IHMRov} : \textcolor{keyword}{public} QDialog
+00063 \{
+00064     Q\_OBJECT
+00065 
+00066 \textcolor{keyword}{private}:
+00067     \textcolor{comment}{// objets principaux}
+\Hypertarget{ihmrov_8h_source_l00068}\hyperlink{class_i_h_m_rov_a0eda0e4726269508d4563d98064dca9d}{00068}     \hyperlink{class_camera}{Camera} *\hyperlink{class_i_h_m_rov_a0eda0e4726269508d4563d98064dca9d}{camera}; 
+\Hypertarget{ihmrov_8h_source_l00069}\hyperlink{class_i_h_m_rov_a405b0c05970829fbf297ee0d26af9bca}{00069}     \hyperlink{class_controle_rov}{ControleRov} *\hyperlink{class_i_h_m_rov_a405b0c05970829fbf297ee0d26af9bca}{controleRov}; 
+\Hypertarget{ihmrov_8h_source_l00070}\hyperlink{class_i_h_m_rov_a1e64353d7244219599c46450bb84e1df}{00070}     \hyperlink{class_archives}{Archives} *\hyperlink{class_i_h_m_rov_a1e64353d7244219599c46450bb84e1df}{archives}; 
+\Hypertarget{ihmrov_8h_source_l00071}\hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{00071}     \hyperlink{class_rov}{Rov} *\hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}; 
+\Hypertarget{ihmrov_8h_source_l00072}\hyperlink{class_i_h_m_rov_ac8733c564d7beea8b669e62544a006a5}{00072}     QTimer *\hyperlink{class_i_h_m_rov_ac8733c564d7beea8b669e62544a006a5}{chronometre}; 
+00073 
+00074     \textcolor{comment}{// attributs principaux}
+\Hypertarget{ihmrov_8h_source_l00075}\hyperlink{class_i_h_m_rov_a110af5c174e9fbba12bffbe0301ed690}{00075}     \textcolor{keywordtype}{int} \hyperlink{class_i_h_m_rov_a110af5c174e9fbba12bffbe0301ed690}{idOperateur}; 
+\Hypertarget{ihmrov_8h_source_l00076}\hyperlink{class_i_h_m_rov_a72623927157b53a89266026514122030}{00076}     QString \hyperlink{class_i_h_m_rov_a72623927157b53a89266026514122030}{nomNouvelleCampagne}; 
+\Hypertarget{ihmrov_8h_source_l00077}\hyperlink{class_i_h_m_rov_a38ad5c20c2347825c237e9b85bb5c7e6}{00077}     \textcolor{keywordtype}{long} \hyperlink{class_i_h_m_rov_a38ad5c20c2347825c237e9b85bb5c7e6}{valeurChronometre}; 
+00078 
+00079     \textcolor{comment}{// widgets}
+\Hypertarget{ihmrov_8h_source_l00080}\hyperlink{class_i_h_m_rov_a14aa781bc1a446ba6b3ecdea029caa91}{00080}     QLabel *\hyperlink{class_i_h_m_rov_a14aa781bc1a446ba6b3ecdea029caa91}{labelCampagneEnCours};
+\Hypertarget{ihmrov_8h_source_l00081}\hyperlink{class_i_h_m_rov_a01cfcfe3e5744cd977bb0416d4e3debe}{00081}     QLabel *\hyperlink{class_i_h_m_rov_a01cfcfe3e5744cd977bb0416d4e3debe}{labelCamera};
+\Hypertarget{ihmrov_8h_source_l00082}\hyperlink{class_i_h_m_rov_a2ec8f0e6175a73377e4b7e96b4f29b95}{00082}     QLabel *\hyperlink{class_i_h_m_rov_a2ec8f0e6175a73377e4b7e96b4f29b95}{labelEtatCamera};
+\Hypertarget{ihmrov_8h_source_l00083}\hyperlink{class_i_h_m_rov_a93259ab27f1eeeacbfe3048a58f475b1}{00083}     QLabel *\hyperlink{class_i_h_m_rov_a93259ab27f1eeeacbfe3048a58f475b1}{labelManette};
+\Hypertarget{ihmrov_8h_source_l00084}\hyperlink{class_i_h_m_rov_ad62586ec4cef61ef851626515fd0f72a}{00084}     QLabel *\hyperlink{class_i_h_m_rov_ad62586ec4cef61ef851626515fd0f72a}{labelEtatManette};
+\Hypertarget{ihmrov_8h_source_l00085}\hyperlink{class_i_h_m_rov_ac52c67da33e4d4c40b4c485c09452142}{00085}     QLabel *\hyperlink{class_i_h_m_rov_ac52c67da33e4d4c40b4c485c09452142}{labelConnexionRov};
+\Hypertarget{ihmrov_8h_source_l00086}\hyperlink{class_i_h_m_rov_a83a10634509cf2d32a0bcee159eecbc3}{00086}     QLabel *\hyperlink{class_i_h_m_rov_a83a10634509cf2d32a0bcee159eecbc3}{labelEtatConnexionRov};
+\Hypertarget{ihmrov_8h_source_l00087}\hyperlink{class_i_h_m_rov_a32e5cb80ecae7bad6914c690ebd93995}{00087}     QLabel *\hyperlink{class_i_h_m_rov_a32e5cb80ecae7bad6914c690ebd93995}{labelChronometre};
+\Hypertarget{ihmrov_8h_source_l00088}\hyperlink{class_i_h_m_rov_aebce213bf418897dc8a775cfc180ff59}{00088}     QLabel *\hyperlink{class_i_h_m_rov_aebce213bf418897dc8a775cfc180ff59}{labelCameras};
+\Hypertarget{ihmrov_8h_source_l00089}\hyperlink{class_i_h_m_rov_ac3b86335f9903c2a71eafe941d5c302b}{00089}     QLabel *\hyperlink{class_i_h_m_rov_ac3b86335f9903c2a71eafe941d5c302b}{labelCameraDeconnectee};
+\Hypertarget{ihmrov_8h_source_l00090}\hyperlink{class_i_h_m_rov_a238e50788d62ae2c34b4ae6c8082d596}{00090}     QStackedWidget *\hyperlink{class_i_h_m_rov_a238e50788d62ae2c34b4ae6c8082d596}{widgetEmpilement};
+00091 
+00092     \textcolor{comment}{// widgets info radiation}
+\Hypertarget{ihmrov_8h_source_l00093}\hyperlink{class_i_h_m_rov_a29246e2035e7b3915a59614eb4802548}{00093}     QLabel *\hyperlink{class_i_h_m_rov_a29246e2035e7b3915a59614eb4802548}{labelIconeRadiation};
+\Hypertarget{ihmrov_8h_source_l00094}\hyperlink{class_i_h_m_rov_aaa9588a64c4af2f9fb08c62519a05c5a}{00094}     QLabel *\hyperlink{class_i_h_m_rov_aaa9588a64c4af2f9fb08c62519a05c5a}{labelMesureRadiation};
+\Hypertarget{ihmrov_8h_source_l00095}\hyperlink{class_i_h_m_rov_a06f0850e46f735c3418360280f6c8336}{00095}     QwtThermo *\hyperlink{class_i_h_m_rov_a06f0850e46f735c3418360280f6c8336}{barRadiation};
+00096 
+00097     \textcolor{comment}{// widgets info temperature}
+\Hypertarget{ihmrov_8h_source_l00098}\hyperlink{class_i_h_m_rov_a0404f03611d3942e7459ee431f05224c}{00098}     QLabel *\hyperlink{class_i_h_m_rov_a0404f03611d3942e7459ee431f05224c}{labelIconeTemperature};
+\Hypertarget{ihmrov_8h_source_l00099}\hyperlink{class_i_h_m_rov_ade64349f20dac7adccee4d4fbc04e6e8}{00099}     QLabel *\hyperlink{class_i_h_m_rov_ade64349f20dac7adccee4d4fbc04e6e8}{labelMesureTemperature};
+\Hypertarget{ihmrov_8h_source_l00100}\hyperlink{class_i_h_m_rov_aa89397963e5889e2f911bed5112772cb}{00100}     QwtThermo *\hyperlink{class_i_h_m_rov_aa89397963e5889e2f911bed5112772cb}{barTemperature};
+00101 
+00102     \textcolor{comment}{// widgets info distance}
+\Hypertarget{ihmrov_8h_source_l00103}\hyperlink{class_i_h_m_rov_ae8e7eef50b55104e1490191e3bdcb8d9}{00103}     QLabel *\hyperlink{class_i_h_m_rov_ae8e7eef50b55104e1490191e3bdcb8d9}{labelIconeDistance};
+\Hypertarget{ihmrov_8h_source_l00104}\hyperlink{class_i_h_m_rov_a39ff04b1880aa20941716cf7a6e1b8d8}{00104}     QLabel *\hyperlink{class_i_h_m_rov_a39ff04b1880aa20941716cf7a6e1b8d8}{labelMesureDistance};
+\Hypertarget{ihmrov_8h_source_l00105}\hyperlink{class_i_h_m_rov_a14e8fc8b6a1f95e974b550fd54088581}{00105}     QLabel *\hyperlink{class_i_h_m_rov_a14e8fc8b6a1f95e974b550fd54088581}{labelIndicationDistance};
+00106 
+00107     \textcolor{comment}{// widgets boutons}
+\Hypertarget{ihmrov_8h_source_l00108}\hyperlink{class_i_h_m_rov_a9b9e5631b8d9b6a9801a6faac8cba0f0}{00108}     QComboBox *\hyperlink{class_i_h_m_rov_a9b9e5631b8d9b6a9801a6faac8cba0f0}{listeCamerasDispo};
+\Hypertarget{ihmrov_8h_source_l00109}\hyperlink{class_i_h_m_rov_a75b93974e71e86a6a14ea1bc47fa7bd8}{00109}     QPushButton *\hyperlink{class_i_h_m_rov_a75b93974e71e86a6a14ea1bc47fa7bd8}{boutonQuitter};
+\Hypertarget{ihmrov_8h_source_l00110}\hyperlink{class_i_h_m_rov_a1a0c3460e0b9e9c4a1adc54f7f229307}{00110}     QPushButton *\hyperlink{class_i_h_m_rov_a1a0c3460e0b9e9c4a1adc54f7f229307}{boutonArchives};
+\Hypertarget{ihmrov_8h_source_l00111}\hyperlink{class_i_h_m_rov_a149c634582225cff29b6c8555eb7ba85}{00111}     QPushButton *\hyperlink{class_i_h_m_rov_a149c634582225cff29b6c8555eb7ba85}{boutonCapture};
+00112 
+00113     \textcolor{comment}{// menu}
+\Hypertarget{ihmrov_8h_source_l00114}\hyperlink{class_i_h_m_rov_a169e28bc630468d13c05de321f66ca3c}{00114}     QMenuBar *\hyperlink{class_i_h_m_rov_a169e28bc630468d13c05de321f66ca3c}{barreMenu};
+\Hypertarget{ihmrov_8h_source_l00115}\hyperlink{class_i_h_m_rov_ad110a9a5cfabc48491ee602075e28066}{00115}     QMenu *\hyperlink{class_i_h_m_rov_ad110a9a5cfabc48491ee602075e28066}{menuFichier};
+\Hypertarget{ihmrov_8h_source_l00116}\hyperlink{class_i_h_m_rov_a7de335b17ef7b92fdb203cd385ba874f}{00116}     QMenu *\hyperlink{class_i_h_m_rov_a7de335b17ef7b92fdb203cd385ba874f}{menuAide};
+\Hypertarget{ihmrov_8h_source_l00117}\hyperlink{class_i_h_m_rov_aab4af4ee5ffb959869ee5f181fe4204e}{00117}     QMenu *\hyperlink{class_i_h_m_rov_aab4af4ee5ffb959869ee5f181fe4204e}{menuOutils};
+\Hypertarget{ihmrov_8h_source_l00118}\hyperlink{class_i_h_m_rov_a1ea738e5224f6fa4fc61ac064b5d9a6e}{00118}     QAction *\hyperlink{class_i_h_m_rov_a1ea738e5224f6fa4fc61ac064b5d9a6e}{actionNouvelleCampagne};
+\Hypertarget{ihmrov_8h_source_l00119}\hyperlink{class_i_h_m_rov_aa1864bc274cc5662b212a3530255e4ad}{00119}     QAction *\hyperlink{class_i_h_m_rov_aa1864bc274cc5662b212a3530255e4ad}{actionParametre};
+\Hypertarget{ihmrov_8h_source_l00120}\hyperlink{class_i_h_m_rov_abf3ebd717e5d59355dd271917962083f}{00120}     QAction *\hyperlink{class_i_h_m_rov_abf3ebd717e5d59355dd271917962083f}{actionDebug};
+\Hypertarget{ihmrov_8h_source_l00121}\hyperlink{class_i_h_m_rov_aecd3c0b54390e60f6e1ba14787c68828}{00121}     QAction *\hyperlink{class_i_h_m_rov_aecd3c0b54390e60f6e1ba14787c68828}{actionAide};
+00122 
+00123     \textcolor{comment}{// fenetre - debug}
+\Hypertarget{ihmrov_8h_source_l00124}\hyperlink{class_i_h_m_rov_a393d23f9256a9db063dfef11d95cdc06}{00124}     QDialog *\hyperlink{class_i_h_m_rov_a393d23f9256a9db063dfef11d95cdc06}{fenetreDebug};
+00125 
+\Hypertarget{ihmrov_8h_source_l00126}\hyperlink{class_i_h_m_rov_a667455d332d2abf2e42b897e6cc632f8}{00126}     QLabel *\hyperlink{class_i_h_m_rov_a667455d332d2abf2e42b897e6cc632f8}{labelDebug};
+\Hypertarget{ihmrov_8h_source_l00127}\hyperlink{class_i_h_m_rov_ae2a7bec24a52ffd9e53baf1185ab6cd7}{00127}     QPlainTextEdit *\hyperlink{class_i_h_m_rov_ae2a7bec24a52ffd9e53baf1185ab6cd7}{plainTextEditDebug};
+00128 
+\Hypertarget{ihmrov_8h_source_l00129}\hyperlink{class_i_h_m_rov_a7a441ed53b0066edaf1f0acbea24e777}{00129}     QPushButton *\hyperlink{class_i_h_m_rov_a7a441ed53b0066edaf1f0acbea24e777}{boutonEnvoyees};
+\Hypertarget{ihmrov_8h_source_l00130}\hyperlink{class_i_h_m_rov_ae56bf1c744f0fc393ef517e0e66b0d12}{00130}     QPushButton *\hyperlink{class_i_h_m_rov_ae56bf1c744f0fc393ef517e0e66b0d12}{boutonRecues};
+\Hypertarget{ihmrov_8h_source_l00131}\hyperlink{class_i_h_m_rov_a5dca475dd63a04c96386855a84c5effb}{00131}     QPushButton *\hyperlink{class_i_h_m_rov_a5dca475dd63a04c96386855a84c5effb}{boutonSQL};
+\Hypertarget{ihmrov_8h_source_l00132}\hyperlink{class_i_h_m_rov_a82f0ceba3dadd7a3d3251c236bf212a4}{00132}     QPushButton *\hyperlink{class_i_h_m_rov_a82f0ceba3dadd7a3d3251c236bf212a4}{boutonEtats};
+00133 
+00134     \textcolor{comment}{// fenetre - parametres}
+\Hypertarget{ihmrov_8h_source_l00135}\hyperlink{class_i_h_m_rov_a277956dfb79e5345e5ae0117fe41ddf2}{00135}     QDialog *\hyperlink{class_i_h_m_rov_a277956dfb79e5345e5ae0117fe41ddf2}{fenetreParametres};
+00136 
+00137     \textcolor{comment}{// Parametres}
+\Hypertarget{ihmrov_8h_source_l00138}\hyperlink{class_i_h_m_rov_a58e157352986f690bca4b79b9b05ee1d}{00138}     QLabel *\hyperlink{class_i_h_m_rov_a58e157352986f690bca4b79b9b05ee1d}{labelArchivageMesures};
+\Hypertarget{ihmrov_8h_source_l00139}\hyperlink{class_i_h_m_rov_a85be76b5fee7281642db582a79a53511}{00139}     QCheckBox *\hyperlink{class_i_h_m_rov_a85be76b5fee7281642db582a79a53511}{checkboxArchivage};
+00140 
+\Hypertarget{ihmrov_8h_source_l00141}\hyperlink{class_i_h_m_rov_a42fb93c9764bfc2fe81ba65fc02d8de2}{00141}     QLabel *\hyperlink{class_i_h_m_rov_a42fb93c9764bfc2fe81ba65fc02d8de2}{labelIntervalArchivage};
+\Hypertarget{ihmrov_8h_source_l00142}\hyperlink{class_i_h_m_rov_a8c55c93ee14ee51335e72af07b521312}{00142}     QSlider *\hyperlink{class_i_h_m_rov_a8c55c93ee14ee51335e72af07b521312}{sliderIntervalArchivage};
+\Hypertarget{ihmrov_8h_source_l00143}\hyperlink{class_i_h_m_rov_abc906e8e992ecdf5eb1dae5dc622b768}{00143}     QSpinBox *\hyperlink{class_i_h_m_rov_abc906e8e992ecdf5eb1dae5dc622b768}{spinBoxIntervalArchivage};
+00144 
+\Hypertarget{ihmrov_8h_source_l00145}\hyperlink{class_i_h_m_rov_ac6f93c34da2a4e24f743e61fd5d62405}{00145}     QLabel *\hyperlink{class_i_h_m_rov_ac6f93c34da2a4e24f743e61fd5d62405}{labelAppareils};
+\Hypertarget{ihmrov_8h_source_l00146}\hyperlink{class_i_h_m_rov_a12b970f1d2a170f14a01a684787904a5}{00146}     QComboBox *\hyperlink{class_i_h_m_rov_a12b970f1d2a170f14a01a684787904a5}{comboboxAppareils};
+00147 
+\Hypertarget{ihmrov_8h_source_l00148}\hyperlink{class_i_h_m_rov_a6e9a97a5cd38bfd92e6114c4299be7ee}{00148}     QLabel *\hyperlink{class_i_h_m_rov_a6e9a97a5cd38bfd92e6114c4299be7ee}{labelBaudRate};
+\Hypertarget{ihmrov_8h_source_l00149}\hyperlink{class_i_h_m_rov_a542c0cf87de612cd529b0753b60e4f95}{00149}     QComboBox *\hyperlink{class_i_h_m_rov_a542c0cf87de612cd529b0753b60e4f95}{comboboxBaudRate};
+00150 
+00151     \textcolor{comment}{// fenetre creerNouvelleCampagne}
+\Hypertarget{ihmrov_8h_source_l00152}\hyperlink{class_i_h_m_rov_a13c12a93de7fc77c32f0108ae73cec06}{00152}     QDialog *\hyperlink{class_i_h_m_rov_a13c12a93de7fc77c32f0108ae73cec06}{fenetreNouvelleCampagne};
+\Hypertarget{ihmrov_8h_source_l00153}\hyperlink{class_i_h_m_rov_a95cd05040c8adc3c0513050661d532db}{00153}     QDir *\hyperlink{class_i_h_m_rov_a95cd05040c8adc3c0513050661d532db}{dossierNouvelleCampagne};
+00154 
+00155     \textcolor{comment}{// boutons}
+\Hypertarget{ihmrov_8h_source_l00156}\hyperlink{class_i_h_m_rov_a4294b6c808089083906fb0815d1c9c27}{00156}     QPushButton *\hyperlink{class_i_h_m_rov_a4294b6c808089083906fb0815d1c9c27}{boutonValider};
+\Hypertarget{ihmrov_8h_source_l00157}\hyperlink{class_i_h_m_rov_a4a6fec1b4a86c93c1d0d62d66804db5c}{00157}     QPushButton *\hyperlink{class_i_h_m_rov_a4a6fec1b4a86c93c1d0d62d66804db5c}{boutonAnnuler};
+00158 
+00159     \textcolor{comment}{// campagne}
+\Hypertarget{ihmrov_8h_source_l00160}\hyperlink{class_i_h_m_rov_a3ae7bec5b8f85f779ab58ba60556b37f}{00160}     QLabel *\hyperlink{class_i_h_m_rov_a3ae7bec5b8f85f779ab58ba60556b37f}{labelCampagne};
+\Hypertarget{ihmrov_8h_source_l00161}\hyperlink{class_i_h_m_rov_a723334735d6a20ea43f79567892cfd25}{00161}     QLabel *\hyperlink{class_i_h_m_rov_a723334735d6a20ea43f79567892cfd25}{labelNomCampagne};
+\Hypertarget{ihmrov_8h_source_l00162}\hyperlink{class_i_h_m_rov_a3b3dac7166ab414832dea0b5ad1a570d}{00162}     QLineEdit *\hyperlink{class_i_h_m_rov_a3b3dac7166ab414832dea0b5ad1a570d}{lineEditNomCampagne};
+\Hypertarget{ihmrov_8h_source_l00163}\hyperlink{class_i_h_m_rov_addac593dfa0ea112cf4cc1b3837ca5e0}{00163}     QLabel *\hyperlink{class_i_h_m_rov_addac593dfa0ea112cf4cc1b3837ca5e0}{labelDescriptionCampagne};
+\Hypertarget{ihmrov_8h_source_l00164}\hyperlink{class_i_h_m_rov_aedf9fd0d893326f970aa1b73dbe06e85}{00164}     QLineEdit *\hyperlink{class_i_h_m_rov_aedf9fd0d893326f970aa1b73dbe06e85}{lineEditDescriptionCampagne};
+00165 
+00166     \textcolor{comment}{// operateur}
+\Hypertarget{ihmrov_8h_source_l00167}\hyperlink{class_i_h_m_rov_a1855235995ed076748b568a1702355c9}{00167}     QLabel *\hyperlink{class_i_h_m_rov_a1855235995ed076748b568a1702355c9}{labelOperateur};
+\Hypertarget{ihmrov_8h_source_l00168}\hyperlink{class_i_h_m_rov_a32ee4423982fa3a78e59167ed2354f6e}{00168}     QComboBox *\hyperlink{class_i_h_m_rov_a32ee4423982fa3a78e59167ed2354f6e}{comboBoxListeOperateurs};
+00169 
+00170     \textcolor{comment}{// divers}
+\Hypertarget{ihmrov_8h_source_l00171}\hyperlink{class_i_h_m_rov_a8a6bdcda8ffc99b12b7232c988f6e797}{00171}     QMessageBox *\hyperlink{class_i_h_m_rov_a8a6bdcda8ffc99b12b7232c988f6e797}{messageBoxAide};
+00172 
+00173     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_aebbcb2325c2d1a88a012d8408e2d6223}{initialiserMenu}();
+00174     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_a752a8dc2b3b68d536e94ff8bfb62f46f}{remplirComboBoxListeOperateurs}();
+00175     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_a021be212b27d0c4a08e14695521aacbc}{setIdOperateur}(\textcolor{keywordtype}{int} idOperateur);
+00176     \textcolor{keywordtype}{int} \hyperlink{class_i_h_m_rov_a79cddc1e905195eb11a8960abadf7d2f}{getIdOperateur}();
+00177     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_a08bf623a890df272f738c1ff8631213f}{creerFenetreNouvelleCampagne}();
+00178     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{creerFenetreParametres}();
+00179     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_a30b49bada719a73e0899ad4bafb4de99}{creerFenetreDebug}();
+00180     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_a64002e867300c8aff2ebd4568acc107e}{initialiserChronometre}();
+00181     \textcolor{keywordtype}{long} \hyperlink{class_i_h_m_rov_ad28dd7ea40587335f6554de60c828524}{getSecondes}();
+00182     \textcolor{keywordtype}{long} \hyperlink{class_i_h_m_rov_ad6d275fe98c3dd1e40b2ef0defff3be9}{getMinutes}();
+00183     \textcolor{keywordtype}{long} \hyperlink{class_i_h_m_rov_a149d6d6325acf3f00bf025cb2fbac05f}{getHeure}();
+00184     QString \hyperlink{class_i_h_m_rov_aa6a269f311d527387ad3c9e22dd12d43}{getTemps}();
+00185     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_abbfcdc154a6ae7f941d186f6c90a5a2b}{actualiseIconesEtat}();
+00186     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_a7e55a10ef08b8a771fa692ec1d150d33}{actualiserIndicationDistance}(\textcolor{keywordtype}{double} distance);
+00187 
+00188 \textcolor{keyword}{public}:
+00189     \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{IHMRov}(QWidget *parent = \textcolor{keyword}{nullptr});
+00190     \hyperlink{class_i_h_m_rov_ab861463889934a3b6083b7a29c6adf45}{~IHMRov}();
+00191 
+00192 signals:
+00193     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_a4a4a90ab6d074aa54466f3f87db2f81c}{creationCampagne}();
+00194     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_afcfb7f60c126fbaa87cb3f501189cc39}{nouvelleFrequenceArchivage}(\textcolor{keywordtype}{int});
+00195     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_ae64280b18ebe069c1f64bd5f19ef3a2e}{nouveauPortCom}(QString);
+00196     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_a051d1d8d545e97c6b838df9054dddc6f}{nouveauBaudRate}(QString);
+00197     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_accf04daf204c5810c8a6099bb7e37b7e}{parametresSauvegardes}();
+00198 
+00199 \textcolor{keyword}{public} slots:
+00200     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_a6446087033d8ead72d16451b4a29c44e}{quitter}();
+00201     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_a4a0d3a0741d0669ede732b630eae54c6}{tic}();
+00202     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_af3e46f174ab2fdeaebb2d00e6b8bcb33}{initialiserListeCamera}();
+00203     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_a3169e8cd9132ece69af974648066c6c1}{executerFenetreNouvelleCampagne}();
+00204     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_a2ec97de9b75c073c6a4dd0792a284002}{executerFenetreParametres}();
+00205     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_a8931cade7a1613975da7174b5c2e84d2}{executerFenetreDebug}();
+00206     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_a45a10161fde8c6373918ec30f16a8b5e}{ouvrirAide}();
+00207     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_a9a5108ce8f73fad9a38d02881ec5ae62}{actualiserIrradiation}(\textcolor{keywordtype}{double} irradiation);
+00208     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_ae5f2c89b06d7dc09e9974428b14799f1}{actualiserTemperature}(\textcolor{keywordtype}{double} temperature);
+00209     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_a891d51cf532d9cc8fc56c63a0c61e663}{actualiserDistance}(\textcolor{keywordtype}{double} distance);
+00210     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_a229194814bfb1fc94ab3cc86d6411921}{enregistrerParametresCampagne}();
+00211     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_rov_a94d31f4e748f3e4549eab42c8bc7e367}{enregistrerParametres}();
+00212 \};
+00213 
+00214 \textcolor{preprocessor}{#endif // IHMROV\_H}
+\end{DoxyCode}

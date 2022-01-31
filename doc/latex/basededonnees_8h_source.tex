@@ -1,0 +1,55 @@
+\hypertarget{basededonnees_8h_source}{}\subsection{basededonnees.\+h}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef BASEDEDONNEES\_H}
+00002 \textcolor{preprocessor}{#define BASEDEDONNEES\_H}
+00003 
+00016 \textcolor{preprocessor}{#include <QObject>}
+00017 \textcolor{preprocessor}{#include <QtSql/QtSql>}
+00018 \textcolor{preprocessor}{#include <QSqlDatabase>}
+00019 \textcolor{preprocessor}{#include <QMutex>}
+00020 \textcolor{preprocessor}{#include <QString>}
+00021 
+\Hypertarget{basededonnees_8h_source_l00022}\hyperlink{basededonnees_8h_a9e9e0719c95bed0f3d5ae4cba0c9f5e4}{00022} \textcolor{preprocessor}{#define DEBUG\_BASEDEDONNEES}
+00023 
+\Hypertarget{basededonnees_8h_source_l00024}\hyperlink{basededonnees_8h_af06096ec4ec654090fa78ab359d4a0dd}{00024} \textcolor{preprocessor}{#define BDD\_HOSTNAME        "localhost"}
+\Hypertarget{basededonnees_8h_source_l00025}\hyperlink{basededonnees_8h_a88b5f5b81fa534553c68802384beff2c}{00025} \textcolor{preprocessor}{#define BDD\_USERNAME        "root"}
+\Hypertarget{basededonnees_8h_source_l00026}\hyperlink{basededonnees_8h_ae2ded9166ed2553182545e97514c04f7}{00026} \textcolor{preprocessor}{#define BDD\_PASSWORD        "password"}
+00027 
+\Hypertarget{basededonnees_8h_source_l00039}\hyperlink{class_base_de_donnees}{00039} \textcolor{keyword}{class }\hyperlink{class_base_de_donnees}{BaseDeDonnees} : \textcolor{keyword}{public} QObject
+00040 \{
+00041     Q\_OBJECT
+00042     \textcolor{keyword}{public}:
+00043         \textcolor{keyword}{static} \hyperlink{class_base_de_donnees}{BaseDeDonnees}* \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{getInstance}(QString type=\textcolor{stringliteral}{"QMYSQL"});
+00044         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{detruireInstance}();
+00045 
+00046         \textcolor{keywordtype}{bool} \hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{estConnecte}();
+00047         \textcolor{keywordtype}{bool} \hyperlink{class_base_de_donnees_ab2e092285ccc0ee1cce61a1774218561}{connecter}(QString nomBase, QString username=\hyperlink{basededonnees_8h_a88b5f5b81fa534553c68802384beff2c}{BDD\_USERNAME}, QString 
+      password=\hyperlink{basededonnees_8h_ae2ded9166ed2553182545e97514c04f7}{BDD\_PASSWORD}, QString serveur=\hyperlink{basededonnees_8h_af06096ec4ec654090fa78ab359d4a0dd}{BDD\_HOSTNAME});
+00048         
+00049         \textcolor{keywordtype}{bool} \hyperlink{class_base_de_donnees_af9ac332082ffd0dd35e412cefabe5e9c}{estOuvert}();
+00050         \textcolor{keywordtype}{bool} \hyperlink{class_base_de_donnees_a7f6a5510b08017b0d99115a84252f186}{ouvrir}(QString fichierBase);
+00051 
+00052         \textcolor{comment}{/* uniquement pour : UPDATE, INSERT et DELETE */}
+00053         \textcolor{keywordtype}{bool} \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(QString requete);
+00054 
+00055         \textcolor{comment}{/* uniquement pour : SELECT */}
+00056         \textcolor{keywordtype}{bool} \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString requete, QString &donnees); \textcolor{comment}{// 1 -> 1}
+00057         \textcolor{keywordtype}{bool} \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString requete, QStringList &donnees); \textcolor{comment}{// 1 -> 1..*}
+00058         \textcolor{keywordtype}{bool} \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString requete, QVector<QString> &donnees); \textcolor{comment}{// 1..* -> 1}
+00059         \textcolor{keywordtype}{bool} \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString requete, QVector<QStringList> &donnees); \textcolor{comment}{// 1..* -> 1..*}
+00060 
+00061     \textcolor{keyword}{private}:
+00062         \hyperlink{class_base_de_donnees_a10dd177f1008f675ab78c2221b2a6750}{BaseDeDonnees}(QString type);
+00063         \hyperlink{class_base_de_donnees_a5dc474cdbe003644fb0ca7b8f2ec6b93}{~BaseDeDonnees}();
+00064 
+\Hypertarget{basededonnees_8h_source_l00065}\hyperlink{class_base_de_donnees_a822ba0b7cf85b1e48ced8efd3d65e266}{00065}         \textcolor{keyword}{static} \hyperlink{class_base_de_donnees}{BaseDeDonnees}*  \hyperlink{class_base_de_donnees_a822ba0b7cf85b1e48ced8efd3d65e266}{baseDeDonnees};
+\Hypertarget{basededonnees_8h_source_l00066}\hyperlink{class_base_de_donnees_ab682b82167f494496a6531bfe522b42b}{00066}         \textcolor{keyword}{static} QString         \hyperlink{class_base_de_donnees_ab682b82167f494496a6531bfe522b42b}{typeBase};
+\Hypertarget{basededonnees_8h_source_l00067}\hyperlink{class_base_de_donnees_a5099ecb2922bb31d84cd5d4505298a29}{00067}         \textcolor{keyword}{static} \textcolor{keywordtype}{int}             \hyperlink{class_base_de_donnees_a5099ecb2922bb31d84cd5d4505298a29}{nbAcces};
+00068 
+\Hypertarget{basededonnees_8h_source_l00069}\hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{00069}         QSqlDatabase           \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db};
+\Hypertarget{basededonnees_8h_source_l00070}\hyperlink{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}{00070}         QMutex                 \hyperlink{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}{mutex};
+00071 \};
+00072 
+00073 \textcolor{preprocessor}{#endif // BASEDEDONNEES\_H}
+\end{DoxyCode}

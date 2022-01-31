@@ -1,0 +1,55 @@
+\hypertarget{camera_8h_source}{}\subsection{camera.\+h}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef CAMERA\_H}
+00002 \textcolor{preprocessor}{#define CAMERA\_H}
+00003 
+00017 \textcolor{preprocessor}{#include "\hyperlink{archives_8h}{archives.h}"}
+00018 
+00019 \textcolor{preprocessor}{#include <QObject>}
+00020 \textcolor{preprocessor}{#include <QString>}
+00021 \textcolor{preprocessor}{#include <QDateTime>}
+00022 \textcolor{preprocessor}{#include <QCamera>}
+00023 \textcolor{preprocessor}{#include <QCameraInfo>}
+00024 \textcolor{preprocessor}{#include <QCameraViewfinder>}
+00025 \textcolor{preprocessor}{#include <QCameraImageCapture>}
+00026 
+\Hypertarget{camera_8h_source_l00027}\hyperlink{camera_8h_a1cdfce9d11c96526aaac6717f3ba10fc}{00027} \textcolor{preprocessor}{#define LARGEUR\_RESOLUTION\_IMAGE 1280}
+\Hypertarget{camera_8h_source_l00028}\hyperlink{camera_8h_ab6598f2bd4db8451b2077f23274656a4}{00028} \textcolor{preprocessor}{#define HAUTEUR\_RESOLUTION\_IMAGE 720}
+00029 
+\Hypertarget{camera_8h_source_l00043}\hyperlink{class_camera}{00043} \textcolor{keyword}{class }\hyperlink{class_camera}{Camera} : \textcolor{keyword}{public} QObject
+00044 \{
+00045     Q\_OBJECT
+00046 
+00047 \textcolor{keyword}{public}:
+00048     \hyperlink{class_camera_ae3aa4afd7a3d9ddc2bf710bc74dc293e}{Camera}(QObject *parent = \textcolor{keyword}{nullptr});
+00049     \hyperlink{class_camera_ad1897942d0ccf91052386388a497349f}{~Camera}();
+00050 
+00051     \textcolor{keywordtype}{bool} \hyperlink{class_camera_afb73ab859802a143a1a00443e396143e}{estCameraDisponible}();
+00052     QCameraViewfinder *\hyperlink{class_camera_a67420d3ef14065a412327ada6193a2e0}{getCadreFluxVideo}();
+00053     QList<QCameraInfo> \hyperlink{class_camera_ad8a2a21d3701375a553c7c90646c694f}{getListeCamera}();
+00054     \textcolor{keywordtype}{void} \hyperlink{class_camera_a66b844eec2b721a6ac23b80cb3fe2426}{setArchives}(\hyperlink{class_archives}{Archives} *\hyperlink{class_camera_a5eb3a29aeeab2f2755d0b69ac7cf550a}{archives});
+00055 
+00056 \textcolor{keyword}{private}:
+\Hypertarget{camera_8h_source_l00057}\hyperlink{class_camera_a282a199ddd33fe64bc27b32a55719054}{00057}     QCamera *\hyperlink{class_camera_a282a199ddd33fe64bc27b32a55719054}{camera}; 
+\Hypertarget{camera_8h_source_l00058}\hyperlink{class_camera_a5eb3a29aeeab2f2755d0b69ac7cf550a}{00058}     \hyperlink{class_archives}{Archives} *\hyperlink{class_camera_a5eb3a29aeeab2f2755d0b69ac7cf550a}{archives}; 
+\Hypertarget{camera_8h_source_l00059}\hyperlink{class_camera_abf5fd38d19f0f06dfd7ec9e37f73adb8}{00059}     QCameraViewfinder *\hyperlink{class_camera_abf5fd38d19f0f06dfd7ec9e37f73adb8}{cadreFluxVideo}; 
+\Hypertarget{camera_8h_source_l00060}\hyperlink{class_camera_a482276c4fd0ba7172670006556322b62}{00060}     QCameraImageCapture *\hyperlink{class_camera_a482276c4fd0ba7172670006556322b62}{captureImage}; 
+\Hypertarget{camera_8h_source_l00061}\hyperlink{class_camera_a1056fa6cffd2914d9e5a171bebf5ba7e}{00061}     QString \hyperlink{class_camera_a1056fa6cffd2914d9e5a171bebf5ba7e}{formatSauvegardeTemps}; 
+\Hypertarget{camera_8h_source_l00062}\hyperlink{class_camera_a4433c250847de630592927b6c034f3c8}{00062}     QString \hyperlink{class_camera_a4433c250847de630592927b6c034f3c8}{dateImage}; 
+\Hypertarget{camera_8h_source_l00063}\hyperlink{class_camera_a3bea5177e857533a53cb94135bee8c6b}{00063}     QList<QCameraInfo> \hyperlink{class_camera_a3bea5177e857533a53cb94135bee8c6b}{cameras}; 
+00064 
+00065     QString \hyperlink{class_camera_a60d2c9f16b6f235ab6dd0360c883e0d0}{nommerCapture}();
+00066     \textcolor{keywordtype}{void} \hyperlink{class_camera_a181773c87c3deaea9fa9844f8ac294e3}{demarrerCamera}();
+00067     \textcolor{keywordtype}{void} \hyperlink{class_camera_a181773c87c3deaea9fa9844f8ac294e3}{demarrerCamera}(QCameraInfo);
+00068 
+00069 signals:
+00070 
+00071 \textcolor{keyword}{public} slots:
+00072     \textcolor{keywordtype}{void} \hyperlink{class_camera_a3ca730dcbd7ea6bfba12931a15066f6c}{capture}();
+00073     \textcolor{keywordtype}{void} \hyperlink{class_camera_a82a0dd06f1802dc0ec0ea8ff6fcbd231}{changerCamera}(QString);
+00074     \textcolor{keywordtype}{void} \hyperlink{class_camera_ac5b8c16f8edcb92569fab87185fc0500}{erreurCapture}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id}, QCameraImageCapture::Error error, \textcolor{keyword}{const} QString &errorString);
+00075 \};
+00076 
+00077 \textcolor{preprocessor}{#endif // CAMERA\_H}
+\end{DoxyCode}

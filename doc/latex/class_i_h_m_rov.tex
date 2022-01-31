@@ -1,0 +1,2185 @@
+\hypertarget{class_i_h_m_rov}{}\subsection{Référence de la classe I\+H\+M\+Rov}
+\label{class_i_h_m_rov}\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+
+
+Déclaration de la classe \hyperlink{class_rov}{Rov}.  
+
+
+
+
+{\ttfamily \#include $<$ihmrov.\+h$>$}
+
+
+
+Graphe de collaboration de I\+H\+M\+Rov\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_h_m_rov__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_i_h_m_rov_a6446087033d8ead72d16451b4a29c44e}{quitter} ()
+\begin{DoxyCompactList}\small\item\em Permet de fermer l\textquotesingle{}application. \end{DoxyCompactList}\item 
+void \hyperlink{class_i_h_m_rov_a4a0d3a0741d0669ede732b630eae54c6}{tic} ()
+\begin{DoxyCompactList}\small\item\em Actualise l\textquotesingle{}affichage du temps chaque seconde et actualise l\textquotesingle{}état des icones de rov, manette, et camera. \end{DoxyCompactList}\item 
+void \hyperlink{class_i_h_m_rov_af3e46f174ab2fdeaebb2d00e6b8bcb33}{initialiser\+Liste\+Camera} ()
+\begin{DoxyCompactList}\small\item\em Ajoute les caméras détectées dans une liste déroulante. \end{DoxyCompactList}\item 
+void \hyperlink{class_i_h_m_rov_a3169e8cd9132ece69af974648066c6c1}{executer\+Fenetre\+Nouvelle\+Campagne} ()
+\begin{DoxyCompactList}\small\item\em Slot permettant de creer une nouvelle campagne. \end{DoxyCompactList}\item 
+void \hyperlink{class_i_h_m_rov_a2ec97de9b75c073c6a4dd0792a284002}{executer\+Fenetre\+Parametres} ()
+\begin{DoxyCompactList}\small\item\em Affiche la fenêtre Paramètres. \end{DoxyCompactList}\item 
+void \hyperlink{class_i_h_m_rov_a8931cade7a1613975da7174b5c2e84d2}{executer\+Fenetre\+Debug} ()
+\begin{DoxyCompactList}\small\item\em Affiche la fenêtre de Debug. \end{DoxyCompactList}\item 
+void \hyperlink{class_i_h_m_rov_a45a10161fde8c6373918ec30f16a8b5e}{ouvrir\+Aide} ()
+\begin{DoxyCompactList}\small\item\em ouvrir une fenetre informative sur l\textquotesingle{}application. \end{DoxyCompactList}\item 
+void \hyperlink{class_i_h_m_rov_a9a5108ce8f73fad9a38d02881ec5ae62}{actualiser\+Irradiation} (double irradiation)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}actualiser l\textquotesingle{}affichage de l\textquotesingle{}irradiation sur l\textquotesingle{}I\+HM. \end{DoxyCompactList}\item 
+void \hyperlink{class_i_h_m_rov_ae5f2c89b06d7dc09e9974428b14799f1}{actualiser\+Temperature} (double temperature)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}actualiser l\textquotesingle{}affichage de la temperature sur l\textquotesingle{}I\+HM. \end{DoxyCompactList}\item 
+void \hyperlink{class_i_h_m_rov_a891d51cf532d9cc8fc56c63a0c61e663}{actualiser\+Distance} (double distance)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}actualiser l\textquotesingle{}affichage de la distance sur l\textquotesingle{}I\+HM. \end{DoxyCompactList}\item 
+void \hyperlink{class_i_h_m_rov_a229194814bfb1fc94ab3cc86d6411921}{enregistrer\+Parametres\+Campagne} ()
+\begin{DoxyCompactList}\small\item\em Methode émettant l\textquotesingle{}ordre d\textquotesingle{}enregistrer les paramètres des la campagne. \end{DoxyCompactList}\item 
+void \hyperlink{class_i_h_m_rov_a94d31f4e748f3e4549eab42c8bc7e367}{enregistrer\+Parametres} ()
+\begin{DoxyCompactList}\small\item\em Applique les paramètres choisis par l\textquotesingle{}utilisateur suite à la fenêtre Paramètres. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_i_h_m_rov_a4a4a90ab6d074aa54466f3f87db2f81c}{creation\+Campagne} ()
+\item 
+void \hyperlink{class_i_h_m_rov_afcfb7f60c126fbaa87cb3f501189cc39}{nouvelle\+Frequence\+Archivage} (int)
+\item 
+void \hyperlink{class_i_h_m_rov_ae64280b18ebe069c1f64bd5f19ef3a2e}{nouveau\+Port\+Com} (Q\+String)
+\item 
+void \hyperlink{class_i_h_m_rov_a051d1d8d545e97c6b838df9054dddc6f}{nouveau\+Baud\+Rate} (Q\+String)
+\item 
+void \hyperlink{class_i_h_m_rov_accf04daf204c5810c8a6099bb7e37b7e}{parametres\+Sauvegardes} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov} (Q\+Widget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_i_h_m_rov}{I\+H\+M\+Rov}. \end{DoxyCompactList}\item 
+\hyperlink{class_i_h_m_rov_ab861463889934a3b6083b7a29c6adf45}{$\sim$\+I\+H\+M\+Rov} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe \hyperlink{class_i_h_m_rov}{I\+H\+M\+Rov}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_i_h_m_rov_aebbcb2325c2d1a88a012d8408e2d6223}{initialiser\+Menu} ()
+\begin{DoxyCompactList}\small\item\em initialise la barre de menu \end{DoxyCompactList}\item 
+void \hyperlink{class_i_h_m_rov_a752a8dc2b3b68d536e94ff8bfb62f46f}{remplir\+Combo\+Box\+Liste\+Operateurs} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de remplir le Combo\+Box de la liste des opérateurs au démarrage de l\textquotesingle{}I\+HM. \end{DoxyCompactList}\item 
+void \hyperlink{class_i_h_m_rov_a021be212b27d0c4a08e14695521aacbc}{set\+Id\+Operateur} (int \hyperlink{class_i_h_m_rov_a110af5c174e9fbba12bffbe0301ed690}{id\+Operateur})
+\begin{DoxyCompactList}\small\item\em Mutateur de l\textquotesingle{}attribut id\+Operateur. \end{DoxyCompactList}\item 
+int \hyperlink{class_i_h_m_rov_a79cddc1e905195eb11a8960abadf7d2f}{get\+Id\+Operateur} ()
+\begin{DoxyCompactList}\small\item\em Accesseur de l\textquotesingle{}attribut id\+Operateur. \end{DoxyCompactList}\item 
+void \hyperlink{class_i_h_m_rov_a08bf623a890df272f738c1ff8631213f}{creer\+Fenetre\+Nouvelle\+Campagne} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant d\textquotesingle{}initialiser la fenetre de création d\textquotesingle{}une nouvelle campagne. \end{DoxyCompactList}\item 
+void \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{creer\+Fenetre\+Parametres} ()
+\begin{DoxyCompactList}\small\item\em Crée la fenêtre de Paramètres. \end{DoxyCompactList}\item 
+void \hyperlink{class_i_h_m_rov_a30b49bada719a73e0899ad4bafb4de99}{creer\+Fenetre\+Debug} ()
+\begin{DoxyCompactList}\small\item\em Crée la fenêtre de Debug. \end{DoxyCompactList}\item 
+void \hyperlink{class_i_h_m_rov_a64002e867300c8aff2ebd4568acc107e}{initialiser\+Chronometre} ()
+\begin{DoxyCompactList}\small\item\em Démarre le chronomètre au lancement de l\textquotesingle{}application. \end{DoxyCompactList}\item 
+long \hyperlink{class_i_h_m_rov_ad28dd7ea40587335f6554de60c828524}{get\+Secondes} ()
+\begin{DoxyCompactList}\small\item\em Retourne les secondes depuis le lancement de l\textquotesingle{}application. \end{DoxyCompactList}\item 
+long \hyperlink{class_i_h_m_rov_ad6d275fe98c3dd1e40b2ef0defff3be9}{get\+Minutes} ()
+\begin{DoxyCompactList}\small\item\em Retourne les minutes depuis le lancement de l\textquotesingle{}application. \end{DoxyCompactList}\item 
+long \hyperlink{class_i_h_m_rov_a149d6d6325acf3f00bf025cb2fbac05f}{get\+Heure} ()
+\begin{DoxyCompactList}\small\item\em Retourne les heures depuis le lancement de l\textquotesingle{}application. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_i_h_m_rov_aa6a269f311d527387ad3c9e22dd12d43}{get\+Temps} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_i_h_m_rov_aa6a269f311d527387ad3c9e22dd12d43}{I\+H\+M\+Rov\+::get\+Temps}. \end{DoxyCompactList}\item 
+void \hyperlink{class_i_h_m_rov_abbfcdc154a6ae7f941d186f6c90a5a2b}{actualise\+Icones\+Etat} ()
+\begin{DoxyCompactList}\small\item\em Met à jour l\textquotesingle{}icone d\textquotesingle{}état de la communication dans l\textquotesingle{}I\+HM. \end{DoxyCompactList}\item 
+void \hyperlink{class_i_h_m_rov_a7e55a10ef08b8a771fa692ec1d150d33}{actualiser\+Indication\+Distance} (double distance)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}actualiser l\textquotesingle{}indicateur de la distance sur l\textquotesingle{}I\+HM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_camera}{Camera} $\ast$ \hyperlink{class_i_h_m_rov_a0eda0e4726269508d4563d98064dca9d}{camera}
+\begin{DoxyCompactList}\small\item\em association vers la caméra \end{DoxyCompactList}\item 
+\hyperlink{class_controle_rov}{Controle\+Rov} $\ast$ \hyperlink{class_i_h_m_rov_a405b0c05970829fbf297ee0d26af9bca}{controle\+Rov}
+\begin{DoxyCompactList}\small\item\em agrégation du contrôle du \hyperlink{class_rov}{Rov} \end{DoxyCompactList}\item 
+\hyperlink{class_archives}{Archives} $\ast$ \hyperlink{class_i_h_m_rov_a1e64353d7244219599c46450bb84e1df}{archives}
+\begin{DoxyCompactList}\small\item\em association vers \hyperlink{class_archives}{Archives} \end{DoxyCompactList}\item 
+\hyperlink{class_rov}{Rov} $\ast$ \hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}
+\begin{DoxyCompactList}\small\item\em association vers le \hyperlink{class_rov}{Rov} \end{DoxyCompactList}\item 
+Q\+Timer $\ast$ \hyperlink{class_i_h_m_rov_ac8733c564d7beea8b669e62544a006a5}{chronometre}
+\begin{DoxyCompactList}\small\item\em timer pour chronomètrer la campagne \end{DoxyCompactList}\item 
+int \hyperlink{class_i_h_m_rov_a110af5c174e9fbba12bffbe0301ed690}{id\+Operateur}
+\begin{DoxyCompactList}\small\item\em id de l\textquotesingle{}opérateur de la campagne encours \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_i_h_m_rov_a72623927157b53a89266026514122030}{nom\+Nouvelle\+Campagne}
+\begin{DoxyCompactList}\small\item\em nom de la campagne en cours \end{DoxyCompactList}\item 
+long \hyperlink{class_i_h_m_rov_a38ad5c20c2347825c237e9b85bb5c7e6}{valeur\+Chronometre}
+\begin{DoxyCompactList}\small\item\em temps \end{DoxyCompactList}\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_a14aa781bc1a446ba6b3ecdea029caa91}{label\+Campagne\+En\+Cours}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_a01cfcfe3e5744cd977bb0416d4e3debe}{label\+Camera}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_a2ec8f0e6175a73377e4b7e96b4f29b95}{label\+Etat\+Camera}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_a93259ab27f1eeeacbfe3048a58f475b1}{label\+Manette}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_ad62586ec4cef61ef851626515fd0f72a}{label\+Etat\+Manette}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_ac52c67da33e4d4c40b4c485c09452142}{label\+Connexion\+Rov}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_a83a10634509cf2d32a0bcee159eecbc3}{label\+Etat\+Connexion\+Rov}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_a32e5cb80ecae7bad6914c690ebd93995}{label\+Chronometre}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_aebce213bf418897dc8a775cfc180ff59}{label\+Cameras}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_ac3b86335f9903c2a71eafe941d5c302b}{label\+Camera\+Deconnectee}
+\item 
+Q\+Stacked\+Widget $\ast$ \hyperlink{class_i_h_m_rov_a238e50788d62ae2c34b4ae6c8082d596}{widget\+Empilement}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_a29246e2035e7b3915a59614eb4802548}{label\+Icone\+Radiation}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_aaa9588a64c4af2f9fb08c62519a05c5a}{label\+Mesure\+Radiation}
+\item 
+Qwt\+Thermo $\ast$ \hyperlink{class_i_h_m_rov_a06f0850e46f735c3418360280f6c8336}{bar\+Radiation}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_a0404f03611d3942e7459ee431f05224c}{label\+Icone\+Temperature}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_ade64349f20dac7adccee4d4fbc04e6e8}{label\+Mesure\+Temperature}
+\item 
+Qwt\+Thermo $\ast$ \hyperlink{class_i_h_m_rov_aa89397963e5889e2f911bed5112772cb}{bar\+Temperature}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_ae8e7eef50b55104e1490191e3bdcb8d9}{label\+Icone\+Distance}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_a39ff04b1880aa20941716cf7a6e1b8d8}{label\+Mesure\+Distance}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_a14e8fc8b6a1f95e974b550fd54088581}{label\+Indication\+Distance}
+\item 
+Q\+Combo\+Box $\ast$ \hyperlink{class_i_h_m_rov_a9b9e5631b8d9b6a9801a6faac8cba0f0}{liste\+Cameras\+Dispo}
+\item 
+Q\+Push\+Button $\ast$ \hyperlink{class_i_h_m_rov_a75b93974e71e86a6a14ea1bc47fa7bd8}{bouton\+Quitter}
+\item 
+Q\+Push\+Button $\ast$ \hyperlink{class_i_h_m_rov_a1a0c3460e0b9e9c4a1adc54f7f229307}{bouton\+Archives}
+\item 
+Q\+Push\+Button $\ast$ \hyperlink{class_i_h_m_rov_a149c634582225cff29b6c8555eb7ba85}{bouton\+Capture}
+\item 
+Q\+Menu\+Bar $\ast$ \hyperlink{class_i_h_m_rov_a169e28bc630468d13c05de321f66ca3c}{barre\+Menu}
+\item 
+Q\+Menu $\ast$ \hyperlink{class_i_h_m_rov_ad110a9a5cfabc48491ee602075e28066}{menu\+Fichier}
+\item 
+Q\+Menu $\ast$ \hyperlink{class_i_h_m_rov_a7de335b17ef7b92fdb203cd385ba874f}{menu\+Aide}
+\item 
+Q\+Menu $\ast$ \hyperlink{class_i_h_m_rov_aab4af4ee5ffb959869ee5f181fe4204e}{menu\+Outils}
+\item 
+Q\+Action $\ast$ \hyperlink{class_i_h_m_rov_a1ea738e5224f6fa4fc61ac064b5d9a6e}{action\+Nouvelle\+Campagne}
+\item 
+Q\+Action $\ast$ \hyperlink{class_i_h_m_rov_aa1864bc274cc5662b212a3530255e4ad}{action\+Parametre}
+\item 
+Q\+Action $\ast$ \hyperlink{class_i_h_m_rov_abf3ebd717e5d59355dd271917962083f}{action\+Debug}
+\item 
+Q\+Action $\ast$ \hyperlink{class_i_h_m_rov_aecd3c0b54390e60f6e1ba14787c68828}{action\+Aide}
+\item 
+Q\+Dialog $\ast$ \hyperlink{class_i_h_m_rov_a393d23f9256a9db063dfef11d95cdc06}{fenetre\+Debug}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_a667455d332d2abf2e42b897e6cc632f8}{label\+Debug}
+\item 
+Q\+Plain\+Text\+Edit $\ast$ \hyperlink{class_i_h_m_rov_ae2a7bec24a52ffd9e53baf1185ab6cd7}{plain\+Text\+Edit\+Debug}
+\item 
+Q\+Push\+Button $\ast$ \hyperlink{class_i_h_m_rov_a7a441ed53b0066edaf1f0acbea24e777}{bouton\+Envoyees}
+\item 
+Q\+Push\+Button $\ast$ \hyperlink{class_i_h_m_rov_ae56bf1c744f0fc393ef517e0e66b0d12}{bouton\+Recues}
+\item 
+Q\+Push\+Button $\ast$ \hyperlink{class_i_h_m_rov_a5dca475dd63a04c96386855a84c5effb}{bouton\+S\+QL}
+\item 
+Q\+Push\+Button $\ast$ \hyperlink{class_i_h_m_rov_a82f0ceba3dadd7a3d3251c236bf212a4}{bouton\+Etats}
+\item 
+Q\+Dialog $\ast$ \hyperlink{class_i_h_m_rov_a277956dfb79e5345e5ae0117fe41ddf2}{fenetre\+Parametres}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_a58e157352986f690bca4b79b9b05ee1d}{label\+Archivage\+Mesures}
+\item 
+Q\+Check\+Box $\ast$ \hyperlink{class_i_h_m_rov_a85be76b5fee7281642db582a79a53511}{checkbox\+Archivage}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_a42fb93c9764bfc2fe81ba65fc02d8de2}{label\+Interval\+Archivage}
+\item 
+Q\+Slider $\ast$ \hyperlink{class_i_h_m_rov_a8c55c93ee14ee51335e72af07b521312}{slider\+Interval\+Archivage}
+\item 
+Q\+Spin\+Box $\ast$ \hyperlink{class_i_h_m_rov_abc906e8e992ecdf5eb1dae5dc622b768}{spin\+Box\+Interval\+Archivage}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_ac6f93c34da2a4e24f743e61fd5d62405}{label\+Appareils}
+\item 
+Q\+Combo\+Box $\ast$ \hyperlink{class_i_h_m_rov_a12b970f1d2a170f14a01a684787904a5}{combobox\+Appareils}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_a6e9a97a5cd38bfd92e6114c4299be7ee}{label\+Baud\+Rate}
+\item 
+Q\+Combo\+Box $\ast$ \hyperlink{class_i_h_m_rov_a542c0cf87de612cd529b0753b60e4f95}{combobox\+Baud\+Rate}
+\item 
+Q\+Dialog $\ast$ \hyperlink{class_i_h_m_rov_a13c12a93de7fc77c32f0108ae73cec06}{fenetre\+Nouvelle\+Campagne}
+\item 
+Q\+Dir $\ast$ \hyperlink{class_i_h_m_rov_a95cd05040c8adc3c0513050661d532db}{dossier\+Nouvelle\+Campagne}
+\item 
+Q\+Push\+Button $\ast$ \hyperlink{class_i_h_m_rov_a4294b6c808089083906fb0815d1c9c27}{bouton\+Valider}
+\item 
+Q\+Push\+Button $\ast$ \hyperlink{class_i_h_m_rov_a4a6fec1b4a86c93c1d0d62d66804db5c}{bouton\+Annuler}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_a3ae7bec5b8f85f779ab58ba60556b37f}{label\+Campagne}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_a723334735d6a20ea43f79567892cfd25}{label\+Nom\+Campagne}
+\item 
+Q\+Line\+Edit $\ast$ \hyperlink{class_i_h_m_rov_a3b3dac7166ab414832dea0b5ad1a570d}{line\+Edit\+Nom\+Campagne}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_addac593dfa0ea112cf4cc1b3837ca5e0}{label\+Description\+Campagne}
+\item 
+Q\+Line\+Edit $\ast$ \hyperlink{class_i_h_m_rov_aedf9fd0d893326f970aa1b73dbe06e85}{line\+Edit\+Description\+Campagne}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_rov_a1855235995ed076748b568a1702355c9}{label\+Operateur}
+\item 
+Q\+Combo\+Box $\ast$ \hyperlink{class_i_h_m_rov_a32ee4423982fa3a78e59167ed2354f6e}{combo\+Box\+Liste\+Operateurs}
+\item 
+Q\+Message\+Box $\ast$ \hyperlink{class_i_h_m_rov_a8a6bdcda8ffc99b12b7232c988f6e797}{message\+Box\+Aide}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Nicolas B\+O\+F\+F\+R\+E\+DO \& Jacques R\+E\+Y\+N\+I\+ER
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+Jeudi 13 Juin 2019 
+\end{DoxyDate}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}\label{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{I\+H\+M\+Rov()}{IHMRov()}}
+{\footnotesize\ttfamily I\+H\+M\+Rov\+::\+I\+H\+M\+Rov (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_i_h_m_rov_a891d51cf532d9cc8fc56c63a0c61e663}{actualiser\+Distance()}, \hyperlink{class_i_h_m_rov_a9a5108ce8f73fad9a38d02881ec5ae62}{actualiser\+Irradiation()}, \hyperlink{class_i_h_m_rov_ae5f2c89b06d7dc09e9974428b14799f1}{actualiser\+Temperature()}, \hyperlink{ihmrov_8h_ab599af93fd63f0c5df05b03aa7448eb9}{A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+I\+T\+RE}, \hyperlink{class_i_h_m_rov_a1e64353d7244219599c46450bb84e1df}{archives}, \hyperlink{class_i_h_m_rov_a06f0850e46f735c3418360280f6c8336}{bar\+Radiation}, \hyperlink{class_i_h_m_rov_a169e28bc630468d13c05de321f66ca3c}{barre\+Menu}, \hyperlink{class_i_h_m_rov_aa89397963e5889e2f911bed5112772cb}{bar\+Temperature}, \hyperlink{class_i_h_m_rov_a1a0c3460e0b9e9c4a1adc54f7f229307}{bouton\+Archives}, \hyperlink{class_i_h_m_rov_a149c634582225cff29b6c8555eb7ba85}{bouton\+Capture}, \hyperlink{class_i_h_m_rov_a75b93974e71e86a6a14ea1bc47fa7bd8}{bouton\+Quitter}, \hyperlink{class_i_h_m_rov_a0eda0e4726269508d4563d98064dca9d}{camera}, \hyperlink{class_i_h_m_rov_a405b0c05970829fbf297ee0d26af9bca}{controle\+Rov}, \hyperlink{class_i_h_m_rov_a30b49bada719a73e0899ad4bafb4de99}{creer\+Fenetre\+Debug()}, \hyperlink{class_i_h_m_rov_a08bf623a890df272f738c1ff8631213f}{creer\+Fenetre\+Nouvelle\+Campagne()}, \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{creer\+Fenetre\+Parametres()}, \hyperlink{class_i_h_m_rov_a3169e8cd9132ece69af974648066c6c1}{executer\+Fenetre\+Nouvelle\+Campagne()}, \hyperlink{class_i_h_m_rov_a2ec97de9b75c073c6a4dd0792a284002}{executer\+Fenetre\+Parametres()}, \hyperlink{class_camera_a67420d3ef14065a412327ada6193a2e0}{Camera\+::get\+Cadre\+Flux\+Video()}, \hyperlink{class_rov_a0edd5f7db785bd856b8723fe49ca7848}{Rov\+::get\+Mesures()}, \hyperlink{class_i_h_m_rov_a64002e867300c8aff2ebd4568acc107e}{initialiser\+Chronometre()}, \hyperlink{class_i_h_m_rov_af3e46f174ab2fdeaebb2d00e6b8bcb33}{initialiser\+Liste\+Camera()}, \hyperlink{class_i_h_m_rov_aebbcb2325c2d1a88a012d8408e2d6223}{initialiser\+Menu()}, \hyperlink{class_i_h_m_rov_a01cfcfe3e5744cd977bb0416d4e3debe}{label\+Camera}, \hyperlink{class_i_h_m_rov_ac3b86335f9903c2a71eafe941d5c302b}{label\+Camera\+Deconnectee}, \hyperlink{class_i_h_m_rov_aebce213bf418897dc8a775cfc180ff59}{label\+Cameras}, \hyperlink{class_i_h_m_rov_a14aa781bc1a446ba6b3ecdea029caa91}{label\+Campagne\+En\+Cours}, \hyperlink{class_i_h_m_rov_a32e5cb80ecae7bad6914c690ebd93995}{label\+Chronometre}, \hyperlink{class_i_h_m_rov_ac52c67da33e4d4c40b4c485c09452142}{label\+Connexion\+Rov}, \hyperlink{class_i_h_m_rov_a2ec8f0e6175a73377e4b7e96b4f29b95}{label\+Etat\+Camera}, \hyperlink{class_i_h_m_rov_a83a10634509cf2d32a0bcee159eecbc3}{label\+Etat\+Connexion\+Rov}, \hyperlink{class_i_h_m_rov_ad62586ec4cef61ef851626515fd0f72a}{label\+Etat\+Manette}, \hyperlink{class_i_h_m_rov_ae8e7eef50b55104e1490191e3bdcb8d9}{label\+Icone\+Distance}, \hyperlink{class_i_h_m_rov_a29246e2035e7b3915a59614eb4802548}{label\+Icone\+Radiation}, \hyperlink{class_i_h_m_rov_a0404f03611d3942e7459ee431f05224c}{label\+Icone\+Temperature}, \hyperlink{class_i_h_m_rov_a14e8fc8b6a1f95e974b550fd54088581}{label\+Indication\+Distance}, \hyperlink{class_i_h_m_rov_a93259ab27f1eeeacbfe3048a58f475b1}{label\+Manette}, \hyperlink{class_i_h_m_rov_a39ff04b1880aa20941716cf7a6e1b8d8}{label\+Mesure\+Distance}, \hyperlink{class_i_h_m_rov_aaa9588a64c4af2f9fb08c62519a05c5a}{label\+Mesure\+Radiation}, \hyperlink{class_i_h_m_rov_ade64349f20dac7adccee4d4fbc04e6e8}{label\+Mesure\+Temperature}, \hyperlink{class_i_h_m_rov_a9b9e5631b8d9b6a9801a6faac8cba0f0}{liste\+Cameras\+Dispo}, \hyperlink{class_i_h_m_rov_a6446087033d8ead72d16451b4a29c44e}{quitter()}, \hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}, \hyperlink{class_camera_a66b844eec2b721a6ac23b80cb3fe2426}{Camera\+::set\+Archives()}, \hyperlink{class_rov_acb3ecbb04ace455526206d3c05b712fd}{Rov\+::set\+Archives()}, \hyperlink{class_rov_a0eba2119b89406948976ae92781c4629}{Rov\+::set\+Camera()}, et \hyperlink{class_i_h_m_rov_a238e50788d62ae2c34b4ae6c8082d596}{widget\+Empilement}.
+
+
+\begin{DoxyCode}
+00024     : QDialog(parent)
+00025 \{
+00026     qDebug() << Q\_FUNC\_INFO;
+00027 
+00028     this->\hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov} = \textcolor{keyword}{new} \hyperlink{class_rov}{Rov}(\textcolor{keyword}{this});
+00029 
+00030     this->\hyperlink{class_i_h_m_rov_a08bf623a890df272f738c1ff8631213f}{creerFenetreNouvelleCampagne}();
+00031     this->\hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{creerFenetreParametres}();
+00032     this->\hyperlink{class_i_h_m_rov_a30b49bada719a73e0899ad4bafb4de99}{creerFenetreDebug}();
+00033 
+00034     \hyperlink{class_i_h_m_rov_a0eda0e4726269508d4563d98064dca9d}{camera} = \textcolor{keyword}{new} \hyperlink{class_camera}{Camera}(\textcolor{keyword}{this});    
+00035     \hyperlink{class_i_h_m_rov_a405b0c05970829fbf297ee0d26af9bca}{controleRov} = \textcolor{keyword}{new} \hyperlink{class_controle_rov}{ControleRov}(\textcolor{keyword}{this}, \hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov});
+00036     \hyperlink{class_i_h_m_rov_a1e64353d7244219599c46450bb84e1df}{archives} = \textcolor{keyword}{new} \hyperlink{class_archives}{Archives}(\textcolor{keyword}{this});
+00037 
+00038     \textcolor{comment}{// met en place les associations}
+00039     \hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}->\hyperlink{class_rov_a0eba2119b89406948976ae92781c4629}{setCamera}(\hyperlink{class_i_h_m_rov_a0eda0e4726269508d4563d98064dca9d}{camera});
+00040     \hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}->\hyperlink{class_rov_acb3ecbb04ace455526206d3c05b712fd}{setArchives}(\hyperlink{class_i_h_m_rov_a1e64353d7244219599c46450bb84e1df}{archives});
+00041     \hyperlink{class_i_h_m_rov_a0eda0e4726269508d4563d98064dca9d}{camera}->\hyperlink{class_camera_a66b844eec2b721a6ac23b80cb3fe2426}{setArchives}(\hyperlink{class_i_h_m_rov_a1e64353d7244219599c46450bb84e1df}{archives});
+00042 
+00043     \textcolor{keyword}{const} \textcolor{keywordtype}{int} largeurMAX = qApp->desktop()->availableGeometry(\textcolor{keyword}{this}).width();
+00044     \textcolor{keyword}{const} \textcolor{keywordtype}{int} hauteurMAX = qApp->desktop()->availableGeometry(\textcolor{keyword}{this}).height();
+00045     \textcolor{keyword}{const} \textcolor{keywordtype}{int} largeurVideo = largeurMAX/4 + largeurMAX/2;
+00046     \textcolor{keyword}{const} \textcolor{keywordtype}{int} hauteurVideo = hauteurMAX - hauteurMAX/8;
+00047 
+00048     this->\hyperlink{class_i_h_m_rov_aebbcb2325c2d1a88a012d8408e2d6223}{initialiserMenu}();
+00049 
+00050     connect(\hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}->\hyperlink{class_rov_a0edd5f7db785bd856b8723fe49ca7848}{getMesures}(), SIGNAL(irradiationActualisee(\textcolor{keywordtype}{double})), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_i_h_m_rov_a9a5108ce8f73fad9a38d02881ec5ae62}{actualiserIrradiation}(\textcolor{keywordtype}{double})));
+00051     connect(\hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}->\hyperlink{class_rov_a0edd5f7db785bd856b8723fe49ca7848}{getMesures}(), SIGNAL(temperatureActualisee(\textcolor{keywordtype}{double})), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_i_h_m_rov_ae5f2c89b06d7dc09e9974428b14799f1}{actualiserTemperature}(\textcolor{keywordtype}{double})));
+00052     connect(\hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}->\hyperlink{class_rov_a0edd5f7db785bd856b8723fe49ca7848}{getMesures}(), SIGNAL(distanceActualisee(\textcolor{keywordtype}{double})), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_i_h_m_rov_a891d51cf532d9cc8fc56c63a0c61e663}{actualiserDistance}(\textcolor{keywordtype}{double})));
+00053 
+00054     \textcolor{comment}{// Créer l'IHM}
+00055     \textcolor{comment}{// fixer le titre de la fenêtre}
+00056     this->setWindowTitle(\hyperlink{ihmrov_8h_ab599af93fd63f0c5df05b03aa7448eb9}{APPLICATION\_TITRE});
+00057 
+00058     \textcolor{comment}{// créer les widgets}
+00059     \hyperlink{class_i_h_m_rov_a14aa781bc1a446ba6b3ecdea029caa91}{labelCampagneEnCours} = \textcolor{keyword}{new} QLabel(QString::fromUtf8(\textcolor{stringliteral}{"Campagne : aucune"}), \textcolor{keyword}{this});
+00060     \hyperlink{class_i_h_m_rov_ac52c67da33e4d4c40b4c485c09452142}{labelConnexionRov} = \textcolor{keyword}{new} QLabel(QString::fromUtf8(\textcolor{stringliteral}{"Rov"}), \textcolor{keyword}{this});
+00061     \hyperlink{class_i_h_m_rov_a83a10634509cf2d32a0bcee159eecbc3}{labelEtatConnexionRov} = \textcolor{keyword}{new} QLabel(\textcolor{keyword}{this});
+00062     \hyperlink{class_i_h_m_rov_a01cfcfe3e5744cd977bb0416d4e3debe}{labelCamera} = \textcolor{keyword}{new} QLabel(QString::fromUtf8(\textcolor{stringliteral}{"Caméra"}), \textcolor{keyword}{this});
+00063     \hyperlink{class_i_h_m_rov_a2ec8f0e6175a73377e4b7e96b4f29b95}{labelEtatCamera} = \textcolor{keyword}{new} QLabel(\textcolor{keyword}{this});
+00064     \hyperlink{class_i_h_m_rov_a93259ab27f1eeeacbfe3048a58f475b1}{labelManette} = \textcolor{keyword}{new} QLabel(QString::fromUtf8(\textcolor{stringliteral}{"Manette"}), \textcolor{keyword}{this});
+00065     \hyperlink{class_i_h_m_rov_ad62586ec4cef61ef851626515fd0f72a}{labelEtatManette} = \textcolor{keyword}{new} QLabel(\textcolor{keyword}{this});
+00066     \hyperlink{class_i_h_m_rov_a32e5cb80ecae7bad6914c690ebd93995}{labelChronometre} = \textcolor{keyword}{new} QLabel(\textcolor{keyword}{this});
+00067     \hyperlink{class_i_h_m_rov_aebce213bf418897dc8a775cfc180ff59}{labelCameras} = \textcolor{keyword}{new} QLabel(QString::fromUtf8(\textcolor{stringliteral}{"Caméras disponibles : "}), \textcolor{keyword}{this});
+00068     \hyperlink{class_i_h_m_rov_aebce213bf418897dc8a775cfc180ff59}{labelCameras}->setAlignment(Qt::AlignRight);
+00069     \hyperlink{class_i_h_m_rov_ac3b86335f9903c2a71eafe941d5c302b}{labelCameraDeconnectee} = \textcolor{keyword}{new} QLabel(\textcolor{keyword}{this});
+00070     \hyperlink{class_i_h_m_rov_a238e50788d62ae2c34b4ae6c8082d596}{widgetEmpilement} = \textcolor{keyword}{new} QStackedWidget(\textcolor{keyword}{this});
+00071 
+00072     QFont policeLabel;
+00073     policeLabel.setPointSize(18);
+00074     \hyperlink{class_i_h_m_rov_a32e5cb80ecae7bad6914c690ebd93995}{labelChronometre}->setFont(policeLabel);
+00075 
+00076     \textcolor{comment}{// créer les widgets du layout des mesures}
+00077     \hyperlink{class_i_h_m_rov_a29246e2035e7b3915a59614eb4802548}{labelIconeRadiation} = \textcolor{keyword}{new} QLabel(\textcolor{stringliteral}{"&Radiation (µSv/h)"}, \textcolor{keyword}{this});
+00078     \hyperlink{class_i_h_m_rov_aaa9588a64c4af2f9fb08c62519a05c5a}{labelMesureRadiation} = \textcolor{keyword}{new} QLabel(\textcolor{stringliteral}{""}, \textcolor{keyword}{this});
+00079     \hyperlink{class_i_h_m_rov_a06f0850e46f735c3418360280f6c8336}{barRadiation} = \textcolor{keyword}{new} QwtThermo();
+00080 
+00081     \hyperlink{class_i_h_m_rov_a0404f03611d3942e7459ee431f05224c}{labelIconeTemperature} = \textcolor{keyword}{new} QLabel(QString::fromUtf8(\textcolor{stringliteral}{"&Température (°C)"}), \textcolor{keyword}{this});
+00082     \hyperlink{class_i_h_m_rov_ade64349f20dac7adccee4d4fbc04e6e8}{labelMesureTemperature} = \textcolor{keyword}{new} QLabel(\textcolor{stringliteral}{""}, \textcolor{keyword}{this});
+00083     \hyperlink{class_i_h_m_rov_aa89397963e5889e2f911bed5112772cb}{barTemperature} = \textcolor{keyword}{new} QwtThermo();
+00084 
+00085     \hyperlink{class_i_h_m_rov_ae8e7eef50b55104e1490191e3bdcb8d9}{labelIconeDistance} = \textcolor{keyword}{new} QLabel(QString::fromUtf8(\textcolor{stringliteral}{"&Distance (cm)"}), \textcolor{keyword}{this});
+00086     \hyperlink{class_i_h_m_rov_a39ff04b1880aa20941716cf7a6e1b8d8}{labelMesureDistance} = \textcolor{keyword}{new} QLabel(\textcolor{stringliteral}{""}, \textcolor{keyword}{this});
+00087     \hyperlink{class_i_h_m_rov_a14e8fc8b6a1f95e974b550fd54088581}{labelIndicationDistance} = \textcolor{keyword}{new} QLabel(\textcolor{keyword}{this});
+00088 
+00089     \textcolor{comment}{// créer les widgets du layout boutons}
+00090     \hyperlink{class_i_h_m_rov_a9b9e5631b8d9b6a9801a6faac8cba0f0}{listeCamerasDispo} = \textcolor{keyword}{new} QComboBox();
+00091     \hyperlink{class_i_h_m_rov_a9b9e5631b8d9b6a9801a6faac8cba0f0}{listeCamerasDispo}->setLayoutDirection(Qt::RightToLeft);
+00092     \hyperlink{class_i_h_m_rov_a9b9e5631b8d9b6a9801a6faac8cba0f0}{listeCamerasDispo}->setEditable(\textcolor{keyword}{true});
+00093     \hyperlink{class_i_h_m_rov_a9b9e5631b8d9b6a9801a6faac8cba0f0}{listeCamerasDispo}->lineEdit()->setReadOnly(\textcolor{keyword}{true});
+00094     \hyperlink{class_i_h_m_rov_a9b9e5631b8d9b6a9801a6faac8cba0f0}{listeCamerasDispo}->lineEdit()->setAlignment(Qt::AlignRight);
+00095     \hyperlink{class_i_h_m_rov_af3e46f174ab2fdeaebb2d00e6b8bcb33}{initialiserListeCamera}();
+00096 
+00097     \hyperlink{class_i_h_m_rov_a149c634582225cff29b6c8555eb7ba85}{boutonCapture} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"&Capturer"}, \textcolor{keyword}{this});
+00098     \hyperlink{class_i_h_m_rov_a1a0c3460e0b9e9c4a1adc54f7f229307}{boutonArchives} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"&Archives"}, \textcolor{keyword}{this});
+00099     \hyperlink{class_i_h_m_rov_a75b93974e71e86a6a14ea1bc47fa7bd8}{boutonQuitter} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"&Quitter"}, \textcolor{keyword}{this});
+00100 
+00101     \textcolor{comment}{// créer les layout}
+00102     QHBoxLayout *hFLayoutPrincipal = \textcolor{keyword}{new} QHBoxLayout;
+00103     QHBoxLayout *hLayoutPrincipal = \textcolor{keyword}{new} QHBoxLayout;    
+00104     QVBoxLayout *vLayoutVideo = \textcolor{keyword}{new} QVBoxLayout;
+00105     QVBoxLayout *vLayoutBoutonsEtMesures = \textcolor{keyword}{new} QVBoxLayout;
+00106 
+00107     \textcolor{comment}{// layout des états}
+00108     QVBoxLayout *vLayoutEtats = \textcolor{keyword}{new} QVBoxLayout;
+00109     QHBoxLayout *hLayoutEtatCamera = \textcolor{keyword}{new} QHBoxLayout;
+00110     QHBoxLayout *hLayoutEtatManette = \textcolor{keyword}{new} QHBoxLayout;
+00111     QHBoxLayout *hLayoutEtatRov = \textcolor{keyword}{new} QHBoxLayout;
+00112 
+00113     \textcolor{comment}{// layout boutons}
+00114     QVBoxLayout *vLayoutChoixCamera = \textcolor{keyword}{new} QVBoxLayout;
+00115     QVBoxLayout *vLayoutBoutons = \textcolor{keyword}{new} QVBoxLayout;
+00116 
+00117     \textcolor{comment}{// layout des mesures}
+00118     QVBoxLayout *vLayoutMesures = \textcolor{keyword}{new} QVBoxLayout;
+00119     QHBoxLayout *hLayoutMesuresRadiation = \textcolor{keyword}{new} QHBoxLayout;
+00120     QHBoxLayout *hLayoutMesuresTemperature = \textcolor{keyword}{new} QHBoxLayout;
+00121     QHBoxLayout *hLayoutMesuresDistance = \textcolor{keyword}{new} QHBoxLayout;
+00122     QVBoxLayout *vLayoutIndicationDistance = \textcolor{keyword}{new} QVBoxLayout;
+00123 
+00124     \textcolor{comment}{// layout menu}
+00125     QHBoxLayout *hLayoutMenu = \textcolor{keyword}{new} QHBoxLayout;
+00126     hLayoutMenu->setMenuBar(\hyperlink{class_i_h_m_rov_a169e28bc630468d13c05de321f66ca3c}{barreMenu});
+00127     hFLayoutPrincipal->addLayout(hLayoutMenu);
+00128 
+00129     \textcolor{comment}{// positionner les widgets dans les layouts}
+00130 
+00131     \textcolor{comment}{// le layout du flux vidéo}
+00132     vLayoutVideo->addWidget(\hyperlink{class_i_h_m_rov_a14aa781bc1a446ba6b3ecdea029caa91}{labelCampagneEnCours});
+00133     vLayoutVideo->addWidget(\hyperlink{class_i_h_m_rov_a238e50788d62ae2c34b4ae6c8082d596}{widgetEmpilement});
+00134 
+00135     \hyperlink{class_i_h_m_rov_a238e50788d62ae2c34b4ae6c8082d596}{widgetEmpilement}->setFixedWidth(largeurVideo);
+00136     \hyperlink{class_i_h_m_rov_a238e50788d62ae2c34b4ae6c8082d596}{widgetEmpilement}->setFixedHeight(hauteurVideo);
+00137     \hyperlink{class_i_h_m_rov_a238e50788d62ae2c34b4ae6c8082d596}{widgetEmpilement}->addWidget(\hyperlink{class_i_h_m_rov_ac3b86335f9903c2a71eafe941d5c302b}{labelCameraDeconnectee});
+00138     \hyperlink{class_i_h_m_rov_a238e50788d62ae2c34b4ae6c8082d596}{widgetEmpilement}->addWidget(\hyperlink{class_i_h_m_rov_a0eda0e4726269508d4563d98064dca9d}{camera}->\hyperlink{class_camera_a67420d3ef14065a412327ada6193a2e0}{getCadreFluxVideo}());
+00139     \hyperlink{class_i_h_m_rov_ac3b86335f9903c2a71eafe941d5c302b}{labelCameraDeconnectee}->setPixmap(QPixmap(\textcolor{stringliteral}{":/logos/Images/camera\_deconnectee.png"}
+      ));
+00140 
+00141     vLayoutVideo->addWidget(\hyperlink{class_i_h_m_rov_a32e5cb80ecae7bad6914c690ebd93995}{labelChronometre});
+00142 
+00143     \textcolor{comment}{// le layout principal}
+00144     hLayoutPrincipal->setContentsMargins(0, 15, 0, 0);
+00145     hLayoutPrincipal->addLayout(vLayoutVideo);
+00146     hLayoutPrincipal->addLayout(vLayoutBoutonsEtMesures);
+00147 
+00148     \textcolor{comment}{// le layout des boutons et des mesures}
+00149     vLayoutBoutonsEtMesures->addLayout(vLayoutMesures);
+00150     vLayoutBoutonsEtMesures->addLayout(vLayoutEtats);
+00151     vLayoutBoutonsEtMesures->addLayout(vLayoutChoixCamera);
+00152     vLayoutBoutonsEtMesures->addLayout(vLayoutBoutons);
+00153 
+00154     \textcolor{comment}{// le layout des mesures}
+00155     vLayoutMesures->addLayout(hLayoutMesuresRadiation);
+00156     vLayoutMesures->addLayout(hLayoutMesuresTemperature);
+00157     vLayoutMesures->addLayout(hLayoutMesuresDistance);
+00158 
+00159     \textcolor{comment}{// layout radiation}
+00160     hLayoutMesuresRadiation->addStretch();
+00161     hLayoutMesuresRadiation->addWidget(\hyperlink{class_i_h_m_rov_a29246e2035e7b3915a59614eb4802548}{labelIconeRadiation});
+00162     \hyperlink{class_i_h_m_rov_a29246e2035e7b3915a59614eb4802548}{labelIconeRadiation}->setPixmap(QPixmap(\textcolor{stringliteral}{":/logos/Images/logo\_radioactive.png"}));
+00163     hLayoutMesuresRadiation->addWidget(\hyperlink{class_i_h_m_rov_aaa9588a64c4af2f9fb08c62519a05c5a}{labelMesureRadiation});
+00164     \hyperlink{class_i_h_m_rov_aaa9588a64c4af2f9fb08c62519a05c5a}{labelMesureRadiation}->setText(\textcolor{stringliteral}{"Radiation (µSv/h) : "});
+00165     hLayoutMesuresRadiation->addWidget(\hyperlink{class_i_h_m_rov_a06f0850e46f735c3418360280f6c8336}{barRadiation});
+00166     \hyperlink{class_i_h_m_rov_a06f0850e46f735c3418360280f6c8336}{barRadiation}->setOrientation(Qt::Vertical);
+00167     \hyperlink{class_i_h_m_rov_a06f0850e46f735c3418360280f6c8336}{barRadiation}->setScale(0, 4);
+00168     \hyperlink{class_i_h_m_rov_a06f0850e46f735c3418360280f6c8336}{barRadiation}->setValue(0.0);
+00169 
+00170     \textcolor{comment}{// layout temperature}
+00171     hLayoutMesuresTemperature->addStretch();
+00172     hLayoutMesuresTemperature->addWidget(\hyperlink{class_i_h_m_rov_a0404f03611d3942e7459ee431f05224c}{labelIconeTemperature});
+00173     \hyperlink{class_i_h_m_rov_a0404f03611d3942e7459ee431f05224c}{labelIconeTemperature}->setPixmap(QPixmap(\textcolor{stringliteral}{":/logos/Images/logo\_temperature.png"}));
+00174     hLayoutMesuresTemperature->addWidget(\hyperlink{class_i_h_m_rov_ade64349f20dac7adccee4d4fbc04e6e8}{labelMesureTemperature});
+00175     \hyperlink{class_i_h_m_rov_ade64349f20dac7adccee4d4fbc04e6e8}{labelMesureTemperature}->setText(\textcolor{stringliteral}{"Temperature (°C) : "});
+00176     hLayoutMesuresTemperature->addWidget(\hyperlink{class_i_h_m_rov_aa89397963e5889e2f911bed5112772cb}{barTemperature});
+00177     \hyperlink{class_i_h_m_rov_aa89397963e5889e2f911bed5112772cb}{barTemperature}->setOrientation(Qt::Vertical);
+00178     \hyperlink{class_i_h_m_rov_aa89397963e5889e2f911bed5112772cb}{barTemperature}->setScale(-20,60);
+00179     \hyperlink{class_i_h_m_rov_aa89397963e5889e2f911bed5112772cb}{barTemperature}->setValue(0.0);
+00180 
+00181     \textcolor{comment}{// layout distance}
+00182     hLayoutMesuresDistance->addStretch();
+00183     hLayoutMesuresDistance->addWidget(\hyperlink{class_i_h_m_rov_ae8e7eef50b55104e1490191e3bdcb8d9}{labelIconeDistance});
+00184     \hyperlink{class_i_h_m_rov_ae8e7eef50b55104e1490191e3bdcb8d9}{labelIconeDistance}->setPixmap(QPixmap(\textcolor{stringliteral}{":/logos/Images/logo\_distance.png"}));
+00185     hLayoutMesuresDistance->addWidget(\hyperlink{class_i_h_m_rov_a39ff04b1880aa20941716cf7a6e1b8d8}{labelMesureDistance});
+00186     \hyperlink{class_i_h_m_rov_a39ff04b1880aa20941716cf7a6e1b8d8}{labelMesureDistance}->setText(\textcolor{stringliteral}{"Distance (cm) : "});
+00187     hLayoutMesuresDistance->addLayout(vLayoutIndicationDistance);
+00188     vLayoutIndicationDistance->addWidget(\hyperlink{class_i_h_m_rov_a14e8fc8b6a1f95e974b550fd54088581}{labelIndicationDistance});
+00189     \hyperlink{class_i_h_m_rov_a14e8fc8b6a1f95e974b550fd54088581}{labelIndicationDistance}->setPixmap(QPixmap(\textcolor{stringliteral}{":/logos/Images/distance\_defaut.png"})
+      );
+00190 
+00191     \textcolor{comment}{// le layout des états}
+00192     hLayoutEtatCamera->addStretch();
+00193     hLayoutEtatCamera->addWidget(\hyperlink{class_i_h_m_rov_a01cfcfe3e5744cd977bb0416d4e3debe}{labelCamera});
+00194     hLayoutEtatCamera->addWidget(\hyperlink{class_i_h_m_rov_a2ec8f0e6175a73377e4b7e96b4f29b95}{labelEtatCamera});
+00195     hLayoutEtatManette->addStretch();
+00196     hLayoutEtatManette->addWidget(\hyperlink{class_i_h_m_rov_a93259ab27f1eeeacbfe3048a58f475b1}{labelManette});
+00197     hLayoutEtatManette->addWidget(\hyperlink{class_i_h_m_rov_ad62586ec4cef61ef851626515fd0f72a}{labelEtatManette});
+00198     hLayoutEtatRov->addStretch();
+00199     hLayoutEtatRov->addWidget(\hyperlink{class_i_h_m_rov_ac52c67da33e4d4c40b4c485c09452142}{labelConnexionRov});
+00200     hLayoutEtatRov->addWidget(\hyperlink{class_i_h_m_rov_a83a10634509cf2d32a0bcee159eecbc3}{labelEtatConnexionRov});
+00201     vLayoutEtats->addLayout(hLayoutEtatManette);
+00202     vLayoutEtats->addLayout(hLayoutEtatCamera);
+00203     vLayoutEtats->addLayout(hLayoutEtatRov);
+00204 
+00205     \textcolor{comment}{// le layout du choix de la caméra}
+00206     vLayoutChoixCamera->setAlignment(Qt::AlignRight);
+00207     vLayoutChoixCamera->addWidget(\hyperlink{class_i_h_m_rov_aebce213bf418897dc8a775cfc180ff59}{labelCameras});
+00208     vLayoutChoixCamera->addWidget(\hyperlink{class_i_h_m_rov_a9b9e5631b8d9b6a9801a6faac8cba0f0}{listeCamerasDispo});
+00209 
+00210     \textcolor{comment}{// le layout des boutons}
+00211     vLayoutBoutons->addStretch();
+00212     vLayoutBoutons->addWidget(\hyperlink{class_i_h_m_rov_a149c634582225cff29b6c8555eb7ba85}{boutonCapture});
+00213     vLayoutBoutons->addWidget(\hyperlink{class_i_h_m_rov_a1a0c3460e0b9e9c4a1adc54f7f229307}{boutonArchives});
+00214     vLayoutBoutons->addWidget(\hyperlink{class_i_h_m_rov_a75b93974e71e86a6a14ea1bc47fa7bd8}{boutonQuitter});
+00215 
+00216     hFLayoutPrincipal->addLayout(hLayoutPrincipal);
+00217 
+00218     setLayout(hFLayoutPrincipal);
+00219     \textcolor{comment}{//resize(largeurMAX, hauteurMAX-30);}
+00220     setFixedSize(largeurMAX, hauteurMAX-30);
+00221     setWindowFlags(Qt::Dialog | Qt::WindowCloseButtonHint);
+00222 
+00223     \textcolor{comment}{// connecter signals/slots}
+00224     connect(\hyperlink{class_i_h_m_rov_a75b93974e71e86a6a14ea1bc47fa7bd8}{boutonQuitter}, SIGNAL(clicked()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_i_h_m_rov_a6446087033d8ead72d16451b4a29c44e}{quitter}()));
+00225     connect(\hyperlink{class_i_h_m_rov_a1a0c3460e0b9e9c4a1adc54f7f229307}{boutonArchives}, SIGNAL(clicked()), \hyperlink{class_i_h_m_rov_a1e64353d7244219599c46450bb84e1df}{archives}, SLOT(ouvrirFenetreArchives()
+      ));
+00226     connect(\hyperlink{class_i_h_m_rov_a149c634582225cff29b6c8555eb7ba85}{boutonCapture}, SIGNAL(clicked()), \hyperlink{class_i_h_m_rov_a0eda0e4726269508d4563d98064dca9d}{camera}, SLOT(capture()));
+00227     connect(\hyperlink{class_i_h_m_rov_a9b9e5631b8d9b6a9801a6faac8cba0f0}{listeCamerasDispo}, SIGNAL(currentIndexChanged(\textcolor{keyword}{const} QString)), 
+      \hyperlink{class_i_h_m_rov_a0eda0e4726269508d4563d98064dca9d}{camera}, SLOT(changerCamera(QString)));
+00228 
+00229     this->\hyperlink{class_i_h_m_rov_a3169e8cd9132ece69af974648066c6c1}{executerFenetreNouvelleCampagne}();
+00230     this->\hyperlink{class_i_h_m_rov_a2ec97de9b75c073c6a4dd0792a284002}{executerFenetreParametres}();
+00231     this->\hyperlink{class_i_h_m_rov_a64002e867300c8aff2ebd4568acc107e}{initialiserChronometre}();
+00232 
+00233     \textcolor{comment}{/*if(!message.isEmpty())}
+00234 \textcolor{comment}{        QMessageBox::critical(nullptr, QString::fromUtf8(APPLICATION\_TITRE), message);*/}
+00235 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_ab861463889934a3b6083b7a29c6adf45}\label{class_i_h_m_rov_ab861463889934a3b6083b7a29c6adf45}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!````~I\+H\+M\+Rov@{$\sim$\+I\+H\+M\+Rov}}
+\index{````~I\+H\+M\+Rov@{$\sim$\+I\+H\+M\+Rov}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{$\sim$\+I\+H\+M\+Rov()}{~IHMRov()}}
+{\footnotesize\ttfamily I\+H\+M\+Rov\+::$\sim$\+I\+H\+M\+Rov (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{Base\+De\+Donnees\+::detruire\+Instance()}.
+
+
+\begin{DoxyCode}
+00241 \{
+00242     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}();
+00243     qDebug() << Q\_FUNC\_INFO;
+00244 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_i_h_m_rov_abbfcdc154a6ae7f941d186f6c90a5a2b}\label{class_i_h_m_rov_abbfcdc154a6ae7f941d186f6c90a5a2b}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!actualise\+Icones\+Etat@{actualise\+Icones\+Etat}}
+\index{actualise\+Icones\+Etat@{actualise\+Icones\+Etat}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{actualise\+Icones\+Etat()}{actualiseIconesEtat()}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::actualise\+Icones\+Etat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_i_h_m_rov_a149c634582225cff29b6c8555eb7ba85}{bouton\+Capture}, \hyperlink{class_i_h_m_rov_a0eda0e4726269508d4563d98064dca9d}{camera}, \hyperlink{class_i_h_m_rov_a405b0c05970829fbf297ee0d26af9bca}{controle\+Rov}, \hyperlink{class_camera_afb73ab859802a143a1a00443e396143e}{Camera\+::est\+Camera\+Disponible()}, \hyperlink{class_communication_rov_a513c26b04745fa2ae31b4533d656dfd4}{Communication\+Rov\+::est\+Communication\+Rov\+Disponible()}, \hyperlink{class_controle_rov_a9531520e50479fc2e339cd43f4c87066}{Controle\+Rov\+::est\+Controle\+Rov\+Disponible()}, \hyperlink{class_rov_ad30543625f584e28bf785a80c59506dc}{Rov\+::get\+Communication\+Rov()}, \hyperlink{class_i_h_m_rov_a2ec8f0e6175a73377e4b7e96b4f29b95}{label\+Etat\+Camera}, \hyperlink{class_i_h_m_rov_a83a10634509cf2d32a0bcee159eecbc3}{label\+Etat\+Connexion\+Rov}, \hyperlink{class_i_h_m_rov_ad62586ec4cef61ef851626515fd0f72a}{label\+Etat\+Manette}, \hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}, \hyperlink{ihmrov_8h_a01e28fb5361c4789cfefd3682ad1c25b}{W\+I\+D\+G\+E\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+D\+I\+S\+P\+O\+N\+I\+B\+LE}, \hyperlink{ihmrov_8h_a811ff9a6b410f748f13757277a45d1cd}{W\+I\+D\+G\+E\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+I\+N\+D\+I\+S\+P\+O\+N\+I\+B\+LE}, et \hyperlink{class_i_h_m_rov_a238e50788d62ae2c34b4ae6c8082d596}{widget\+Empilement}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a4a0d3a0741d0669ede732b630eae54c6}{tic()}.
+
+
+\begin{DoxyCode}
+00252 \{
+00253     QString message;
+00254     \textcolor{keywordflow}{if}(\hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}->\hyperlink{class_rov_ad30543625f584e28bf785a80c59506dc}{getCommunicationRov}()->
+      \hyperlink{class_communication_rov_a513c26b04745fa2ae31b4533d656dfd4}{estCommunicationRovDisponible}())
+00255     \{
+00256         \hyperlink{class_i_h_m_rov_a83a10634509cf2d32a0bcee159eecbc3}{labelEtatConnexionRov}->setPixmap(QPixmap(\textcolor{stringliteral}{":/logos/Images/on.png"}));
+00257     \}
+00258     \textcolor{keywordflow}{else}
+00259     \{
+00260         message += QString::fromUtf8(\textcolor{stringliteral}{"Aucune communication avec le Rov !\(\backslash\)n"});
+00261         \hyperlink{class_i_h_m_rov_a83a10634509cf2d32a0bcee159eecbc3}{labelEtatConnexionRov}->setPixmap(QPixmap(\textcolor{stringliteral}{":/logos/Images/off.png"}));
+00262     \}
+00263     \textcolor{keywordflow}{if}(\hyperlink{class_i_h_m_rov_a0eda0e4726269508d4563d98064dca9d}{camera}->\hyperlink{class_camera_afb73ab859802a143a1a00443e396143e}{estCameraDisponible}())
+00264     \{
+00265         \hyperlink{class_i_h_m_rov_a2ec8f0e6175a73377e4b7e96b4f29b95}{labelEtatCamera}->setPixmap(QPixmap(\textcolor{stringliteral}{":/logos/Images/on.png"}));
+00266         \hyperlink{class_i_h_m_rov_a238e50788d62ae2c34b4ae6c8082d596}{widgetEmpilement}->setCurrentIndex(
+      \hyperlink{ihmrov_8h_a01e28fb5361c4789cfefd3682ad1c25b}{WIDGET\_CAMERA\_DISPONIBLE});
+00267     \}
+00268     \textcolor{keywordflow}{else}
+00269     \{
+00270         message += QString::fromUtf8(\textcolor{stringliteral}{"Aucune caméra détectée !\(\backslash\)n"});
+00271         \hyperlink{class_i_h_m_rov_a2ec8f0e6175a73377e4b7e96b4f29b95}{labelEtatCamera}->setPixmap(QPixmap(\textcolor{stringliteral}{":/logos/Images/off.png"}));
+00272         \hyperlink{class_i_h_m_rov_a149c634582225cff29b6c8555eb7ba85}{boutonCapture}->setEnabled(\textcolor{keyword}{false});
+00273         \hyperlink{class_i_h_m_rov_a238e50788d62ae2c34b4ae6c8082d596}{widgetEmpilement}->setCurrentIndex(
+      \hyperlink{ihmrov_8h_a811ff9a6b410f748f13757277a45d1cd}{WIDGET\_CAMERA\_INDISPONIBLE});
+00274     \}
+00275     \textcolor{keywordflow}{if}(\hyperlink{class_i_h_m_rov_a405b0c05970829fbf297ee0d26af9bca}{controleRov}->\hyperlink{class_controle_rov_a9531520e50479fc2e339cd43f4c87066}{estControleRovDisponible}())
+00276     \{
+00277         \hyperlink{class_i_h_m_rov_ad62586ec4cef61ef851626515fd0f72a}{labelEtatManette}->setPixmap(QPixmap(\textcolor{stringliteral}{":/logos/Images/on.png"}));
+00278     \}
+00279     \textcolor{keywordflow}{else}
+00280     \{
+00281         message += QString::fromUtf8(\textcolor{stringliteral}{"Aucune manette détectée !\(\backslash\)n"});
+00282         \hyperlink{class_i_h_m_rov_ad62586ec4cef61ef851626515fd0f72a}{labelEtatManette}->setPixmap(QPixmap(\textcolor{stringliteral}{":/logos/Images/off.png"}));
+00283     \}
+00284 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_a891d51cf532d9cc8fc56c63a0c61e663}\label{class_i_h_m_rov_a891d51cf532d9cc8fc56c63a0c61e663}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!actualiser\+Distance@{actualiser\+Distance}}
+\index{actualiser\+Distance@{actualiser\+Distance}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{actualiser\+Distance}{actualiserDistance}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::actualiser\+Distance (\begin{DoxyParamCaption}\item[{double}]{distance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+S\textquotesingle{}actualise à chaque reception de mesure
+
+
+\begin{DoxyParams}{Paramètres}
+{\em distance} & double \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_i_h_m_rov_a7e55a10ef08b8a771fa692ec1d150d33}{actualiser\+Indication\+Distance()}, et \hyperlink{class_i_h_m_rov_a39ff04b1880aa20941716cf7a6e1b8d8}{label\+Mesure\+Distance}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+
+\begin{DoxyCode}
+00408 \{
+00409     \textcolor{keywordflow}{if}(distance >= 0)
+00410     \{
+00411         \hyperlink{class_i_h_m_rov_a39ff04b1880aa20941716cf7a6e1b8d8}{labelMesureDistance}->setText(\textcolor{stringliteral}{"Distance (cm) : "} + QString::number(distance));
+00412         \hyperlink{class_i_h_m_rov_a7e55a10ef08b8a771fa692ec1d150d33}{actualiserIndicationDistance}(distance);
+00413     \}
+00414     \textcolor{keywordflow}{else}
+00415     \{
+00416         \hyperlink{class_i_h_m_rov_a39ff04b1880aa20941716cf7a6e1b8d8}{labelMesureDistance}->setText(\textcolor{stringliteral}{"Distance (cm) : < 5"});
+00417         \hyperlink{class_i_h_m_rov_a7e55a10ef08b8a771fa692ec1d150d33}{actualiserIndicationDistance}(distance);
+00418     \}
+00419 
+00420 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_a7e55a10ef08b8a771fa692ec1d150d33}\label{class_i_h_m_rov_a7e55a10ef08b8a771fa692ec1d150d33}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!actualiser\+Indication\+Distance@{actualiser\+Indication\+Distance}}
+\index{actualiser\+Indication\+Distance@{actualiser\+Indication\+Distance}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{actualiser\+Indication\+Distance()}{actualiserIndicationDistance()}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::actualiser\+Indication\+Distance (\begin{DoxyParamCaption}\item[{double}]{distance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+S\textquotesingle{}actualise à chaque reception de mesure
+
+
+\begin{DoxyParams}{Paramètres}
+{\em distance} & double \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{ihmrov_8h_aa986e54d0a0e08e8e32fc991c2186c09}{D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+L\+O\+IN}, \hyperlink{ihmrov_8h_a90b48491a3e4dbe15f8255efe530e41a}{D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+P\+R\+O\+C\+HE}, et \hyperlink{class_i_h_m_rov_a14e8fc8b6a1f95e974b550fd54088581}{label\+Indication\+Distance}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a891d51cf532d9cc8fc56c63a0c61e663}{actualiser\+Distance()}.
+
+
+\begin{DoxyCode}
+00429 \{
+00430     \textcolor{keywordflow}{if} (distance > \hyperlink{ihmrov_8h_aa986e54d0a0e08e8e32fc991c2186c09}{DISTANCE\_LOIN})
+00431         \hyperlink{class_i_h_m_rov_a14e8fc8b6a1f95e974b550fd54088581}{labelIndicationDistance}->setPixmap(QPixmap(\textcolor{stringliteral}{":/logos/Images/distance\_loin.png
+      "}));
+00432 
+00433     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ((distance <= \hyperlink{ihmrov_8h_aa986e54d0a0e08e8e32fc991c2186c09}{DISTANCE\_LOIN}) && (distance >= 
+      \hyperlink{ihmrov_8h_a90b48491a3e4dbe15f8255efe530e41a}{DISTANCE\_PROCHE}))
+00434         \hyperlink{class_i_h_m_rov_a14e8fc8b6a1f95e974b550fd54088581}{labelIndicationDistance}->setPixmap(QPixmap(\textcolor{stringliteral}{"
+      :/logos/Images/distance\_proche.png"}));
+00435 
+00436     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (distance < \hyperlink{ihmrov_8h_a90b48491a3e4dbe15f8255efe530e41a}{DISTANCE\_PROCHE})
+00437         \hyperlink{class_i_h_m_rov_a14e8fc8b6a1f95e974b550fd54088581}{labelIndicationDistance}->setPixmap(QPixmap(\textcolor{stringliteral}{"
+      :/logos/Images/distance\_danger.png"}));
+00438 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_a9a5108ce8f73fad9a38d02881ec5ae62}\label{class_i_h_m_rov_a9a5108ce8f73fad9a38d02881ec5ae62}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!actualiser\+Irradiation@{actualiser\+Irradiation}}
+\index{actualiser\+Irradiation@{actualiser\+Irradiation}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{actualiser\+Irradiation}{actualiserIrradiation}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::actualiser\+Irradiation (\begin{DoxyParamCaption}\item[{double}]{irradiation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+S\textquotesingle{}actualise à chaque reception de mesure
+
+
+\begin{DoxyParams}{Paramètres}
+{\em irradiation} & double \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_i_h_m_rov_a06f0850e46f735c3418360280f6c8336}{bar\+Radiation}, et \hyperlink{class_i_h_m_rov_aaa9588a64c4af2f9fb08c62519a05c5a}{label\+Mesure\+Radiation}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+
+\begin{DoxyCode}
+00384 \{
+00385     \hyperlink{class_i_h_m_rov_aaa9588a64c4af2f9fb08c62519a05c5a}{labelMesureRadiation}->setText(\textcolor{stringliteral}{"Radiation (µSv/h) : "} + QString::number(irradiation)
+      );
+00386     \hyperlink{class_i_h_m_rov_a06f0850e46f735c3418360280f6c8336}{barRadiation}->setValue(\textcolor{keywordtype}{int}(irradiation));
+00387 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_ae5f2c89b06d7dc09e9974428b14799f1}\label{class_i_h_m_rov_ae5f2c89b06d7dc09e9974428b14799f1}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!actualiser\+Temperature@{actualiser\+Temperature}}
+\index{actualiser\+Temperature@{actualiser\+Temperature}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{actualiser\+Temperature}{actualiserTemperature}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::actualiser\+Temperature (\begin{DoxyParamCaption}\item[{double}]{temperature }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+S\textquotesingle{}actualise à chaque reception de mesure
+
+
+\begin{DoxyParams}{Paramètres}
+{\em temperature} & double \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_i_h_m_rov_aa89397963e5889e2f911bed5112772cb}{bar\+Temperature}, et \hyperlink{class_i_h_m_rov_ade64349f20dac7adccee4d4fbc04e6e8}{label\+Mesure\+Temperature}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+
+\begin{DoxyCode}
+00396 \{
+00397     \hyperlink{class_i_h_m_rov_ade64349f20dac7adccee4d4fbc04e6e8}{labelMesureTemperature}->setText(\textcolor{stringliteral}{"Temperature (°C) : "} + QString::number(
+      temperature));
+00398     \hyperlink{class_i_h_m_rov_aa89397963e5889e2f911bed5112772cb}{barTemperature}->setValue(\textcolor{keywordtype}{int}(temperature)); 
+00399 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_a4a4a90ab6d074aa54466f3f87db2f81c}\label{class_i_h_m_rov_a4a4a90ab6d074aa54466f3f87db2f81c}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!creation\+Campagne@{creation\+Campagne}}
+\index{creation\+Campagne@{creation\+Campagne}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{creation\+Campagne}{creationCampagne}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::creation\+Campagne (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a08bf623a890df272f738c1ff8631213f}{creer\+Fenetre\+Nouvelle\+Campagne()}, et \hyperlink{class_i_h_m_rov_a229194814bfb1fc94ab3cc86d6411921}{enregistrer\+Parametres\+Campagne()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a30b49bada719a73e0899ad4bafb4de99}\label{class_i_h_m_rov_a30b49bada719a73e0899ad4bafb4de99}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!creer\+Fenetre\+Debug@{creer\+Fenetre\+Debug}}
+\index{creer\+Fenetre\+Debug@{creer\+Fenetre\+Debug}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{creer\+Fenetre\+Debug()}{creerFenetreDebug()}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::creer\+Fenetre\+Debug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_i_h_m_rov_a4a6fec1b4a86c93c1d0d62d66804db5c}{bouton\+Annuler}, \hyperlink{class_i_h_m_rov_a7a441ed53b0066edaf1f0acbea24e777}{bouton\+Envoyees}, \hyperlink{class_i_h_m_rov_a82f0ceba3dadd7a3d3251c236bf212a4}{bouton\+Etats}, \hyperlink{class_i_h_m_rov_ae56bf1c744f0fc393ef517e0e66b0d12}{bouton\+Recues}, \hyperlink{class_i_h_m_rov_a5dca475dd63a04c96386855a84c5effb}{bouton\+S\+QL}, \hyperlink{class_i_h_m_rov_a393d23f9256a9db063dfef11d95cdc06}{fenetre\+Debug}, \hyperlink{class_i_h_m_rov_a667455d332d2abf2e42b897e6cc632f8}{label\+Debug}, et \hyperlink{class_i_h_m_rov_ae2a7bec24a52ffd9e53baf1185ab6cd7}{plain\+Text\+Edit\+Debug}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+
+\begin{DoxyCode}
+00497 \{
+00498     \textcolor{keyword}{const} \textcolor{keywordtype}{int} largeurFenetreDebug = qApp->desktop()->availableGeometry(\textcolor{keyword}{this}).width() / 3;
+00499     \textcolor{keyword}{const} \textcolor{keywordtype}{int} hauteurFenetreDebug = qApp->desktop()->availableGeometry(\textcolor{keyword}{this}).height() / 4;
+00500 
+00501     \hyperlink{class_i_h_m_rov_a393d23f9256a9db063dfef11d95cdc06}{fenetreDebug} = \textcolor{keyword}{new} QDialog();
+00502     \hyperlink{class_i_h_m_rov_a7a441ed53b0066edaf1f0acbea24e777}{boutonEnvoyees} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"Envoi"});
+00503     \hyperlink{class_i_h_m_rov_ae56bf1c744f0fc393ef517e0e66b0d12}{boutonRecues} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"Reception"});
+00504     \hyperlink{class_i_h_m_rov_a5dca475dd63a04c96386855a84c5effb}{boutonSQL} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"SQL"});
+00505     \hyperlink{class_i_h_m_rov_a82f0ceba3dadd7a3d3251c236bf212a4}{boutonEtats} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"Status"});
+00506     \hyperlink{class_i_h_m_rov_a4a6fec1b4a86c93c1d0d62d66804db5c}{boutonAnnuler} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"&Retour"});
+00507 
+00508     \hyperlink{class_i_h_m_rov_a667455d332d2abf2e42b897e6cc632f8}{labelDebug} = \textcolor{keyword}{new} QLabel(\textcolor{stringliteral}{"En cours de développement."});
+00509     \hyperlink{class_i_h_m_rov_ae2a7bec24a52ffd9e53baf1185ab6cd7}{plainTextEditDebug} = \textcolor{keyword}{new} QPlainTextEdit(\textcolor{stringliteral}{"Test"});
+00510 
+00511     QVBoxLayout *vLayoutFenetreDebug = \textcolor{keyword}{new} QVBoxLayout;
+00512     QHBoxLayout *hLayoutEntete = \textcolor{keyword}{new} QHBoxLayout;
+00513     QVBoxLayout *vLayoutSelection = \textcolor{keyword}{new} QVBoxLayout;
+00514     QHBoxLayout *hLayoutBoutonRetour = \textcolor{keyword}{new} QHBoxLayout;
+00515 
+00516     \hyperlink{class_i_h_m_rov_a393d23f9256a9db063dfef11d95cdc06}{fenetreDebug}->setWindowTitle(\textcolor{stringliteral}{"Mode Debug"});
+00517     \hyperlink{class_i_h_m_rov_a393d23f9256a9db063dfef11d95cdc06}{fenetreDebug}->setFixedSize(largeurFenetreDebug, hauteurFenetreDebug);
+00518 
+00519     \hyperlink{class_i_h_m_rov_a393d23f9256a9db063dfef11d95cdc06}{fenetreDebug}->setLayout(vLayoutFenetreDebug);
+00520 
+00521     vLayoutFenetreDebug->addLayout(hLayoutEntete);
+00522     \textcolor{comment}{//vLayoutFenetreDebug->addLayout(vLayoutSelection);}
+00523     vLayoutFenetreDebug->addLayout(hLayoutBoutonRetour);
+00524 
+00525     hLayoutEntete->addWidget(\hyperlink{class_i_h_m_rov_a667455d332d2abf2e42b897e6cc632f8}{labelDebug});
+00526 
+00527     vLayoutSelection->addWidget(\hyperlink{class_i_h_m_rov_a7a441ed53b0066edaf1f0acbea24e777}{boutonEnvoyees});
+00528     vLayoutSelection->addWidget(\hyperlink{class_i_h_m_rov_ae56bf1c744f0fc393ef517e0e66b0d12}{boutonRecues});
+00529     vLayoutSelection->addWidget(\hyperlink{class_i_h_m_rov_a5dca475dd63a04c96386855a84c5effb}{boutonSQL});
+00530     vLayoutSelection->addWidget(\hyperlink{class_i_h_m_rov_a82f0ceba3dadd7a3d3251c236bf212a4}{boutonEtats});
+00531 
+00532     hLayoutBoutonRetour->addWidget(\hyperlink{class_i_h_m_rov_a4a6fec1b4a86c93c1d0d62d66804db5c}{boutonAnnuler});
+00533 
+00534     connect(\hyperlink{class_i_h_m_rov_a4a6fec1b4a86c93c1d0d62d66804db5c}{boutonAnnuler}, SIGNAL(clicked()), \hyperlink{class_i_h_m_rov_a393d23f9256a9db063dfef11d95cdc06}{fenetreDebug}, SLOT(reject()));
+00535 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_a08bf623a890df272f738c1ff8631213f}\label{class_i_h_m_rov_a08bf623a890df272f738c1ff8631213f}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!creer\+Fenetre\+Nouvelle\+Campagne@{creer\+Fenetre\+Nouvelle\+Campagne}}
+\index{creer\+Fenetre\+Nouvelle\+Campagne@{creer\+Fenetre\+Nouvelle\+Campagne}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{creer\+Fenetre\+Nouvelle\+Campagne()}{creerFenetreNouvelleCampagne()}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::creer\+Fenetre\+Nouvelle\+Campagne (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_i_h_m_rov_a4a6fec1b4a86c93c1d0d62d66804db5c}{bouton\+Annuler}, \hyperlink{class_i_h_m_rov_a4294b6c808089083906fb0815d1c9c27}{bouton\+Valider}, \hyperlink{class_i_h_m_rov_a32ee4423982fa3a78e59167ed2354f6e}{combo\+Box\+Liste\+Operateurs}, \hyperlink{class_i_h_m_rov_a4a4a90ab6d074aa54466f3f87db2f81c}{creation\+Campagne()}, \hyperlink{class_i_h_m_rov_a229194814bfb1fc94ab3cc86d6411921}{enregistrer\+Parametres\+Campagne()}, \hyperlink{class_i_h_m_rov_a13c12a93de7fc77c32f0108ae73cec06}{fenetre\+Nouvelle\+Campagne}, \hyperlink{class_i_h_m_rov_a3ae7bec5b8f85f779ab58ba60556b37f}{label\+Campagne}, \hyperlink{class_i_h_m_rov_addac593dfa0ea112cf4cc1b3837ca5e0}{label\+Description\+Campagne}, \hyperlink{class_i_h_m_rov_a723334735d6a20ea43f79567892cfd25}{label\+Nom\+Campagne}, \hyperlink{class_i_h_m_rov_a1855235995ed076748b568a1702355c9}{label\+Operateur}, \hyperlink{class_i_h_m_rov_aedf9fd0d893326f970aa1b73dbe06e85}{line\+Edit\+Description\+Campagne}, \hyperlink{class_i_h_m_rov_a3b3dac7166ab414832dea0b5ad1a570d}{line\+Edit\+Nom\+Campagne}, et \hyperlink{class_i_h_m_rov_a752a8dc2b3b68d536e94ff8bfb62f46f}{remplir\+Combo\+Box\+Liste\+Operateurs()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+
+\begin{DoxyCode}
+00576 \{
+00577     \textcolor{keyword}{const} \textcolor{keywordtype}{int} largeurFenetreNouvelleCampagne = qApp->desktop()->availableGeometry(\textcolor{keyword}{this}).width() / 3;
+00578     \textcolor{keyword}{const} \textcolor{keywordtype}{int} hauteurFenetreNouvelleCampagne = qApp->desktop()->availableGeometry(\textcolor{keyword}{this}).height() / 4;
+00579 
+00580     \textcolor{comment}{// Les widgets}
+00581     \hyperlink{class_i_h_m_rov_a13c12a93de7fc77c32f0108ae73cec06}{fenetreNouvelleCampagne} = \textcolor{keyword}{new} QDialog(\textcolor{keyword}{this});
+00582     \hyperlink{class_i_h_m_rov_a4294b6c808089083906fb0815d1c9c27}{boutonValider} = \textcolor{keyword}{new} QPushButton(QString::fromUtf8(\textcolor{stringliteral}{"&Créer"}));
+00583     \hyperlink{class_i_h_m_rov_a4a6fec1b4a86c93c1d0d62d66804db5c}{boutonAnnuler} = \textcolor{keyword}{new} QPushButton(QString::fromUtf8(\textcolor{stringliteral}{"&Annuler"}));
+00584 
+00585     \textcolor{comment}{// Campagne}
+00586     \hyperlink{class_i_h_m_rov_a3ae7bec5b8f85f779ab58ba60556b37f}{labelCampagne} = \textcolor{keyword}{new} QLabel;
+00587     \hyperlink{class_i_h_m_rov_a723334735d6a20ea43f79567892cfd25}{labelNomCampagne} = \textcolor{keyword}{new} QLabel;
+00588     \hyperlink{class_i_h_m_rov_a3b3dac7166ab414832dea0b5ad1a570d}{lineEditNomCampagne} = \textcolor{keyword}{new} QLineEdit;
+00589     \hyperlink{class_i_h_m_rov_addac593dfa0ea112cf4cc1b3837ca5e0}{labelDescriptionCampagne} = \textcolor{keyword}{new} QLabel;
+00590     \hyperlink{class_i_h_m_rov_aedf9fd0d893326f970aa1b73dbe06e85}{lineEditDescriptionCampagne} = \textcolor{keyword}{new} QLineEdit;
+00591 
+00592     \textcolor{comment}{// Operateur}
+00593     \hyperlink{class_i_h_m_rov_a1855235995ed076748b568a1702355c9}{labelOperateur} = \textcolor{keyword}{new} QLabel;
+00594     \hyperlink{class_i_h_m_rov_a32ee4423982fa3a78e59167ed2354f6e}{comboBoxListeOperateurs} = \textcolor{keyword}{new} QComboBox;
+00595 
+00596     \textcolor{comment}{// Les layouts}
+00597     QVBoxLayout *vLayoutFenetreNouvelleCampagne = \textcolor{keyword}{new} QVBoxLayout;
+00598     QHBoxLayout *hLayoutFenetreCampagne = \textcolor{keyword}{new} QHBoxLayout;
+00599     QVBoxLayout *vLayoutCampagne = \textcolor{keyword}{new} QVBoxLayout;
+00600     QVBoxLayout *vLayoutOperateur = \textcolor{keyword}{new} QVBoxLayout;
+00601     QHBoxLayout *hLayoutNomCampagne = \textcolor{keyword}{new} QHBoxLayout;
+00602     QHBoxLayout *hLayoutDescriptionCampagne = \textcolor{keyword}{new} QHBoxLayout;
+00603     QHBoxLayout *hLayoutBoutonsCampagne = \textcolor{keyword}{new} QHBoxLayout;
+00604 
+00605     \hyperlink{class_i_h_m_rov_a13c12a93de7fc77c32f0108ae73cec06}{fenetreNouvelleCampagne}->setWindowTitle(\textcolor{stringliteral}{"Démarrer une nouvelle campagne"});
+00606     \hyperlink{class_i_h_m_rov_a13c12a93de7fc77c32f0108ae73cec06}{fenetreNouvelleCampagne}->setFixedSize(largeurFenetreNouvelleCampagne, 
+      hauteurFenetreNouvelleCampagne);
+00607     \hyperlink{class_i_h_m_rov_a13c12a93de7fc77c32f0108ae73cec06}{fenetreNouvelleCampagne}->setLayout(vLayoutFenetreNouvelleCampagne);
+00608 
+00609     \textcolor{comment}{// Campagne}
+00610     \hyperlink{class_i_h_m_rov_a3ae7bec5b8f85f779ab58ba60556b37f}{labelCampagne}->setText(\textcolor{stringliteral}{"Campagne"});
+00611     \hyperlink{class_i_h_m_rov_a723334735d6a20ea43f79567892cfd25}{labelNomCampagne}->setText(\textcolor{stringliteral}{"Nom : "});
+00612     \hyperlink{class_i_h_m_rov_addac593dfa0ea112cf4cc1b3837ca5e0}{labelDescriptionCampagne}->setText(\textcolor{stringliteral}{"Description : "});
+00613     hLayoutNomCampagne->addWidget(\hyperlink{class_i_h_m_rov_a723334735d6a20ea43f79567892cfd25}{labelNomCampagne});
+00614     hLayoutNomCampagne->addWidget(\hyperlink{class_i_h_m_rov_a3b3dac7166ab414832dea0b5ad1a570d}{lineEditNomCampagne});
+00615     hLayoutDescriptionCampagne->addWidget(\hyperlink{class_i_h_m_rov_addac593dfa0ea112cf4cc1b3837ca5e0}{labelDescriptionCampagne});
+00616     hLayoutDescriptionCampagne->addWidget(\hyperlink{class_i_h_m_rov_aedf9fd0d893326f970aa1b73dbe06e85}{lineEditDescriptionCampagne});
+00617     vLayoutCampagne->addWidget(\hyperlink{class_i_h_m_rov_a3ae7bec5b8f85f779ab58ba60556b37f}{labelCampagne});
+00618     vLayoutCampagne->addLayout(hLayoutNomCampagne);
+00619     vLayoutCampagne->addLayout(hLayoutDescriptionCampagne);
+00620     vLayoutCampagne->addStretch();
+00621 
+00622     \textcolor{comment}{// Operateur}
+00623     \hyperlink{class_i_h_m_rov_a1855235995ed076748b568a1702355c9}{labelOperateur}->setText(QString::fromUtf8(\textcolor{stringliteral}{"Opérateur"}));
+00624     vLayoutOperateur->addWidget(\hyperlink{class_i_h_m_rov_a1855235995ed076748b568a1702355c9}{labelOperateur});
+00625     vLayoutOperateur->addWidget(\hyperlink{class_i_h_m_rov_a32ee4423982fa3a78e59167ed2354f6e}{comboBoxListeOperateurs});
+00626     vLayoutOperateur->addStretch();
+00627     \hyperlink{class_i_h_m_rov_a752a8dc2b3b68d536e94ff8bfb62f46f}{remplirComboBoxListeOperateurs}();
+00628 
+00629     hLayoutFenetreCampagne->addLayout(vLayoutCampagne);
+00630     hLayoutFenetreCampagne->addSpacing(10);
+00631     hLayoutFenetreCampagne->addLayout(vLayoutOperateur);
+00632 
+00633     \textcolor{comment}{// Boutons}
+00634     hLayoutBoutonsCampagne->addWidget(\hyperlink{class_i_h_m_rov_a4294b6c808089083906fb0815d1c9c27}{boutonValider});
+00635     hLayoutBoutonsCampagne->addWidget(\hyperlink{class_i_h_m_rov_a4a6fec1b4a86c93c1d0d62d66804db5c}{boutonAnnuler});
+00636     hLayoutBoutonsCampagne->addStretch();
+00637 
+00638     vLayoutFenetreNouvelleCampagne->addLayout(hLayoutFenetreCampagne);
+00639     vLayoutFenetreNouvelleCampagne->addStretch();
+00640     vLayoutFenetreNouvelleCampagne->addLayout(hLayoutBoutonsCampagne);
+00641 
+00642     \textcolor{comment}{// Les connexions}
+00643     connect(\hyperlink{class_i_h_m_rov_a4294b6c808089083906fb0815d1c9c27}{boutonValider}, SIGNAL(clicked()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_i_h_m_rov_a229194814bfb1fc94ab3cc86d6411921}{enregistrerParametresCampagne}()));
+00644     connect(\textcolor{keyword}{this}, SIGNAL(\hyperlink{class_i_h_m_rov_a4a4a90ab6d074aa54466f3f87db2f81c}{creationCampagne}()), 
+      \hyperlink{class_i_h_m_rov_a13c12a93de7fc77c32f0108ae73cec06}{fenetreNouvelleCampagne}, SLOT(accept()));
+00645     connect(\hyperlink{class_i_h_m_rov_a4a6fec1b4a86c93c1d0d62d66804db5c}{boutonAnnuler}, SIGNAL(clicked()), 
+      \hyperlink{class_i_h_m_rov_a13c12a93de7fc77c32f0108ae73cec06}{fenetreNouvelleCampagne}, SLOT(reject()));
+00646 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}\label{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!creer\+Fenetre\+Parametres@{creer\+Fenetre\+Parametres}}
+\index{creer\+Fenetre\+Parametres@{creer\+Fenetre\+Parametres}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{creer\+Fenetre\+Parametres()}{creerFenetreParametres()}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::creer\+Fenetre\+Parametres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_i_h_m_rov_a4a6fec1b4a86c93c1d0d62d66804db5c}{bouton\+Annuler}, \hyperlink{class_i_h_m_rov_a4294b6c808089083906fb0815d1c9c27}{bouton\+Valider}, \hyperlink{class_communication_rov_ac49ffc6f2e6ae22ea9f99e10ca0a4163}{Communication\+Rov\+::change\+Baud\+Rate()}, \hyperlink{class_communication_rov_ad46397a58ba7704fbd5ac5748e083004}{Communication\+Rov\+::change\+Port\+Communication()}, \hyperlink{class_i_h_m_rov_a85be76b5fee7281642db582a79a53511}{checkbox\+Archivage}, \hyperlink{class_i_h_m_rov_a12b970f1d2a170f14a01a684787904a5}{combobox\+Appareils}, \hyperlink{class_i_h_m_rov_a542c0cf87de612cd529b0753b60e4f95}{combobox\+Baud\+Rate}, \hyperlink{class_i_h_m_rov_a94d31f4e748f3e4549eab42c8bc7e367}{enregistrer\+Parametres()}, \hyperlink{class_i_h_m_rov_a277956dfb79e5345e5ae0117fe41ddf2}{fenetre\+Parametres}, \hyperlink{class_communication_rov_a810de691dfc6d305f77c92ccd90bb6db}{Communication\+Rov\+::get\+Baud\+Rate()}, \hyperlink{class_rov_ad30543625f584e28bf785a80c59506dc}{Rov\+::get\+Communication\+Rov()}, \hyperlink{class_mesures_ae969e38402b8d19fe9b484f368200578}{Mesures\+::get\+Frequence\+Archivage()}, \hyperlink{class_rov_a0edd5f7db785bd856b8723fe49ca7848}{Rov\+::get\+Mesures()}, \hyperlink{class_communication_rov_a6226f9338fffc648cfca91c8e585a26b}{Communication\+Rov\+::get\+Port()}, \hyperlink{class_i_h_m_rov_ac6f93c34da2a4e24f743e61fd5d62405}{label\+Appareils}, \hyperlink{class_i_h_m_rov_a58e157352986f690bca4b79b9b05ee1d}{label\+Archivage\+Mesures}, \hyperlink{class_i_h_m_rov_a6e9a97a5cd38bfd92e6114c4299be7ee}{label\+Baud\+Rate}, \hyperlink{class_i_h_m_rov_a42fb93c9764bfc2fe81ba65fc02d8de2}{label\+Interval\+Archivage}, \hyperlink{class_mesures_ac1d2ea97f648264ebd690fba8f7020cc}{Mesures\+::modifie\+Frequence\+Archivage()}, \hyperlink{class_i_h_m_rov_a051d1d8d545e97c6b838df9054dddc6f}{nouveau\+Baud\+Rate()}, \hyperlink{class_i_h_m_rov_ae64280b18ebe069c1f64bd5f19ef3a2e}{nouveau\+Port\+Com()}, \hyperlink{class_i_h_m_rov_afcfb7f60c126fbaa87cb3f501189cc39}{nouvelle\+Frequence\+Archivage()}, \hyperlink{class_i_h_m_rov_accf04daf204c5810c8a6099bb7e37b7e}{parametres\+Sauvegardes()}, \hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}, \hyperlink{class_i_h_m_rov_a8c55c93ee14ee51335e72af07b521312}{slider\+Interval\+Archivage}, et \hyperlink{class_i_h_m_rov_abc906e8e992ecdf5eb1dae5dc622b768}{spin\+Box\+Interval\+Archivage}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+
+\begin{DoxyCode}
+00693 \{
+00694     \textcolor{keyword}{const} \textcolor{keywordtype}{int} largeurFenetreParametres = qApp->desktop()->availableGeometry(\textcolor{keyword}{this}).width() / 3;
+00695     \textcolor{keyword}{const} \textcolor{keywordtype}{int} hauteurFenetreParametres = qApp->desktop()->availableGeometry(\textcolor{keyword}{this}).height() / 4;
+00696 
+00697     \hyperlink{class_i_h_m_rov_a277956dfb79e5345e5ae0117fe41ddf2}{fenetreParametres} = \textcolor{keyword}{new} QDialog();
+00698     \hyperlink{class_i_h_m_rov_a4294b6c808089083906fb0815d1c9c27}{boutonValider} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"&Valider"});
+00699     \hyperlink{class_i_h_m_rov_a4a6fec1b4a86c93c1d0d62d66804db5c}{boutonAnnuler} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"&Retour"});
+00700 
+00701     \hyperlink{class_i_h_m_rov_a58e157352986f690bca4b79b9b05ee1d}{labelArchivageMesures} = \textcolor{keyword}{new} QLabel(\textcolor{stringliteral}{"Archivage Mesures :"});
+00702     \hyperlink{class_i_h_m_rov_a85be76b5fee7281642db582a79a53511}{checkboxArchivage} = \textcolor{keyword}{new} QCheckBox;
+00703     \hyperlink{class_i_h_m_rov_a85be76b5fee7281642db582a79a53511}{checkboxArchivage}->setChecked(\textcolor{keyword}{true});
+00704 
+00705     \hyperlink{class_i_h_m_rov_a42fb93c9764bfc2fe81ba65fc02d8de2}{labelIntervalArchivage} = \textcolor{keyword}{new} QLabel(\textcolor{stringliteral}{"Période d'archivage des mesures (sec) :"});
+00706     \hyperlink{class_i_h_m_rov_a8c55c93ee14ee51335e72af07b521312}{sliderIntervalArchivage} = \textcolor{keyword}{new} QSlider(Qt::Horizontal);
+00707     \hyperlink{class_i_h_m_rov_a8c55c93ee14ee51335e72af07b521312}{sliderIntervalArchivage}->setRange(12, 120);
+00708     \hyperlink{class_i_h_m_rov_a8c55c93ee14ee51335e72af07b521312}{sliderIntervalArchivage}->setSliderPosition(\hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}->
+      \hyperlink{class_rov_a0edd5f7db785bd856b8723fe49ca7848}{getMesures}()->\hyperlink{class_mesures_ae969e38402b8d19fe9b484f368200578}{getFrequenceArchivage}());
+00709     \hyperlink{class_i_h_m_rov_abc906e8e992ecdf5eb1dae5dc622b768}{spinBoxIntervalArchivage} = \textcolor{keyword}{new} QSpinBox;
+00710     \hyperlink{class_i_h_m_rov_abc906e8e992ecdf5eb1dae5dc622b768}{spinBoxIntervalArchivage}->setRange(12, 120);
+00711     \hyperlink{class_i_h_m_rov_abc906e8e992ecdf5eb1dae5dc622b768}{spinBoxIntervalArchivage}->setValue(\hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}->
+      \hyperlink{class_rov_a0edd5f7db785bd856b8723fe49ca7848}{getMesures}()->\hyperlink{class_mesures_ae969e38402b8d19fe9b484f368200578}{getFrequenceArchivage}());
+00712 
+00713     \hyperlink{class_i_h_m_rov_ac6f93c34da2a4e24f743e61fd5d62405}{labelAppareils} = \textcolor{keyword}{new} QLabel(\textcolor{stringliteral}{"Port :"});
+00714     \hyperlink{class_i_h_m_rov_a12b970f1d2a170f14a01a684787904a5}{comboboxAppareils} = \textcolor{keyword}{new} QComboBox;
+00715     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 4; i++)
+00716         \hyperlink{class_i_h_m_rov_a12b970f1d2a170f14a01a684787904a5}{comboboxAppareils}->addItem(\textcolor{stringliteral}{"/dev/ttyUSB"} + QString::number(i));
+00717 
+00718     \hyperlink{class_i_h_m_rov_a12b970f1d2a170f14a01a684787904a5}{comboboxAppareils}->addItem(\textcolor{stringliteral}{"/dev/ttyACM0"});
+00719     \hyperlink{class_i_h_m_rov_a12b970f1d2a170f14a01a684787904a5}{comboboxAppareils}->setCurrentText(\hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}->
+      \hyperlink{class_rov_ad30543625f584e28bf785a80c59506dc}{getCommunicationRov}()->\hyperlink{class_communication_rov_a6226f9338fffc648cfca91c8e585a26b}{getPort}());
+00720 
+00721     \hyperlink{class_i_h_m_rov_a6e9a97a5cd38bfd92e6114c4299be7ee}{labelBaudRate} = \textcolor{keyword}{new} QLabel(\textcolor{stringliteral}{"Baudrate : "});
+00722     \hyperlink{class_i_h_m_rov_a542c0cf87de612cd529b0753b60e4f95}{comboboxBaudRate} = \textcolor{keyword}{new} QComboBox;
+00723     QStringList listeBaudRate = \{\textcolor{stringliteral}{"1200"}, \textcolor{stringliteral}{"2400"}, \textcolor{stringliteral}{"4800"}, \textcolor{stringliteral}{"9600"}, \textcolor{stringliteral}{"19200"}, \textcolor{stringliteral}{"38400"}, \textcolor{stringliteral}{"57600"}, \textcolor{stringliteral}{"115200"}\};
+00724     \hyperlink{class_i_h_m_rov_a542c0cf87de612cd529b0753b60e4f95}{comboboxBaudRate}->addItems(listeBaudRate);
+00725     \hyperlink{class_i_h_m_rov_a542c0cf87de612cd529b0753b60e4f95}{comboboxBaudRate}->setCurrentText(\hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}->\hyperlink{class_rov_ad30543625f584e28bf785a80c59506dc}{getCommunicationRov}()->
+      \hyperlink{class_communication_rov_a810de691dfc6d305f77c92ccd90bb6db}{getBaudRate}());
+00726 
+00727     \textcolor{comment}{// LAYOUTS}
+00728     QVBoxLayout *vLayoutFenetreParametres = \textcolor{keyword}{new} QVBoxLayout;
+00729     QHBoxLayout *hLayoutArchivageActif = \textcolor{keyword}{new} QHBoxLayout;
+00730     QHBoxLayout *hLayoutIntervalArchivage = \textcolor{keyword}{new} QHBoxLayout;
+00731     QHBoxLayout *hLayoutAppareils = \textcolor{keyword}{new} QHBoxLayout;
+00732     QHBoxLayout *hLayoutBaudRate = \textcolor{keyword}{new} QHBoxLayout;
+00733     QHBoxLayout *hLayoutValiderAnnuler = \textcolor{keyword}{new} QHBoxLayout;
+00734 
+00735     \hyperlink{class_i_h_m_rov_a277956dfb79e5345e5ae0117fe41ddf2}{fenetreParametres}->setWindowTitle(\textcolor{stringliteral}{"Paramètres de la campagne"});
+00736     \hyperlink{class_i_h_m_rov_a277956dfb79e5345e5ae0117fe41ddf2}{fenetreParametres}->setFixedSize(largeurFenetreParametres, hauteurFenetreParametres);
+00737 
+00738     \hyperlink{class_i_h_m_rov_a277956dfb79e5345e5ae0117fe41ddf2}{fenetreParametres}->setLayout(vLayoutFenetreParametres);
+00739 
+00740     vLayoutFenetreParametres->addLayout(hLayoutArchivageActif);
+00741     vLayoutFenetreParametres->addLayout(hLayoutIntervalArchivage);
+00742     vLayoutFenetreParametres->addLayout(hLayoutAppareils);
+00743     vLayoutFenetreParametres->addLayout(hLayoutBaudRate);
+00744     vLayoutFenetreParametres->addLayout(hLayoutValiderAnnuler);
+00745 
+00746     \textcolor{comment}{// Contenu}
+00747     hLayoutArchivageActif->addWidget(\hyperlink{class_i_h_m_rov_a58e157352986f690bca4b79b9b05ee1d}{labelArchivageMesures});
+00748     hLayoutArchivageActif->addWidget(\hyperlink{class_i_h_m_rov_a85be76b5fee7281642db582a79a53511}{checkboxArchivage});
+00749 
+00750     hLayoutIntervalArchivage->addWidget(\hyperlink{class_i_h_m_rov_a42fb93c9764bfc2fe81ba65fc02d8de2}{labelIntervalArchivage});
+00751     hLayoutIntervalArchivage->addWidget(\hyperlink{class_i_h_m_rov_abc906e8e992ecdf5eb1dae5dc622b768}{spinBoxIntervalArchivage});
+00752     hLayoutIntervalArchivage->addWidget(\hyperlink{class_i_h_m_rov_a8c55c93ee14ee51335e72af07b521312}{sliderIntervalArchivage});
+00753 
+00754     hLayoutAppareils->addWidget(\hyperlink{class_i_h_m_rov_ac6f93c34da2a4e24f743e61fd5d62405}{labelAppareils});
+00755     hLayoutAppareils->addWidget(\hyperlink{class_i_h_m_rov_a12b970f1d2a170f14a01a684787904a5}{comboboxAppareils});
+00756 
+00757     hLayoutBaudRate->addWidget(\hyperlink{class_i_h_m_rov_a6e9a97a5cd38bfd92e6114c4299be7ee}{labelBaudRate});
+00758     hLayoutBaudRate->addWidget(\hyperlink{class_i_h_m_rov_a542c0cf87de612cd529b0753b60e4f95}{comboboxBaudRate});
+00759 
+00760     hLayoutValiderAnnuler->addWidget(\hyperlink{class_i_h_m_rov_a4294b6c808089083906fb0815d1c9c27}{boutonValider});
+00761     hLayoutValiderAnnuler->addWidget(\hyperlink{class_i_h_m_rov_a4a6fec1b4a86c93c1d0d62d66804db5c}{boutonAnnuler});
+00762 
+00763     \textcolor{comment}{// CONNEXIONS}
+00764     connect(\hyperlink{class_i_h_m_rov_abc906e8e992ecdf5eb1dae5dc622b768}{spinBoxIntervalArchivage}, SIGNAL(valueChanged(\textcolor{keywordtype}{int})), 
+      \hyperlink{class_i_h_m_rov_a8c55c93ee14ee51335e72af07b521312}{sliderIntervalArchivage}, SLOT(setValue(\textcolor{keywordtype}{int})));
+00765     connect(\hyperlink{class_i_h_m_rov_a8c55c93ee14ee51335e72af07b521312}{sliderIntervalArchivage}, SIGNAL(valueChanged(\textcolor{keywordtype}{int})), 
+      \hyperlink{class_i_h_m_rov_abc906e8e992ecdf5eb1dae5dc622b768}{spinBoxIntervalArchivage}, SLOT(setValue(\textcolor{keywordtype}{int})));
+00766 
+00767     connect(\hyperlink{class_i_h_m_rov_a85be76b5fee7281642db582a79a53511}{checkboxArchivage}, SIGNAL(toggled(\textcolor{keywordtype}{bool})), 
+      \hyperlink{class_i_h_m_rov_a8c55c93ee14ee51335e72af07b521312}{sliderIntervalArchivage}, SLOT(setEnabled(\textcolor{keywordtype}{bool})));
+00768     connect(\hyperlink{class_i_h_m_rov_a85be76b5fee7281642db582a79a53511}{checkboxArchivage}, SIGNAL(toggled(\textcolor{keywordtype}{bool})), 
+      \hyperlink{class_i_h_m_rov_abc906e8e992ecdf5eb1dae5dc622b768}{spinBoxIntervalArchivage}, SLOT(setEnabled(\textcolor{keywordtype}{bool})));
+00769 
+00770     connect(\hyperlink{class_i_h_m_rov_a4294b6c808089083906fb0815d1c9c27}{boutonValider}, SIGNAL(clicked()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_i_h_m_rov_a94d31f4e748f3e4549eab42c8bc7e367}{enregistrerParametres}()));
+00771     connect(\textcolor{keyword}{this}, SIGNAL(\hyperlink{class_i_h_m_rov_accf04daf204c5810c8a6099bb7e37b7e}{parametresSauvegardes}()), 
+      \hyperlink{class_i_h_m_rov_a277956dfb79e5345e5ae0117fe41ddf2}{fenetreParametres}, SLOT(accept()));
+00772     connect(\hyperlink{class_i_h_m_rov_a4a6fec1b4a86c93c1d0d62d66804db5c}{boutonAnnuler}, SIGNAL(clicked()), \hyperlink{class_i_h_m_rov_a277956dfb79e5345e5ae0117fe41ddf2}{fenetreParametres}, SLOT(reject(
+      )));
+00773 
+00774     connect(\textcolor{keyword}{this}, &\hyperlink{class_i_h_m_rov_afcfb7f60c126fbaa87cb3f501189cc39}{IHMRov::nouvelleFrequenceArchivage}, 
+      \hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}->\hyperlink{class_rov_a0edd5f7db785bd856b8723fe49ca7848}{getMesures}(), &\hyperlink{class_mesures_ac1d2ea97f648264ebd690fba8f7020cc}{Mesures::modifieFrequenceArchivage});
+00775     connect(\textcolor{keyword}{this}, &\hyperlink{class_i_h_m_rov_ae64280b18ebe069c1f64bd5f19ef3a2e}{IHMRov::nouveauPortCom}, \hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}->
+      \hyperlink{class_rov_ad30543625f584e28bf785a80c59506dc}{getCommunicationRov}(), &
+      \hyperlink{class_communication_rov_ad46397a58ba7704fbd5ac5748e083004}{CommunicationRov::changePortCommunication});
+00776     connect(\textcolor{keyword}{this}, &\hyperlink{class_i_h_m_rov_a051d1d8d545e97c6b838df9054dddc6f}{IHMRov::nouveauBaudRate}, \hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}->
+      \hyperlink{class_rov_ad30543625f584e28bf785a80c59506dc}{getCommunicationRov}(), &\hyperlink{class_communication_rov_ac49ffc6f2e6ae22ea9f99e10ca0a4163}{CommunicationRov::changeBaudRate}
+      );
+00777 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_a94d31f4e748f3e4549eab42c8bc7e367}\label{class_i_h_m_rov_a94d31f4e748f3e4549eab42c8bc7e367}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!enregistrer\+Parametres@{enregistrer\+Parametres}}
+\index{enregistrer\+Parametres@{enregistrer\+Parametres}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{enregistrer\+Parametres}{enregistrerParametres}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::enregistrer\+Parametres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{ihmrov_8h_ab599af93fd63f0c5df05b03aa7448eb9}{A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+I\+T\+RE}, \hyperlink{class_i_h_m_rov_a85be76b5fee7281642db582a79a53511}{checkbox\+Archivage}, \hyperlink{class_i_h_m_rov_a12b970f1d2a170f14a01a684787904a5}{combobox\+Appareils}, \hyperlink{class_i_h_m_rov_a542c0cf87de612cd529b0753b60e4f95}{combobox\+Baud\+Rate}, \hyperlink{class_communication_rov_a513c26b04745fa2ae31b4533d656dfd4}{Communication\+Rov\+::est\+Communication\+Rov\+Disponible()}, \hyperlink{class_rov_ad30543625f584e28bf785a80c59506dc}{Rov\+::get\+Communication\+Rov()}, \hyperlink{class_i_h_m_rov_a051d1d8d545e97c6b838df9054dddc6f}{nouveau\+Baud\+Rate()}, \hyperlink{class_i_h_m_rov_ae64280b18ebe069c1f64bd5f19ef3a2e}{nouveau\+Port\+Com()}, \hyperlink{class_i_h_m_rov_afcfb7f60c126fbaa87cb3f501189cc39}{nouvelle\+Frequence\+Archivage()}, \hyperlink{class_i_h_m_rov_accf04daf204c5810c8a6099bb7e37b7e}{parametres\+Sauvegardes()}, \hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}, \hyperlink{class_rov_abbe2eb87a00b651c8259c0c7abca3edd}{Rov\+::set\+Archivage\+Actif()}, et \hyperlink{class_i_h_m_rov_a8c55c93ee14ee51335e72af07b521312}{slider\+Interval\+Archivage}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{creer\+Fenetre\+Parametres()}.
+
+
+\begin{DoxyCode}
+00798 \{
+00799     qDebug() << Q\_FUNC\_INFO;
+00800 
+00801     emit \hyperlink{class_i_h_m_rov_ae64280b18ebe069c1f64bd5f19ef3a2e}{nouveauPortCom}(\hyperlink{class_i_h_m_rov_a12b970f1d2a170f14a01a684787904a5}{comboboxAppareils}->currentText());
+00802 
+00803     \hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}->\hyperlink{class_rov_abbe2eb87a00b651c8259c0c7abca3edd}{setArchivageActif}(\hyperlink{class_i_h_m_rov_a85be76b5fee7281642db582a79a53511}{checkboxArchivage}->isChecked());
+00804 
+00805     emit \hyperlink{class_i_h_m_rov_afcfb7f60c126fbaa87cb3f501189cc39}{nouvelleFrequenceArchivage}(
+      \hyperlink{class_i_h_m_rov_a8c55c93ee14ee51335e72af07b521312}{sliderIntervalArchivage}->value());
+00806 
+00807     emit \hyperlink{class_i_h_m_rov_a051d1d8d545e97c6b838df9054dddc6f}{nouveauBaudRate}(\hyperlink{class_i_h_m_rov_a542c0cf87de612cd529b0753b60e4f95}{comboboxBaudRate}->currentText());
+00808 
+00809     \textcolor{keywordflow}{if}(!\hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}->\hyperlink{class_rov_ad30543625f584e28bf785a80c59506dc}{getCommunicationRov}()->
+      \hyperlink{class_communication_rov_a513c26b04745fa2ae31b4533d656dfd4}{estCommunicationRovDisponible}())
+00810         QMessageBox::critical(\textcolor{keyword}{nullptr}, QString::fromUtf8(\hyperlink{ihmrov_8h_ab599af93fd63f0c5df05b03aa7448eb9}{APPLICATION\_TITRE}), 
+      QString::fromUtf8(\textcolor{stringliteral}{"Impossible de se connecter au port choisi !"} ));
+00811     \textcolor{keywordflow}{else}
+00812     \{
+00813         emit \hyperlink{class_i_h_m_rov_accf04daf204c5810c8a6099bb7e37b7e}{parametresSauvegardes}();
+00814     \}
+00815 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_a229194814bfb1fc94ab3cc86d6411921}\label{class_i_h_m_rov_a229194814bfb1fc94ab3cc86d6411921}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!enregistrer\+Parametres\+Campagne@{enregistrer\+Parametres\+Campagne}}
+\index{enregistrer\+Parametres\+Campagne@{enregistrer\+Parametres\+Campagne}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{enregistrer\+Parametres\+Campagne}{enregistrerParametresCampagne}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::enregistrer\+Parametres\+Campagne (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{ihmrov_8h_ab599af93fd63f0c5df05b03aa7448eb9}{A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+I\+T\+RE}, \hyperlink{class_i_h_m_rov_a32ee4423982fa3a78e59167ed2354f6e}{combo\+Box\+Liste\+Operateurs}, \hyperlink{class_i_h_m_rov_a4a4a90ab6d074aa54466f3f87db2f81c}{creation\+Campagne()}, \hyperlink{class_rov_ae1306036b067e9ad50a09f9dd607a092}{Rov\+::creer\+Nouvelle\+Campagne()}, \hyperlink{class_i_h_m_rov_a110af5c174e9fbba12bffbe0301ed690}{id\+Operateur}, \hyperlink{class_i_h_m_rov_a14aa781bc1a446ba6b3ecdea029caa91}{label\+Campagne\+En\+Cours}, \hyperlink{class_i_h_m_rov_aedf9fd0d893326f970aa1b73dbe06e85}{line\+Edit\+Description\+Campagne}, \hyperlink{class_i_h_m_rov_a3b3dac7166ab414832dea0b5ad1a570d}{line\+Edit\+Nom\+Campagne}, et \hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a08bf623a890df272f738c1ff8631213f}{creer\+Fenetre\+Nouvelle\+Campagne()}.
+
+
+\begin{DoxyCode}
+00342 \{   
+00343     qDebug() << Q\_FUNC\_INFO;
+00344     QString \hyperlink{class_i_h_m_rov_a110af5c174e9fbba12bffbe0301ed690}{idOperateur} = QString::number(\hyperlink{class_i_h_m_rov_a32ee4423982fa3a78e59167ed2354f6e}{comboBoxListeOperateurs}->
+      currentIndex() + 1);
+00345 
+00346     \textcolor{keywordflow}{if}(\hyperlink{class_i_h_m_rov_a3b3dac7166ab414832dea0b5ad1a570d}{lineEditNomCampagne}->text().isEmpty())
+00347     \{
+00348         QMessageBox::critical(\textcolor{keyword}{nullptr}, QString::fromUtf8(\hyperlink{ihmrov_8h_ab599af93fd63f0c5df05b03aa7448eb9}{APPLICATION\_TITRE}), 
+      QString::fromUtf8(\textcolor{stringliteral}{"Il faut donner un nom à la campagne !"}));
+00349         \textcolor{keywordflow}{return};
+00350     \}
+00351     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}->\hyperlink{class_rov_ae1306036b067e9ad50a09f9dd607a092}{creerNouvelleCampagne}(
+      \hyperlink{class_i_h_m_rov_a3b3dac7166ab414832dea0b5ad1a570d}{lineEditNomCampagne}->text(), \hyperlink{class_i_h_m_rov_aedf9fd0d893326f970aa1b73dbe06e85}{lineEditDescriptionCampagne}->
+      text(), \hyperlink{class_i_h_m_rov_a110af5c174e9fbba12bffbe0301ed690}{idOperateur}))
+00352     \{
+00353         \hyperlink{class_i_h_m_rov_a14aa781bc1a446ba6b3ecdea029caa91}{labelCampagneEnCours}->setText(\textcolor{stringliteral}{"Campagne : "} + 
+      \hyperlink{class_i_h_m_rov_a3b3dac7166ab414832dea0b5ad1a570d}{lineEditNomCampagne}->text());
+00354         emit \hyperlink{class_i_h_m_rov_a4a4a90ab6d074aa54466f3f87db2f81c}{creationCampagne}();
+00355     \}
+00356     \textcolor{keywordflow}{else}
+00357     \{
+00358         QMessageBox::critical(\textcolor{keyword}{nullptr}, QString::fromUtf8(\hyperlink{ihmrov_8h_ab599af93fd63f0c5df05b03aa7448eb9}{APPLICATION\_TITRE}), 
+      QString::fromUtf8(\textcolor{stringliteral}{"Impossible de créer la campagne !"}));
+00359         qDebug() << Q\_FUNC\_INFO << \hyperlink{class_i_h_m_rov_a3b3dac7166ab414832dea0b5ad1a570d}{lineEditNomCampagne}->text() << 
+      \hyperlink{class_i_h_m_rov_aedf9fd0d893326f970aa1b73dbe06e85}{lineEditDescriptionCampagne}->text() << \hyperlink{class_i_h_m_rov_a110af5c174e9fbba12bffbe0301ed690}{idOperateur};
+00360         \textcolor{keywordflow}{return};
+00361     \}
+00362 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_a8931cade7a1613975da7174b5c2e84d2}\label{class_i_h_m_rov_a8931cade7a1613975da7174b5c2e84d2}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!executer\+Fenetre\+Debug@{executer\+Fenetre\+Debug}}
+\index{executer\+Fenetre\+Debug@{executer\+Fenetre\+Debug}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{executer\+Fenetre\+Debug}{executerFenetreDebug}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::executer\+Fenetre\+Debug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_i_h_m_rov_a393d23f9256a9db063dfef11d95cdc06}{fenetre\+Debug}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aebbcb2325c2d1a88a012d8408e2d6223}{initialiser\+Menu()}.
+
+
+\begin{DoxyCode}
+00483 \{
+00484     qDebug() << Q\_FUNC\_INFO;
+00485     \textcolor{keywordtype}{int} retour = \hyperlink{class_i_h_m_rov_a393d23f9256a9db063dfef11d95cdc06}{fenetreDebug}->exec();
+00486     qDebug() << Q\_FUNC\_INFO << retour;
+00487     \textcolor{keywordflow}{if}(retour == QDialog::Rejected)
+00488     \{
+00489     \}
+00490 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_a3169e8cd9132ece69af974648066c6c1}\label{class_i_h_m_rov_a3169e8cd9132ece69af974648066c6c1}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!executer\+Fenetre\+Nouvelle\+Campagne@{executer\+Fenetre\+Nouvelle\+Campagne}}
+\index{executer\+Fenetre\+Nouvelle\+Campagne@{executer\+Fenetre\+Nouvelle\+Campagne}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{executer\+Fenetre\+Nouvelle\+Campagne}{executerFenetreNouvelleCampagne}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::executer\+Fenetre\+Nouvelle\+Campagne (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Connecté à l\textquotesingle{}action \char`\"{}\+Nouvelle Campagne\char`\"{} dans le menu \char`\"{}\+Campagne\char`\"{} 
+
+Références \hyperlink{class_i_h_m_rov_a13c12a93de7fc77c32f0108ae73cec06}{fenetre\+Nouvelle\+Campagne}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}, et \hyperlink{class_i_h_m_rov_aebbcb2325c2d1a88a012d8408e2d6223}{initialiser\+Menu()}.
+
+
+\begin{DoxyCode}
+00328 \{
+00329     qDebug() << Q\_FUNC\_INFO;
+00330     \textcolor{keywordtype}{int} retour = \hyperlink{class_i_h_m_rov_a13c12a93de7fc77c32f0108ae73cec06}{fenetreNouvelleCampagne}->exec();
+00331     qDebug() << Q\_FUNC\_INFO << retour;
+00332     \textcolor{keywordflow}{if}(retour == QDialog::Rejected)
+00333     \{
+00334     \}
+00335 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_a2ec97de9b75c073c6a4dd0792a284002}\label{class_i_h_m_rov_a2ec97de9b75c073c6a4dd0792a284002}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!executer\+Fenetre\+Parametres@{executer\+Fenetre\+Parametres}}
+\index{executer\+Fenetre\+Parametres@{executer\+Fenetre\+Parametres}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{executer\+Fenetre\+Parametres}{executerFenetreParametres}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::executer\+Fenetre\+Parametres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_i_h_m_rov_a277956dfb79e5345e5ae0117fe41ddf2}{fenetre\+Parametres}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}, et \hyperlink{class_i_h_m_rov_aebbcb2325c2d1a88a012d8408e2d6223}{initialiser\+Menu()}.
+
+
+\begin{DoxyCode}
+00784 \{
+00785     qDebug() << Q\_FUNC\_INFO;
+00786     \textcolor{keywordtype}{int} retour = \hyperlink{class_i_h_m_rov_a277956dfb79e5345e5ae0117fe41ddf2}{fenetreParametres}->exec();
+00787     qDebug() << Q\_FUNC\_INFO << retour;
+00788     \textcolor{keywordflow}{if}(retour == QDialog::Rejected)
+00789     \{
+00790     \}
+00791 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_a149d6d6325acf3f00bf025cb2fbac05f}\label{class_i_h_m_rov_a149d6d6325acf3f00bf025cb2fbac05f}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!get\+Heure@{get\+Heure}}
+\index{get\+Heure@{get\+Heure}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{get\+Heure()}{getHeure()}}
+{\footnotesize\ttfamily long I\+H\+M\+Rov\+::get\+Heure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_i_h_m_rov_a38ad5c20c2347825c237e9b85bb5c7e6}{valeur\+Chronometre}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aa6a269f311d527387ad3c9e22dd12d43}{get\+Temps()}.
+
+
+\begin{DoxyCode}
+00684 \{
+00685     \textcolor{keywordflow}{return} \hyperlink{class_i_h_m_rov_a38ad5c20c2347825c237e9b85bb5c7e6}{valeurChronometre}/3600;
+00686 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_a79cddc1e905195eb11a8960abadf7d2f}\label{class_i_h_m_rov_a79cddc1e905195eb11a8960abadf7d2f}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!get\+Id\+Operateur@{get\+Id\+Operateur}}
+\index{get\+Id\+Operateur@{get\+Id\+Operateur}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{get\+Id\+Operateur()}{getIdOperateur()}}
+{\footnotesize\ttfamily int I\+H\+M\+Rov\+::get\+Id\+Operateur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_i_h_m_rov_a110af5c174e9fbba12bffbe0301ed690}{id\+Operateur}.
+
+
+\begin{DoxyCode}
+00567 \{
+00568     \textcolor{keywordflow}{return} \hyperlink{class_i_h_m_rov_a110af5c174e9fbba12bffbe0301ed690}{idOperateur};
+00569 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_ad6d275fe98c3dd1e40b2ef0defff3be9}\label{class_i_h_m_rov_ad6d275fe98c3dd1e40b2ef0defff3be9}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!get\+Minutes@{get\+Minutes}}
+\index{get\+Minutes@{get\+Minutes}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{get\+Minutes()}{getMinutes()}}
+{\footnotesize\ttfamily long I\+H\+M\+Rov\+::get\+Minutes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_i_h_m_rov_a38ad5c20c2347825c237e9b85bb5c7e6}{valeur\+Chronometre}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aa6a269f311d527387ad3c9e22dd12d43}{get\+Temps()}.
+
+
+\begin{DoxyCode}
+00675 \{
+00676     \textcolor{keywordflow}{return} (\hyperlink{class_i_h_m_rov_a38ad5c20c2347825c237e9b85bb5c7e6}{valeurChronometre}%3600)/60;
+00677 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_ad28dd7ea40587335f6554de60c828524}\label{class_i_h_m_rov_ad28dd7ea40587335f6554de60c828524}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!get\+Secondes@{get\+Secondes}}
+\index{get\+Secondes@{get\+Secondes}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{get\+Secondes()}{getSecondes()}}
+{\footnotesize\ttfamily long I\+H\+M\+Rov\+::get\+Secondes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_i_h_m_rov_a38ad5c20c2347825c237e9b85bb5c7e6}{valeur\+Chronometre}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aa6a269f311d527387ad3c9e22dd12d43}{get\+Temps()}.
+
+
+\begin{DoxyCode}
+00666 \{
+00667     \textcolor{keywordflow}{return} \hyperlink{class_i_h_m_rov_a38ad5c20c2347825c237e9b85bb5c7e6}{valeurChronometre}%60;
+00668 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_aa6a269f311d527387ad3c9e22dd12d43}\label{class_i_h_m_rov_aa6a269f311d527387ad3c9e22dd12d43}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!get\+Temps@{get\+Temps}}
+\index{get\+Temps@{get\+Temps}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{get\+Temps()}{getTemps()}}
+{\footnotesize\ttfamily Q\+String I\+H\+M\+Rov\+::get\+Temps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyReturn}{Renvoie}
+Q\+String le temps formaté \char`\"{}hh\+:mm\+:ss\char`\"{} 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_i_h_m_rov_a149d6d6325acf3f00bf025cb2fbac05f}{get\+Heure()}, \hyperlink{class_i_h_m_rov_ad6d275fe98c3dd1e40b2ef0defff3be9}{get\+Minutes()}, et \hyperlink{class_i_h_m_rov_ad28dd7ea40587335f6554de60c828524}{get\+Secondes()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a4a0d3a0741d0669ede732b630eae54c6}{tic()}.
+
+
+\begin{DoxyCode}
+00823 \{
+00824     QString heure, minutes, secondes;
+00825 
+00826    \textcolor{keywordflow}{if} (\hyperlink{class_i_h_m_rov_a149d6d6325acf3f00bf025cb2fbac05f}{getHeure}() < 10)
+00827       heure = \textcolor{stringliteral}{"0"} + QString::number(\hyperlink{class_i_h_m_rov_a149d6d6325acf3f00bf025cb2fbac05f}{getHeure}());
+00828    \textcolor{keywordflow}{else} heure = QString::number(\hyperlink{class_i_h_m_rov_a149d6d6325acf3f00bf025cb2fbac05f}{getHeure}());
+00829 
+00830    \textcolor{keywordflow}{if} (\hyperlink{class_i_h_m_rov_ad6d275fe98c3dd1e40b2ef0defff3be9}{getMinutes}() < 10)
+00831       minutes = \textcolor{stringliteral}{"0"} + QString::number(\hyperlink{class_i_h_m_rov_ad6d275fe98c3dd1e40b2ef0defff3be9}{getMinutes}());
+00832    \textcolor{keywordflow}{else} minutes = QString::number(\hyperlink{class_i_h_m_rov_ad6d275fe98c3dd1e40b2ef0defff3be9}{getMinutes}());
+00833 
+00834    \textcolor{keywordflow}{if} (\hyperlink{class_i_h_m_rov_ad28dd7ea40587335f6554de60c828524}{getSecondes}() < 10)
+00835       secondes = \textcolor{stringliteral}{"0"} + QString::number(\hyperlink{class_i_h_m_rov_ad28dd7ea40587335f6554de60c828524}{getSecondes}());
+00836    \textcolor{keywordflow}{else} secondes = QString::number(\hyperlink{class_i_h_m_rov_ad28dd7ea40587335f6554de60c828524}{getSecondes}());
+00837 
+00838    QString temps = heure + \textcolor{stringliteral}{":"} + minutes + \textcolor{stringliteral}{":"} + secondes;
+00839    \textcolor{keywordflow}{return} temps;
+00840 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_a64002e867300c8aff2ebd4568acc107e}\label{class_i_h_m_rov_a64002e867300c8aff2ebd4568acc107e}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!initialiser\+Chronometre@{initialiser\+Chronometre}}
+\index{initialiser\+Chronometre@{initialiser\+Chronometre}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{initialiser\+Chronometre()}{initialiserChronometre()}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::initialiser\+Chronometre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_i_h_m_rov_ac8733c564d7beea8b669e62544a006a5}{chronometre}, \hyperlink{ihmrov_8h_ad0750d12e2f5f404ec458d4066a53fa4}{P\+E\+R\+I\+O\+DE}, \hyperlink{class_i_h_m_rov_a4a0d3a0741d0669ede732b630eae54c6}{tic()}, et \hyperlink{class_i_h_m_rov_a38ad5c20c2347825c237e9b85bb5c7e6}{valeur\+Chronometre}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+
+\begin{DoxyCode}
+00653 \{
+00654     this->\hyperlink{class_i_h_m_rov_a38ad5c20c2347825c237e9b85bb5c7e6}{valeurChronometre} = 0;
+00655     QTimer *\hyperlink{class_i_h_m_rov_ac8733c564d7beea8b669e62544a006a5}{chronometre} = \textcolor{keyword}{new} QTimer(\textcolor{keyword}{this});
+00656     connect(chronometre, SIGNAL(timeout()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_i_h_m_rov_a4a0d3a0741d0669ede732b630eae54c6}{tic}()));
+00657 
+00658     chronometre->start(\hyperlink{ihmrov_8h_ad0750d12e2f5f404ec458d4066a53fa4}{PERIODE});
+00659 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_af3e46f174ab2fdeaebb2d00e6b8bcb33}\label{class_i_h_m_rov_af3e46f174ab2fdeaebb2d00e6b8bcb33}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!initialiser\+Liste\+Camera@{initialiser\+Liste\+Camera}}
+\index{initialiser\+Liste\+Camera@{initialiser\+Liste\+Camera}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{initialiser\+Liste\+Camera}{initialiserListeCamera}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::initialiser\+Liste\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_i_h_m_rov_a0eda0e4726269508d4563d98064dca9d}{camera}, \hyperlink{class_camera_ad8a2a21d3701375a553c7c90646c694f}{Camera\+::get\+Liste\+Camera()}, et \hyperlink{class_i_h_m_rov_a9b9e5631b8d9b6a9801a6faac8cba0f0}{liste\+Cameras\+Dispo}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+
+\begin{DoxyCode}
+00312 \{
+00313     QList<QCameraInfo> listeCamera = \hyperlink{class_i_h_m_rov_a0eda0e4726269508d4563d98064dca9d}{camera}->\hyperlink{class_camera_ad8a2a21d3701375a553c7c90646c694f}{getListeCamera}();
+00314     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < listeCamera.count(); i++)
+00315     \{
+00316         \hyperlink{class_i_h_m_rov_a9b9e5631b8d9b6a9801a6faac8cba0f0}{listeCamerasDispo}->addItem(listeCamera[i].description() + \textcolor{stringliteral}{" ("} + listeCamera[i].
+      deviceName() + \textcolor{stringliteral}{")"});
+00317         \hyperlink{class_i_h_m_rov_a9b9e5631b8d9b6a9801a6faac8cba0f0}{listeCamerasDispo}->setSizeAdjustPolicy(QComboBox::AdjustToContents);
+00318         \hyperlink{class_i_h_m_rov_a9b9e5631b8d9b6a9801a6faac8cba0f0}{listeCamerasDispo}->setFixedWidth(\hyperlink{class_i_h_m_rov_a9b9e5631b8d9b6a9801a6faac8cba0f0}{listeCamerasDispo}->sizeHint().
+      width()+10);
+00319     \}
+00320 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_aebbcb2325c2d1a88a012d8408e2d6223}\label{class_i_h_m_rov_aebbcb2325c2d1a88a012d8408e2d6223}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!initialiser\+Menu@{initialiser\+Menu}}
+\index{initialiser\+Menu@{initialiser\+Menu}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{initialiser\+Menu()}{initialiserMenu()}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::initialiser\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_i_h_m_rov_aecd3c0b54390e60f6e1ba14787c68828}{action\+Aide}, \hyperlink{class_i_h_m_rov_abf3ebd717e5d59355dd271917962083f}{action\+Debug}, \hyperlink{class_i_h_m_rov_a1ea738e5224f6fa4fc61ac064b5d9a6e}{action\+Nouvelle\+Campagne}, \hyperlink{class_i_h_m_rov_aa1864bc274cc5662b212a3530255e4ad}{action\+Parametre}, \hyperlink{class_i_h_m_rov_a169e28bc630468d13c05de321f66ca3c}{barre\+Menu}, \hyperlink{class_i_h_m_rov_a8931cade7a1613975da7174b5c2e84d2}{executer\+Fenetre\+Debug()}, \hyperlink{class_i_h_m_rov_a3169e8cd9132ece69af974648066c6c1}{executer\+Fenetre\+Nouvelle\+Campagne()}, \hyperlink{class_i_h_m_rov_a2ec97de9b75c073c6a4dd0792a284002}{executer\+Fenetre\+Parametres()}, \hyperlink{class_i_h_m_rov_a7de335b17ef7b92fdb203cd385ba874f}{menu\+Aide}, \hyperlink{class_i_h_m_rov_ad110a9a5cfabc48491ee602075e28066}{menu\+Fichier}, \hyperlink{class_i_h_m_rov_aab4af4ee5ffb959869ee5f181fe4204e}{menu\+Outils}, et \hyperlink{class_i_h_m_rov_a45a10161fde8c6373918ec30f16a8b5e}{ouvrir\+Aide()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+
+\begin{DoxyCode}
+00445 \{
+00446     \hyperlink{class_i_h_m_rov_a169e28bc630468d13c05de321f66ca3c}{barreMenu} = \textcolor{keyword}{new} QMenuBar(\textcolor{keyword}{this});
+00447     \hyperlink{class_i_h_m_rov_ad110a9a5cfabc48491ee602075e28066}{menuFichier} = \textcolor{keyword}{new} QMenu(QString::fromUtf8(\textcolor{stringliteral}{"Fichier"}), \hyperlink{class_i_h_m_rov_a169e28bc630468d13c05de321f66ca3c}{barreMenu});
+00448     \hyperlink{class_i_h_m_rov_aab4af4ee5ffb959869ee5f181fe4204e}{menuOutils} = \textcolor{keyword}{new} QMenu(QString::fromUtf8(\textcolor{stringliteral}{"Outils"}), \hyperlink{class_i_h_m_rov_a169e28bc630468d13c05de321f66ca3c}{barreMenu});
+00449     \hyperlink{class_i_h_m_rov_a7de335b17ef7b92fdb203cd385ba874f}{menuAide} = \textcolor{keyword}{new} QMenu(QString::fromUtf8(\textcolor{stringliteral}{"À propos"}), \hyperlink{class_i_h_m_rov_a169e28bc630468d13c05de321f66ca3c}{barreMenu});
+00450 
+00451     \hyperlink{class_i_h_m_rov_a1ea738e5224f6fa4fc61ac064b5d9a6e}{actionNouvelleCampagne} = \textcolor{keyword}{new} QAction(QString::fromUtf8(\textcolor{stringliteral}{"Nouvelle campagne"}), \textcolor{keyword}{this}
+      );
+00452     \hyperlink{class_i_h_m_rov_aa1864bc274cc5662b212a3530255e4ad}{actionParametre} = \textcolor{keyword}{new} QAction(QString::fromUtf8(\textcolor{stringliteral}{"Parametres"}), \textcolor{keyword}{this});
+00453     \hyperlink{class_i_h_m_rov_abf3ebd717e5d59355dd271917962083f}{actionDebug} = \textcolor{keyword}{new} QAction(QString::fromUtf8(\textcolor{stringliteral}{"Debug"}), \textcolor{keyword}{this});
+00454     \hyperlink{class_i_h_m_rov_aecd3c0b54390e60f6e1ba14787c68828}{actionAide} = \textcolor{keyword}{new} QAction(QString::fromUtf8(\textcolor{stringliteral}{"À propos"}), \textcolor{keyword}{this});
+00455 
+00456     \hyperlink{class_i_h_m_rov_a1ea738e5224f6fa4fc61ac064b5d9a6e}{actionNouvelleCampagne}->setShortcuts(QKeySequence::New);
+00457     \hyperlink{class_i_h_m_rov_a1ea738e5224f6fa4fc61ac064b5d9a6e}{actionNouvelleCampagne}->setStatusTip(QString::fromUtf8(\textcolor{stringliteral}{"Créer une nouvelle
+       campagne"}));
+00458     connect(\hyperlink{class_i_h_m_rov_a1ea738e5224f6fa4fc61ac064b5d9a6e}{actionNouvelleCampagne}, SIGNAL(triggered()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_i_h_m_rov_a3169e8cd9132ece69af974648066c6c1}{executerFenetreNouvelleCampagne}()));
+00459 
+00460     \hyperlink{class_i_h_m_rov_aa1864bc274cc5662b212a3530255e4ad}{actionParametre}->setShortcut(tr(\textcolor{stringliteral}{"Ctrl+p"}));
+00461     connect(\hyperlink{class_i_h_m_rov_aa1864bc274cc5662b212a3530255e4ad}{actionParametre}, SIGNAL(triggered()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_i_h_m_rov_a2ec97de9b75c073c6a4dd0792a284002}{executerFenetreParametres}()));
+00462 
+00463     \hyperlink{class_i_h_m_rov_abf3ebd717e5d59355dd271917962083f}{actionDebug}->setShortcut(tr(\textcolor{stringliteral}{"Ctrl+d"}));
+00464     connect(\hyperlink{class_i_h_m_rov_abf3ebd717e5d59355dd271917962083f}{actionDebug}, SIGNAL(triggered()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_i_h_m_rov_a8931cade7a1613975da7174b5c2e84d2}{executerFenetreDebug}()));
+00465 
+00466     \hyperlink{class_i_h_m_rov_aecd3c0b54390e60f6e1ba14787c68828}{actionAide}->setShortcut(QKeySequence::HelpContents);
+00467     connect(\hyperlink{class_i_h_m_rov_aecd3c0b54390e60f6e1ba14787c68828}{actionAide}, SIGNAL(triggered()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_i_h_m_rov_a45a10161fde8c6373918ec30f16a8b5e}{ouvrirAide}()));
+00468 
+00469     \hyperlink{class_i_h_m_rov_a169e28bc630468d13c05de321f66ca3c}{barreMenu}->addMenu(\hyperlink{class_i_h_m_rov_ad110a9a5cfabc48491ee602075e28066}{menuFichier});
+00470     \hyperlink{class_i_h_m_rov_a169e28bc630468d13c05de321f66ca3c}{barreMenu}->addMenu(\hyperlink{class_i_h_m_rov_aab4af4ee5ffb959869ee5f181fe4204e}{menuOutils});
+00471     \hyperlink{class_i_h_m_rov_a169e28bc630468d13c05de321f66ca3c}{barreMenu}->addMenu(\hyperlink{class_i_h_m_rov_a7de335b17ef7b92fdb203cd385ba874f}{menuAide});
+00472     \hyperlink{class_i_h_m_rov_ad110a9a5cfabc48491ee602075e28066}{menuFichier}->addAction(\hyperlink{class_i_h_m_rov_a1ea738e5224f6fa4fc61ac064b5d9a6e}{actionNouvelleCampagne});
+00473     \hyperlink{class_i_h_m_rov_ad110a9a5cfabc48491ee602075e28066}{menuFichier}->addAction(\hyperlink{class_i_h_m_rov_aa1864bc274cc5662b212a3530255e4ad}{actionParametre});
+00474     \hyperlink{class_i_h_m_rov_aab4af4ee5ffb959869ee5f181fe4204e}{menuOutils}->addAction(\hyperlink{class_i_h_m_rov_abf3ebd717e5d59355dd271917962083f}{actionDebug});
+00475     \hyperlink{class_i_h_m_rov_a7de335b17ef7b92fdb203cd385ba874f}{menuAide}->addAction(\hyperlink{class_i_h_m_rov_aecd3c0b54390e60f6e1ba14787c68828}{actionAide});
+00476 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_a051d1d8d545e97c6b838df9054dddc6f}\label{class_i_h_m_rov_a051d1d8d545e97c6b838df9054dddc6f}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!nouveau\+Baud\+Rate@{nouveau\+Baud\+Rate}}
+\index{nouveau\+Baud\+Rate@{nouveau\+Baud\+Rate}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{nouveau\+Baud\+Rate}{nouveauBaudRate}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::nouveau\+Baud\+Rate (\begin{DoxyParamCaption}\item[{Q\+String}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{creer\+Fenetre\+Parametres()}, et \hyperlink{class_i_h_m_rov_a94d31f4e748f3e4549eab42c8bc7e367}{enregistrer\+Parametres()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_ae64280b18ebe069c1f64bd5f19ef3a2e}\label{class_i_h_m_rov_ae64280b18ebe069c1f64bd5f19ef3a2e}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!nouveau\+Port\+Com@{nouveau\+Port\+Com}}
+\index{nouveau\+Port\+Com@{nouveau\+Port\+Com}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{nouveau\+Port\+Com}{nouveauPortCom}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::nouveau\+Port\+Com (\begin{DoxyParamCaption}\item[{Q\+String}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{creer\+Fenetre\+Parametres()}, et \hyperlink{class_i_h_m_rov_a94d31f4e748f3e4549eab42c8bc7e367}{enregistrer\+Parametres()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_afcfb7f60c126fbaa87cb3f501189cc39}\label{class_i_h_m_rov_afcfb7f60c126fbaa87cb3f501189cc39}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!nouvelle\+Frequence\+Archivage@{nouvelle\+Frequence\+Archivage}}
+\index{nouvelle\+Frequence\+Archivage@{nouvelle\+Frequence\+Archivage}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{nouvelle\+Frequence\+Archivage}{nouvelleFrequenceArchivage}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::nouvelle\+Frequence\+Archivage (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{creer\+Fenetre\+Parametres()}, et \hyperlink{class_i_h_m_rov_a94d31f4e748f3e4549eab42c8bc7e367}{enregistrer\+Parametres()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a45a10161fde8c6373918ec30f16a8b5e}\label{class_i_h_m_rov_a45a10161fde8c6373918ec30f16a8b5e}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!ouvrir\+Aide@{ouvrir\+Aide}}
+\index{ouvrir\+Aide@{ouvrir\+Aide}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{ouvrir\+Aide}{ouvrirAide}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::ouvrir\+Aide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{ihmrov_8h_afbc72a1675bd9c5173820a3b874f1fa6}{A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+O\+NS}, \hyperlink{ihmrov_8h_ab599af93fd63f0c5df05b03aa7448eb9}{A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+I\+T\+RE}, et \hyperlink{class_i_h_m_rov_a8a6bdcda8ffc99b12b7232c988f6e797}{message\+Box\+Aide}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aebbcb2325c2d1a88a012d8408e2d6223}{initialiser\+Menu()}.
+
+
+\begin{DoxyCode}
+00369 \{
+00370     \hyperlink{class_i_h_m_rov_a8a6bdcda8ffc99b12b7232c988f6e797}{messageBoxAide} = \textcolor{keyword}{new} QMessageBox(\textcolor{keyword}{this});
+00371     \hyperlink{class_i_h_m_rov_a8a6bdcda8ffc99b12b7232c988f6e797}{messageBoxAide}->setWindowTitle(\textcolor{stringliteral}{"Aide"});
+00372     \hyperlink{class_i_h_m_rov_a8a6bdcda8ffc99b12b7232c988f6e797}{messageBoxAide}->setText(\hyperlink{ihmrov_8h_ab599af93fd63f0c5df05b03aa7448eb9}{APPLICATION\_TITRE});
+00373     \hyperlink{class_i_h_m_rov_a8a6bdcda8ffc99b12b7232c988f6e797}{messageBoxAide}->setInformativeText(\hyperlink{ihmrov_8h_afbc72a1675bd9c5173820a3b874f1fa6}{APPLICATION\_INFORMATIONS});
+00374     \hyperlink{class_i_h_m_rov_a8a6bdcda8ffc99b12b7232c988f6e797}{messageBoxAide}->exec();
+00375 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_accf04daf204c5810c8a6099bb7e37b7e}\label{class_i_h_m_rov_accf04daf204c5810c8a6099bb7e37b7e}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!parametres\+Sauvegardes@{parametres\+Sauvegardes}}
+\index{parametres\+Sauvegardes@{parametres\+Sauvegardes}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{parametres\+Sauvegardes}{parametresSauvegardes}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::parametres\+Sauvegardes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{creer\+Fenetre\+Parametres()}, et \hyperlink{class_i_h_m_rov_a94d31f4e748f3e4549eab42c8bc7e367}{enregistrer\+Parametres()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a6446087033d8ead72d16451b4a29c44e}\label{class_i_h_m_rov_a6446087033d8ead72d16451b4a29c44e}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!quitter@{quitter}}
+\index{quitter@{quitter}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{quitter}{quitter}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::quitter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+
+\begin{DoxyCode}
+00291 \{
+00292     close();
+00293 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_a752a8dc2b3b68d536e94ff8bfb62f46f}\label{class_i_h_m_rov_a752a8dc2b3b68d536e94ff8bfb62f46f}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!remplir\+Combo\+Box\+Liste\+Operateurs@{remplir\+Combo\+Box\+Liste\+Operateurs}}
+\index{remplir\+Combo\+Box\+Liste\+Operateurs@{remplir\+Combo\+Box\+Liste\+Operateurs}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{remplir\+Combo\+Box\+Liste\+Operateurs()}{remplirComboBoxListeOperateurs()}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::remplir\+Combo\+Box\+Liste\+Operateurs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_i_h_m_rov_a32ee4423982fa3a78e59167ed2354f6e}{combo\+Box\+Liste\+Operateurs}, \hyperlink{class_rov_ab585cb1f82344ba0a64a28488910b262}{Rov\+::get\+Liste\+Noms\+Operateurs()}, \hyperlink{class_rov_a128cae6dc19025017dea26663adde765}{Rov\+::get\+Liste\+Prenoms\+Operateurs()}, et \hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a08bf623a890df272f738c1ff8631213f}{creer\+Fenetre\+Nouvelle\+Campagne()}.
+
+
+\begin{DoxyCode}
+00542 \{
+00543     qDebug() << Q\_FUNC\_INFO;
+00544     QString operateur;
+00545 
+00546     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i < \hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}->\hyperlink{class_rov_ab585cb1f82344ba0a64a28488910b262}{getListeNomsOperateurs}().size(); i++)
+00547     \{
+00548         operateur = \hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}->\hyperlink{class_rov_ab585cb1f82344ba0a64a28488910b262}{getListeNomsOperateurs}()[i] + \textcolor{stringliteral}{" "} + 
+      \hyperlink{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}{rov}->\hyperlink{class_rov_a128cae6dc19025017dea26663adde765}{getListePrenomsOperateurs}()[i];
+00549         \hyperlink{class_i_h_m_rov_a32ee4423982fa3a78e59167ed2354f6e}{comboBoxListeOperateurs}->addItem(operateur);
+00550     \}
+00551 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_a021be212b27d0c4a08e14695521aacbc}\label{class_i_h_m_rov_a021be212b27d0c4a08e14695521aacbc}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!set\+Id\+Operateur@{set\+Id\+Operateur}}
+\index{set\+Id\+Operateur@{set\+Id\+Operateur}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{set\+Id\+Operateur()}{setIdOperateur()}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::set\+Id\+Operateur (\begin{DoxyParamCaption}\item[{int}]{id\+Operateur }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_i_h_m_rov_a110af5c174e9fbba12bffbe0301ed690}{id\+Operateur}.
+
+
+\begin{DoxyCode}
+00558 \{
+00559     this->\hyperlink{class_i_h_m_rov_a110af5c174e9fbba12bffbe0301ed690}{idOperateur} = \hyperlink{class_i_h_m_rov_a110af5c174e9fbba12bffbe0301ed690}{idOperateur};
+00560 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_rov_a4a0d3a0741d0669ede732b630eae54c6}\label{class_i_h_m_rov_a4a0d3a0741d0669ede732b630eae54c6}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!tic@{tic}}
+\index{tic@{tic}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{tic}{tic}}
+{\footnotesize\ttfamily void I\+H\+M\+Rov\+::tic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_i_h_m_rov_abbfcdc154a6ae7f941d186f6c90a5a2b}{actualise\+Icones\+Etat()}, \hyperlink{class_i_h_m_rov_aa6a269f311d527387ad3c9e22dd12d43}{get\+Temps()}, \hyperlink{class_i_h_m_rov_a32e5cb80ecae7bad6914c690ebd93995}{label\+Chronometre}, et \hyperlink{class_i_h_m_rov_a38ad5c20c2347825c237e9b85bb5c7e6}{valeur\+Chronometre}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a64002e867300c8aff2ebd4568acc107e}{initialiser\+Chronometre()}.
+
+
+\begin{DoxyCode}
+00300 \{
+00301     \hyperlink{class_i_h_m_rov_a38ad5c20c2347825c237e9b85bb5c7e6}{valeurChronometre}++;
+00302     \hyperlink{class_i_h_m_rov_a32e5cb80ecae7bad6914c690ebd93995}{labelChronometre}->setText(this->\hyperlink{class_i_h_m_rov_aa6a269f311d527387ad3c9e22dd12d43}{getTemps}());
+00303 
+00304     \hyperlink{class_i_h_m_rov_abbfcdc154a6ae7f941d186f6c90a5a2b}{actualiseIconesEtat}();
+00305 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_i_h_m_rov_aecd3c0b54390e60f6e1ba14787c68828}\label{class_i_h_m_rov_aecd3c0b54390e60f6e1ba14787c68828}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!action\+Aide@{action\+Aide}}
+\index{action\+Aide@{action\+Aide}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{action\+Aide}{actionAide}}
+{\footnotesize\ttfamily Q\+Action$\ast$ I\+H\+M\+Rov\+::action\+Aide\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aebbcb2325c2d1a88a012d8408e2d6223}{initialiser\+Menu()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_abf3ebd717e5d59355dd271917962083f}\label{class_i_h_m_rov_abf3ebd717e5d59355dd271917962083f}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!action\+Debug@{action\+Debug}}
+\index{action\+Debug@{action\+Debug}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{action\+Debug}{actionDebug}}
+{\footnotesize\ttfamily Q\+Action$\ast$ I\+H\+M\+Rov\+::action\+Debug\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aebbcb2325c2d1a88a012d8408e2d6223}{initialiser\+Menu()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a1ea738e5224f6fa4fc61ac064b5d9a6e}\label{class_i_h_m_rov_a1ea738e5224f6fa4fc61ac064b5d9a6e}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!action\+Nouvelle\+Campagne@{action\+Nouvelle\+Campagne}}
+\index{action\+Nouvelle\+Campagne@{action\+Nouvelle\+Campagne}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{action\+Nouvelle\+Campagne}{actionNouvelleCampagne}}
+{\footnotesize\ttfamily Q\+Action$\ast$ I\+H\+M\+Rov\+::action\+Nouvelle\+Campagne\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aebbcb2325c2d1a88a012d8408e2d6223}{initialiser\+Menu()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_aa1864bc274cc5662b212a3530255e4ad}\label{class_i_h_m_rov_aa1864bc274cc5662b212a3530255e4ad}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!action\+Parametre@{action\+Parametre}}
+\index{action\+Parametre@{action\+Parametre}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{action\+Parametre}{actionParametre}}
+{\footnotesize\ttfamily Q\+Action$\ast$ I\+H\+M\+Rov\+::action\+Parametre\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aebbcb2325c2d1a88a012d8408e2d6223}{initialiser\+Menu()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a1e64353d7244219599c46450bb84e1df}\label{class_i_h_m_rov_a1e64353d7244219599c46450bb84e1df}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!archives@{archives}}
+\index{archives@{archives}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{archives}{archives}}
+{\footnotesize\ttfamily \hyperlink{class_archives}{Archives}$\ast$ I\+H\+M\+Rov\+::archives\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a06f0850e46f735c3418360280f6c8336}\label{class_i_h_m_rov_a06f0850e46f735c3418360280f6c8336}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!bar\+Radiation@{bar\+Radiation}}
+\index{bar\+Radiation@{bar\+Radiation}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{bar\+Radiation}{barRadiation}}
+{\footnotesize\ttfamily Qwt\+Thermo$\ast$ I\+H\+M\+Rov\+::bar\+Radiation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a9a5108ce8f73fad9a38d02881ec5ae62}{actualiser\+Irradiation()}, et \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a169e28bc630468d13c05de321f66ca3c}\label{class_i_h_m_rov_a169e28bc630468d13c05de321f66ca3c}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!barre\+Menu@{barre\+Menu}}
+\index{barre\+Menu@{barre\+Menu}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{barre\+Menu}{barreMenu}}
+{\footnotesize\ttfamily Q\+Menu\+Bar$\ast$ I\+H\+M\+Rov\+::barre\+Menu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}, et \hyperlink{class_i_h_m_rov_aebbcb2325c2d1a88a012d8408e2d6223}{initialiser\+Menu()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_aa89397963e5889e2f911bed5112772cb}\label{class_i_h_m_rov_aa89397963e5889e2f911bed5112772cb}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!bar\+Temperature@{bar\+Temperature}}
+\index{bar\+Temperature@{bar\+Temperature}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{bar\+Temperature}{barTemperature}}
+{\footnotesize\ttfamily Qwt\+Thermo$\ast$ I\+H\+M\+Rov\+::bar\+Temperature\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_ae5f2c89b06d7dc09e9974428b14799f1}{actualiser\+Temperature()}, et \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a4a6fec1b4a86c93c1d0d62d66804db5c}\label{class_i_h_m_rov_a4a6fec1b4a86c93c1d0d62d66804db5c}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!bouton\+Annuler@{bouton\+Annuler}}
+\index{bouton\+Annuler@{bouton\+Annuler}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{bouton\+Annuler}{boutonAnnuler}}
+{\footnotesize\ttfamily Q\+Push\+Button$\ast$ I\+H\+M\+Rov\+::bouton\+Annuler\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a30b49bada719a73e0899ad4bafb4de99}{creer\+Fenetre\+Debug()}, \hyperlink{class_i_h_m_rov_a08bf623a890df272f738c1ff8631213f}{creer\+Fenetre\+Nouvelle\+Campagne()}, et \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{creer\+Fenetre\+Parametres()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a1a0c3460e0b9e9c4a1adc54f7f229307}\label{class_i_h_m_rov_a1a0c3460e0b9e9c4a1adc54f7f229307}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!bouton\+Archives@{bouton\+Archives}}
+\index{bouton\+Archives@{bouton\+Archives}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{bouton\+Archives}{boutonArchives}}
+{\footnotesize\ttfamily Q\+Push\+Button$\ast$ I\+H\+M\+Rov\+::bouton\+Archives\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a149c634582225cff29b6c8555eb7ba85}\label{class_i_h_m_rov_a149c634582225cff29b6c8555eb7ba85}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!bouton\+Capture@{bouton\+Capture}}
+\index{bouton\+Capture@{bouton\+Capture}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{bouton\+Capture}{boutonCapture}}
+{\footnotesize\ttfamily Q\+Push\+Button$\ast$ I\+H\+M\+Rov\+::bouton\+Capture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_abbfcdc154a6ae7f941d186f6c90a5a2b}{actualise\+Icones\+Etat()}, et \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a7a441ed53b0066edaf1f0acbea24e777}\label{class_i_h_m_rov_a7a441ed53b0066edaf1f0acbea24e777}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!bouton\+Envoyees@{bouton\+Envoyees}}
+\index{bouton\+Envoyees@{bouton\+Envoyees}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{bouton\+Envoyees}{boutonEnvoyees}}
+{\footnotesize\ttfamily Q\+Push\+Button$\ast$ I\+H\+M\+Rov\+::bouton\+Envoyees\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a30b49bada719a73e0899ad4bafb4de99}{creer\+Fenetre\+Debug()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a82f0ceba3dadd7a3d3251c236bf212a4}\label{class_i_h_m_rov_a82f0ceba3dadd7a3d3251c236bf212a4}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!bouton\+Etats@{bouton\+Etats}}
+\index{bouton\+Etats@{bouton\+Etats}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{bouton\+Etats}{boutonEtats}}
+{\footnotesize\ttfamily Q\+Push\+Button$\ast$ I\+H\+M\+Rov\+::bouton\+Etats\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a30b49bada719a73e0899ad4bafb4de99}{creer\+Fenetre\+Debug()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a75b93974e71e86a6a14ea1bc47fa7bd8}\label{class_i_h_m_rov_a75b93974e71e86a6a14ea1bc47fa7bd8}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!bouton\+Quitter@{bouton\+Quitter}}
+\index{bouton\+Quitter@{bouton\+Quitter}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{bouton\+Quitter}{boutonQuitter}}
+{\footnotesize\ttfamily Q\+Push\+Button$\ast$ I\+H\+M\+Rov\+::bouton\+Quitter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_ae56bf1c744f0fc393ef517e0e66b0d12}\label{class_i_h_m_rov_ae56bf1c744f0fc393ef517e0e66b0d12}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!bouton\+Recues@{bouton\+Recues}}
+\index{bouton\+Recues@{bouton\+Recues}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{bouton\+Recues}{boutonRecues}}
+{\footnotesize\ttfamily Q\+Push\+Button$\ast$ I\+H\+M\+Rov\+::bouton\+Recues\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a30b49bada719a73e0899ad4bafb4de99}{creer\+Fenetre\+Debug()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a5dca475dd63a04c96386855a84c5effb}\label{class_i_h_m_rov_a5dca475dd63a04c96386855a84c5effb}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!bouton\+S\+QL@{bouton\+S\+QL}}
+\index{bouton\+S\+QL@{bouton\+S\+QL}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{bouton\+S\+QL}{boutonSQL}}
+{\footnotesize\ttfamily Q\+Push\+Button$\ast$ I\+H\+M\+Rov\+::bouton\+S\+QL\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a30b49bada719a73e0899ad4bafb4de99}{creer\+Fenetre\+Debug()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a4294b6c808089083906fb0815d1c9c27}\label{class_i_h_m_rov_a4294b6c808089083906fb0815d1c9c27}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!bouton\+Valider@{bouton\+Valider}}
+\index{bouton\+Valider@{bouton\+Valider}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{bouton\+Valider}{boutonValider}}
+{\footnotesize\ttfamily Q\+Push\+Button$\ast$ I\+H\+M\+Rov\+::bouton\+Valider\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a08bf623a890df272f738c1ff8631213f}{creer\+Fenetre\+Nouvelle\+Campagne()}, et \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{creer\+Fenetre\+Parametres()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a0eda0e4726269508d4563d98064dca9d}\label{class_i_h_m_rov_a0eda0e4726269508d4563d98064dca9d}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!camera@{camera}}
+\index{camera@{camera}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{camera}{camera}}
+{\footnotesize\ttfamily \hyperlink{class_camera}{Camera}$\ast$ I\+H\+M\+Rov\+::camera\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_abbfcdc154a6ae7f941d186f6c90a5a2b}{actualise\+Icones\+Etat()}, \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}, et \hyperlink{class_i_h_m_rov_af3e46f174ab2fdeaebb2d00e6b8bcb33}{initialiser\+Liste\+Camera()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a85be76b5fee7281642db582a79a53511}\label{class_i_h_m_rov_a85be76b5fee7281642db582a79a53511}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!checkbox\+Archivage@{checkbox\+Archivage}}
+\index{checkbox\+Archivage@{checkbox\+Archivage}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{checkbox\+Archivage}{checkboxArchivage}}
+{\footnotesize\ttfamily Q\+Check\+Box$\ast$ I\+H\+M\+Rov\+::checkbox\+Archivage\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{creer\+Fenetre\+Parametres()}, et \hyperlink{class_i_h_m_rov_a94d31f4e748f3e4549eab42c8bc7e367}{enregistrer\+Parametres()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_ac8733c564d7beea8b669e62544a006a5}\label{class_i_h_m_rov_ac8733c564d7beea8b669e62544a006a5}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!chronometre@{chronometre}}
+\index{chronometre@{chronometre}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{chronometre}{chronometre}}
+{\footnotesize\ttfamily Q\+Timer$\ast$ I\+H\+M\+Rov\+::chronometre\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a64002e867300c8aff2ebd4568acc107e}{initialiser\+Chronometre()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a12b970f1d2a170f14a01a684787904a5}\label{class_i_h_m_rov_a12b970f1d2a170f14a01a684787904a5}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!combobox\+Appareils@{combobox\+Appareils}}
+\index{combobox\+Appareils@{combobox\+Appareils}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{combobox\+Appareils}{comboboxAppareils}}
+{\footnotesize\ttfamily Q\+Combo\+Box$\ast$ I\+H\+M\+Rov\+::combobox\+Appareils\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{creer\+Fenetre\+Parametres()}, et \hyperlink{class_i_h_m_rov_a94d31f4e748f3e4549eab42c8bc7e367}{enregistrer\+Parametres()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a542c0cf87de612cd529b0753b60e4f95}\label{class_i_h_m_rov_a542c0cf87de612cd529b0753b60e4f95}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!combobox\+Baud\+Rate@{combobox\+Baud\+Rate}}
+\index{combobox\+Baud\+Rate@{combobox\+Baud\+Rate}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{combobox\+Baud\+Rate}{comboboxBaudRate}}
+{\footnotesize\ttfamily Q\+Combo\+Box$\ast$ I\+H\+M\+Rov\+::combobox\+Baud\+Rate\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{creer\+Fenetre\+Parametres()}, et \hyperlink{class_i_h_m_rov_a94d31f4e748f3e4549eab42c8bc7e367}{enregistrer\+Parametres()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a32ee4423982fa3a78e59167ed2354f6e}\label{class_i_h_m_rov_a32ee4423982fa3a78e59167ed2354f6e}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!combo\+Box\+Liste\+Operateurs@{combo\+Box\+Liste\+Operateurs}}
+\index{combo\+Box\+Liste\+Operateurs@{combo\+Box\+Liste\+Operateurs}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{combo\+Box\+Liste\+Operateurs}{comboBoxListeOperateurs}}
+{\footnotesize\ttfamily Q\+Combo\+Box$\ast$ I\+H\+M\+Rov\+::combo\+Box\+Liste\+Operateurs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a08bf623a890df272f738c1ff8631213f}{creer\+Fenetre\+Nouvelle\+Campagne()}, \hyperlink{class_i_h_m_rov_a229194814bfb1fc94ab3cc86d6411921}{enregistrer\+Parametres\+Campagne()}, et \hyperlink{class_i_h_m_rov_a752a8dc2b3b68d536e94ff8bfb62f46f}{remplir\+Combo\+Box\+Liste\+Operateurs()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a405b0c05970829fbf297ee0d26af9bca}\label{class_i_h_m_rov_a405b0c05970829fbf297ee0d26af9bca}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!controle\+Rov@{controle\+Rov}}
+\index{controle\+Rov@{controle\+Rov}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{controle\+Rov}{controleRov}}
+{\footnotesize\ttfamily \hyperlink{class_controle_rov}{Controle\+Rov}$\ast$ I\+H\+M\+Rov\+::controle\+Rov\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_abbfcdc154a6ae7f941d186f6c90a5a2b}{actualise\+Icones\+Etat()}, et \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a95cd05040c8adc3c0513050661d532db}\label{class_i_h_m_rov_a95cd05040c8adc3c0513050661d532db}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!dossier\+Nouvelle\+Campagne@{dossier\+Nouvelle\+Campagne}}
+\index{dossier\+Nouvelle\+Campagne@{dossier\+Nouvelle\+Campagne}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{dossier\+Nouvelle\+Campagne}{dossierNouvelleCampagne}}
+{\footnotesize\ttfamily Q\+Dir$\ast$ I\+H\+M\+Rov\+::dossier\+Nouvelle\+Campagne\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_i_h_m_rov_a393d23f9256a9db063dfef11d95cdc06}\label{class_i_h_m_rov_a393d23f9256a9db063dfef11d95cdc06}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!fenetre\+Debug@{fenetre\+Debug}}
+\index{fenetre\+Debug@{fenetre\+Debug}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{fenetre\+Debug}{fenetreDebug}}
+{\footnotesize\ttfamily Q\+Dialog$\ast$ I\+H\+M\+Rov\+::fenetre\+Debug\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a30b49bada719a73e0899ad4bafb4de99}{creer\+Fenetre\+Debug()}, et \hyperlink{class_i_h_m_rov_a8931cade7a1613975da7174b5c2e84d2}{executer\+Fenetre\+Debug()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a13c12a93de7fc77c32f0108ae73cec06}\label{class_i_h_m_rov_a13c12a93de7fc77c32f0108ae73cec06}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!fenetre\+Nouvelle\+Campagne@{fenetre\+Nouvelle\+Campagne}}
+\index{fenetre\+Nouvelle\+Campagne@{fenetre\+Nouvelle\+Campagne}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{fenetre\+Nouvelle\+Campagne}{fenetreNouvelleCampagne}}
+{\footnotesize\ttfamily Q\+Dialog$\ast$ I\+H\+M\+Rov\+::fenetre\+Nouvelle\+Campagne\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a08bf623a890df272f738c1ff8631213f}{creer\+Fenetre\+Nouvelle\+Campagne()}, et \hyperlink{class_i_h_m_rov_a3169e8cd9132ece69af974648066c6c1}{executer\+Fenetre\+Nouvelle\+Campagne()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a277956dfb79e5345e5ae0117fe41ddf2}\label{class_i_h_m_rov_a277956dfb79e5345e5ae0117fe41ddf2}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!fenetre\+Parametres@{fenetre\+Parametres}}
+\index{fenetre\+Parametres@{fenetre\+Parametres}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{fenetre\+Parametres}{fenetreParametres}}
+{\footnotesize\ttfamily Q\+Dialog$\ast$ I\+H\+M\+Rov\+::fenetre\+Parametres\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{creer\+Fenetre\+Parametres()}, et \hyperlink{class_i_h_m_rov_a2ec97de9b75c073c6a4dd0792a284002}{executer\+Fenetre\+Parametres()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a110af5c174e9fbba12bffbe0301ed690}\label{class_i_h_m_rov_a110af5c174e9fbba12bffbe0301ed690}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!id\+Operateur@{id\+Operateur}}
+\index{id\+Operateur@{id\+Operateur}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{id\+Operateur}{idOperateur}}
+{\footnotesize\ttfamily int I\+H\+M\+Rov\+::id\+Operateur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a229194814bfb1fc94ab3cc86d6411921}{enregistrer\+Parametres\+Campagne()}, \hyperlink{class_i_h_m_rov_a79cddc1e905195eb11a8960abadf7d2f}{get\+Id\+Operateur()}, et \hyperlink{class_i_h_m_rov_a021be212b27d0c4a08e14695521aacbc}{set\+Id\+Operateur()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_ac6f93c34da2a4e24f743e61fd5d62405}\label{class_i_h_m_rov_ac6f93c34da2a4e24f743e61fd5d62405}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Appareils@{label\+Appareils}}
+\index{label\+Appareils@{label\+Appareils}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Appareils}{labelAppareils}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Appareils\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{creer\+Fenetre\+Parametres()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a58e157352986f690bca4b79b9b05ee1d}\label{class_i_h_m_rov_a58e157352986f690bca4b79b9b05ee1d}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Archivage\+Mesures@{label\+Archivage\+Mesures}}
+\index{label\+Archivage\+Mesures@{label\+Archivage\+Mesures}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Archivage\+Mesures}{labelArchivageMesures}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Archivage\+Mesures\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{creer\+Fenetre\+Parametres()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a6e9a97a5cd38bfd92e6114c4299be7ee}\label{class_i_h_m_rov_a6e9a97a5cd38bfd92e6114c4299be7ee}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Baud\+Rate@{label\+Baud\+Rate}}
+\index{label\+Baud\+Rate@{label\+Baud\+Rate}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Baud\+Rate}{labelBaudRate}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Baud\+Rate\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{creer\+Fenetre\+Parametres()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a01cfcfe3e5744cd977bb0416d4e3debe}\label{class_i_h_m_rov_a01cfcfe3e5744cd977bb0416d4e3debe}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Camera@{label\+Camera}}
+\index{label\+Camera@{label\+Camera}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Camera}{labelCamera}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Camera\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_ac3b86335f9903c2a71eafe941d5c302b}\label{class_i_h_m_rov_ac3b86335f9903c2a71eafe941d5c302b}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Camera\+Deconnectee@{label\+Camera\+Deconnectee}}
+\index{label\+Camera\+Deconnectee@{label\+Camera\+Deconnectee}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Camera\+Deconnectee}{labelCameraDeconnectee}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Camera\+Deconnectee\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_aebce213bf418897dc8a775cfc180ff59}\label{class_i_h_m_rov_aebce213bf418897dc8a775cfc180ff59}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Cameras@{label\+Cameras}}
+\index{label\+Cameras@{label\+Cameras}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Cameras}{labelCameras}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Cameras\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a3ae7bec5b8f85f779ab58ba60556b37f}\label{class_i_h_m_rov_a3ae7bec5b8f85f779ab58ba60556b37f}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Campagne@{label\+Campagne}}
+\index{label\+Campagne@{label\+Campagne}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Campagne}{labelCampagne}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Campagne\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a08bf623a890df272f738c1ff8631213f}{creer\+Fenetre\+Nouvelle\+Campagne()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a14aa781bc1a446ba6b3ecdea029caa91}\label{class_i_h_m_rov_a14aa781bc1a446ba6b3ecdea029caa91}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Campagne\+En\+Cours@{label\+Campagne\+En\+Cours}}
+\index{label\+Campagne\+En\+Cours@{label\+Campagne\+En\+Cours}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Campagne\+En\+Cours}{labelCampagneEnCours}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Campagne\+En\+Cours\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a229194814bfb1fc94ab3cc86d6411921}{enregistrer\+Parametres\+Campagne()}, et \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a32e5cb80ecae7bad6914c690ebd93995}\label{class_i_h_m_rov_a32e5cb80ecae7bad6914c690ebd93995}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Chronometre@{label\+Chronometre}}
+\index{label\+Chronometre@{label\+Chronometre}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Chronometre}{labelChronometre}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Chronometre\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}, et \hyperlink{class_i_h_m_rov_a4a0d3a0741d0669ede732b630eae54c6}{tic()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_ac52c67da33e4d4c40b4c485c09452142}\label{class_i_h_m_rov_ac52c67da33e4d4c40b4c485c09452142}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Connexion\+Rov@{label\+Connexion\+Rov}}
+\index{label\+Connexion\+Rov@{label\+Connexion\+Rov}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Connexion\+Rov}{labelConnexionRov}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Connexion\+Rov\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a667455d332d2abf2e42b897e6cc632f8}\label{class_i_h_m_rov_a667455d332d2abf2e42b897e6cc632f8}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Debug@{label\+Debug}}
+\index{label\+Debug@{label\+Debug}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Debug}{labelDebug}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Debug\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a30b49bada719a73e0899ad4bafb4de99}{creer\+Fenetre\+Debug()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_addac593dfa0ea112cf4cc1b3837ca5e0}\label{class_i_h_m_rov_addac593dfa0ea112cf4cc1b3837ca5e0}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Description\+Campagne@{label\+Description\+Campagne}}
+\index{label\+Description\+Campagne@{label\+Description\+Campagne}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Description\+Campagne}{labelDescriptionCampagne}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Description\+Campagne\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a08bf623a890df272f738c1ff8631213f}{creer\+Fenetre\+Nouvelle\+Campagne()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a2ec8f0e6175a73377e4b7e96b4f29b95}\label{class_i_h_m_rov_a2ec8f0e6175a73377e4b7e96b4f29b95}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Etat\+Camera@{label\+Etat\+Camera}}
+\index{label\+Etat\+Camera@{label\+Etat\+Camera}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Etat\+Camera}{labelEtatCamera}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Etat\+Camera\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_abbfcdc154a6ae7f941d186f6c90a5a2b}{actualise\+Icones\+Etat()}, et \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a83a10634509cf2d32a0bcee159eecbc3}\label{class_i_h_m_rov_a83a10634509cf2d32a0bcee159eecbc3}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Etat\+Connexion\+Rov@{label\+Etat\+Connexion\+Rov}}
+\index{label\+Etat\+Connexion\+Rov@{label\+Etat\+Connexion\+Rov}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Etat\+Connexion\+Rov}{labelEtatConnexionRov}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Etat\+Connexion\+Rov\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_abbfcdc154a6ae7f941d186f6c90a5a2b}{actualise\+Icones\+Etat()}, et \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_ad62586ec4cef61ef851626515fd0f72a}\label{class_i_h_m_rov_ad62586ec4cef61ef851626515fd0f72a}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Etat\+Manette@{label\+Etat\+Manette}}
+\index{label\+Etat\+Manette@{label\+Etat\+Manette}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Etat\+Manette}{labelEtatManette}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Etat\+Manette\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_abbfcdc154a6ae7f941d186f6c90a5a2b}{actualise\+Icones\+Etat()}, et \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_ae8e7eef50b55104e1490191e3bdcb8d9}\label{class_i_h_m_rov_ae8e7eef50b55104e1490191e3bdcb8d9}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Icone\+Distance@{label\+Icone\+Distance}}
+\index{label\+Icone\+Distance@{label\+Icone\+Distance}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Icone\+Distance}{labelIconeDistance}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Icone\+Distance\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a29246e2035e7b3915a59614eb4802548}\label{class_i_h_m_rov_a29246e2035e7b3915a59614eb4802548}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Icone\+Radiation@{label\+Icone\+Radiation}}
+\index{label\+Icone\+Radiation@{label\+Icone\+Radiation}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Icone\+Radiation}{labelIconeRadiation}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Icone\+Radiation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a0404f03611d3942e7459ee431f05224c}\label{class_i_h_m_rov_a0404f03611d3942e7459ee431f05224c}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Icone\+Temperature@{label\+Icone\+Temperature}}
+\index{label\+Icone\+Temperature@{label\+Icone\+Temperature}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Icone\+Temperature}{labelIconeTemperature}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Icone\+Temperature\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a14e8fc8b6a1f95e974b550fd54088581}\label{class_i_h_m_rov_a14e8fc8b6a1f95e974b550fd54088581}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Indication\+Distance@{label\+Indication\+Distance}}
+\index{label\+Indication\+Distance@{label\+Indication\+Distance}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Indication\+Distance}{labelIndicationDistance}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Indication\+Distance\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a7e55a10ef08b8a771fa692ec1d150d33}{actualiser\+Indication\+Distance()}, et \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a42fb93c9764bfc2fe81ba65fc02d8de2}\label{class_i_h_m_rov_a42fb93c9764bfc2fe81ba65fc02d8de2}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Interval\+Archivage@{label\+Interval\+Archivage}}
+\index{label\+Interval\+Archivage@{label\+Interval\+Archivage}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Interval\+Archivage}{labelIntervalArchivage}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Interval\+Archivage\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{creer\+Fenetre\+Parametres()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a93259ab27f1eeeacbfe3048a58f475b1}\label{class_i_h_m_rov_a93259ab27f1eeeacbfe3048a58f475b1}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Manette@{label\+Manette}}
+\index{label\+Manette@{label\+Manette}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Manette}{labelManette}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Manette\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a39ff04b1880aa20941716cf7a6e1b8d8}\label{class_i_h_m_rov_a39ff04b1880aa20941716cf7a6e1b8d8}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Mesure\+Distance@{label\+Mesure\+Distance}}
+\index{label\+Mesure\+Distance@{label\+Mesure\+Distance}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Mesure\+Distance}{labelMesureDistance}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Mesure\+Distance\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a891d51cf532d9cc8fc56c63a0c61e663}{actualiser\+Distance()}, et \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_aaa9588a64c4af2f9fb08c62519a05c5a}\label{class_i_h_m_rov_aaa9588a64c4af2f9fb08c62519a05c5a}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Mesure\+Radiation@{label\+Mesure\+Radiation}}
+\index{label\+Mesure\+Radiation@{label\+Mesure\+Radiation}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Mesure\+Radiation}{labelMesureRadiation}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Mesure\+Radiation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a9a5108ce8f73fad9a38d02881ec5ae62}{actualiser\+Irradiation()}, et \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_ade64349f20dac7adccee4d4fbc04e6e8}\label{class_i_h_m_rov_ade64349f20dac7adccee4d4fbc04e6e8}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Mesure\+Temperature@{label\+Mesure\+Temperature}}
+\index{label\+Mesure\+Temperature@{label\+Mesure\+Temperature}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Mesure\+Temperature}{labelMesureTemperature}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Mesure\+Temperature\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_ae5f2c89b06d7dc09e9974428b14799f1}{actualiser\+Temperature()}, et \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a723334735d6a20ea43f79567892cfd25}\label{class_i_h_m_rov_a723334735d6a20ea43f79567892cfd25}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Nom\+Campagne@{label\+Nom\+Campagne}}
+\index{label\+Nom\+Campagne@{label\+Nom\+Campagne}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Nom\+Campagne}{labelNomCampagne}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Nom\+Campagne\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a08bf623a890df272f738c1ff8631213f}{creer\+Fenetre\+Nouvelle\+Campagne()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a1855235995ed076748b568a1702355c9}\label{class_i_h_m_rov_a1855235995ed076748b568a1702355c9}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!label\+Operateur@{label\+Operateur}}
+\index{label\+Operateur@{label\+Operateur}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{label\+Operateur}{labelOperateur}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Rov\+::label\+Operateur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a08bf623a890df272f738c1ff8631213f}{creer\+Fenetre\+Nouvelle\+Campagne()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_aedf9fd0d893326f970aa1b73dbe06e85}\label{class_i_h_m_rov_aedf9fd0d893326f970aa1b73dbe06e85}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!line\+Edit\+Description\+Campagne@{line\+Edit\+Description\+Campagne}}
+\index{line\+Edit\+Description\+Campagne@{line\+Edit\+Description\+Campagne}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{line\+Edit\+Description\+Campagne}{lineEditDescriptionCampagne}}
+{\footnotesize\ttfamily Q\+Line\+Edit$\ast$ I\+H\+M\+Rov\+::line\+Edit\+Description\+Campagne\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a08bf623a890df272f738c1ff8631213f}{creer\+Fenetre\+Nouvelle\+Campagne()}, et \hyperlink{class_i_h_m_rov_a229194814bfb1fc94ab3cc86d6411921}{enregistrer\+Parametres\+Campagne()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a3b3dac7166ab414832dea0b5ad1a570d}\label{class_i_h_m_rov_a3b3dac7166ab414832dea0b5ad1a570d}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!line\+Edit\+Nom\+Campagne@{line\+Edit\+Nom\+Campagne}}
+\index{line\+Edit\+Nom\+Campagne@{line\+Edit\+Nom\+Campagne}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{line\+Edit\+Nom\+Campagne}{lineEditNomCampagne}}
+{\footnotesize\ttfamily Q\+Line\+Edit$\ast$ I\+H\+M\+Rov\+::line\+Edit\+Nom\+Campagne\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a08bf623a890df272f738c1ff8631213f}{creer\+Fenetre\+Nouvelle\+Campagne()}, et \hyperlink{class_i_h_m_rov_a229194814bfb1fc94ab3cc86d6411921}{enregistrer\+Parametres\+Campagne()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a9b9e5631b8d9b6a9801a6faac8cba0f0}\label{class_i_h_m_rov_a9b9e5631b8d9b6a9801a6faac8cba0f0}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!liste\+Cameras\+Dispo@{liste\+Cameras\+Dispo}}
+\index{liste\+Cameras\+Dispo@{liste\+Cameras\+Dispo}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{liste\+Cameras\+Dispo}{listeCamerasDispo}}
+{\footnotesize\ttfamily Q\+Combo\+Box$\ast$ I\+H\+M\+Rov\+::liste\+Cameras\+Dispo\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}, et \hyperlink{class_i_h_m_rov_af3e46f174ab2fdeaebb2d00e6b8bcb33}{initialiser\+Liste\+Camera()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a7de335b17ef7b92fdb203cd385ba874f}\label{class_i_h_m_rov_a7de335b17ef7b92fdb203cd385ba874f}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!menu\+Aide@{menu\+Aide}}
+\index{menu\+Aide@{menu\+Aide}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{menu\+Aide}{menuAide}}
+{\footnotesize\ttfamily Q\+Menu$\ast$ I\+H\+M\+Rov\+::menu\+Aide\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aebbcb2325c2d1a88a012d8408e2d6223}{initialiser\+Menu()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_ad110a9a5cfabc48491ee602075e28066}\label{class_i_h_m_rov_ad110a9a5cfabc48491ee602075e28066}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!menu\+Fichier@{menu\+Fichier}}
+\index{menu\+Fichier@{menu\+Fichier}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{menu\+Fichier}{menuFichier}}
+{\footnotesize\ttfamily Q\+Menu$\ast$ I\+H\+M\+Rov\+::menu\+Fichier\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aebbcb2325c2d1a88a012d8408e2d6223}{initialiser\+Menu()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_aab4af4ee5ffb959869ee5f181fe4204e}\label{class_i_h_m_rov_aab4af4ee5ffb959869ee5f181fe4204e}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!menu\+Outils@{menu\+Outils}}
+\index{menu\+Outils@{menu\+Outils}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{menu\+Outils}{menuOutils}}
+{\footnotesize\ttfamily Q\+Menu$\ast$ I\+H\+M\+Rov\+::menu\+Outils\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aebbcb2325c2d1a88a012d8408e2d6223}{initialiser\+Menu()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a8a6bdcda8ffc99b12b7232c988f6e797}\label{class_i_h_m_rov_a8a6bdcda8ffc99b12b7232c988f6e797}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!message\+Box\+Aide@{message\+Box\+Aide}}
+\index{message\+Box\+Aide@{message\+Box\+Aide}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{message\+Box\+Aide}{messageBoxAide}}
+{\footnotesize\ttfamily Q\+Message\+Box$\ast$ I\+H\+M\+Rov\+::message\+Box\+Aide\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a45a10161fde8c6373918ec30f16a8b5e}{ouvrir\+Aide()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a72623927157b53a89266026514122030}\label{class_i_h_m_rov_a72623927157b53a89266026514122030}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!nom\+Nouvelle\+Campagne@{nom\+Nouvelle\+Campagne}}
+\index{nom\+Nouvelle\+Campagne@{nom\+Nouvelle\+Campagne}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{nom\+Nouvelle\+Campagne}{nomNouvelleCampagne}}
+{\footnotesize\ttfamily Q\+String I\+H\+M\+Rov\+::nom\+Nouvelle\+Campagne\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_i_h_m_rov_ae2a7bec24a52ffd9e53baf1185ab6cd7}\label{class_i_h_m_rov_ae2a7bec24a52ffd9e53baf1185ab6cd7}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!plain\+Text\+Edit\+Debug@{plain\+Text\+Edit\+Debug}}
+\index{plain\+Text\+Edit\+Debug@{plain\+Text\+Edit\+Debug}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{plain\+Text\+Edit\+Debug}{plainTextEditDebug}}
+{\footnotesize\ttfamily Q\+Plain\+Text\+Edit$\ast$ I\+H\+M\+Rov\+::plain\+Text\+Edit\+Debug\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a30b49bada719a73e0899ad4bafb4de99}{creer\+Fenetre\+Debug()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}\label{class_i_h_m_rov_a777ca33fdb295ba6b6773e880356fa1e}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!rov@{rov}}
+\index{rov@{rov}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{rov}{rov}}
+{\footnotesize\ttfamily \hyperlink{class_rov}{Rov}$\ast$ I\+H\+M\+Rov\+::rov\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_abbfcdc154a6ae7f941d186f6c90a5a2b}{actualise\+Icones\+Etat()}, \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{creer\+Fenetre\+Parametres()}, \hyperlink{class_i_h_m_rov_a94d31f4e748f3e4549eab42c8bc7e367}{enregistrer\+Parametres()}, \hyperlink{class_i_h_m_rov_a229194814bfb1fc94ab3cc86d6411921}{enregistrer\+Parametres\+Campagne()}, \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}, et \hyperlink{class_i_h_m_rov_a752a8dc2b3b68d536e94ff8bfb62f46f}{remplir\+Combo\+Box\+Liste\+Operateurs()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a8c55c93ee14ee51335e72af07b521312}\label{class_i_h_m_rov_a8c55c93ee14ee51335e72af07b521312}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!slider\+Interval\+Archivage@{slider\+Interval\+Archivage}}
+\index{slider\+Interval\+Archivage@{slider\+Interval\+Archivage}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{slider\+Interval\+Archivage}{sliderIntervalArchivage}}
+{\footnotesize\ttfamily Q\+Slider$\ast$ I\+H\+M\+Rov\+::slider\+Interval\+Archivage\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{creer\+Fenetre\+Parametres()}, et \hyperlink{class_i_h_m_rov_a94d31f4e748f3e4549eab42c8bc7e367}{enregistrer\+Parametres()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_abc906e8e992ecdf5eb1dae5dc622b768}\label{class_i_h_m_rov_abc906e8e992ecdf5eb1dae5dc622b768}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!spin\+Box\+Interval\+Archivage@{spin\+Box\+Interval\+Archivage}}
+\index{spin\+Box\+Interval\+Archivage@{spin\+Box\+Interval\+Archivage}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{spin\+Box\+Interval\+Archivage}{spinBoxIntervalArchivage}}
+{\footnotesize\ttfamily Q\+Spin\+Box$\ast$ I\+H\+M\+Rov\+::spin\+Box\+Interval\+Archivage\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{creer\+Fenetre\+Parametres()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a38ad5c20c2347825c237e9b85bb5c7e6}\label{class_i_h_m_rov_a38ad5c20c2347825c237e9b85bb5c7e6}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!valeur\+Chronometre@{valeur\+Chronometre}}
+\index{valeur\+Chronometre@{valeur\+Chronometre}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{valeur\+Chronometre}{valeurChronometre}}
+{\footnotesize\ttfamily long I\+H\+M\+Rov\+::valeur\+Chronometre\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a149d6d6325acf3f00bf025cb2fbac05f}{get\+Heure()}, \hyperlink{class_i_h_m_rov_ad6d275fe98c3dd1e40b2ef0defff3be9}{get\+Minutes()}, \hyperlink{class_i_h_m_rov_ad28dd7ea40587335f6554de60c828524}{get\+Secondes()}, \hyperlink{class_i_h_m_rov_a64002e867300c8aff2ebd4568acc107e}{initialiser\+Chronometre()}, et \hyperlink{class_i_h_m_rov_a4a0d3a0741d0669ede732b630eae54c6}{tic()}.
+
+\mbox{\Hypertarget{class_i_h_m_rov_a238e50788d62ae2c34b4ae6c8082d596}\label{class_i_h_m_rov_a238e50788d62ae2c34b4ae6c8082d596}} 
+\index{I\+H\+M\+Rov@{I\+H\+M\+Rov}!widget\+Empilement@{widget\+Empilement}}
+\index{widget\+Empilement@{widget\+Empilement}!I\+H\+M\+Rov@{I\+H\+M\+Rov}}
+\paragraph{\texorpdfstring{widget\+Empilement}{widgetEmpilement}}
+{\footnotesize\ttfamily Q\+Stacked\+Widget$\ast$ I\+H\+M\+Rov\+::widget\+Empilement\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_abbfcdc154a6ae7f941d186f6c90a5a2b}{actualise\+Icones\+Etat()}, et \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ihmrov_8h}{ihmrov.\+h}\item 
+\hyperlink{ihmrov_8cpp}{ihmrov.\+cpp}\end{DoxyCompactItemize}

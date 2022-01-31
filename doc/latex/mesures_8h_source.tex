@@ -1,0 +1,46 @@
+\hypertarget{mesures_8h_source}{}\subsection{mesures.\+h}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef MESURES\_H}
+00002 \textcolor{preprocessor}{#define MESURES\_H}
+00003 
+00017 \textcolor{preprocessor}{#include <QObject>}
+00018 \textcolor{preprocessor}{#include <QTimer>}
+00019 \textcolor{preprocessor}{#include "\hyperlink{communicationrov_8h}{communicationrov.h}"}
+00020 
+\Hypertarget{mesures_8h_source_l00033}\hyperlink{class_mesures}{00033} \textcolor{keyword}{class }\hyperlink{class_mesures}{Mesures} : \textcolor{keyword}{public} QObject
+00034 \{
+00035     Q\_OBJECT
+00036 
+00037     \textcolor{keyword}{private}:
+\Hypertarget{mesures_8h_source_l00038}\hyperlink{class_mesures_a2688d0da4acf9d91ea0befd6ed0bd140}{00038}         \textcolor{keywordtype}{double} \hyperlink{class_mesures_a2688d0da4acf9d91ea0befd6ed0bd140}{temperature}; 
+\Hypertarget{mesures_8h_source_l00039}\hyperlink{class_mesures_a77cde7672dac5e544b7288364ec7c7b5}{00039}         \textcolor{keywordtype}{double} \hyperlink{class_mesures_a77cde7672dac5e544b7288364ec7c7b5}{irradiation}; 
+\Hypertarget{mesures_8h_source_l00040}\hyperlink{class_mesures_a276f71168b1dcecf2051631d19aa8eeb}{00040}         \textcolor{keywordtype}{double} \hyperlink{class_mesures_a276f71168b1dcecf2051631d19aa8eeb}{distance};    
+\Hypertarget{mesures_8h_source_l00041}\hyperlink{class_mesures_a89af5f279d21cf10f5d6bd58bbc33173}{00041}         QTimer *\hyperlink{class_mesures_a89af5f279d21cf10f5d6bd58bbc33173}{compteur};   
+00042 
+00043     \textcolor{keyword}{public}:
+00044         \textcolor{keyword}{explicit} \hyperlink{class_mesures_aa24ed1e055242fab5adab3f8f057c9b1}{Mesures}(QObject *parent = \textcolor{keyword}{nullptr}); 
+00045         \hyperlink{class_mesures_a4bb192b80fbf2c0f9aea5911ce29c652}{~Mesures}();                                  
+00046 
+00051         \textcolor{keywordtype}{double} \hyperlink{class_mesures_a5e5e61c6bbdd2fd891b66ee494183dcd}{getTemperature}() \textcolor{keyword}{const};
+00057         \textcolor{keywordtype}{double} \hyperlink{class_mesures_af260c8f685e3519681b3ca0086d70b31}{getIrradiation}() \textcolor{keyword}{const};
+00063         \textcolor{keywordtype}{double} \hyperlink{class_mesures_aa40d78428855bab861cc9a57582c8d42}{getDistance}() \textcolor{keyword}{const};
+00064 
+00065         \textcolor{keywordtype}{int} \hyperlink{class_mesures_ae969e38402b8d19fe9b484f368200578}{getFrequenceArchivage}() \textcolor{keyword}{const}; 
+00066 
+00067         \textcolor{keywordtype}{void} \hyperlink{class_mesures_a77652c2332a9234bf08b463d1d389aa5}{stockeDonnees}(QString type, QString donnee); 
+00068 
+00069     signals:
+00070         \textcolor{keywordtype}{void} \hyperlink{class_mesures_a8a6e4db8850930d8e4e96c98d5aa95b8}{irradiationActualisee}(\textcolor{keywordtype}{double}); 
+00071         \textcolor{keywordtype}{void} \hyperlink{class_mesures_ab13d5e64ff21fd869fe347ec1c5a246f}{temperatureActualisee}(\textcolor{keywordtype}{double}); 
+00072         \textcolor{keywordtype}{void} \hyperlink{class_mesures_a6073f147fb08d7c5cc2ce1c9880becbe}{distanceActualisee}(\textcolor{keywordtype}{double});    
+00073         \textcolor{keywordtype}{void} \hyperlink{class_mesures_a97d8dbd7742519d1f3ce959661d8aede}{mesuresBDDPrete}(\textcolor{keywordtype}{double} temperature, \textcolor{keywordtype}{double} irradiation); 
+00074 
+00075     \textcolor{keyword}{public} slots:
+00076         \textcolor{keywordtype}{void} \hyperlink{class_mesures_a43b121b67418802b3332b195d8541481}{traiteTrame}(QString trame);     
+00077         \textcolor{keywordtype}{void} \hyperlink{class_mesures_a9eb8d49c9f60b3801110a5c3d0c50149}{envoieMesuresBDD}();             
+00078         \textcolor{keywordtype}{void} \hyperlink{class_mesures_ac1d2ea97f648264ebd690fba8f7020cc}{modifieFrequenceArchivage}(\textcolor{keywordtype}{int}); 
+00079 \};
+00080 
+00081 \textcolor{preprocessor}{#endif // MESURES\_H}
+\end{DoxyCode}

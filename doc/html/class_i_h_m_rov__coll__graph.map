@@ -1,0 +1,13 @@
+<map id="IHMRov" name="IHMRov">
+<area shape="rect" id="node2" href="$class_rov.html" title="Déclaration de la classe Rov. Gestion des liaisons entre les différentes classes, et paramètres de la..." alt="" coords="412,843,648,1184"/>
+<area shape="rect" id="node8" href="$class_controle_rov.html" title="Déclaration de la classe ControleRov. Permet le contrôle des éléments du rov, en reliant la manette a..." alt="" coords="775,1247,970,1383"/>
+<area shape="rect" id="node3" href="$class_archives.html" title="Déclaration de la classe Archives. " alt="" coords="299,5,488,405"/>
+<area shape="rect" id="node4" href="$class_camera.html" title="Déclaration de la classe Camera. " alt="" coords="306,468,482,780"/>
+<area shape="rect" id="node5" href="$class_mesures.html" title="Déclaration de la classe Mesures. Gestion des mesures des capteurs (température, irradiation, et distance). " alt="" coords="611,497,814,751"/>
+<area shape="rect" id="node6" href="$class_base_de_donnees.html" title="Déclaration de la classe BaseDeDonnees. " alt="" coords="838,475,984,773"/>
+<area shape="rect" id="node7" href="$class_communication_rov.html" title="Déclaration de la classe CommunicationRov. Gère la communication entre le Rov et le Rov..." alt="" coords="45,505,281,743"/>
+<area shape="rect" id="node9" href="$class_controle_camera.html" title="Déclaration de la classe ControleCamera. " alt="" coords="1114,960,1284,1067"/>
+<area shape="rect" id="node10" href="$class_manette.html" title="Déclaration de la classe Manette. Liaison avec la manette, permettant d&#39;en recevoir les signaux..." alt="" coords="1308,945,1415,1081"/>
+<area shape="rect" id="node11" href="$class_deplacement.html" title="Déclaration de la classe Deplacement. Réceptionne les signaux de la manette destiné aux déplacements ..." alt="" coords="672,953,851,1074"/>
+<area shape="rect" id="node12" href="$class_bras.html" title="Déclaration de la classe Bras. Réceptionne les signaux de la manette destiné aux mouvements du bras..." alt="" coords="876,887,1090,1140"/>
+</map>

@@ -1,0 +1,449 @@
+\hypertarget{class_camera}{}\subsection{Référence de la classe Camera}
+\label{class_camera}\index{Camera@{Camera}}
+
+
+Déclaration de la classe \hyperlink{class_camera}{Camera}.  
+
+
+
+
+{\ttfamily \#include $<$camera.\+h$>$}
+
+
+
+Graphe de collaboration de Camera\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_camera__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_camera_a3ca730dcbd7ea6bfba12931a15066f6c}{capture} ()
+\begin{DoxyCompactList}\small\item\em Capture l\textquotesingle{}image du flux video. \end{DoxyCompactList}\item 
+void \hyperlink{class_camera_a82a0dd06f1802dc0ec0ea8ff6fcbd231}{changer\+Camera} (Q\+String)
+\begin{DoxyCompactList}\small\item\em Permet de démarrer le flux vidéo de la caméra choisir dans le Q\+Combo\+Box sur l\textquotesingle{}I\+HM. \end{DoxyCompactList}\item 
+void \hyperlink{class_camera_ac5b8c16f8edcb92569fab87185fc0500}{erreur\+Capture} (int id, Q\+Camera\+Image\+Capture\+::\+Error error, const Q\+String \&error\+String)
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_camera_ae3aa4afd7a3d9ddc2bf710bc74dc293e}{Camera} (Q\+Object $\ast$parent=nullptr)
+\item 
+\hyperlink{class_camera_ad1897942d0ccf91052386388a497349f}{$\sim$\+Camera} ()
+\item 
+bool \hyperlink{class_camera_afb73ab859802a143a1a00443e396143e}{est\+Camera\+Disponible} ()
+\begin{DoxyCompactList}\small\item\em Retourne un booléen sur l\textquotesingle{}état de disponibilité de la caméra. \end{DoxyCompactList}\item 
+Q\+Camera\+Viewfinder $\ast$ \hyperlink{class_camera_a67420d3ef14065a412327ada6193a2e0}{get\+Cadre\+Flux\+Video} ()
+\begin{DoxyCompactList}\small\item\em retourne le flux video \end{DoxyCompactList}\item 
+Q\+List$<$ Q\+Camera\+Info $>$ \hyperlink{class_camera_ad8a2a21d3701375a553c7c90646c694f}{get\+Liste\+Camera} ()
+\begin{DoxyCompactList}\small\item\em retourne toute les caméras disponible \end{DoxyCompactList}\item 
+void \hyperlink{class_camera_a66b844eec2b721a6ac23b80cb3fe2426}{set\+Archives} (\hyperlink{class_archives}{Archives} $\ast$\hyperlink{class_camera_a5eb3a29aeeab2f2755d0b69ac7cf550a}{archives})
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_camera_a60d2c9f16b6f235ab6dd0360c883e0d0}{nommer\+Capture} ()
+\begin{DoxyCompactList}\small\item\em Renomme la photo capturée au format \+: \char`\"{}yyyy-\/\+M\+M-\/dd\+\_\+\+H\+H\+:mm\+:ss\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{class_camera_a181773c87c3deaea9fa9844f8ac294e3}{demarrer\+Camera} ()
+\item 
+void \hyperlink{class_camera_a7eb23e1a5fe67c61f36b8a97ff1f882c}{demarrer\+Camera} (Q\+Camera\+Info)
+\begin{DoxyCompactList}\small\item\em Demarre le retour vidéo sur l\textquotesingle{}I\+HM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Camera $\ast$ \hyperlink{class_camera_a282a199ddd33fe64bc27b32a55719054}{camera}
+\begin{DoxyCompactList}\small\item\em Permet la connexion avec la caméra. \end{DoxyCompactList}\item 
+\hyperlink{class_archives}{Archives} $\ast$ \hyperlink{class_camera_a5eb3a29aeeab2f2755d0b69ac7cf550a}{archives}
+\begin{DoxyCompactList}\small\item\em Permet la connexion avec les archives. \end{DoxyCompactList}\item 
+Q\+Camera\+Viewfinder $\ast$ \hyperlink{class_camera_abf5fd38d19f0f06dfd7ec9e37f73adb8}{cadre\+Flux\+Video}
+\begin{DoxyCompactList}\small\item\em Permet l\textquotesingle{}affichage du flux vidéo. \end{DoxyCompactList}\item 
+Q\+Camera\+Image\+Capture $\ast$ \hyperlink{class_camera_a482276c4fd0ba7172670006556322b62}{capture\+Image}
+\begin{DoxyCompactList}\small\item\em Permet la capture d\textquotesingle{}image. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_camera_a1056fa6cffd2914d9e5a171bebf5ba7e}{format\+Sauvegarde\+Temps}
+\begin{DoxyCompactList}\small\item\em Le format de sauvegarde du temps pour l\textquotesingle{}archivages. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_camera_a4433c250847de630592927b6c034f3c8}{date\+Image}
+\begin{DoxyCompactList}\small\item\em Stock la date de la prise de photo pour l\textquotesingle{}archivage. \end{DoxyCompactList}\item 
+Q\+List$<$ Q\+Camera\+Info $>$ \hyperlink{class_camera_a3bea5177e857533a53cb94135bee8c6b}{cameras}
+\begin{DoxyCompactList}\small\item\em Stock la liste des caméras disponibles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Nicolas B\+O\+F\+F\+R\+E\+DO
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+Jeudi 13 Juin 2019 
+\end{DoxyDate}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_camera_ae3aa4afd7a3d9ddc2bf710bc74dc293e}\label{class_camera_ae3aa4afd7a3d9ddc2bf710bc74dc293e}} 
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\paragraph{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_camera_abf5fd38d19f0f06dfd7ec9e37f73adb8}{cadre\+Flux\+Video}, \hyperlink{class_camera_a282a199ddd33fe64bc27b32a55719054}{camera}, \hyperlink{class_camera_a3bea5177e857533a53cb94135bee8c6b}{cameras}, \hyperlink{class_camera_a482276c4fd0ba7172670006556322b62}{capture\+Image}, \hyperlink{class_camera_a181773c87c3deaea9fa9844f8ac294e3}{demarrer\+Camera()}, et \hyperlink{class_camera_afb73ab859802a143a1a00443e396143e}{est\+Camera\+Disponible()}.
+
+
+\begin{DoxyCode}
+00022                               : QObject(parent),
+00023   \hyperlink{class_camera_a282a199ddd33fe64bc27b32a55719054}{camera}(\textcolor{keyword}{nullptr}),
+00024   \hyperlink{class_camera_a5eb3a29aeeab2f2755d0b69ac7cf550a}{archives}(\textcolor{keyword}{nullptr}),
+00025   \hyperlink{class_camera_abf5fd38d19f0f06dfd7ec9e37f73adb8}{cadreFluxVideo}(\textcolor{keyword}{nullptr}),
+00026   \hyperlink{class_camera_a482276c4fd0ba7172670006556322b62}{captureImage}(\textcolor{keyword}{nullptr}),
+00027   \hyperlink{class_camera_a1056fa6cffd2914d9e5a171bebf5ba7e}{formatSauvegardeTemps}(\textcolor{stringliteral}{"dd-MM-yyyy\_HH:mm:ss"})
+00028 \{
+00029     \hyperlink{class_camera_abf5fd38d19f0f06dfd7ec9e37f73adb8}{cadreFluxVideo} = \textcolor{keyword}{new} QCameraViewfinder;
+00030     \hyperlink{class_camera_a282a199ddd33fe64bc27b32a55719054}{camera} = \textcolor{keyword}{new} QCamera;
+00031     \hyperlink{class_camera_a482276c4fd0ba7172670006556322b62}{captureImage} = \textcolor{keyword}{new} QCameraImageCapture(\hyperlink{class_camera_a282a199ddd33fe64bc27b32a55719054}{camera});
+00032     \hyperlink{class_camera_a3bea5177e857533a53cb94135bee8c6b}{cameras} = QCameraInfo::availableCameras();
+00033 
+00034     \textcolor{keywordflow}{if}(\hyperlink{class_camera_afb73ab859802a143a1a00443e396143e}{estCameraDisponible}())
+00035         \hyperlink{class_camera_a181773c87c3deaea9fa9844f8ac294e3}{demarrerCamera}(\hyperlink{class_camera_a3bea5177e857533a53cb94135bee8c6b}{cameras}[0]);
+00036 
+00037     qDebug() << Q\_FUNC\_INFO << \hyperlink{class_camera_a3bea5177e857533a53cb94135bee8c6b}{cameras};
+00038 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_camera_ad1897942d0ccf91052386388a497349f}\label{class_camera_ad1897942d0ccf91052386388a497349f}} 
+\index{Camera@{Camera}!````~Camera@{$\sim$\+Camera}}
+\index{````~Camera@{$\sim$\+Camera}!Camera@{Camera}}
+\paragraph{\texorpdfstring{$\sim$\+Camera()}{~Camera()}}
+{\footnotesize\ttfamily Camera\+::$\sim$\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_camera_abf5fd38d19f0f06dfd7ec9e37f73adb8}{cadre\+Flux\+Video}, et \hyperlink{class_camera_a282a199ddd33fe64bc27b32a55719054}{camera}.
+
+
+\begin{DoxyCode}
+00041 \{
+00042     \textcolor{keyword}{delete} \hyperlink{class_camera_abf5fd38d19f0f06dfd7ec9e37f73adb8}{cadreFluxVideo};
+00043     \textcolor{keyword}{delete} \hyperlink{class_camera_a282a199ddd33fe64bc27b32a55719054}{camera};
+00044     qDebug() << Q\_FUNC\_INFO;
+00045 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_camera_a3ca730dcbd7ea6bfba12931a15066f6c}\label{class_camera_a3ca730dcbd7ea6bfba12931a15066f6c}} 
+\index{Camera@{Camera}!capture@{capture}}
+\index{capture@{capture}!Camera@{Camera}}
+\paragraph{\texorpdfstring{capture}{capture}}
+{\footnotesize\ttfamily void Camera\+::capture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_camera_a482276c4fd0ba7172670006556322b62}{capture\+Image}, et \hyperlink{class_camera_a60d2c9f16b6f235ab6dd0360c883e0d0}{nommer\+Capture()}.
+
+
+\begin{DoxyCode}
+00116 \{
+00117     qDebug() << Q\_FUNC\_INFO;
+00118     QString nomCapture = this->\hyperlink{class_camera_a60d2c9f16b6f235ab6dd0360c883e0d0}{nommerCapture}();
+00119     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"nomCapture"} << nomCapture;
+00120     \hyperlink{class_camera_a482276c4fd0ba7172670006556322b62}{captureImage}->capture(nomCapture);
+00121 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_camera_a82a0dd06f1802dc0ec0ea8ff6fcbd231}\label{class_camera_a82a0dd06f1802dc0ec0ea8ff6fcbd231}} 
+\index{Camera@{Camera}!changer\+Camera@{changer\+Camera}}
+\index{changer\+Camera@{changer\+Camera}!Camera@{Camera}}
+\paragraph{\texorpdfstring{changer\+Camera}{changerCamera}}
+{\footnotesize\ttfamily void Camera\+::changer\+Camera (\begin{DoxyParamCaption}\item[{Q\+String}]{nom\+Camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nom\+Camera} & Un {\itshape Q\+String}, le nom de la caméra \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_camera_a3bea5177e857533a53cb94135bee8c6b}{cameras}, et \hyperlink{class_camera_a181773c87c3deaea9fa9844f8ac294e3}{demarrer\+Camera()}.
+
+
+\begin{DoxyCode}
+00142 \{
+00143     QString cameraTrouvee;
+00144     QList<QCameraInfo> \hyperlink{class_camera_a3bea5177e857533a53cb94135bee8c6b}{cameras} = QCameraInfo::availableCameras();
+00145     \textcolor{keywordflow}{foreach} (\textcolor{keyword}{const} QCameraInfo &cameraInfo, cameras)
+00146     \{
+00147         cameraTrouvee = cameraInfo.description() + \textcolor{stringliteral}{" ("} + cameraInfo.deviceName()+ \textcolor{stringliteral}{")"};
+00148         \textcolor{keywordflow}{if} (cameraTrouvee == nomCamera)
+00149         \{
+00150             this->\hyperlink{class_camera_a181773c87c3deaea9fa9844f8ac294e3}{demarrerCamera}(cameraInfo);
+00151         \}
+00152     \}
+00153 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_camera_a181773c87c3deaea9fa9844f8ac294e3}\label{class_camera_a181773c87c3deaea9fa9844f8ac294e3}} 
+\index{Camera@{Camera}!demarrer\+Camera@{demarrer\+Camera}}
+\index{demarrer\+Camera@{demarrer\+Camera}!Camera@{Camera}}
+\paragraph{\texorpdfstring{demarrer\+Camera()}{demarrerCamera()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Camera\+::demarrer\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_camera_ae3aa4afd7a3d9ddc2bf710bc74dc293e}{Camera()}, et \hyperlink{class_camera_a82a0dd06f1802dc0ec0ea8ff6fcbd231}{changer\+Camera()}.
+
+\mbox{\Hypertarget{class_camera_a7eb23e1a5fe67c61f36b8a97ff1f882c}\label{class_camera_a7eb23e1a5fe67c61f36b8a97ff1f882c}} 
+\index{Camera@{Camera}!demarrer\+Camera@{demarrer\+Camera}}
+\index{demarrer\+Camera@{demarrer\+Camera}!Camera@{Camera}}
+\paragraph{\texorpdfstring{demarrer\+Camera()}{demarrerCamera()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Camera\+::demarrer\+Camera (\begin{DoxyParamCaption}\item[{Q\+Camera\+Info}]{camera\+Selectionnee }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Par défaut la méthode reçoit la première caméra trouvée 
+\begin{DoxyParams}{Paramètres}
+{\em camera\+Selectionnee} & \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_camera_abf5fd38d19f0f06dfd7ec9e37f73adb8}{cadre\+Flux\+Video}, \hyperlink{class_camera_a282a199ddd33fe64bc27b32a55719054}{camera}, \hyperlink{class_camera_a482276c4fd0ba7172670006556322b62}{capture\+Image}, \hyperlink{class_camera_ac5b8c16f8edcb92569fab87185fc0500}{erreur\+Capture()}, et \hyperlink{class_camera_afb73ab859802a143a1a00443e396143e}{est\+Camera\+Disponible()}.
+
+
+\begin{DoxyCode}
+00092 \{
+00093     \textcolor{keywordflow}{if}(\hyperlink{class_camera_a282a199ddd33fe64bc27b32a55719054}{camera} != \textcolor{keyword}{nullptr})
+00094         \textcolor{keyword}{delete} \hyperlink{class_camera_a282a199ddd33fe64bc27b32a55719054}{camera};
+00095     \textcolor{keywordflow}{if}(\hyperlink{class_camera_a482276c4fd0ba7172670006556322b62}{captureImage} != \textcolor{keyword}{nullptr})
+00096         \textcolor{keyword}{delete} \hyperlink{class_camera_a482276c4fd0ba7172670006556322b62}{captureImage};
+00097 
+00098     \textcolor{keywordflow}{if}(\hyperlink{class_camera_afb73ab859802a143a1a00443e396143e}{estCameraDisponible}())
+00099     \{
+00100         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"cameraSelectionnee"} << cameraSelectionnee.deviceName();
+00101         \hyperlink{class_camera_a282a199ddd33fe64bc27b32a55719054}{camera} = \textcolor{keyword}{new} QCamera(cameraSelectionnee);
+00102         \hyperlink{class_camera_a282a199ddd33fe64bc27b32a55719054}{camera}->setViewfinder(\hyperlink{class_camera_abf5fd38d19f0f06dfd7ec9e37f73adb8}{cadreFluxVideo});
+00103         \hyperlink{class_camera_a282a199ddd33fe64bc27b32a55719054}{camera}->setCaptureMode(QCamera::CaptureStillImage);
+00104         \hyperlink{class_camera_a482276c4fd0ba7172670006556322b62}{captureImage} = \textcolor{keyword}{new} QCameraImageCapture(\hyperlink{class_camera_a282a199ddd33fe64bc27b32a55719054}{camera});
+00105         \hyperlink{class_camera_a482276c4fd0ba7172670006556322b62}{captureImage}->setCaptureDestination(QCameraImageCapture::CaptureToBuffer);
+00106         connect(\hyperlink{class_camera_a482276c4fd0ba7172670006556322b62}{captureImage}, SIGNAL(error(\textcolor{keywordtype}{int},QCameraImageCapture::Error,QString)), \textcolor{keyword}{this}, SLOT
+      (\hyperlink{class_camera_ac5b8c16f8edcb92569fab87185fc0500}{erreurCapture}(\textcolor{keywordtype}{int},QCameraImageCapture::Error,QString)));
+00107 
+00108         \hyperlink{class_camera_a282a199ddd33fe64bc27b32a55719054}{camera}->start();
+00109     \}
+00110 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_camera_ac5b8c16f8edcb92569fab87185fc0500}\label{class_camera_ac5b8c16f8edcb92569fab87185fc0500}} 
+\index{Camera@{Camera}!erreur\+Capture@{erreur\+Capture}}
+\index{erreur\+Capture@{erreur\+Capture}!Camera@{Camera}}
+\paragraph{\texorpdfstring{erreur\+Capture}{erreurCapture}}
+{\footnotesize\ttfamily void Camera\+::erreur\+Capture (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{Q\+Camera\+Image\+Capture\+::\+Error}]{error,  }\item[{const Q\+String \&}]{error\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Référencé par \hyperlink{class_camera_a7eb23e1a5fe67c61f36b8a97ff1f882c}{demarrer\+Camera()}.
+
+
+\begin{DoxyCode}
+00156 \{
+00157     Q\_UNUSED(\textcolor{keywordtype}{id})
+00158     Q\_UNUSED(error)
+00159     qDebug() << Q\_FUNC\_INFO << errorString;
+00160 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_camera_afb73ab859802a143a1a00443e396143e}\label{class_camera_afb73ab859802a143a1a00443e396143e}} 
+\index{Camera@{Camera}!est\+Camera\+Disponible@{est\+Camera\+Disponible}}
+\index{est\+Camera\+Disponible@{est\+Camera\+Disponible}!Camera@{Camera}}
+\paragraph{\texorpdfstring{est\+Camera\+Disponible()}{estCameraDisponible()}}
+{\footnotesize\ttfamily bool Camera\+::est\+Camera\+Disponible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+Un {\itshape booléen}, vrai si la caméra est disponible, faux sinon. 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_camera_a3bea5177e857533a53cb94135bee8c6b}{cameras}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_abbfcdc154a6ae7f941d186f6c90a5a2b}{I\+H\+M\+Rov\+::actualise\+Icones\+Etat()}, \hyperlink{class_camera_ae3aa4afd7a3d9ddc2bf710bc74dc293e}{Camera()}, et \hyperlink{class_camera_a7eb23e1a5fe67c61f36b8a97ff1f882c}{demarrer\+Camera()}.
+
+
+\begin{DoxyCode}
+00052 \{
+00053     \textcolor{keywordflow}{if} (\hyperlink{class_camera_a3bea5177e857533a53cb94135bee8c6b}{cameras}.count() > 0)
+00054         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00055 
+00056     \textcolor{keywordflow}{else}
+00057         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00058 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_camera_a67420d3ef14065a412327ada6193a2e0}\label{class_camera_a67420d3ef14065a412327ada6193a2e0}} 
+\index{Camera@{Camera}!get\+Cadre\+Flux\+Video@{get\+Cadre\+Flux\+Video}}
+\index{get\+Cadre\+Flux\+Video@{get\+Cadre\+Flux\+Video}!Camera@{Camera}}
+\paragraph{\texorpdfstring{get\+Cadre\+Flux\+Video()}{getCadreFluxVideo()}}
+{\footnotesize\ttfamily Q\+Camera\+Viewfinder $\ast$ Camera\+::get\+Cadre\+Flux\+Video (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Un assesseur permettant d\textquotesingle{}avoir le retour vidéo 
+
+Références \hyperlink{class_camera_abf5fd38d19f0f06dfd7ec9e37f73adb8}{cadre\+Flux\+Video}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov\+::\+I\+H\+M\+Rov()}.
+
+
+\begin{DoxyCode}
+00082 \{
+00083     \textcolor{keywordflow}{return} \hyperlink{class_camera_abf5fd38d19f0f06dfd7ec9e37f73adb8}{cadreFluxVideo};
+00084 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_camera_ad8a2a21d3701375a553c7c90646c694f}\label{class_camera_ad8a2a21d3701375a553c7c90646c694f}} 
+\index{Camera@{Camera}!get\+Liste\+Camera@{get\+Liste\+Camera}}
+\index{get\+Liste\+Camera@{get\+Liste\+Camera}!Camera@{Camera}}
+\paragraph{\texorpdfstring{get\+Liste\+Camera()}{getListeCamera()}}
+{\footnotesize\ttfamily Q\+List$<$ Q\+Camera\+Info $>$ Camera\+::get\+Liste\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_camera_a3bea5177e857533a53cb94135bee8c6b}{cameras}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_af3e46f174ab2fdeaebb2d00e6b8bcb33}{I\+H\+M\+Rov\+::initialiser\+Liste\+Camera()}.
+
+
+\begin{DoxyCode}
+00063 \{
+00064     QList<QCameraInfo> listeCamera;
+00065     \textcolor{keywordflow}{foreach} (\textcolor{keyword}{const} QCameraInfo &cameraInfo, \hyperlink{class_camera_a3bea5177e857533a53cb94135bee8c6b}{cameras})
+00066     \{
+00067         listeCamera.append(cameraInfo);
+00068     \}
+00069     \textcolor{keywordflow}{return} listeCamera;
+00070 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_camera_a60d2c9f16b6f235ab6dd0360c883e0d0}\label{class_camera_a60d2c9f16b6f235ab6dd0360c883e0d0}} 
+\index{Camera@{Camera}!nommer\+Capture@{nommer\+Capture}}
+\index{nommer\+Capture@{nommer\+Capture}!Camera@{Camera}}
+\paragraph{\texorpdfstring{nommer\+Capture()}{nommerCapture()}}
+{\footnotesize\ttfamily Q\+String Camera\+::nommer\+Capture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Indique le chemin vers un dossier de stockage des photos, à l\textquotesingle{}emplacement de l\textquotesingle{}éxécutable. 
+
+Références \hyperlink{class_camera_a5eb3a29aeeab2f2755d0b69ac7cf550a}{archives}, \hyperlink{class_camera_a4433c250847de630592927b6c034f3c8}{date\+Image}, \hyperlink{class_camera_a1056fa6cffd2914d9e5a171bebf5ba7e}{format\+Sauvegarde\+Temps}, et \hyperlink{class_archives_a65dfbaba0123e6530b03bfb70e614c90}{Archives\+::get\+Chemin\+Archives()}.
+
+
+
+Référencé par \hyperlink{class_camera_a3ca730dcbd7ea6bfba12931a15066f6c}{capture()}.
+
+
+\begin{DoxyCode}
+00128 \{
+00129     QString nom = QApplication::applicationDirPath() + \textcolor{stringliteral}{"/defaut"};
+00130     QDateTime dateCapture = QDateTime::currentDateTime();
+00131     \hyperlink{class_camera_a4433c250847de630592927b6c034f3c8}{dateImage} = dateCapture.toString(\hyperlink{class_camera_a1056fa6cffd2914d9e5a171bebf5ba7e}{formatSauvegardeTemps});
+00132     nom = \hyperlink{class_camera_a5eb3a29aeeab2f2755d0b69ac7cf550a}{archives}->\hyperlink{class_archives_a65dfbaba0123e6530b03bfb70e614c90}{getCheminArchives}() + \textcolor{stringliteral}{"/"} + 
+      \hyperlink{class_camera_a4433c250847de630592927b6c034f3c8}{dateImage};
+00133     qDebug() << Q\_FUNC\_INFO << nom;
+00134     \textcolor{keywordflow}{return} nom;
+00135 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_camera_a66b844eec2b721a6ac23b80cb3fe2426}\label{class_camera_a66b844eec2b721a6ac23b80cb3fe2426}} 
+\index{Camera@{Camera}!set\+Archives@{set\+Archives}}
+\index{set\+Archives@{set\+Archives}!Camera@{Camera}}
+\paragraph{\texorpdfstring{set\+Archives()}{setArchives()}}
+{\footnotesize\ttfamily void Camera\+::set\+Archives (\begin{DoxyParamCaption}\item[{\hyperlink{class_archives}{Archives} $\ast$}]{archives }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_camera_a5eb3a29aeeab2f2755d0b69ac7cf550a}{archives}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov\+::\+I\+H\+M\+Rov()}.
+
+
+\begin{DoxyCode}
+00073 \{
+00074     this->archives = \hyperlink{class_camera_a5eb3a29aeeab2f2755d0b69ac7cf550a}{archives};
+00075 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_camera_a5eb3a29aeeab2f2755d0b69ac7cf550a}\label{class_camera_a5eb3a29aeeab2f2755d0b69ac7cf550a}} 
+\index{Camera@{Camera}!archives@{archives}}
+\index{archives@{archives}!Camera@{Camera}}
+\paragraph{\texorpdfstring{archives}{archives}}
+{\footnotesize\ttfamily \hyperlink{class_archives}{Archives}$\ast$ Camera\+::archives\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_camera_a60d2c9f16b6f235ab6dd0360c883e0d0}{nommer\+Capture()}, et \hyperlink{class_camera_a66b844eec2b721a6ac23b80cb3fe2426}{set\+Archives()}.
+
+\mbox{\Hypertarget{class_camera_abf5fd38d19f0f06dfd7ec9e37f73adb8}\label{class_camera_abf5fd38d19f0f06dfd7ec9e37f73adb8}} 
+\index{Camera@{Camera}!cadre\+Flux\+Video@{cadre\+Flux\+Video}}
+\index{cadre\+Flux\+Video@{cadre\+Flux\+Video}!Camera@{Camera}}
+\paragraph{\texorpdfstring{cadre\+Flux\+Video}{cadreFluxVideo}}
+{\footnotesize\ttfamily Q\+Camera\+Viewfinder$\ast$ Camera\+::cadre\+Flux\+Video\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_camera_ae3aa4afd7a3d9ddc2bf710bc74dc293e}{Camera()}, \hyperlink{class_camera_a7eb23e1a5fe67c61f36b8a97ff1f882c}{demarrer\+Camera()}, \hyperlink{class_camera_a67420d3ef14065a412327ada6193a2e0}{get\+Cadre\+Flux\+Video()}, et \hyperlink{class_camera_ad1897942d0ccf91052386388a497349f}{$\sim$\+Camera()}.
+
+\mbox{\Hypertarget{class_camera_a282a199ddd33fe64bc27b32a55719054}\label{class_camera_a282a199ddd33fe64bc27b32a55719054}} 
+\index{Camera@{Camera}!camera@{camera}}
+\index{camera@{camera}!Camera@{Camera}}
+\paragraph{\texorpdfstring{camera}{camera}}
+{\footnotesize\ttfamily Q\+Camera$\ast$ Camera\+::camera\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_camera_ae3aa4afd7a3d9ddc2bf710bc74dc293e}{Camera()}, \hyperlink{class_camera_a7eb23e1a5fe67c61f36b8a97ff1f882c}{demarrer\+Camera()}, et \hyperlink{class_camera_ad1897942d0ccf91052386388a497349f}{$\sim$\+Camera()}.
+
+\mbox{\Hypertarget{class_camera_a3bea5177e857533a53cb94135bee8c6b}\label{class_camera_a3bea5177e857533a53cb94135bee8c6b}} 
+\index{Camera@{Camera}!cameras@{cameras}}
+\index{cameras@{cameras}!Camera@{Camera}}
+\paragraph{\texorpdfstring{cameras}{cameras}}
+{\footnotesize\ttfamily Q\+List$<$Q\+Camera\+Info$>$ Camera\+::cameras\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_camera_ae3aa4afd7a3d9ddc2bf710bc74dc293e}{Camera()}, \hyperlink{class_camera_a82a0dd06f1802dc0ec0ea8ff6fcbd231}{changer\+Camera()}, \hyperlink{class_camera_afb73ab859802a143a1a00443e396143e}{est\+Camera\+Disponible()}, et \hyperlink{class_camera_ad8a2a21d3701375a553c7c90646c694f}{get\+Liste\+Camera()}.
+
+\mbox{\Hypertarget{class_camera_a482276c4fd0ba7172670006556322b62}\label{class_camera_a482276c4fd0ba7172670006556322b62}} 
+\index{Camera@{Camera}!capture\+Image@{capture\+Image}}
+\index{capture\+Image@{capture\+Image}!Camera@{Camera}}
+\paragraph{\texorpdfstring{capture\+Image}{captureImage}}
+{\footnotesize\ttfamily Q\+Camera\+Image\+Capture$\ast$ Camera\+::capture\+Image\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_camera_ae3aa4afd7a3d9ddc2bf710bc74dc293e}{Camera()}, \hyperlink{class_camera_a3ca730dcbd7ea6bfba12931a15066f6c}{capture()}, et \hyperlink{class_camera_a7eb23e1a5fe67c61f36b8a97ff1f882c}{demarrer\+Camera()}.
+
+\mbox{\Hypertarget{class_camera_a4433c250847de630592927b6c034f3c8}\label{class_camera_a4433c250847de630592927b6c034f3c8}} 
+\index{Camera@{Camera}!date\+Image@{date\+Image}}
+\index{date\+Image@{date\+Image}!Camera@{Camera}}
+\paragraph{\texorpdfstring{date\+Image}{dateImage}}
+{\footnotesize\ttfamily Q\+String Camera\+::date\+Image\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_camera_a60d2c9f16b6f235ab6dd0360c883e0d0}{nommer\+Capture()}.
+
+\mbox{\Hypertarget{class_camera_a1056fa6cffd2914d9e5a171bebf5ba7e}\label{class_camera_a1056fa6cffd2914d9e5a171bebf5ba7e}} 
+\index{Camera@{Camera}!format\+Sauvegarde\+Temps@{format\+Sauvegarde\+Temps}}
+\index{format\+Sauvegarde\+Temps@{format\+Sauvegarde\+Temps}!Camera@{Camera}}
+\paragraph{\texorpdfstring{format\+Sauvegarde\+Temps}{formatSauvegardeTemps}}
+{\footnotesize\ttfamily Q\+String Camera\+::format\+Sauvegarde\+Temps\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_camera_a60d2c9f16b6f235ab6dd0360c883e0d0}{nommer\+Capture()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{camera_8h}{camera.\+h}\item 
+\hyperlink{camera_8cpp}{camera.\+cpp}\end{DoxyCompactItemize}

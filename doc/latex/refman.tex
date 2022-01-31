@@ -1,0 +1,221 @@
+\documentclass[twoside]{article}
+
+% Packages required by doxygen
+\usepackage{fixltx2e}
+\usepackage{calc}
+\usepackage{doxygen}
+\usepackage[export]{adjustbox} % also loads graphicx
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{multirow}
+\PassOptionsToPackage{warn}{textcomp}
+\usepackage{textcomp}
+\usepackage[nointegrals]{wasysym}
+\usepackage[table]{xcolor}
+
+% NLS support packages
+\usepackage[french]{babel}
+
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\renewcommand{\familydefault}{\sfdefault}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+
+% Page & text layout
+\usepackage[a4paper]{geometry}
+\geometry{vmargin=2cm,hmargin=2cm,lmargin=1.2cm,rmargin=1.2cm}
+% \usepackage{geometry}
+% \geometry{%
+%   a4paper,%
+%   top=2.5cm,%
+%   bottom=2.5cm,%
+%   left=2.5cm,%
+%   right=2.5cm%
+% }
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{3ex plus 2ex minus 2ex}
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{\bfseries\scriptsize Rov'Net}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize BTS SN-IR LaSalle Avigon 2019 }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize BTS SN-IR LaSalle Avigon 2019 }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{\bfseries\scriptsize Rov'Net}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+% Hyperlinks (required, but should be loaded last)
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex,pagebackref=true]{hyperref}
+\else
+  \usepackage[ps2pdf,pagebackref=true]{hyperref}
+\fi
+\hypersetup{%
+  colorlinks=true,%
+  linkcolor=blue,%
+  citecolor=blue,%
+  unicode%
+}
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+\usepackage{caption}
+\captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+
+%===== C O N T E N T S =====
+
+\begin{document}
+
+% Titlepage & ToC
+\hypersetup{pageanchor=false,
+             bookmarksnumbered=true,
+             pdfencoding=unicode
+            }
+\pagenumbering{alph}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\LARGE Projet R\+OV\textquotesingle{}N\+ET \\[1ex]\large 1.\+1 }\\
+\vspace*{1cm}
+{\large BTS SN-IR LaSalle Avignon 2019}\\
+\vspace*{1cm}
+{\large REYNIER Jacques}\\
+{\large BOFFREDO Nicolas}\\
+\end{center}
+\end{titlepage}
+\pagenumbering{roman}
+\tableofcontents
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+
+%--- Begin generated contents ---
+\section{Le projet R\+OV\textquotesingle{}N\+ET}
+\label{index}\hypertarget{index}{}\input{index}
+\section{Changelog}
+\label{page_changelog}
+\Hypertarget{page_changelog}
+\input{page_changelog}
+\section{Installation}
+\label{page_install}
+\Hypertarget{page_install}
+\input{page_install}
+\section{R\+E\+A\+D\+ME}
+\label{page__r_e_a_d_m_e}
+\Hypertarget{page__r_e_a_d_m_e}
+\input{page__r_e_a_d_m_e}
+\section{A propos}
+\label{page_about}
+\Hypertarget{page_about}
+\input{page_about}
+\section{Licence G\+PL}
+\label{page_licence}
+\Hypertarget{page_licence}
+\input{page_licence}
+\section{Liste des choses à faire}
+\label{todo}
+\Hypertarget{todo}
+\input{todo}
+\section{Documentation des classes}
+\input{class_archives}
+\input{class_base_de_donnees}
+\input{class_bras}
+\input{class_camera}
+\input{class_communication_rov}
+\input{class_controle_camera}
+\input{class_controle_rov}
+\input{class_deplacement}
+\input{class_i_h_m_rov}
+\input{class_manette}
+\input{class_mesures}
+\input{class_rov}
+\section{Documentation des fichiers}
+\input{archives_8cpp}
+\input{archives_8h}
+\input{basededonnees_8cpp}
+\input{basededonnees_8h}
+\input{bras_8cpp}
+\input{bras_8h}
+\input{camera_8cpp}
+\input{camera_8h}
+\input{_changelog_8md}
+\input{communicationrov_8cpp}
+\input{communicationrov_8h}
+\input{controlecamera_8cpp}
+\input{controlecamera_8h}
+\input{controlerov_8cpp}
+\input{controlerov_8h}
+\input{deplacement_8cpp}
+\input{deplacement_8h}
+\input{ihmrov_8cpp}
+\input{ihmrov_8h}
+\input{_i_n_s_t_a_l_l_8md}
+\input{main_8cpp}
+\input{manette_8cpp}
+\input{manette_8h}
+\input{mesures_8cpp}
+\input{mesures_8h}
+\input{_r_e_a_d_m_e_8md}
+\input{rov_8cpp}
+\input{rov_8h}
+%--- End generated contents ---
+
+% Index
+\newpage
+\phantomsection
+\clearemptydoublepage
+\addcontentsline{toc}{section}{Index}
+\printindex
+
+\end{document}

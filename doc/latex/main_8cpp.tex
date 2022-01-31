@@ -1,0 +1,57 @@
+\hypertarget{main_8cpp}{}\subsection{Référence du fichier main.\+cpp}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+
+
+Programme principal \hyperlink{class_rov}{Rov}\textquotesingle{}net.  
+
+
+{\ttfamily \#include \char`\"{}ihmrov.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Q\+Application$>$}\newline
+\subsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8cpp_ae0665038b72011f5c680c660fcb59459}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+Crée et affiche la fenêtre principale de l\textquotesingle{}application \hyperlink{class_rov}{Rov}\textquotesingle{}net
+
+\begin{DoxyAuthor}{Auteur}
+Nicolas B\+O\+F\+F\+R\+E\+DO \href{mailto:nboffredo@gmail.com}{\tt nboffredo@gmail.\+com} 
+
+Jacques R\+E\+Y\+N\+I\+ER \href{mailto:reynier.jacques@gmail.com}{\tt reynier.\+jacques@gmail.\+com}
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des fonctions}
+\mbox{\Hypertarget{main_8cpp_ae0665038b72011f5c680c660fcb59459}\label{main_8cpp_ae0665038b72011f5c680c660fcb59459}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\paragraph{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em argc} & \\
+\hline
+{\em argv\mbox{[}$\,$\mbox{]}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+00024 \{
+00025     QApplication a(argc, argv);
+00026 
+00027     \hyperlink{class_i_h_m_rov}{IHMRov} ihm;
+00028     ihm.show();
+00029 
+00030     \textcolor{keywordflow}{return} a.exec();
+00031 \}
+\end{DoxyCode}

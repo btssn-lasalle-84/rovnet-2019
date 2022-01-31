@@ -1,0 +1,395 @@
+\hypertarget{class_communication_rov}{}\subsection{Référence de la classe Communication\+Rov}
+\label{class_communication_rov}\index{Communication\+Rov@{Communication\+Rov}}
+
+
+Déclaration de la classe \hyperlink{class_communication_rov}{Communication\+Rov}. Gère la communication entre le \hyperlink{class_rov}{Rov} et le \hyperlink{class_rov}{Rov}.  
+
+
+
+
+{\ttfamily \#include $<$communicationrov.\+h$>$}
+
+
+
+Graphe de collaboration de Communication\+Rov\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{class_communication_rov__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_communication_rov_a5822d2f41553221ea876ea09e148f859}{lire\+Trame} ()
+\begin{DoxyCompactList}\small\item\em Récupère la trame envoyée par le \hyperlink{class_rov}{Rov}, et la renvoie sous un signal si cette dernière est complète. \end{DoxyCompactList}\item 
+bool \hyperlink{class_communication_rov_ac243fcfb073f4ceaf58fab1d41207801}{envoie\+Trame} (Q\+String \hyperlink{class_communication_rov_a7100b1be33860d235b45efd9010ac218}{trame})
+\begin{DoxyCompactList}\small\item\em Envoie une trame au \hyperlink{class_rov}{Rov}. \end{DoxyCompactList}\item 
+void \hyperlink{class_communication_rov_ad46397a58ba7704fbd5ac5748e083004}{change\+Port\+Communication} (Q\+String nouveau\+Port)
+\begin{DoxyCompactList}\small\item\em Modifie le port de communication du rov. \end{DoxyCompactList}\item 
+void \hyperlink{class_communication_rov_ac49ffc6f2e6ae22ea9f99e10ca0a4163}{change\+Baud\+Rate} (Q\+String nouveau\+Baud\+Rate)
+\begin{DoxyCompactList}\small\item\em Modifie le baudrate utilisé. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_communication_rov_add205822378629204a4ee49ca74c6d56}{trame\+Recue} (Q\+String \hyperlink{class_communication_rov_a7100b1be33860d235b45efd9010ac218}{trame})
+\begin{DoxyCompactList}\small\item\em Signal émis lorsque des nouvelles données ont été reçues. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_communication_rov_a22b64c69228d392a212f543e071adc02}{Communication\+Rov} (Q\+Object $\ast$parent=nullptr)
+\item 
+\hyperlink{class_communication_rov_a97e96f47dad6d47cbec4adc82756b49e}{$\sim$\+Communication\+Rov} ()
+\item 
+bool \hyperlink{class_communication_rov_a513c26b04745fa2ae31b4533d656dfd4}{est\+Communication\+Rov\+Disponible} ()
+\begin{DoxyCompactList}\small\item\em Retourne l\textquotesingle{}é\&tat d\textquotesingle{}ouverture du port de communication vers le \hyperlink{class_rov}{Rov}. \end{DoxyCompactList}\item 
+const Q\+String \hyperlink{class_communication_rov_a6226f9338fffc648cfca91c8e585a26b}{get\+Port} ()
+\begin{DoxyCompactList}\small\item\em Retourne le port de communication utilisé. \end{DoxyCompactList}\item 
+const Q\+String \hyperlink{class_communication_rov_a810de691dfc6d305f77c92ccd90bb6db}{get\+Baud\+Rate} ()
+\begin{DoxyCompactList}\small\item\em Retourne le baudrate utilisé. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Serial\+Port $\ast$ \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}
+\begin{DoxyCompactList}\small\item\em Port série pour la communication le programme et le \hyperlink{class_rov}{Rov}. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_communication_rov_a7bd5d36d065005b27ed6cb421c7ffe42}{adresse\+Port}
+\begin{DoxyCompactList}\small\item\em Adresse du port de communication. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_communication_rov_a7100b1be33860d235b45efd9010ac218}{trame}
+\begin{DoxyCompactList}\small\item\em Trame reçue par le port. \end{DoxyCompactList}\item 
+Q\+Byte\+Array \hyperlink{class_communication_rov_acbb6939bb597179956c6f4bc5ca39f3f}{donnees}
+\begin{DoxyCompactList}\small\item\em Dernière donnée reçue (ou en cours de réception) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+R\+E\+Y\+N\+I\+ER Jacques
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+Jeudi 13 Juin 2019 
+\end{DoxyDate}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_communication_rov_a22b64c69228d392a212f543e071adc02}\label{class_communication_rov_a22b64c69228d392a212f543e071adc02}} 
+\index{Communication\+Rov@{Communication\+Rov}!Communication\+Rov@{Communication\+Rov}}
+\index{Communication\+Rov@{Communication\+Rov}!Communication\+Rov@{Communication\+Rov}}
+\paragraph{\texorpdfstring{Communication\+Rov()}{CommunicationRov()}}
+{\footnotesize\ttfamily Communication\+Rov\+::\+Communication\+Rov (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Références \hyperlink{class_communication_rov_a7bd5d36d065005b27ed6cb421c7ffe42}{adresse\+Port}, \hyperlink{class_communication_rov_a5822d2f41553221ea876ea09e148f859}{lire\+Trame()}, et \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}.
+
+
+\begin{DoxyCode}
+00017                                                   : QObject(parent), \hyperlink{class_communication_rov_a7bd5d36d065005b27ed6cb421c7ffe42}{adressePort}(\textcolor{stringliteral}{"/dev/ttyUSB0"})
+00018 \{
+00019     \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port} = \textcolor{keyword}{new} QSerialPort(\hyperlink{class_communication_rov_a7bd5d36d065005b27ed6cb421c7ffe42}{adressePort});
+00020 
+00021     \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}->setBaudRate(QSerialPort::Baud38400);
+00022 
+00023     \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}->open(QIODevice::ReadWrite);
+00024     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Port ouvert :"} << \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}->isOpen();
+00025 
+00026     \textcolor{keywordflow}{if}(\hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}->isOpen())
+00027         connect(\hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}, SIGNAL(readyRead()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_communication_rov_a5822d2f41553221ea876ea09e148f859}{lireTrame}()));
+00028 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_communication_rov_a97e96f47dad6d47cbec4adc82756b49e}\label{class_communication_rov_a97e96f47dad6d47cbec4adc82756b49e}} 
+\index{Communication\+Rov@{Communication\+Rov}!````~Communication\+Rov@{$\sim$\+Communication\+Rov}}
+\index{````~Communication\+Rov@{$\sim$\+Communication\+Rov}!Communication\+Rov@{Communication\+Rov}}
+\paragraph{\texorpdfstring{$\sim$\+Communication\+Rov()}{~CommunicationRov()}}
+{\footnotesize\ttfamily Communication\+Rov\+::$\sim$\+Communication\+Rov (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}.
+
+
+\begin{DoxyCode}
+00031 \{
+00032     \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}->close();
+00033     \textcolor{keyword}{delete} \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port};
+00034 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_communication_rov_ac49ffc6f2e6ae22ea9f99e10ca0a4163}\label{class_communication_rov_ac49ffc6f2e6ae22ea9f99e10ca0a4163}} 
+\index{Communication\+Rov@{Communication\+Rov}!change\+Baud\+Rate@{change\+Baud\+Rate}}
+\index{change\+Baud\+Rate@{change\+Baud\+Rate}!Communication\+Rov@{Communication\+Rov}}
+\paragraph{\texorpdfstring{change\+Baud\+Rate}{changeBaudRate}}
+{\footnotesize\ttfamily void Communication\+Rov\+::change\+Baud\+Rate (\begin{DoxyParamCaption}\item[{Q\+String}]{nouveau\+Baud\+Rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Change le débit (baudrate) utilisé pour la communication avec le rov.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nouveau\+Baud\+Rate} & Q\+String le nouveau baudrate à utiliser. \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{I\+H\+M\+Rov\+::creer\+Fenetre\+Parametres()}.
+
+
+\begin{DoxyCode}
+00076 \{
+00077     \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}->setBaudRate(nouveauBaudRate.toInt());
+00078     qDebug() << Q\_FUNC\_INFO << nouveauBaudRate.toInt();
+00079 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_communication_rov_ad46397a58ba7704fbd5ac5748e083004}\label{class_communication_rov_ad46397a58ba7704fbd5ac5748e083004}} 
+\index{Communication\+Rov@{Communication\+Rov}!change\+Port\+Communication@{change\+Port\+Communication}}
+\index{change\+Port\+Communication@{change\+Port\+Communication}!Communication\+Rov@{Communication\+Rov}}
+\paragraph{\texorpdfstring{change\+Port\+Communication}{changePortCommunication}}
+{\footnotesize\ttfamily void Communication\+Rov\+::change\+Port\+Communication (\begin{DoxyParamCaption}\item[{Q\+String}]{nouveau\+Port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Change le port de communication utilisé pour la liaison avec le rov.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nouveau\+Port} & Q\+String le nouveau port auquel se connecter. \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_communication_rov_a7bd5d36d065005b27ed6cb421c7ffe42}{adresse\+Port}, et \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{I\+H\+M\+Rov\+::creer\+Fenetre\+Parametres()}.
+
+
+\begin{DoxyCode}
+00062 \{
+00063     \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}->close();
+00064     \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}->setPortName(nouveauPort);
+00065     \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}->open(QIODevice::ReadWrite);
+00066     \hyperlink{class_communication_rov_a7bd5d36d065005b27ed6cb421c7ffe42}{adressePort} = nouveauPort;
+00067     qDebug() << \textcolor{stringliteral}{"Port : "} << \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}->portName() << \textcolor{stringliteral}{"Ouvert : "} << \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}->isOpen();
+00068 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_communication_rov_ac243fcfb073f4ceaf58fab1d41207801}\label{class_communication_rov_ac243fcfb073f4ceaf58fab1d41207801}} 
+\index{Communication\+Rov@{Communication\+Rov}!envoie\+Trame@{envoie\+Trame}}
+\index{envoie\+Trame@{envoie\+Trame}!Communication\+Rov@{Communication\+Rov}}
+\paragraph{\texorpdfstring{envoie\+Trame}{envoieTrame}}
+{\footnotesize\ttfamily Communication\+Rov\+::envoie\+Trame (\begin{DoxyParamCaption}\item[{Q\+String}]{trame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Envoie la trame passée en argument au \hyperlink{class_rov}{Rov} par liaison série.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em trame} & Q\+String Trame à envoyer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+bool envoye, vrai si la trame a été envoyée, sinon faux
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Paramètres}
+{\em trame} & Q\+String le contenu de la trame envoyée au \hyperlink{class_rov}{Rov} \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_communication_rov_a513c26b04745fa2ae31b4533d656dfd4}{est\+Communication\+Rov\+Disponible()}, \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}, et \hyperlink{class_communication_rov_a7100b1be33860d235b45efd9010ac218}{trame}.
+
+
+
+Référencé par \hyperlink{class_controle_rov_acc4d5fea26770217df978d43df2ad51e}{Controle\+Rov\+::\+Controle\+Rov()}.
+
+
+\begin{DoxyCode}
+00118 \{
+00119     \textcolor{keywordflow}{if}(!\hyperlink{class_communication_rov_a513c26b04745fa2ae31b4533d656dfd4}{estCommunicationRovDisponible}())
+00120         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00121 
+00122     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"trame"} << \hyperlink{class_communication_rov_a7100b1be33860d235b45efd9010ac218}{trame};
+00123     qint64 nbEnvoyes = \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}->write(trame.toLocal8Bit());
+00124     \textcolor{comment}{//port->waitForReadyRead(1100);}
+00125 
+00126     \textcolor{keywordflow}{if}(nbEnvoyes > 0)
+00127         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00128     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00129 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_communication_rov_a513c26b04745fa2ae31b4533d656dfd4}\label{class_communication_rov_a513c26b04745fa2ae31b4533d656dfd4}} 
+\index{Communication\+Rov@{Communication\+Rov}!est\+Communication\+Rov\+Disponible@{est\+Communication\+Rov\+Disponible}}
+\index{est\+Communication\+Rov\+Disponible@{est\+Communication\+Rov\+Disponible}!Communication\+Rov@{Communication\+Rov}}
+\paragraph{\texorpdfstring{est\+Communication\+Rov\+Disponible()}{estCommunicationRovDisponible()}}
+{\footnotesize\ttfamily Communication\+Rov\+::est\+Communication\+Rov\+Disponible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+bool disponible, vrai si le port vers le \hyperlink{class_rov}{Rov} est ouvert sinon faux
+
+bool vrai si le port vers le \hyperlink{class_rov}{Rov} est ouvert sinon faux 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_abbfcdc154a6ae7f941d186f6c90a5a2b}{I\+H\+M\+Rov\+::actualise\+Icones\+Etat()}, \hyperlink{class_rov_ae1306036b067e9ad50a09f9dd607a092}{Rov\+::creer\+Nouvelle\+Campagne()}, \hyperlink{class_i_h_m_rov_a94d31f4e748f3e4549eab42c8bc7e367}{I\+H\+M\+Rov\+::enregistrer\+Parametres()}, et \hyperlink{class_communication_rov_ac243fcfb073f4ceaf58fab1d41207801}{envoie\+Trame()}.
+
+
+\begin{DoxyCode}
+00087 \{
+00088     \textcolor{keywordflow}{return} \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}->isOpen();
+00089 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_communication_rov_a810de691dfc6d305f77c92ccd90bb6db}\label{class_communication_rov_a810de691dfc6d305f77c92ccd90bb6db}} 
+\index{Communication\+Rov@{Communication\+Rov}!get\+Baud\+Rate@{get\+Baud\+Rate}}
+\index{get\+Baud\+Rate@{get\+Baud\+Rate}!Communication\+Rov@{Communication\+Rov}}
+\paragraph{\texorpdfstring{get\+Baud\+Rate()}{getBaudRate()}}
+{\footnotesize\ttfamily const Q\+String Communication\+Rov\+::get\+Baud\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Indique le Baudrate utilisé pour la communication avec le rov.
+
+\begin{DoxyReturn}{Renvoie}
+baudrate Q\+String le baudrate utilisé actuellement pour la communication. 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{I\+H\+M\+Rov\+::creer\+Fenetre\+Parametres()}.
+
+
+\begin{DoxyCode}
+00052 \{
+00053     \textcolor{keywordflow}{return} QString::number(\hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}->baudRate());
+00054 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_communication_rov_a6226f9338fffc648cfca91c8e585a26b}\label{class_communication_rov_a6226f9338fffc648cfca91c8e585a26b}} 
+\index{Communication\+Rov@{Communication\+Rov}!get\+Port@{get\+Port}}
+\index{get\+Port@{get\+Port}!Communication\+Rov@{Communication\+Rov}}
+\paragraph{\texorpdfstring{get\+Port()}{getPort()}}
+{\footnotesize\ttfamily const Q\+String Communication\+Rov\+::get\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Indique le port utilisé pour la communication avec le rov.
+
+\begin{DoxyReturn}{Renvoie}
+adresse\+Port Q\+String le port de communication utilisé actuellement. 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_communication_rov_a7bd5d36d065005b27ed6cb421c7ffe42}{adresse\+Port}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_aed451139ac09ef18b7c92637761d80ce}{I\+H\+M\+Rov\+::creer\+Fenetre\+Parametres()}.
+
+
+\begin{DoxyCode}
+00042 \{
+00043     \textcolor{keywordflow}{return} \hyperlink{class_communication_rov_a7bd5d36d065005b27ed6cb421c7ffe42}{adressePort};
+00044 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_communication_rov_a5822d2f41553221ea876ea09e148f859}\label{class_communication_rov_a5822d2f41553221ea876ea09e148f859}} 
+\index{Communication\+Rov@{Communication\+Rov}!lire\+Trame@{lire\+Trame}}
+\index{lire\+Trame@{lire\+Trame}!Communication\+Rov@{Communication\+Rov}}
+\paragraph{\texorpdfstring{lire\+Trame}{lireTrame}}
+{\footnotesize\ttfamily Communication\+Rov\+::lire\+Trame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Récupère la trame envoyée par le rov, et émet un signal. 
+
+Références \hyperlink{class_communication_rov_acbb6939bb597179956c6f4bc5ca39f3f}{donnees}, \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}, et \hyperlink{class_communication_rov_add205822378629204a4ee49ca74c6d56}{trame\+Recue()}.
+
+
+
+Référencé par \hyperlink{class_communication_rov_a22b64c69228d392a212f543e071adc02}{Communication\+Rov()}.
+
+
+\begin{DoxyCode}
+00096 \{
+00097     \hyperlink{class_communication_rov_acbb6939bb597179956c6f4bc5ca39f3f}{donnees} += \hyperlink{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}{port}->readAll();
+00098     qDebug() << \hyperlink{class_communication_rov_acbb6939bb597179956c6f4bc5ca39f3f}{donnees};
+00099 
+00100     \textcolor{keywordflow}{if}(\hyperlink{class_communication_rov_acbb6939bb597179956c6f4bc5ca39f3f}{donnees}.endsWith(\textcolor{stringliteral}{"\(\backslash\)n"}))
+00101     \{
+00102         \textcolor{keywordflow}{if}(\hyperlink{class_communication_rov_acbb6939bb597179956c6f4bc5ca39f3f}{donnees}.startsWith(\textcolor{stringliteral}{"$"}))
+00103         \{
+00104             qDebug() << Q\_FUNC\_INFO << \hyperlink{class_communication_rov_acbb6939bb597179956c6f4bc5ca39f3f}{donnees};
+00105             emit \hyperlink{class_communication_rov_add205822378629204a4ee49ca74c6d56}{trameRecue}(donnees);
+00106         \}
+00107 
+00108         \hyperlink{class_communication_rov_acbb6939bb597179956c6f4bc5ca39f3f}{donnees}.clear();
+00109     \}
+00110 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_communication_rov_add205822378629204a4ee49ca74c6d56}\label{class_communication_rov_add205822378629204a4ee49ca74c6d56}} 
+\index{Communication\+Rov@{Communication\+Rov}!trame\+Recue@{trame\+Recue}}
+\index{trame\+Recue@{trame\+Recue}!Communication\+Rov@{Communication\+Rov}}
+\paragraph{\texorpdfstring{trame\+Recue}{trameRecue}}
+{\footnotesize\ttfamily Communication\+Rov\+::trame\+Recue (\begin{DoxyParamCaption}\item[{Q\+String}]{trame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em trame} & Q\+String le contenu de la trame reçue du \hyperlink{class_rov}{Rov} \\
+\hline
+\end{DoxyParams}
+
+
+Référencé par \hyperlink{class_communication_rov_a5822d2f41553221ea876ea09e148f859}{lire\+Trame()}.
+
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_communication_rov_a7bd5d36d065005b27ed6cb421c7ffe42}\label{class_communication_rov_a7bd5d36d065005b27ed6cb421c7ffe42}} 
+\index{Communication\+Rov@{Communication\+Rov}!adresse\+Port@{adresse\+Port}}
+\index{adresse\+Port@{adresse\+Port}!Communication\+Rov@{Communication\+Rov}}
+\paragraph{\texorpdfstring{adresse\+Port}{adressePort}}
+{\footnotesize\ttfamily Q\+String Communication\+Rov\+::adresse\+Port\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_communication_rov_ad46397a58ba7704fbd5ac5748e083004}{change\+Port\+Communication()}, \hyperlink{class_communication_rov_a22b64c69228d392a212f543e071adc02}{Communication\+Rov()}, et \hyperlink{class_communication_rov_a6226f9338fffc648cfca91c8e585a26b}{get\+Port()}.
+
+\mbox{\Hypertarget{class_communication_rov_acbb6939bb597179956c6f4bc5ca39f3f}\label{class_communication_rov_acbb6939bb597179956c6f4bc5ca39f3f}} 
+\index{Communication\+Rov@{Communication\+Rov}!donnees@{donnees}}
+\index{donnees@{donnees}!Communication\+Rov@{Communication\+Rov}}
+\paragraph{\texorpdfstring{donnees}{donnees}}
+{\footnotesize\ttfamily Q\+Byte\+Array Communication\+Rov\+::donnees\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_communication_rov_a5822d2f41553221ea876ea09e148f859}{lire\+Trame()}.
+
+\mbox{\Hypertarget{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}\label{class_communication_rov_a21b62067ef0b2a6aec339df60b4abd72}} 
+\index{Communication\+Rov@{Communication\+Rov}!port@{port}}
+\index{port@{port}!Communication\+Rov@{Communication\+Rov}}
+\paragraph{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily Q\+Serial\+Port$\ast$ Communication\+Rov\+::port\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_communication_rov_ac49ffc6f2e6ae22ea9f99e10ca0a4163}{change\+Baud\+Rate()}, \hyperlink{class_communication_rov_ad46397a58ba7704fbd5ac5748e083004}{change\+Port\+Communication()}, \hyperlink{class_communication_rov_a22b64c69228d392a212f543e071adc02}{Communication\+Rov()}, \hyperlink{class_communication_rov_ac243fcfb073f4ceaf58fab1d41207801}{envoie\+Trame()}, \hyperlink{class_communication_rov_a513c26b04745fa2ae31b4533d656dfd4}{est\+Communication\+Rov\+Disponible()}, \hyperlink{class_communication_rov_a810de691dfc6d305f77c92ccd90bb6db}{get\+Baud\+Rate()}, \hyperlink{class_communication_rov_a5822d2f41553221ea876ea09e148f859}{lire\+Trame()}, et \hyperlink{class_communication_rov_a97e96f47dad6d47cbec4adc82756b49e}{$\sim$\+Communication\+Rov()}.
+
+\mbox{\Hypertarget{class_communication_rov_a7100b1be33860d235b45efd9010ac218}\label{class_communication_rov_a7100b1be33860d235b45efd9010ac218}} 
+\index{Communication\+Rov@{Communication\+Rov}!trame@{trame}}
+\index{trame@{trame}!Communication\+Rov@{Communication\+Rov}}
+\paragraph{\texorpdfstring{trame}{trame}}
+{\footnotesize\ttfamily Q\+String Communication\+Rov\+::trame\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_communication_rov_ac243fcfb073f4ceaf58fab1d41207801}{envoie\+Trame()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{communicationrov_8h}{communicationrov.\+h}\item 
+\hyperlink{communicationrov_8cpp}{communicationrov.\+cpp}\end{DoxyCompactItemize}

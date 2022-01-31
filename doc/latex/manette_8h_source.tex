@@ -1,0 +1,36 @@
+\hypertarget{manette_8h_source}{}\subsection{manette.\+h}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef MANETTE\_H}
+00002 \textcolor{preprocessor}{#define MANETTE\_H}
+00003 
+00017 \textcolor{preprocessor}{#include <QtCore/QObject>}
+00018 \textcolor{preprocessor}{#include <QtCore/QTimer>}
+00019 
+00020 \textcolor{preprocessor}{#include "\hyperlink{rov_8h}{rov.h}"}
+00021 \textcolor{preprocessor}{#include "\hyperlink{deplacement_8h}{deplacement.h}"}
+00022 \textcolor{preprocessor}{#include "\hyperlink{bras_8h}{bras.h}"}
+00023 
+00024 QT\_BEGIN\_NAMESPACE
+00025 \textcolor{keyword}{class }QGamepad;
+00026 QT\_END\_NAMESPACE
+00027 
+00028 \textcolor{comment}{//#define DEBUG\_MANETTE}
+00029 
+\Hypertarget{manette_8h_source_l00043}\hyperlink{class_manette}{00043} \textcolor{keyword}{class }\hyperlink{class_manette}{Manette} : \textcolor{keyword}{public} QObject
+00044 \{
+00045     Q\_OBJECT
+00046 
+00047     \textcolor{keyword}{private}:
+\Hypertarget{manette_8h_source_l00048}\hyperlink{class_manette_adc9690756093748bb851d4c1d3ba82ea}{00048}         QGamepad *\hyperlink{class_manette_adc9690756093748bb851d4c1d3ba82ea}{manette};  
+\Hypertarget{manette_8h_source_l00049}\hyperlink{class_manette_a2b9c2c380a7bce40d2c6353d534ba6a9}{00049}         \textcolor{keywordtype}{bool} \hyperlink{class_manette_a2b9c2c380a7bce40d2c6353d534ba6a9}{detecte};       
+00050 
+00051     \textcolor{keyword}{public}:
+00052         \textcolor{keyword}{explicit} \hyperlink{class_manette_a9a7b00a30cd6a7eea503c8bcfe5bbcbb}{Manette}(QObject *parent = \textcolor{keyword}{nullptr});
+00053         \hyperlink{class_manette_a86a0cab49599b27d86c2e77f13fa54a2}{~Manette}();
+00058         \textcolor{keywordtype}{bool} \hyperlink{class_manette_a035c0a43a11e91889891b3c874f0a58d}{estDetecte}() \textcolor{keyword}{const};
+00063         QGamepad * \hyperlink{class_manette_a708eccb66e967e0fe575b19e9899ff5a}{getManette}();
+00064 \};
+00065 
+00066 \textcolor{preprocessor}{#endif // MANETTE\_H}
+\end{DoxyCode}

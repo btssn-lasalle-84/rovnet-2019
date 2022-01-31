@@ -1,0 +1,530 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet ROV&#39;NET: Référence de la classe ControleRov</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-rov.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet ROV&#39;NET
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Connecteurs publics</a> &#124;
+<a href="#signals">Signaux</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-methods">Fonctions membres privées</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="class_controle_rov-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe ControleRov</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Déclaration de la classe <a class="el" href="class_controle_rov.html" title="Déclaration de la classe ControleRov. Permet le contrôle des éléments du rov, en reliant la manette a...">ControleRov</a>. Permet le contrôle des éléments du rov, en reliant la manette aux méthodes de déplacement.  
+ <a href="class_controle_rov.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="controlerov_8h_source.html">controlerov.h</a>&gt;</code></p>
+<div class="dynheader">
+Graphe de collaboration de ControleRov:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_controle_rov__coll__graph.png" border="0" usemap="#_controle_rov_coll__map" alt="Collaboration graph"/></div>
+<map name="_controle_rov_coll__map" id="_controle_rov_coll__map">
+<area shape="rect" id="node2" href="class_rov.html" title="Déclaration de la classe Rov. Gestion des liaisons entre les différentes classes, et paramètres de la..." alt="" coords="343,843,579,1184"/>
+<area shape="rect" id="node3" href="class_archives.html" title="Déclaration de la classe Archives. " alt="" coords="5,5,195,405"/>
+<area shape="rect" id="node4" href="class_camera.html" title="Déclaration de la classe Camera. " alt="" coords="160,468,336,780"/>
+<area shape="rect" id="node5" href="class_mesures.html" title="Déclaration de la classe Mesures. Gestion des mesures des capteurs (température, irradiation, et distance). " alt="" coords="360,497,563,751"/>
+<area shape="rect" id="node6" href="class_base_de_donnees.html" title="Déclaration de la classe BaseDeDonnees. " alt="" coords="587,475,733,773"/>
+<area shape="rect" id="node7" href="class_communication_rov.html" title="Déclaration de la classe CommunicationRov. Gère la communication entre le Rov et le Rov..." alt="" coords="886,505,1122,743"/>
+<area shape="rect" id="node8" href="class_controle_camera.html" title="Déclaration de la classe ControleCamera. " alt="" coords="603,960,773,1067"/>
+<area shape="rect" id="node9" href="class_manette.html" title="Déclaration de la classe Manette. Liaison avec la manette, permettant d&#39;en recevoir les signaux..." alt="" coords="797,945,904,1081"/>
+<area shape="rect" id="node10" href="class_deplacement.html" title="Déclaration de la classe Deplacement. Réceptionne les signaux de la manette destiné aux déplacements ..." alt="" coords="928,953,1107,1074"/>
+<area shape="rect" id="node11" href="class_bras.html" title="Déclaration de la classe Bras. Réceptionne les signaux de la manette destiné aux mouvements du bras..." alt="" coords="1131,887,1346,1140"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Connecteurs publics</h2></td></tr>
+<tr class="memitem:a206d52adf49b8510316b2885ea6b98b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controle_rov.html#a206d52adf49b8510316b2885ea6b98b0">changeMode</a> (bool appuye)</td></tr>
+<tr class="memdesc:a206d52adf49b8510316b2885ea6b98b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">change le mode de la manette (<a class="el" href="class_deplacement.html" title="Déclaration de la classe Deplacement. Réceptionne les signaux de la manette destiné aux déplacements ...">Deplacement</a> / <a class="el" href="class_bras.html" title="Déclaration de la classe Bras. Réceptionne les signaux de la manette destiné aux mouvements du bras...">Bras</a>).  <a href="#a206d52adf49b8510316b2885ea6b98b0">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a206d52adf49b8510316b2885ea6b98b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signaux</h2></td></tr>
+<tr class="memitem:a05506e1d8caf632b0394dcffd365c06f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controle_rov.html#a05506e1d8caf632b0394dcffd365c06f">trameCree</a> (QString trame)</td></tr>
+<tr class="memdesc:a05506e1d8caf632b0394dcffd365c06f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal émis lorsqu'une trame a été crée et est destinée à l'envoi.  <a href="#a05506e1d8caf632b0394dcffd365c06f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a05506e1d8caf632b0394dcffd365c06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:acc4d5fea26770217df978d43df2ad51e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controle_rov.html#acc4d5fea26770217df978d43df2ad51e">ControleRov</a> (QObject *parent=nullptr, <a class="el" href="class_rov.html">Rov</a> *<a class="el" href="class_controle_rov.html#a3620b701fbb3aebe6a57ca3f3f04c6ca">rov</a>=nullptr)</td></tr>
+<tr class="separator:acc4d5fea26770217df978d43df2ad51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab216ab83b9dfb738aa240c3846e65d39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controle_rov.html#ab216ab83b9dfb738aa240c3846e65d39">~ControleRov</a> ()</td></tr>
+<tr class="separator:ab216ab83b9dfb738aa240c3846e65d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9531520e50479fc2e339cd43f4c87066"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controle_rov.html#a9531520e50479fc2e339cd43f4c87066">estControleRovDisponible</a> () const</td></tr>
+<tr class="memdesc:a9531520e50479fc2e339cd43f4c87066"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoi l'état de connexion de la manette.  <a href="#a9531520e50479fc2e339cd43f4c87066">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9531520e50479fc2e339cd43f4c87066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Fonctions membres privées</h2></td></tr>
+<tr class="memitem:a400d5766b9acabb45c1af5f8b22bbe47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controle_rov.html#a400d5766b9acabb45c1af5f8b22bbe47">changeConnexions</a> (int <a class="el" href="class_controle_rov.html#a5d1fb6ad14da49e3c587199ae86dc28d">mode</a>)</td></tr>
+<tr class="memdesc:a400d5766b9acabb45c1af5f8b22bbe47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de modifier les connexions entre la manette et les actions selon le mode de la manette.  <a href="#a400d5766b9acabb45c1af5f8b22bbe47">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a400d5766b9acabb45c1af5f8b22bbe47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:af5caffd78d06f90d045b53ee87ad76df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_manette.html">Manette</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a></td></tr>
+<tr class="memdesc:af5caffd78d06f90d045b53ee87ad76df"><td class="mdescLeft">&#160;</td><td class="mdescRight">manette utilisée  <a href="#af5caffd78d06f90d045b53ee87ad76df">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af5caffd78d06f90d045b53ee87ad76df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae96443be0a82814b27958e6ceb0a0acf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_deplacement.html">Deplacement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controle_rov.html#ae96443be0a82814b27958e6ceb0a0acf">deplacement</a></td></tr>
+<tr class="memdesc:ae96443be0a82814b27958e6ceb0a0acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">objet contenant les méthodes utilisées pour le déplacement du rov  <a href="#ae96443be0a82814b27958e6ceb0a0acf">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae96443be0a82814b27958e6ceb0a0acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b2e394dd6332b2acd1be0770451e140"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_bras.html">Bras</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">bras</a></td></tr>
+<tr class="memdesc:a1b2e394dd6332b2acd1be0770451e140"><td class="mdescLeft">&#160;</td><td class="mdescRight">objet contenant les méthodes utilisées pour les mouvements du bras articulé  <a href="#a1b2e394dd6332b2acd1be0770451e140">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1b2e394dd6332b2acd1be0770451e140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac88fe7f2367cca5a24aeda187ee0bac2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_controle_camera.html">ControleCamera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controle_rov.html#ac88fe7f2367cca5a24aeda187ee0bac2">controleCamera</a></td></tr>
+<tr class="memdesc:ac88fe7f2367cca5a24aeda187ee0bac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">objet contenant les méthodes utilisées pour les mouvements de la caméra  <a href="#ac88fe7f2367cca5a24aeda187ee0bac2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac88fe7f2367cca5a24aeda187ee0bac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3620b701fbb3aebe6a57ca3f3f04c6ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rov.html">Rov</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controle_rov.html#a3620b701fbb3aebe6a57ca3f3f04c6ca">rov</a></td></tr>
+<tr class="memdesc:a3620b701fbb3aebe6a57ca3f3f04c6ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">objet <a class="el" href="class_rov.html" title="Déclaration de la classe Rov. Gestion des liaisons entre les différentes classes, et paramètres de la...">Rov</a> contenant l'accès à la communication  <a href="#a3620b701fbb3aebe6a57ca3f3f04c6ca">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3620b701fbb3aebe6a57ca3f3f04c6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d1fb6ad14da49e3c587199ae86dc28d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controle_rov.html#a5d1fb6ad14da49e3c587199ae86dc28d">mode</a></td></tr>
+<tr class="memdesc:a5d1fb6ad14da49e3c587199ae86dc28d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mode de la manette (0 pour déplacement, 1 pour bras)  <a href="#a5d1fb6ad14da49e3c587199ae86dc28d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5d1fb6ad14da49e3c587199ae86dc28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><dl class="section author"><dt>Auteur</dt><dd>REYNIER Jacques</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.1</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Jeudi 13 Juin 2019 </dd></dl>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="acc4d5fea26770217df978d43df2ad51e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc4d5fea26770217df978d43df2ad51e">&#9670;&nbsp;</a></span>ControleRov()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ControleRov::ControleRov </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_rov.html">Rov</a> *&#160;</td>
+          <td class="paramname"><em>rov</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">bras</a>, <a class="el" href="class_controle_rov.html#a206d52adf49b8510316b2885ea6b98b0">changeMode()</a>, <a class="el" href="class_controle_rov.html#ac88fe7f2367cca5a24aeda187ee0bac2">controleCamera</a>, <a class="el" href="class_controle_rov.html#ae96443be0a82814b27958e6ceb0a0acf">deplacement</a>, <a class="el" href="class_communication_rov.html#ac243fcfb073f4ceaf58fab1d41207801">CommunicationRov::envoieTrame()</a>, <a class="el" href="class_manette.html#a035c0a43a11e91889891b3c874f0a58d">Manette::estDetecte()</a>, <a class="el" href="class_rov.html#ad30543625f584e28bf785a80c59506dc">Rov::getCommunicationRov()</a>, <a class="el" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">Manette::getManette()</a>, <a class="el" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>, <a class="el" href="class_deplacement.html#a65a1c6adfe5114d3cfefa631e0c91618">Deplacement::rouleAvantArriere()</a>, <a class="el" href="class_controle_camera.html#aac294c4e98a912199ba32d686e52f7ef">ControleCamera::tourneCameraDroite()</a>, <a class="el" href="class_controle_camera.html#a119562aacbb4c0fbd4e5aa27a05ce7cc">ControleCamera::tourneCameraGauche()</a>, <a class="el" href="class_deplacement.html#a164cc606a6c5b8d55c1e5475d4d112e0">Deplacement::tourneDroiteGauche()</a>, <a class="el" href="class_deplacement.html#ae1a6d4a98304dee19d426ceeb6b7d5bb">Deplacement::trameCree()</a>, <a class="el" href="class_controle_rov.html#a05506e1d8caf632b0394dcffd365c06f">trameCree()</a>, et <a class="el" href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">Bras::trameCree()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                                  : QObject(parent), <a class="code" href="class_controle_rov.html#a3620b701fbb3aebe6a57ca3f3f04c6ca">rov</a>(rov), <a class="code" href="class_controle_rov.html#a5d1fb6ad14da49e3c587199ae86dc28d">mode</a>(<a class="code" href="controlerov_8h.html#a427f99e4fe2f812b0f49a09025623653">MODE_DEPLACEMENT</a>)</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    this-&gt;<a class="code" href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">bras</a> = <span class="keyword">new</span> <a class="code" href="class_bras.html">Bras</a>(<span class="keyword">this</span>);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    this-&gt;<a class="code" href="class_controle_rov.html#ae96443be0a82814b27958e6ceb0a0acf">deplacement</a> = <span class="keyword">new</span> <a class="code" href="class_deplacement.html">Deplacement</a>(<span class="keyword">this</span>);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    this-&gt;<a class="code" href="class_controle_rov.html#ac88fe7f2367cca5a24aeda187ee0bac2">controleCamera</a> = <span class="keyword">new</span> <a class="code" href="class_controle_camera.html">ControleCamera</a>(<span class="keyword">this</span>);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    this-&gt;<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a> = <span class="keyword">new</span> <a class="code" href="class_manette.html">Manette</a>(<span class="keyword">this</span>);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a035c0a43a11e91889891b3c874f0a58d">estDetecte</a>())</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        connect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::axisLeftXChanged, <a class="code" href="class_controle_rov.html#ae96443be0a82814b27958e6ceb0a0acf">deplacement</a>, &amp;<a class="code" href="class_deplacement.html#a164cc606a6c5b8d55c1e5475d4d112e0">Deplacement::tourneDroiteGauche</a>);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        connect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::axisLeftYChanged, <a class="code" href="class_controle_rov.html#ae96443be0a82814b27958e6ceb0a0acf">deplacement</a>, &amp;<a class="code" href="class_deplacement.html#a65a1c6adfe5114d3cfefa631e0c91618">Deplacement::rouleAvantArriere</a>);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        connect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::buttonLeftChanged, <a class="code" href="class_controle_rov.html#ac88fe7f2367cca5a24aeda187ee0bac2">controleCamera</a>, &amp;<a class="code" href="class_controle_camera.html#a119562aacbb4c0fbd4e5aa27a05ce7cc">ControleCamera::tourneCameraGauche</a>);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        connect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::buttonRightChanged, <a class="code" href="class_controle_rov.html#ac88fe7f2367cca5a24aeda187ee0bac2">controleCamera</a>, &amp;<a class="code" href="class_controle_camera.html#aac294c4e98a912199ba32d686e52f7ef">ControleCamera::tourneCameraDroite</a>);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        connect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::buttonSelectChanged, <span class="keyword">this</span>, &amp;<a class="code" href="class_controle_rov.html#a206d52adf49b8510316b2885ea6b98b0">ControleRov::changeMode</a>);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// Connexion entre le signal émis d&#39;une trame à envoyer au slot d&#39;envoi de trame de la classe CommunicationRov.</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    connect(<a class="code" href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">bras</a>, &amp;<a class="code" href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">Bras::trameCree</a>, this-&gt;rov-&gt;<a class="code" href="class_rov.html#ad30543625f584e28bf785a80c59506dc">getCommunicationRov</a>(), &amp;<a class="code" href="class_communication_rov.html#ac243fcfb073f4ceaf58fab1d41207801">CommunicationRov::envoieTrame</a>);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// Connexion entre le signal émis d&#39;une trame à envoyer au slot d&#39;envoi de trame de la classe CommunicationRov.</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    connect(deplacement, &amp;<a class="code" href="class_deplacement.html#ae1a6d4a98304dee19d426ceeb6b7d5bb">Deplacement::trameCree</a>, this-&gt;rov-&gt;<a class="code" href="class_rov.html#ad30543625f584e28bf785a80c59506dc">getCommunicationRov</a>(), &amp;<a class="code" href="class_communication_rov.html#ac243fcfb073f4ceaf58fab1d41207801">CommunicationRov::envoieTrame</a>);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    connect(<span class="keyword">this</span>, &amp;<a class="code" href="class_controle_rov.html#a05506e1d8caf632b0394dcffd365c06f">ControleRov::trameCree</a>, this-&gt;rov-&gt;<a class="code" href="class_rov.html#ad30543625f584e28bf785a80c59506dc">getCommunicationRov</a>(), &amp;<a class="code" href="class_communication_rov.html#ac243fcfb073f4ceaf58fab1d41207801">CommunicationRov::envoieTrame</a>);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div><div class="ttc" id="class_controle_camera_html"><div class="ttname"><a href="class_controle_camera.html">ControleCamera</a></div><div class="ttdoc">Déclaration de la classe ControleCamera. </div><div class="ttdef"><b>Definition:</b> controlecamera.h:31</div></div>
+<div class="ttc" id="class_manette_html"><div class="ttname"><a href="class_manette.html">Manette</a></div><div class="ttdoc">Déclaration de la classe Manette. Liaison avec la manette, permettant d&amp;#39;en recevoir les signaux...</div><div class="ttdef"><b>Definition:</b> manette.h:43</div></div>
+<div class="ttc" id="class_deplacement_html"><div class="ttname"><a href="class_deplacement.html">Deplacement</a></div><div class="ttdoc">Déclaration de la classe Deplacement. Réceptionne les signaux de la manette destiné aux déplacements ...</div><div class="ttdef"><b>Definition:</b> deplacement.h:31</div></div>
+<div class="ttc" id="class_controle_rov_html_ae96443be0a82814b27958e6ceb0a0acf"><div class="ttname"><a href="class_controle_rov.html#ae96443be0a82814b27958e6ceb0a0acf">ControleRov::deplacement</a></div><div class="ttdeci">Deplacement * deplacement</div><div class="ttdoc">objet contenant les méthodes utilisées pour le déplacement du rov </div><div class="ttdef"><b>Definition:</b> controlerov.h:47</div></div>
+<div class="ttc" id="class_bras_html"><div class="ttname"><a href="class_bras.html">Bras</a></div><div class="ttdoc">Déclaration de la classe Bras. Réceptionne les signaux de la manette destiné aux mouvements du bras...</div><div class="ttdef"><b>Definition:</b> bras.h:32</div></div>
+<div class="ttc" id="class_bras_html_ab442bf8d3e389c051b26b4b0741e7924"><div class="ttname"><a href="class_bras.html#ab442bf8d3e389c051b26b4b0741e7924">Bras::trameCree</a></div><div class="ttdeci">void trameCree(QString trame)</div><div class="ttdoc">Signal émis lorsqu&amp;#39;une trame a été créée et prête à être transmise. </div></div>
+<div class="ttc" id="class_controle_rov_html_a5d1fb6ad14da49e3c587199ae86dc28d"><div class="ttname"><a href="class_controle_rov.html#a5d1fb6ad14da49e3c587199ae86dc28d">ControleRov::mode</a></div><div class="ttdeci">unsigned int mode</div><div class="ttdoc">Mode de la manette (0 pour déplacement, 1 pour bras) </div><div class="ttdef"><b>Definition:</b> controlerov.h:52</div></div>
+<div class="ttc" id="class_controle_camera_html_aac294c4e98a912199ba32d686e52f7ef"><div class="ttname"><a href="class_controle_camera.html#aac294c4e98a912199ba32d686e52f7ef">ControleCamera::tourneCameraDroite</a></div><div class="ttdeci">void tourneCameraDroite(bool boutonAppuye)</div><div class="ttdoc">Permet de pivoter la caméra vers la droite, en émettant la trame correspondante. Correspond à la croi...</div><div class="ttdef"><b>Definition:</b> controlecamera.cpp:38</div></div>
+<div class="ttc" id="class_controle_rov_html_af5caffd78d06f90d045b53ee87ad76df"><div class="ttname"><a href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">ControleRov::manette</a></div><div class="ttdeci">Manette * manette</div><div class="ttdoc">manette utilisée </div><div class="ttdef"><b>Definition:</b> controlerov.h:46</div></div>
+<div class="ttc" id="class_communication_rov_html_ac243fcfb073f4ceaf58fab1d41207801"><div class="ttname"><a href="class_communication_rov.html#ac243fcfb073f4ceaf58fab1d41207801">CommunicationRov::envoieTrame</a></div><div class="ttdeci">bool envoieTrame(QString trame)</div><div class="ttdoc">Envoie une trame au Rov. </div><div class="ttdef"><b>Definition:</b> communicationrov.cpp:117</div></div>
+<div class="ttc" id="class_controle_camera_html_a119562aacbb4c0fbd4e5aa27a05ce7cc"><div class="ttname"><a href="class_controle_camera.html#a119562aacbb4c0fbd4e5aa27a05ce7cc">ControleCamera::tourneCameraGauche</a></div><div class="ttdeci">void tourneCameraGauche(bool boutonAppuye)</div><div class="ttdoc">Permet de pivoter la caméra vers la gauche, en émettant la trame correspondante. Correspond à la croi...</div><div class="ttdef"><b>Definition:</b> controlecamera.cpp:27</div></div>
+<div class="ttc" id="class_controle_rov_html_ac88fe7f2367cca5a24aeda187ee0bac2"><div class="ttname"><a href="class_controle_rov.html#ac88fe7f2367cca5a24aeda187ee0bac2">ControleRov::controleCamera</a></div><div class="ttdeci">ControleCamera * controleCamera</div><div class="ttdoc">objet contenant les méthodes utilisées pour les mouvements de la caméra </div><div class="ttdef"><b>Definition:</b> controlerov.h:49</div></div>
+<div class="ttc" id="class_controle_rov_html_a1b2e394dd6332b2acd1be0770451e140"><div class="ttname"><a href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">ControleRov::bras</a></div><div class="ttdeci">Bras * bras</div><div class="ttdoc">objet contenant les méthodes utilisées pour les mouvements du bras articulé </div><div class="ttdef"><b>Definition:</b> controlerov.h:48</div></div>
+<div class="ttc" id="class_deplacement_html_a164cc606a6c5b8d55c1e5475d4d112e0"><div class="ttname"><a href="class_deplacement.html#a164cc606a6c5b8d55c1e5475d4d112e0">Deplacement::tourneDroiteGauche</a></div><div class="ttdeci">void tourneDroiteGauche(double valeur)</div><div class="ttdoc">Slot activé lorsque le joystick gauche est poussé à droite ou gauche. Emet un signal contenant la tra...</div><div class="ttdef"><b>Definition:</b> deplacement.cpp:29</div></div>
+<div class="ttc" id="controlerov_8h_html_a427f99e4fe2f812b0f49a09025623653"><div class="ttname"><a href="controlerov_8h.html#a427f99e4fe2f812b0f49a09025623653">MODE_DEPLACEMENT</a></div><div class="ttdeci">#define MODE_DEPLACEMENT</div><div class="ttdef"><b>Definition:</b> controlerov.h:25</div></div>
+<div class="ttc" id="class_controle_rov_html_a206d52adf49b8510316b2885ea6b98b0"><div class="ttname"><a href="class_controle_rov.html#a206d52adf49b8510316b2885ea6b98b0">ControleRov::changeMode</a></div><div class="ttdeci">void changeMode(bool appuye)</div><div class="ttdoc">change le mode de la manette (Deplacement / Bras). </div><div class="ttdef"><b>Definition:</b> controlerov.cpp:63</div></div>
+<div class="ttc" id="class_controle_rov_html_a3620b701fbb3aebe6a57ca3f3f04c6ca"><div class="ttname"><a href="class_controle_rov.html#a3620b701fbb3aebe6a57ca3f3f04c6ca">ControleRov::rov</a></div><div class="ttdeci">Rov * rov</div><div class="ttdoc">objet Rov contenant l&amp;#39;accès à la communication </div><div class="ttdef"><b>Definition:</b> controlerov.h:50</div></div>
+<div class="ttc" id="class_manette_html_a035c0a43a11e91889891b3c874f0a58d"><div class="ttname"><a href="class_manette.html#a035c0a43a11e91889891b3c874f0a58d">Manette::estDetecte</a></div><div class="ttdeci">bool estDetecte() const</div><div class="ttdoc">estDetecte </div><div class="ttdef"><b>Definition:</b> manette.cpp:55</div></div>
+<div class="ttc" id="class_deplacement_html_a65a1c6adfe5114d3cfefa631e0c91618"><div class="ttname"><a href="class_deplacement.html#a65a1c6adfe5114d3cfefa631e0c91618">Deplacement::rouleAvantArriere</a></div><div class="ttdeci">void rouleAvantArriere(double valeur)</div><div class="ttdoc">Slot activé lorsque le joystick gauche est poussé en avant ou arrière. Emet un signal contenant la tr...</div><div class="ttdef"><b>Definition:</b> deplacement.cpp:54</div></div>
+<div class="ttc" id="class_controle_rov_html_a05506e1d8caf632b0394dcffd365c06f"><div class="ttname"><a href="class_controle_rov.html#a05506e1d8caf632b0394dcffd365c06f">ControleRov::trameCree</a></div><div class="ttdeci">void trameCree(QString trame)</div><div class="ttdoc">Signal émis lorsqu&amp;#39;une trame a été crée et est destinée à l&amp;#39;envoi. </div></div>
+<div class="ttc" id="class_rov_html_ad30543625f584e28bf785a80c59506dc"><div class="ttname"><a href="class_rov.html#ad30543625f584e28bf785a80c59506dc">Rov::getCommunicationRov</a></div><div class="ttdeci">CommunicationRov * getCommunicationRov() const</div><div class="ttdoc">Renvoie l&amp;#39;objet réalisant la connexion entre le rov et le programme. </div><div class="ttdef"><b>Definition:</b> rov.cpp:97</div></div>
+<div class="ttc" id="class_manette_html_a708eccb66e967e0fe575b19e9899ff5a"><div class="ttname"><a href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">Manette::getManette</a></div><div class="ttdeci">QGamepad * getManette()</div><div class="ttdoc">getManette </div><div class="ttdef"><b>Definition:</b> manette.cpp:65</div></div>
+<div class="ttc" id="class_deplacement_html_ae1a6d4a98304dee19d426ceeb6b7d5bb"><div class="ttname"><a href="class_deplacement.html#ae1a6d4a98304dee19d426ceeb6b7d5bb">Deplacement::trameCree</a></div><div class="ttdeci">void trameCree(QString trame)</div><div class="ttdoc">Signal émis lorsqu&amp;#39;une trame est prête à être transmise. </div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab216ab83b9dfb738aa240c3846e65d39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab216ab83b9dfb738aa240c3846e65d39">&#9670;&nbsp;</a></span>~ControleRov()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ControleRov::~ControleRov </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a400d5766b9acabb45c1af5f8b22bbe47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a400d5766b9acabb45c1af5f8b22bbe47">&#9670;&nbsp;</a></span>changeConnexions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ControleRov::changeConnexions </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>int</td></tr>
+    <tr><td class="paramname">mode</td><td>int Nouveau mode. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Références <a class="el" href="class_bras.html#a4b8e4791a454fcf884b1e7217a16a326">Bras::baisseCoude()</a>, <a class="el" href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">bras</a>, <a class="el" href="class_controle_rov.html#ae96443be0a82814b27958e6ceb0a0acf">deplacement</a>, <a class="el" href="class_bras.html#a69d95616a74732e13b23bd90680d7d21">Bras::depose()</a>, <a class="el" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">Manette::getManette()</a>, <a class="el" href="class_bras.html#a246e835f25bd61f0618c58aafea99ea1">Bras::lachePince()</a>, <a class="el" href="class_bras.html#a197686a4ff55b4fe2384b2af44b8228b">Bras::leveCoude()</a>, <a class="el" href="class_bras.html#ac8f658db87d03bfbba6faa535326cc3a">Bras::leveEpaule()</a>, <a class="el" href="class_bras.html#ac95f54d8b02e7c88081f482fbbc40aef">Bras::levePoignet()</a>, <a class="el" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>, <a class="el" href="controlerov_8h.html#aa7e25e50c4dd52bfc6abcb3e450686d4">MODE_BRAS</a>, <a class="el" href="controlerov_8h.html#a427f99e4fe2f812b0f49a09025623653">MODE_DEPLACEMENT</a>, <a class="el" href="class_deplacement.html#a65a1c6adfe5114d3cfefa631e0c91618">Deplacement::rouleAvantArriere()</a>, <a class="el" href="class_bras.html#a55e143cf8e696ed214809ae25fb558d5">Bras::serrePince()</a>, <a class="el" href="class_deplacement.html#a164cc606a6c5b8d55c1e5475d4d112e0">Deplacement::tourneDroiteGauche()</a>, <a class="el" href="class_bras.html#aaeacb18f22532a63559fc8430118169e">Bras::tourneEpaule()</a>, et <a class="el" href="class_bras.html#a15beae8aa104c2e689614486646ab402">Bras::tournePoignet()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_controle_rov.html#a206d52adf49b8510316b2885ea6b98b0">changeMode()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_controle_rov.html#a5d1fb6ad14da49e3c587199ae86dc28d">mode</a> == <a class="code" href="controlerov_8h.html#aa7e25e50c4dd52bfc6abcb3e450686d4">MODE_BRAS</a>)</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        disconnect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::axisLeftXChanged, <a class="code" href="class_controle_rov.html#ae96443be0a82814b27958e6ceb0a0acf">deplacement</a>, &amp;<a class="code" href="class_deplacement.html#a164cc606a6c5b8d55c1e5475d4d112e0">Deplacement::tourneDroiteGauche</a>);</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        disconnect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::axisLeftYChanged, <a class="code" href="class_controle_rov.html#ae96443be0a82814b27958e6ceb0a0acf">deplacement</a>, &amp;<a class="code" href="class_deplacement.html#a65a1c6adfe5114d3cfefa631e0c91618">Deplacement::rouleAvantArriere</a>);</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        connect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::axisLeftXChanged, <a class="code" href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">bras</a>, &amp;<a class="code" href="class_bras.html#a15beae8aa104c2e689614486646ab402">Bras::tournePoignet</a>);</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        connect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::axisLeftYChanged, <a class="code" href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">bras</a>, &amp;<a class="code" href="class_bras.html#ac95f54d8b02e7c88081f482fbbc40aef">Bras::levePoignet</a>);</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        connect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::axisRightXChanged, <a class="code" href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">bras</a>, &amp;<a class="code" href="class_bras.html#aaeacb18f22532a63559fc8430118169e">Bras::tourneEpaule</a>);</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        connect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::axisRightYChanged, <a class="code" href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">bras</a>, &amp;<a class="code" href="class_bras.html#ac8f658db87d03bfbba6faa535326cc3a">Bras::leveEpaule</a>);</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        connect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::buttonUpChanged, <a class="code" href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">bras</a>, &amp;<a class="code" href="class_bras.html#a197686a4ff55b4fe2384b2af44b8228b">Bras::leveCoude</a>);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        connect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::buttonDownChanged, <a class="code" href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">bras</a>, &amp;<a class="code" href="class_bras.html#a4b8e4791a454fcf884b1e7217a16a326">Bras::baisseCoude</a>);</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        connect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::buttonR1Changed, <a class="code" href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">bras</a>, &amp;<a class="code" href="class_bras.html#a55e143cf8e696ed214809ae25fb558d5">Bras::serrePince</a>);</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        connect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::buttonL1Changed, <a class="code" href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">bras</a>, &amp;<a class="code" href="class_bras.html#a246e835f25bd61f0618c58aafea99ea1">Bras::lachePince</a>);</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        connect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::buttonStartChanged, <a class="code" href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">bras</a>, &amp;<a class="code" href="class_bras.html#a69d95616a74732e13b23bd90680d7d21">Bras::depose</a>);</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="class_controle_rov.html#a5d1fb6ad14da49e3c587199ae86dc28d">mode</a> == <a class="code" href="controlerov_8h.html#a427f99e4fe2f812b0f49a09025623653">MODE_DEPLACEMENT</a>)</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    {</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        disconnect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::axisLeftXChanged, <a class="code" href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">bras</a>, &amp;<a class="code" href="class_bras.html#a15beae8aa104c2e689614486646ab402">Bras::tournePoignet</a>);</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        disconnect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::axisLeftYChanged, <a class="code" href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">bras</a>, &amp;<a class="code" href="class_bras.html#ac95f54d8b02e7c88081f482fbbc40aef">Bras::levePoignet</a>);</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        disconnect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::axisRightXChanged, <a class="code" href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">bras</a>, &amp;<a class="code" href="class_bras.html#aaeacb18f22532a63559fc8430118169e">Bras::tourneEpaule</a>);</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        disconnect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::axisRightYChanged, <a class="code" href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">bras</a>, &amp;<a class="code" href="class_bras.html#ac8f658db87d03bfbba6faa535326cc3a">Bras::leveEpaule</a>);</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        disconnect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::buttonUpChanged, <a class="code" href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">bras</a>, &amp;<a class="code" href="class_bras.html#a197686a4ff55b4fe2384b2af44b8228b">Bras::leveCoude</a>);</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        disconnect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::buttonDownChanged, <a class="code" href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">bras</a>, &amp;<a class="code" href="class_bras.html#a4b8e4791a454fcf884b1e7217a16a326">Bras::baisseCoude</a>);</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        disconnect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::buttonR1Changed, <a class="code" href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">bras</a>, &amp;<a class="code" href="class_bras.html#a55e143cf8e696ed214809ae25fb558d5">Bras::serrePince</a>);</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        disconnect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::buttonL1Changed, <a class="code" href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">bras</a>, &amp;<a class="code" href="class_bras.html#a246e835f25bd61f0618c58aafea99ea1">Bras::lachePince</a>);</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        disconnect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::buttonStartChanged, <a class="code" href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">bras</a>, &amp;<a class="code" href="class_bras.html#a69d95616a74732e13b23bd90680d7d21">Bras::depose</a>);</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        connect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::axisLeftXChanged, <a class="code" href="class_controle_rov.html#ae96443be0a82814b27958e6ceb0a0acf">deplacement</a>, &amp;<a class="code" href="class_deplacement.html#a164cc606a6c5b8d55c1e5475d4d112e0">Deplacement::tourneDroiteGauche</a>);</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        connect(<a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">getManette</a>(), &amp;QGamepad::axisLeftYChanged, <a class="code" href="class_controle_rov.html#ae96443be0a82814b27958e6ceb0a0acf">deplacement</a>, &amp;<a class="code" href="class_deplacement.html#a65a1c6adfe5114d3cfefa631e0c91618">Deplacement::rouleAvantArriere</a>);</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    {</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;ERREUR ! mode inconnu&quot;</span>;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div><div class="ttc" id="class_bras_html_a246e835f25bd61f0618c58aafea99ea1"><div class="ttname"><a href="class_bras.html#a246e835f25bd61f0618c58aafea99ea1">Bras::lachePince</a></div><div class="ttdeci">void lachePince(bool appuye)</div><div class="ttdoc">Permet de relâcher la pince, en émettant la trame correspondante. Correspond au bouton L1 de la manet...</div><div class="ttdef"><b>Definition:</b> bras.cpp:169</div></div>
+<div class="ttc" id="class_bras_html_a69d95616a74732e13b23bd90680d7d21"><div class="ttname"><a href="class_bras.html#a69d95616a74732e13b23bd90680d7d21">Bras::depose</a></div><div class="ttdeci">void depose(bool appuye)</div><div class="ttdoc">Emet la trame : poser dans le bac le contenu de la pince. </div><div class="ttdef"><b>Definition:</b> bras.cpp:181</div></div>
+<div class="ttc" id="class_controle_rov_html_ae96443be0a82814b27958e6ceb0a0acf"><div class="ttname"><a href="class_controle_rov.html#ae96443be0a82814b27958e6ceb0a0acf">ControleRov::deplacement</a></div><div class="ttdeci">Deplacement * deplacement</div><div class="ttdoc">objet contenant les méthodes utilisées pour le déplacement du rov </div><div class="ttdef"><b>Definition:</b> controlerov.h:47</div></div>
+<div class="ttc" id="class_bras_html_ac95f54d8b02e7c88081f482fbbc40aef"><div class="ttname"><a href="class_bras.html#ac95f54d8b02e7c88081f482fbbc40aef">Bras::levePoignet</a></div><div class="ttdeci">void levePoignet(double valeur)</div><div class="ttdoc">Permet de lever ou baisser le poignet, en émettant la trame correspondante. Correspond au joystick ga...</div><div class="ttdef"><b>Definition:</b> bras.cpp:133</div></div>
+<div class="ttc" id="controlerov_8h_html_aa7e25e50c4dd52bfc6abcb3e450686d4"><div class="ttname"><a href="controlerov_8h.html#aa7e25e50c4dd52bfc6abcb3e450686d4">MODE_BRAS</a></div><div class="ttdeci">#define MODE_BRAS</div><div class="ttdef"><b>Definition:</b> controlerov.h:26</div></div>
+<div class="ttc" id="class_bras_html_a197686a4ff55b4fe2384b2af44b8228b"><div class="ttname"><a href="class_bras.html#a197686a4ff55b4fe2384b2af44b8228b">Bras::leveCoude</a></div><div class="ttdeci">void leveCoude(bool appuye)</div><div class="ttdoc">Permet de lever le coude, en émettant la trame correspondante. Correspond au bouton triangle de la ma...</div><div class="ttdef"><b>Definition:</b> bras.cpp:85</div></div>
+<div class="ttc" id="class_bras_html_a4b8e4791a454fcf884b1e7217a16a326"><div class="ttname"><a href="class_bras.html#a4b8e4791a454fcf884b1e7217a16a326">Bras::baisseCoude</a></div><div class="ttdeci">void baisseCoude(bool appuye)</div><div class="ttdoc">Permet de plier le coude, en émettant la trame correspondante. Correspond au bouton X de la manette...</div><div class="ttdef"><b>Definition:</b> bras.cpp:97</div></div>
+<div class="ttc" id="class_controle_rov_html_a5d1fb6ad14da49e3c587199ae86dc28d"><div class="ttname"><a href="class_controle_rov.html#a5d1fb6ad14da49e3c587199ae86dc28d">ControleRov::mode</a></div><div class="ttdeci">unsigned int mode</div><div class="ttdoc">Mode de la manette (0 pour déplacement, 1 pour bras) </div><div class="ttdef"><b>Definition:</b> controlerov.h:52</div></div>
+<div class="ttc" id="class_bras_html_a15beae8aa104c2e689614486646ab402"><div class="ttname"><a href="class_bras.html#a15beae8aa104c2e689614486646ab402">Bras::tournePoignet</a></div><div class="ttdeci">void tournePoignet(double valeur)</div><div class="ttdoc">Permet de pivoter le poignet, en émettant la trame correspondante. Correspond au joystick gauche axe ...</div><div class="ttdef"><b>Definition:</b> bras.cpp:109</div></div>
+<div class="ttc" id="class_bras_html_aaeacb18f22532a63559fc8430118169e"><div class="ttname"><a href="class_bras.html#aaeacb18f22532a63559fc8430118169e">Bras::tourneEpaule</a></div><div class="ttdeci">void tourneEpaule(double valeur)</div><div class="ttdoc">Contrôle la rotation de l&amp;#39;épaule (entre autre, la direction du bras), en émettant la trame correspond...</div><div class="ttdef"><b>Definition:</b> bras.cpp:34</div></div>
+<div class="ttc" id="class_controle_rov_html_af5caffd78d06f90d045b53ee87ad76df"><div class="ttname"><a href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">ControleRov::manette</a></div><div class="ttdeci">Manette * manette</div><div class="ttdoc">manette utilisée </div><div class="ttdef"><b>Definition:</b> controlerov.h:46</div></div>
+<div class="ttc" id="class_bras_html_a55e143cf8e696ed214809ae25fb558d5"><div class="ttname"><a href="class_bras.html#a55e143cf8e696ed214809ae25fb558d5">Bras::serrePince</a></div><div class="ttdeci">void serrePince(bool appuye)</div><div class="ttdoc">Permet de serrer la pince, en émettant la trame correspondante. Correspond au bouton R1 de la manette...</div><div class="ttdef"><b>Definition:</b> bras.cpp:157</div></div>
+<div class="ttc" id="class_controle_rov_html_a1b2e394dd6332b2acd1be0770451e140"><div class="ttname"><a href="class_controle_rov.html#a1b2e394dd6332b2acd1be0770451e140">ControleRov::bras</a></div><div class="ttdeci">Bras * bras</div><div class="ttdoc">objet contenant les méthodes utilisées pour les mouvements du bras articulé </div><div class="ttdef"><b>Definition:</b> controlerov.h:48</div></div>
+<div class="ttc" id="class_deplacement_html_a164cc606a6c5b8d55c1e5475d4d112e0"><div class="ttname"><a href="class_deplacement.html#a164cc606a6c5b8d55c1e5475d4d112e0">Deplacement::tourneDroiteGauche</a></div><div class="ttdeci">void tourneDroiteGauche(double valeur)</div><div class="ttdoc">Slot activé lorsque le joystick gauche est poussé à droite ou gauche. Emet un signal contenant la tra...</div><div class="ttdef"><b>Definition:</b> deplacement.cpp:29</div></div>
+<div class="ttc" id="controlerov_8h_html_a427f99e4fe2f812b0f49a09025623653"><div class="ttname"><a href="controlerov_8h.html#a427f99e4fe2f812b0f49a09025623653">MODE_DEPLACEMENT</a></div><div class="ttdeci">#define MODE_DEPLACEMENT</div><div class="ttdef"><b>Definition:</b> controlerov.h:25</div></div>
+<div class="ttc" id="class_bras_html_ac8f658db87d03bfbba6faa535326cc3a"><div class="ttname"><a href="class_bras.html#ac8f658db87d03bfbba6faa535326cc3a">Bras::leveEpaule</a></div><div class="ttdeci">void leveEpaule(double valeur)</div><div class="ttdoc">Contrôle l&amp;#39;angle de levé de l&amp;#39;épaule, en émettant la trame correspondante. Correspond au joystick dro...</div><div class="ttdef"><b>Definition:</b> bras.cpp:59</div></div>
+<div class="ttc" id="class_deplacement_html_a65a1c6adfe5114d3cfefa631e0c91618"><div class="ttname"><a href="class_deplacement.html#a65a1c6adfe5114d3cfefa631e0c91618">Deplacement::rouleAvantArriere</a></div><div class="ttdeci">void rouleAvantArriere(double valeur)</div><div class="ttdoc">Slot activé lorsque le joystick gauche est poussé en avant ou arrière. Emet un signal contenant la tr...</div><div class="ttdef"><b>Definition:</b> deplacement.cpp:54</div></div>
+<div class="ttc" id="class_manette_html_a708eccb66e967e0fe575b19e9899ff5a"><div class="ttname"><a href="class_manette.html#a708eccb66e967e0fe575b19e9899ff5a">Manette::getManette</a></div><div class="ttdeci">QGamepad * getManette()</div><div class="ttdoc">getManette </div><div class="ttdef"><b>Definition:</b> manette.cpp:65</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a206d52adf49b8510316b2885ea6b98b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a206d52adf49b8510316b2885ea6b98b0">&#9670;&nbsp;</a></span>changeMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ControleRov::changeMode </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>appuye</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Permet de changer le mode de la manette, à la réception du signal d'appui de la touche Select. </p>
+
+<p class="reference">Références <a class="el" href="class_controle_rov.html#a400d5766b9acabb45c1af5f8b22bbe47">changeConnexions()</a>, <a class="el" href="class_controle_rov.html#a5d1fb6ad14da49e3c587199ae86dc28d">mode</a>, <a class="el" href="controlerov_8h.html#aa7e25e50c4dd52bfc6abcb3e450686d4">MODE_BRAS</a>, <a class="el" href="controlerov_8h.html#a427f99e4fe2f812b0f49a09025623653">MODE_DEPLACEMENT</a>, et <a class="el" href="class_controle_rov.html#a05506e1d8caf632b0394dcffd365c06f">trameCree()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_controle_rov.html#acc4d5fea26770217df978d43df2ad51e">ControleRov()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (appuye == 1 &amp;&amp; <a class="code" href="class_controle_rov.html#a5d1fb6ad14da49e3c587199ae86dc28d">mode</a> == <a class="code" href="controlerov_8h.html#a427f99e4fe2f812b0f49a09025623653">MODE_DEPLACEMENT</a>)</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;Passage en mode Bras&quot;</span>;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="class_controle_rov.html#a5d1fb6ad14da49e3c587199ae86dc28d">mode</a> = <a class="code" href="controlerov_8h.html#aa7e25e50c4dd52bfc6abcb3e450686d4">MODE_BRAS</a>;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        emit <a class="code" href="class_controle_rov.html#a05506e1d8caf632b0394dcffd365c06f">trameCree</a>(<span class="stringliteral">&quot;$CBR1\n&quot;</span>);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="class_controle_rov.html#a400d5766b9acabb45c1af5f8b22bbe47">changeConnexions</a>(<a class="code" href="controlerov_8h.html#aa7e25e50c4dd52bfc6abcb3e450686d4">MODE_BRAS</a>);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (appuye == 1 &amp;&amp; <a class="code" href="class_controle_rov.html#a5d1fb6ad14da49e3c587199ae86dc28d">mode</a> == <a class="code" href="controlerov_8h.html#aa7e25e50c4dd52bfc6abcb3e450686d4">MODE_BRAS</a>)</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;Passage en mode Deplacement&quot;</span>;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="class_controle_rov.html#a5d1fb6ad14da49e3c587199ae86dc28d">mode</a> = <a class="code" href="controlerov_8h.html#a427f99e4fe2f812b0f49a09025623653">MODE_DEPLACEMENT</a>;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        emit <a class="code" href="class_controle_rov.html#a05506e1d8caf632b0394dcffd365c06f">trameCree</a>(<span class="stringliteral">&quot;$CRO1\n&quot;</span>);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="class_controle_rov.html#a400d5766b9acabb45c1af5f8b22bbe47">changeConnexions</a>(<a class="code" href="controlerov_8h.html#a427f99e4fe2f812b0f49a09025623653">MODE_DEPLACEMENT</a>);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="class_controle_rov.html#a5d1fb6ad14da49e3c587199ae86dc28d">mode</a> != <a class="code" href="controlerov_8h.html#a427f99e4fe2f812b0f49a09025623653">MODE_DEPLACEMENT</a> &amp;&amp; <a class="code" href="class_controle_rov.html#a5d1fb6ad14da49e3c587199ae86dc28d">mode</a> != <a class="code" href="controlerov_8h.html#aa7e25e50c4dd52bfc6abcb3e450686d4">MODE_BRAS</a>)</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;Erreur de mode ! Retour au mode de déplacement&quot;</span>;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="class_controle_rov.html#a5d1fb6ad14da49e3c587199ae86dc28d">mode</a> = <a class="code" href="controlerov_8h.html#a427f99e4fe2f812b0f49a09025623653">MODE_DEPLACEMENT</a>;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="class_controle_rov.html#a400d5766b9acabb45c1af5f8b22bbe47">changeConnexions</a>(<a class="code" href="controlerov_8h.html#a427f99e4fe2f812b0f49a09025623653">MODE_DEPLACEMENT</a>);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div><div class="ttc" id="controlerov_8h_html_aa7e25e50c4dd52bfc6abcb3e450686d4"><div class="ttname"><a href="controlerov_8h.html#aa7e25e50c4dd52bfc6abcb3e450686d4">MODE_BRAS</a></div><div class="ttdeci">#define MODE_BRAS</div><div class="ttdef"><b>Definition:</b> controlerov.h:26</div></div>
+<div class="ttc" id="class_controle_rov_html_a5d1fb6ad14da49e3c587199ae86dc28d"><div class="ttname"><a href="class_controle_rov.html#a5d1fb6ad14da49e3c587199ae86dc28d">ControleRov::mode</a></div><div class="ttdeci">unsigned int mode</div><div class="ttdoc">Mode de la manette (0 pour déplacement, 1 pour bras) </div><div class="ttdef"><b>Definition:</b> controlerov.h:52</div></div>
+<div class="ttc" id="controlerov_8h_html_a427f99e4fe2f812b0f49a09025623653"><div class="ttname"><a href="controlerov_8h.html#a427f99e4fe2f812b0f49a09025623653">MODE_DEPLACEMENT</a></div><div class="ttdeci">#define MODE_DEPLACEMENT</div><div class="ttdef"><b>Definition:</b> controlerov.h:25</div></div>
+<div class="ttc" id="class_controle_rov_html_a05506e1d8caf632b0394dcffd365c06f"><div class="ttname"><a href="class_controle_rov.html#a05506e1d8caf632b0394dcffd365c06f">ControleRov::trameCree</a></div><div class="ttdeci">void trameCree(QString trame)</div><div class="ttdoc">Signal émis lorsqu&amp;#39;une trame a été crée et est destinée à l&amp;#39;envoi. </div></div>
+<div class="ttc" id="class_controle_rov_html_a400d5766b9acabb45c1af5f8b22bbe47"><div class="ttname"><a href="class_controle_rov.html#a400d5766b9acabb45c1af5f8b22bbe47">ControleRov::changeConnexions</a></div><div class="ttdeci">void changeConnexions(int mode)</div><div class="ttdoc">Permet de modifier les connexions entre la manette et les actions selon le mode de la manette...</div><div class="ttdef"><b>Definition:</b> controlerov.cpp:92</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9531520e50479fc2e339cd43f4c87066"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9531520e50479fc2e339cd43f4c87066">&#9670;&nbsp;</a></span>estControleRovDisponible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ControleRov::estControleRovDisponible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Indique si le <a class="el" href="class_rov.html" title="Déclaration de la classe Rov. Gestion des liaisons entre les différentes classes, et paramètres de la...">Rov</a> est contrôlable, ou non.</p>
+<dl class="section return"><dt>Renvoie</dt><dd>bool Etat de la manette (connectée, ou non). </dd></dl>
+
+<p class="reference">Références <a class="el" href="class_manette.html#a035c0a43a11e91889891b3c874f0a58d">Manette::estDetecte()</a>, et <a class="el" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_i_h_m_rov.html#abbfcdc154a6ae7f941d186f6c90a5a2b">IHMRov::actualiseIconesEtat()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">manette</a>-&gt;<a class="code" href="class_manette.html#a035c0a43a11e91889891b3c874f0a58d">estDetecte</a>();</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div><div class="ttc" id="class_controle_rov_html_af5caffd78d06f90d045b53ee87ad76df"><div class="ttname"><a href="class_controle_rov.html#af5caffd78d06f90d045b53ee87ad76df">ControleRov::manette</a></div><div class="ttdeci">Manette * manette</div><div class="ttdoc">manette utilisée </div><div class="ttdef"><b>Definition:</b> controlerov.h:46</div></div>
+<div class="ttc" id="class_manette_html_a035c0a43a11e91889891b3c874f0a58d"><div class="ttname"><a href="class_manette.html#a035c0a43a11e91889891b3c874f0a58d">Manette::estDetecte</a></div><div class="ttdeci">bool estDetecte() const</div><div class="ttdoc">estDetecte </div><div class="ttdef"><b>Definition:</b> manette.cpp:55</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a05506e1d8caf632b0394dcffd365c06f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05506e1d8caf632b0394dcffd365c06f">&#9670;&nbsp;</a></span>trameCree</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ControleRov::trameCree </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>trame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_controle_rov.html#a206d52adf49b8510316b2885ea6b98b0">changeMode()</a>, et <a class="el" href="class_controle_rov.html#acc4d5fea26770217df978d43df2ad51e">ControleRov()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="a1b2e394dd6332b2acd1be0770451e140"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b2e394dd6332b2acd1be0770451e140">&#9670;&nbsp;</a></span>bras</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_bras.html">Bras</a>* ControleRov::bras</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_controle_rov.html#a400d5766b9acabb45c1af5f8b22bbe47">changeConnexions()</a>, et <a class="el" href="class_controle_rov.html#acc4d5fea26770217df978d43df2ad51e">ControleRov()</a>.</p>
+
+</div>
+</div>
+<a id="ac88fe7f2367cca5a24aeda187ee0bac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac88fe7f2367cca5a24aeda187ee0bac2">&#9670;&nbsp;</a></span>controleCamera</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_controle_camera.html">ControleCamera</a>* ControleRov::controleCamera</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_controle_rov.html#acc4d5fea26770217df978d43df2ad51e">ControleRov()</a>.</p>
+
+</div>
+</div>
+<a id="ae96443be0a82814b27958e6ceb0a0acf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae96443be0a82814b27958e6ceb0a0acf">&#9670;&nbsp;</a></span>deplacement</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_deplacement.html">Deplacement</a>* ControleRov::deplacement</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_controle_rov.html#a400d5766b9acabb45c1af5f8b22bbe47">changeConnexions()</a>, et <a class="el" href="class_controle_rov.html#acc4d5fea26770217df978d43df2ad51e">ControleRov()</a>.</p>
+
+</div>
+</div>
+<a id="af5caffd78d06f90d045b53ee87ad76df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5caffd78d06f90d045b53ee87ad76df">&#9670;&nbsp;</a></span>manette</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_manette.html">Manette</a>* ControleRov::manette</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_controle_rov.html#a400d5766b9acabb45c1af5f8b22bbe47">changeConnexions()</a>, <a class="el" href="class_controle_rov.html#acc4d5fea26770217df978d43df2ad51e">ControleRov()</a>, et <a class="el" href="class_controle_rov.html#a9531520e50479fc2e339cd43f4c87066">estControleRovDisponible()</a>.</p>
+
+</div>
+</div>
+<a id="a5d1fb6ad14da49e3c587199ae86dc28d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d1fb6ad14da49e3c587199ae86dc28d">&#9670;&nbsp;</a></span>mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ControleRov::mode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_controle_rov.html#a206d52adf49b8510316b2885ea6b98b0">changeMode()</a>.</p>
+
+</div>
+</div>
+<a id="a3620b701fbb3aebe6a57ca3f3f04c6ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3620b701fbb3aebe6a57ca3f3f04c6ca">&#9670;&nbsp;</a></span>rov</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_rov.html">Rov</a>* ControleRov::rov</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li><a class="el" href="controlerov_8h_source.html">controlerov.h</a></li>
+<li><a class="el" href="controlerov_8cpp.html">controlerov.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 05:35:33 pour Projet ROV&#39;NET par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

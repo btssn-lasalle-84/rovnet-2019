@@ -1,0 +1,137 @@
+\hypertarget{class_controle_camera}{}\subsection{Référence de la classe Controle\+Camera}
+\label{class_controle_camera}\index{Controle\+Camera@{Controle\+Camera}}
+
+
+Déclaration de la classe \hyperlink{class_controle_camera}{Controle\+Camera}.  
+
+
+
+
+{\ttfamily \#include $<$controlecamera.\+h$>$}
+
+
+
+Graphe de collaboration de Controle\+Camera\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{class_controle_camera__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_controle_camera_a119562aacbb4c0fbd4e5aa27a05ce7cc}{tourne\+Camera\+Gauche} (bool bouton\+Appuye)
+\begin{DoxyCompactList}\small\item\em Permet de pivoter la caméra vers la gauche, en émettant la trame correspondante. Correspond à la croix directionnelle gauche de la manette. \end{DoxyCompactList}\item 
+void \hyperlink{class_controle_camera_aac294c4e98a912199ba32d686e52f7ef}{tourne\+Camera\+Droite} (bool bouton\+Appuye)
+\begin{DoxyCompactList}\small\item\em Permet de pivoter la caméra vers la droite, en émettant la trame correspondante. Correspond à la croix directionnelle droite de la manette. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_controle_camera_ae6fda972cd90c8a14bc1c0171e1600e5}{trame\+Cree} (Q\+String trame)
+\begin{DoxyCompactList}\small\item\em Signal émis lorsqu\textquotesingle{}une trame a été crée et prête à être transmise. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_controle_camera_afe5dd4f7158c6c18c78b52253fe78327}{Controle\+Camera} (Q\+Object $\ast$parent=nullptr)
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Nicolas B\+O\+F\+F\+R\+E\+DO
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+Jeudi 13 Juin 2019 
+\end{DoxyDate}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_controle_camera_afe5dd4f7158c6c18c78b52253fe78327}\label{class_controle_camera_afe5dd4f7158c6c18c78b52253fe78327}} 
+\index{Controle\+Camera@{Controle\+Camera}!Controle\+Camera@{Controle\+Camera}}
+\index{Controle\+Camera@{Controle\+Camera}!Controle\+Camera@{Controle\+Camera}}
+\paragraph{\texorpdfstring{Controle\+Camera()}{ControleCamera()}}
+{\footnotesize\ttfamily Controle\+Camera\+::\+Controle\+Camera (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyCode}
+00017                                               : QObject(parent)
+00018 \{
+00019 
+00020 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_controle_camera_aac294c4e98a912199ba32d686e52f7ef}\label{class_controle_camera_aac294c4e98a912199ba32d686e52f7ef}} 
+\index{Controle\+Camera@{Controle\+Camera}!tourne\+Camera\+Droite@{tourne\+Camera\+Droite}}
+\index{tourne\+Camera\+Droite@{tourne\+Camera\+Droite}!Controle\+Camera@{Controle\+Camera}}
+\paragraph{\texorpdfstring{tourne\+Camera\+Droite}{tourneCameraDroite}}
+{\footnotesize\ttfamily Controle\+Camera\+::tourne\+Camera\+Droite (\begin{DoxyParamCaption}\item[{bool}]{bouton\+Appuye }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em bouton\+Appuye} & bool vrai si le bouton est appuyé, faux sinon. \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_controle_camera_ae6fda972cd90c8a14bc1c0171e1600e5}{trame\+Cree()}.
+
+
+
+Référencé par \hyperlink{class_controle_rov_acc4d5fea26770217df978d43df2ad51e}{Controle\+Rov\+::\+Controle\+Rov()}.
+
+
+\begin{DoxyCode}
+00039 \{
+00040     QString trame = \textcolor{stringliteral}{"$TCA"} + QString::number(boutonAppuye) + \textcolor{stringliteral}{"\(\backslash\)n"};
+00041     emit \hyperlink{class_controle_camera_ae6fda972cd90c8a14bc1c0171e1600e5}{trameCree}(trame);
+00042 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controle_camera_a119562aacbb4c0fbd4e5aa27a05ce7cc}\label{class_controle_camera_a119562aacbb4c0fbd4e5aa27a05ce7cc}} 
+\index{Controle\+Camera@{Controle\+Camera}!tourne\+Camera\+Gauche@{tourne\+Camera\+Gauche}}
+\index{tourne\+Camera\+Gauche@{tourne\+Camera\+Gauche}!Controle\+Camera@{Controle\+Camera}}
+\paragraph{\texorpdfstring{tourne\+Camera\+Gauche}{tourneCameraGauche}}
+{\footnotesize\ttfamily Controle\+Camera\+::tourne\+Camera\+Gauche (\begin{DoxyParamCaption}\item[{bool}]{bouton\+Appuye }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em bouton\+Appuye} & bool vrai si le bouton est appuyé, faux sinon. \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_controle_camera_ae6fda972cd90c8a14bc1c0171e1600e5}{trame\+Cree()}.
+
+
+
+Référencé par \hyperlink{class_controle_rov_acc4d5fea26770217df978d43df2ad51e}{Controle\+Rov\+::\+Controle\+Rov()}.
+
+
+\begin{DoxyCode}
+00028 \{
+00029     QString trame = \textcolor{stringliteral}{"$TCA"} + QString::number(-boutonAppuye) + \textcolor{stringliteral}{"\(\backslash\)n"};
+00030     emit \hyperlink{class_controle_camera_ae6fda972cd90c8a14bc1c0171e1600e5}{trameCree}(trame);
+00031 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controle_camera_ae6fda972cd90c8a14bc1c0171e1600e5}\label{class_controle_camera_ae6fda972cd90c8a14bc1c0171e1600e5}} 
+\index{Controle\+Camera@{Controle\+Camera}!trame\+Cree@{trame\+Cree}}
+\index{trame\+Cree@{trame\+Cree}!Controle\+Camera@{Controle\+Camera}}
+\paragraph{\texorpdfstring{trame\+Cree}{trameCree}}
+{\footnotesize\ttfamily void Controle\+Camera\+::trame\+Cree (\begin{DoxyParamCaption}\item[{Q\+String}]{trame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_controle_camera_aac294c4e98a912199ba32d686e52f7ef}{tourne\+Camera\+Droite()}, et \hyperlink{class_controle_camera_a119562aacbb4c0fbd4e5aa27a05ce7cc}{tourne\+Camera\+Gauche()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{controlecamera_8h}{controlecamera.\+h}\item 
+\hyperlink{controlecamera_8cpp}{controlecamera.\+cpp}\end{DoxyCompactItemize}

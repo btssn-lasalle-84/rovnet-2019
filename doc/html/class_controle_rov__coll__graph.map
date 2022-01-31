@@ -1,0 +1,12 @@
+<map id="ControleRov" name="ControleRov">
+<area shape="rect" id="node2" href="$class_rov.html" title="Déclaration de la classe Rov. Gestion des liaisons entre les différentes classes, et paramètres de la..." alt="" coords="343,843,579,1184"/>
+<area shape="rect" id="node3" href="$class_archives.html" title="Déclaration de la classe Archives. " alt="" coords="5,5,195,405"/>
+<area shape="rect" id="node4" href="$class_camera.html" title="Déclaration de la classe Camera. " alt="" coords="160,468,336,780"/>
+<area shape="rect" id="node5" href="$class_mesures.html" title="Déclaration de la classe Mesures. Gestion des mesures des capteurs (température, irradiation, et distance). " alt="" coords="360,497,563,751"/>
+<area shape="rect" id="node6" href="$class_base_de_donnees.html" title="Déclaration de la classe BaseDeDonnees. " alt="" coords="587,475,733,773"/>
+<area shape="rect" id="node7" href="$class_communication_rov.html" title="Déclaration de la classe CommunicationRov. Gère la communication entre le Rov et le Rov..." alt="" coords="886,505,1122,743"/>
+<area shape="rect" id="node8" href="$class_controle_camera.html" title="Déclaration de la classe ControleCamera. " alt="" coords="603,960,773,1067"/>
+<area shape="rect" id="node9" href="$class_manette.html" title="Déclaration de la classe Manette. Liaison avec la manette, permettant d&#39;en recevoir les signaux..." alt="" coords="797,945,904,1081"/>
+<area shape="rect" id="node10" href="$class_deplacement.html" title="Déclaration de la classe Deplacement. Réceptionne les signaux de la manette destiné aux déplacements ..." alt="" coords="928,953,1107,1074"/>
+<area shape="rect" id="node11" href="$class_bras.html" title="Déclaration de la classe Bras. Réceptionne les signaux de la manette destiné aux mouvements du bras..." alt="" coords="1131,887,1346,1140"/>
+</map>

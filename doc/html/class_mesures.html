@@ -1,0 +1,686 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet ROV&#39;NET: Référence de la classe Mesures</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-rov.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet ROV&#39;NET
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Connecteurs publics</a> &#124;
+<a href="#signals">Signaux</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="class_mesures-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe Mesures</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Déclaration de la classe <a class="el" href="class_mesures.html" title="Déclaration de la classe Mesures. Gestion des mesures des capteurs (température, irradiation, et distance). ">Mesures</a>. Gestion des mesures des capteurs (température, irradiation, et distance).  
+ <a href="class_mesures.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mesures_8h_source.html">mesures.h</a>&gt;</code></p>
+<div class="dynheader">
+Graphe de collaboration de Mesures:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_mesures__coll__graph.png" border="0" usemap="#_mesures_coll__map" alt="Collaboration graph"/></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Connecteurs publics</h2></td></tr>
+<tr class="memitem:a43b121b67418802b3332b195d8541481"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesures.html#a43b121b67418802b3332b195d8541481">traiteTrame</a> (QString trame)</td></tr>
+<tr class="memdesc:a43b121b67418802b3332b195d8541481"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie la validité, et découpe la trame reçue.  <a href="#a43b121b67418802b3332b195d8541481">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a43b121b67418802b3332b195d8541481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eb8d49c9f60b3801110a5c3d0c50149"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesures.html#a9eb8d49c9f60b3801110a5c3d0c50149">envoieMesuresBDD</a> ()</td></tr>
+<tr class="memdesc:a9eb8d49c9f60b3801110a5c3d0c50149"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envoie un signal toutes les 30 secondes contenant la température et l'irradiation.  <a href="#a9eb8d49c9f60b3801110a5c3d0c50149">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9eb8d49c9f60b3801110a5c3d0c50149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1d2ea97f648264ebd690fba8f7020cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesures.html#ac1d2ea97f648264ebd690fba8f7020cc">modifieFrequenceArchivage</a> (int)</td></tr>
+<tr class="memdesc:ac1d2ea97f648264ebd690fba8f7020cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifie l'interval du timer correspondant à l'archivage des mesures dans la BDD.  <a href="#ac1d2ea97f648264ebd690fba8f7020cc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac1d2ea97f648264ebd690fba8f7020cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signaux</h2></td></tr>
+<tr class="memitem:a8a6e4db8850930d8e4e96c98d5aa95b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesures.html#a8a6e4db8850930d8e4e96c98d5aa95b8">irradiationActualisee</a> (double)</td></tr>
+<tr class="memdesc:a8a6e4db8850930d8e4e96c98d5aa95b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal émis lorsqu'une nouvelle valeur d'irradiation est reçue.  <a href="#a8a6e4db8850930d8e4e96c98d5aa95b8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8a6e4db8850930d8e4e96c98d5aa95b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab13d5e64ff21fd869fe347ec1c5a246f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesures.html#ab13d5e64ff21fd869fe347ec1c5a246f">temperatureActualisee</a> (double)</td></tr>
+<tr class="memdesc:ab13d5e64ff21fd869fe347ec1c5a246f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal émis lorsqu'une nouvelle valeur de température est reçue.  <a href="#ab13d5e64ff21fd869fe347ec1c5a246f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab13d5e64ff21fd869fe347ec1c5a246f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6073f147fb08d7c5cc2ce1c9880becbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesures.html#a6073f147fb08d7c5cc2ce1c9880becbe">distanceActualisee</a> (double)</td></tr>
+<tr class="memdesc:a6073f147fb08d7c5cc2ce1c9880becbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal émis lorsqu'une nouvelle valeur de distance est reçue.  <a href="#a6073f147fb08d7c5cc2ce1c9880becbe">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a6073f147fb08d7c5cc2ce1c9880becbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97d8dbd7742519d1f3ce959661d8aede"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesures.html#a97d8dbd7742519d1f3ce959661d8aede">mesuresBDDPrete</a> (double <a class="el" href="class_mesures.html#a2688d0da4acf9d91ea0befd6ed0bd140">temperature</a>, double <a class="el" href="class_mesures.html#a77cde7672dac5e544b7288364ec7c7b5">irradiation</a>)</td></tr>
+<tr class="memdesc:a97d8dbd7742519d1f3ce959661d8aede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal émis toutes les x secondes visant à stocker les valeurs de température et d'irradiation (en argument) dans la BDD.  <a href="#a97d8dbd7742519d1f3ce959661d8aede">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a97d8dbd7742519d1f3ce959661d8aede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:aa24ed1e055242fab5adab3f8f057c9b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesures.html#aa24ed1e055242fab5adab3f8f057c9b1">Mesures</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:aa24ed1e055242fab5adab3f8f057c9b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la classe <a class="el" href="class_mesures.html" title="Déclaration de la classe Mesures. Gestion des mesures des capteurs (température, irradiation, et distance). ">Mesures</a>.  <a href="#aa24ed1e055242fab5adab3f8f057c9b1">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa24ed1e055242fab5adab3f8f057c9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bb192b80fbf2c0f9aea5911ce29c652"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesures.html#a4bb192b80fbf2c0f9aea5911ce29c652">~Mesures</a> ()</td></tr>
+<tr class="memdesc:a4bb192b80fbf2c0f9aea5911ce29c652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur de la classe <a class="el" href="class_mesures.html" title="Déclaration de la classe Mesures. Gestion des mesures des capteurs (température, irradiation, et distance). ">Mesures</a>.  <a href="#a4bb192b80fbf2c0f9aea5911ce29c652">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a4bb192b80fbf2c0f9aea5911ce29c652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e5e61c6bbdd2fd891b66ee494183dcd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesures.html#a5e5e61c6bbdd2fd891b66ee494183dcd">getTemperature</a> () const</td></tr>
+<tr class="memdesc:a5e5e61c6bbdd2fd891b66ee494183dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne la température stockée dans l'objet.  <a href="#a5e5e61c6bbdd2fd891b66ee494183dcd">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5e5e61c6bbdd2fd891b66ee494183dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af260c8f685e3519681b3ca0086d70b31"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesures.html#af260c8f685e3519681b3ca0086d70b31">getIrradiation</a> () const</td></tr>
+<tr class="memdesc:af260c8f685e3519681b3ca0086d70b31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne le taux d'irradiation stocké dans l'objet.  <a href="#af260c8f685e3519681b3ca0086d70b31">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af260c8f685e3519681b3ca0086d70b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa40d78428855bab861cc9a57582c8d42"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesures.html#aa40d78428855bab861cc9a57582c8d42">getDistance</a> () const</td></tr>
+<tr class="memdesc:aa40d78428855bab861cc9a57582c8d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie le dernier relevé du capteur de proximité.  <a href="#aa40d78428855bab861cc9a57582c8d42">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa40d78428855bab861cc9a57582c8d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae969e38402b8d19fe9b484f368200578"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesures.html#ae969e38402b8d19fe9b484f368200578">getFrequenceArchivage</a> () const</td></tr>
+<tr class="memdesc:ae969e38402b8d19fe9b484f368200578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie la fréquence d'archivage des données.  <a href="#ae969e38402b8d19fe9b484f368200578">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae969e38402b8d19fe9b484f368200578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77652c2332a9234bf08b463d1d389aa5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesures.html#a77652c2332a9234bf08b463d1d389aa5">stockeDonnees</a> (QString type, QString donnee)</td></tr>
+<tr class="memdesc:a77652c2332a9234bf08b463d1d389aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stocke la donnee passée en argument.  <a href="#a77652c2332a9234bf08b463d1d389aa5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a77652c2332a9234bf08b463d1d389aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a2688d0da4acf9d91ea0befd6ed0bd140"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesures.html#a2688d0da4acf9d91ea0befd6ed0bd140">temperature</a></td></tr>
+<tr class="memdesc:a2688d0da4acf9d91ea0befd6ed0bd140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dernière température relevée.  <a href="#a2688d0da4acf9d91ea0befd6ed0bd140">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2688d0da4acf9d91ea0befd6ed0bd140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77cde7672dac5e544b7288364ec7c7b5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesures.html#a77cde7672dac5e544b7288364ec7c7b5">irradiation</a></td></tr>
+<tr class="memdesc:a77cde7672dac5e544b7288364ec7c7b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dernier taux d'irradiation relevé.  <a href="#a77cde7672dac5e544b7288364ec7c7b5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a77cde7672dac5e544b7288364ec7c7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a276f71168b1dcecf2051631d19aa8eeb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesures.html#a276f71168b1dcecf2051631d19aa8eeb">distance</a></td></tr>
+<tr class="memdesc:a276f71168b1dcecf2051631d19aa8eeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dernière mesure du capteur de proximité relevé.  <a href="#a276f71168b1dcecf2051631d19aa8eeb">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a276f71168b1dcecf2051631d19aa8eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89af5f279d21cf10f5d6bd58bbc33173"><td class="memItemLeft" align="right" valign="top">QTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesures.html#a89af5f279d21cf10f5d6bd58bbc33173">compteur</a></td></tr>
+<tr class="memdesc:a89af5f279d21cf10f5d6bd58bbc33173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compteur envoyant toutes les x secondes un signal timeout.  <a href="#a89af5f279d21cf10f5d6bd58bbc33173">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a89af5f279d21cf10f5d6bd58bbc33173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><dl class="section author"><dt>Auteur</dt><dd>REYNIER Jacques &amp; Nicolas BOFFREDO</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.1</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Jeudi 13 Juin 2019 </dd></dl>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="aa24ed1e055242fab5adab3f8f057c9b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa24ed1e055242fab5adab3f8f057c9b1">&#9670;&nbsp;</a></span>Mesures()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mesures::Mesures </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Crée un compteur émettant un signal toutes les 30 secondes (modifiable par l'utilisateur), permettant l'envoi des mesures dans la BDD.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>QObject* </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Références <a class="el" href="class_mesures.html#a89af5f279d21cf10f5d6bd58bbc33173">compteur</a>, et <a class="el" href="class_mesures.html#a9eb8d49c9f60b3801110a5c3d0c50149">envoieMesuresBDD()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                : QObject(parent), <a class="code" href="class_mesures.html#a2688d0da4acf9d91ea0befd6ed0bd140">temperature</a>(-999.0), <a class="code" href="class_mesures.html#a77cde7672dac5e544b7288364ec7c7b5">irradiation</a>(-999.0), <a class="code" href="class_mesures.html#a276f71168b1dcecf2051631d19aa8eeb">distance</a>(-999.0)</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_mesures.html#a89af5f279d21cf10f5d6bd58bbc33173">compteur</a> = <span class="keyword">new</span> QTimer(<span class="keyword">this</span>);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    connect(<a class="code" href="class_mesures.html#a89af5f279d21cf10f5d6bd58bbc33173">compteur</a>, SIGNAL(timeout()), <span class="keyword">this</span>, SLOT(<a class="code" href="class_mesures.html#a9eb8d49c9f60b3801110a5c3d0c50149">envoieMesuresBDD</a>()));</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_mesures.html#a89af5f279d21cf10f5d6bd58bbc33173">compteur</a>-&gt;start(30000);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div><div class="ttc" id="class_mesures_html_a276f71168b1dcecf2051631d19aa8eeb"><div class="ttname"><a href="class_mesures.html#a276f71168b1dcecf2051631d19aa8eeb">Mesures::distance</a></div><div class="ttdeci">double distance</div><div class="ttdoc">Dernière mesure du capteur de proximité relevé. </div><div class="ttdef"><b>Definition:</b> mesures.h:40</div></div>
+<div class="ttc" id="class_mesures_html_a2688d0da4acf9d91ea0befd6ed0bd140"><div class="ttname"><a href="class_mesures.html#a2688d0da4acf9d91ea0befd6ed0bd140">Mesures::temperature</a></div><div class="ttdeci">double temperature</div><div class="ttdoc">Dernière température relevée. </div><div class="ttdef"><b>Definition:</b> mesures.h:38</div></div>
+<div class="ttc" id="class_mesures_html_a9eb8d49c9f60b3801110a5c3d0c50149"><div class="ttname"><a href="class_mesures.html#a9eb8d49c9f60b3801110a5c3d0c50149">Mesures::envoieMesuresBDD</a></div><div class="ttdeci">void envoieMesuresBDD()</div><div class="ttdoc">Envoie un signal toutes les 30 secondes contenant la température et l&amp;#39;irradiation. </div><div class="ttdef"><b>Definition:</b> mesures.cpp:149</div></div>
+<div class="ttc" id="class_mesures_html_a89af5f279d21cf10f5d6bd58bbc33173"><div class="ttname"><a href="class_mesures.html#a89af5f279d21cf10f5d6bd58bbc33173">Mesures::compteur</a></div><div class="ttdeci">QTimer * compteur</div><div class="ttdoc">Compteur envoyant toutes les x secondes un signal timeout. </div><div class="ttdef"><b>Definition:</b> mesures.h:41</div></div>
+<div class="ttc" id="class_mesures_html_a77cde7672dac5e544b7288364ec7c7b5"><div class="ttname"><a href="class_mesures.html#a77cde7672dac5e544b7288364ec7c7b5">Mesures::irradiation</a></div><div class="ttdeci">double irradiation</div><div class="ttdoc">Dernier taux d&amp;#39;irradiation relevé. </div><div class="ttdef"><b>Definition:</b> mesures.h:39</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4bb192b80fbf2c0f9aea5911ce29c652"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bb192b80fbf2c0f9aea5911ce29c652">&#9670;&nbsp;</a></span>~Mesures()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mesures::~Mesures </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a6073f147fb08d7c5cc2ce1c9880becbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6073f147fb08d7c5cc2ce1c9880becbe">&#9670;&nbsp;</a></span>distanceActualisee</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mesures::distanceActualisee </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_mesures.html#a77652c2332a9234bf08b463d1d389aa5">stockeDonnees()</a>.</p>
+
+</div>
+</div>
+<a id="a9eb8d49c9f60b3801110a5c3d0c50149"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eb8d49c9f60b3801110a5c3d0c50149">&#9670;&nbsp;</a></span>envoieMesuresBDD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mesures::envoieMesuresBDD </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Envoie un signal comprenant les mesures de température et d'irradiation à destination de la BDD, émis toutes les x secondes (fréquence d'archivage). </p>
+
+<p class="reference">Références <a class="el" href="class_mesures.html#a77cde7672dac5e544b7288364ec7c7b5">irradiation</a>, <a class="el" href="class_mesures.html#a97d8dbd7742519d1f3ce959661d8aede">mesuresBDDPrete()</a>, et <a class="el" href="class_mesures.html#a2688d0da4acf9d91ea0befd6ed0bd140">temperature</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_mesures.html#aa24ed1e055242fab5adab3f8f057c9b1">Mesures()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;{</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    emit <a class="code" href="class_mesures.html#a97d8dbd7742519d1f3ce959661d8aede">mesuresBDDPrete</a>(this-&gt;<a class="code" href="class_mesures.html#a2688d0da4acf9d91ea0befd6ed0bd140">temperature</a>, this-&gt;<a class="code" href="class_mesures.html#a77cde7672dac5e544b7288364ec7c7b5">irradiation</a>);</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;}</div><div class="ttc" id="class_mesures_html_a97d8dbd7742519d1f3ce959661d8aede"><div class="ttname"><a href="class_mesures.html#a97d8dbd7742519d1f3ce959661d8aede">Mesures::mesuresBDDPrete</a></div><div class="ttdeci">void mesuresBDDPrete(double temperature, double irradiation)</div><div class="ttdoc">Signal émis toutes les x secondes visant à stocker les valeurs de température et d&amp;#39;irradiation (en ar...</div></div>
+<div class="ttc" id="class_mesures_html_a2688d0da4acf9d91ea0befd6ed0bd140"><div class="ttname"><a href="class_mesures.html#a2688d0da4acf9d91ea0befd6ed0bd140">Mesures::temperature</a></div><div class="ttdeci">double temperature</div><div class="ttdoc">Dernière température relevée. </div><div class="ttdef"><b>Definition:</b> mesures.h:38</div></div>
+<div class="ttc" id="class_mesures_html_a77cde7672dac5e544b7288364ec7c7b5"><div class="ttname"><a href="class_mesures.html#a77cde7672dac5e544b7288364ec7c7b5">Mesures::irradiation</a></div><div class="ttdeci">double irradiation</div><div class="ttdoc">Dernier taux d&amp;#39;irradiation relevé. </div><div class="ttdef"><b>Definition:</b> mesures.h:39</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa40d78428855bab861cc9a57582c8d42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa40d78428855bab861cc9a57582c8d42">&#9670;&nbsp;</a></span>getDistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mesures::getDistance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Renvoie</dt><dd>distance double Dernier relevé du capteur de proximité. </dd></dl>
+
+<p class="reference">Références <a class="el" href="class_mesures.html#a276f71168b1dcecf2051631d19aa8eeb">distance</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_mesures.html#a276f71168b1dcecf2051631d19aa8eeb">distance</a>;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div><div class="ttc" id="class_mesures_html_a276f71168b1dcecf2051631d19aa8eeb"><div class="ttname"><a href="class_mesures.html#a276f71168b1dcecf2051631d19aa8eeb">Mesures::distance</a></div><div class="ttdeci">double distance</div><div class="ttdoc">Dernière mesure du capteur de proximité relevé. </div><div class="ttdef"><b>Definition:</b> mesures.h:40</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae969e38402b8d19fe9b484f368200578"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae969e38402b8d19fe9b484f368200578">&#9670;&nbsp;</a></span>getFrequenceArchivage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Mesures::getFrequenceArchivage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Renvoie la fréquence d'archivage des mesures dans la BDD en secondes.</p>
+<dl class="section return"><dt>Renvoie</dt><dd>frequence int Fréquence d'archivage en secondes. </dd></dl>
+
+<p class="reference">Références <a class="el" href="class_mesures.html#a89af5f279d21cf10f5d6bd58bbc33173">compteur</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_i_h_m_rov.html#aed451139ac09ef18b7c92637761d80ce">IHMRov::creerFenetreParametres()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="class_mesures.html#a89af5f279d21cf10f5d6bd58bbc33173">compteur</a>-&gt;interval() / 1000);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div><div class="ttc" id="class_mesures_html_a89af5f279d21cf10f5d6bd58bbc33173"><div class="ttname"><a href="class_mesures.html#a89af5f279d21cf10f5d6bd58bbc33173">Mesures::compteur</a></div><div class="ttdeci">QTimer * compteur</div><div class="ttdoc">Compteur envoyant toutes les x secondes un signal timeout. </div><div class="ttdef"><b>Definition:</b> mesures.h:41</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af260c8f685e3519681b3ca0086d70b31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af260c8f685e3519681b3ca0086d70b31">&#9670;&nbsp;</a></span>getIrradiation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mesures::getIrradiation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Renvoie le dernier taux d'irradiation reçu.</p>
+<dl class="section return"><dt>Renvoie</dt><dd>irradiation int Dernier taux d'irradiation relevé. </dd></dl>
+
+<p class="reference">Références <a class="el" href="class_mesures.html#a77cde7672dac5e544b7288364ec7c7b5">irradiation</a>.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_mesures.html#a77cde7672dac5e544b7288364ec7c7b5">irradiation</a>;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div><div class="ttc" id="class_mesures_html_a77cde7672dac5e544b7288364ec7c7b5"><div class="ttname"><a href="class_mesures.html#a77cde7672dac5e544b7288364ec7c7b5">Mesures::irradiation</a></div><div class="ttdeci">double irradiation</div><div class="ttdoc">Dernier taux d&amp;#39;irradiation relevé. </div><div class="ttdef"><b>Definition:</b> mesures.h:39</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5e5e61c6bbdd2fd891b66ee494183dcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e5e61c6bbdd2fd891b66ee494183dcd">&#9670;&nbsp;</a></span>getTemperature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mesures::getTemperature </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Renvoie la dernière température reçue.</p>
+<dl class="section return"><dt>Renvoie</dt><dd>temperature int Dernière température relevée. </dd></dl>
+
+<p class="reference">Références <a class="el" href="class_mesures.html#a2688d0da4acf9d91ea0befd6ed0bd140">temperature</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_mesures.html#a2688d0da4acf9d91ea0befd6ed0bd140">temperature</a>;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div><div class="ttc" id="class_mesures_html_a2688d0da4acf9d91ea0befd6ed0bd140"><div class="ttname"><a href="class_mesures.html#a2688d0da4acf9d91ea0befd6ed0bd140">Mesures::temperature</a></div><div class="ttdeci">double temperature</div><div class="ttdoc">Dernière température relevée. </div><div class="ttdef"><b>Definition:</b> mesures.h:38</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8a6e4db8850930d8e4e96c98d5aa95b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a6e4db8850930d8e4e96c98d5aa95b8">&#9670;&nbsp;</a></span>irradiationActualisee</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mesures::irradiationActualisee </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_mesures.html#a77652c2332a9234bf08b463d1d389aa5">stockeDonnees()</a>.</p>
+
+</div>
+</div>
+<a id="a97d8dbd7742519d1f3ce959661d8aede"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97d8dbd7742519d1f3ce959661d8aede">&#9670;&nbsp;</a></span>mesuresBDDPrete</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mesures::mesuresBDDPrete </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>temperature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>irradiation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_mesures.html#a9eb8d49c9f60b3801110a5c3d0c50149">envoieMesuresBDD()</a>.</p>
+
+</div>
+</div>
+<a id="ac1d2ea97f648264ebd690fba8f7020cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1d2ea97f648264ebd690fba8f7020cc">&#9670;&nbsp;</a></span>modifieFrequenceArchivage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mesures::modifieFrequenceArchivage </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frequence</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Modifie la fréquence.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frequence</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Références <a class="el" href="class_mesures.html#a89af5f279d21cf10f5d6bd58bbc33173">compteur</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_i_h_m_rov.html#aed451139ac09ef18b7c92637761d80ce">IHMRov::creerFenetreParametres()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;{</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <a class="code" href="class_mesures.html#a89af5f279d21cf10f5d6bd58bbc33173">compteur</a>-&gt;setInterval(frequence * 1000);</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div><div class="ttc" id="class_mesures_html_a89af5f279d21cf10f5d6bd58bbc33173"><div class="ttname"><a href="class_mesures.html#a89af5f279d21cf10f5d6bd58bbc33173">Mesures::compteur</a></div><div class="ttdeci">QTimer * compteur</div><div class="ttdoc">Compteur envoyant toutes les x secondes un signal timeout. </div><div class="ttdef"><b>Definition:</b> mesures.h:41</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a77652c2332a9234bf08b463d1d389aa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77652c2332a9234bf08b463d1d389aa5">&#9670;&nbsp;</a></span>stockeDonnees()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mesures::stockeDonnees </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>donnee</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Stocke les donnees passés en argument dans l'objet mesures.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>QString Type de donnée à stocker. </td></tr>
+    <tr><td class="paramname">donnee</td><td>QString Valeur de la donnée à stocker. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Références <a class="el" href="class_mesures.html#a276f71168b1dcecf2051631d19aa8eeb">distance</a>, <a class="el" href="class_mesures.html#a6073f147fb08d7c5cc2ce1c9880becbe">distanceActualisee()</a>, <a class="el" href="class_mesures.html#a77cde7672dac5e544b7288364ec7c7b5">irradiation</a>, <a class="el" href="class_mesures.html#a8a6e4db8850930d8e4e96c98d5aa95b8">irradiationActualisee()</a>, <a class="el" href="class_mesures.html#a2688d0da4acf9d91ea0befd6ed0bd140">temperature</a>, et <a class="el" href="class_mesures.html#ab13d5e64ff21fd869fe347ec1c5a246f">temperatureActualisee()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_mesures.html#a43b121b67418802b3332b195d8541481">traiteTrame()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;irradiation&quot;</span>)</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    {</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        this-&gt;<a class="code" href="class_mesures.html#a77cde7672dac5e544b7288364ec7c7b5">irradiation</a> = donnee.toDouble();</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        emit <a class="code" href="class_mesures.html#a8a6e4db8850930d8e4e96c98d5aa95b8">irradiationActualisee</a>(this-&gt;<a class="code" href="class_mesures.html#a77cde7672dac5e544b7288364ec7c7b5">irradiation</a>);</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;temperature&quot;</span>)</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    {</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        this-&gt;<a class="code" href="class_mesures.html#a2688d0da4acf9d91ea0befd6ed0bd140">temperature</a> = donnee.toDouble();</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        emit <a class="code" href="class_mesures.html#ab13d5e64ff21fd869fe347ec1c5a246f">temperatureActualisee</a>(this-&gt;<a class="code" href="class_mesures.html#a2688d0da4acf9d91ea0befd6ed0bd140">temperature</a>);</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;distance&quot;</span>)</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    {</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        this-&gt;<a class="code" href="class_mesures.html#a276f71168b1dcecf2051631d19aa8eeb">distance</a> = donnee.toDouble();</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        emit <a class="code" href="class_mesures.html#a6073f147fb08d7c5cc2ce1c9880becbe">distanceActualisee</a>(this-&gt;<a class="code" href="class_mesures.html#a276f71168b1dcecf2051631d19aa8eeb">distance</a>);</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    }</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;}</div><div class="ttc" id="class_mesures_html_a276f71168b1dcecf2051631d19aa8eeb"><div class="ttname"><a href="class_mesures.html#a276f71168b1dcecf2051631d19aa8eeb">Mesures::distance</a></div><div class="ttdeci">double distance</div><div class="ttdoc">Dernière mesure du capteur de proximité relevé. </div><div class="ttdef"><b>Definition:</b> mesures.h:40</div></div>
+<div class="ttc" id="class_mesures_html_a6073f147fb08d7c5cc2ce1c9880becbe"><div class="ttname"><a href="class_mesures.html#a6073f147fb08d7c5cc2ce1c9880becbe">Mesures::distanceActualisee</a></div><div class="ttdeci">void distanceActualisee(double)</div><div class="ttdoc">Signal émis lorsqu&amp;#39;une nouvelle valeur de distance est reçue. </div></div>
+<div class="ttc" id="class_mesures_html_ab13d5e64ff21fd869fe347ec1c5a246f"><div class="ttname"><a href="class_mesures.html#ab13d5e64ff21fd869fe347ec1c5a246f">Mesures::temperatureActualisee</a></div><div class="ttdeci">void temperatureActualisee(double)</div><div class="ttdoc">Signal émis lorsqu&amp;#39;une nouvelle valeur de température est reçue. </div></div>
+<div class="ttc" id="class_mesures_html_a8a6e4db8850930d8e4e96c98d5aa95b8"><div class="ttname"><a href="class_mesures.html#a8a6e4db8850930d8e4e96c98d5aa95b8">Mesures::irradiationActualisee</a></div><div class="ttdeci">void irradiationActualisee(double)</div><div class="ttdoc">Signal émis lorsqu&amp;#39;une nouvelle valeur d&amp;#39;irradiation est reçue. </div></div>
+<div class="ttc" id="class_mesures_html_a2688d0da4acf9d91ea0befd6ed0bd140"><div class="ttname"><a href="class_mesures.html#a2688d0da4acf9d91ea0befd6ed0bd140">Mesures::temperature</a></div><div class="ttdeci">double temperature</div><div class="ttdoc">Dernière température relevée. </div><div class="ttdef"><b>Definition:</b> mesures.h:38</div></div>
+<div class="ttc" id="class_mesures_html_a77cde7672dac5e544b7288364ec7c7b5"><div class="ttname"><a href="class_mesures.html#a77cde7672dac5e544b7288364ec7c7b5">Mesures::irradiation</a></div><div class="ttdeci">double irradiation</div><div class="ttdoc">Dernier taux d&amp;#39;irradiation relevé. </div><div class="ttdef"><b>Definition:</b> mesures.h:39</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab13d5e64ff21fd869fe347ec1c5a246f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab13d5e64ff21fd869fe347ec1c5a246f">&#9670;&nbsp;</a></span>temperatureActualisee</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mesures::temperatureActualisee </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_mesures.html#a77652c2332a9234bf08b463d1d389aa5">stockeDonnees()</a>.</p>
+
+</div>
+</div>
+<a id="a43b121b67418802b3332b195d8541481"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43b121b67418802b3332b195d8541481">&#9670;&nbsp;</a></span>traiteTrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mesures::traiteTrame </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>trame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">trame</td><td>QString Trame reçue. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Références <a class="el" href="class_mesures.html#a77652c2332a9234bf08b463d1d389aa5">stockeDonnees()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">bool</span> trameValide = <span class="keyword">true</span>;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> (trame.startsWith(<span class="stringliteral">&quot;$&quot;</span>) &amp;&amp; trame.endsWith(<span class="stringliteral">&quot;\n&quot;</span>))</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    {</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        trame.remove(QChar(<span class="charliteral">&#39;$&#39;</span>));</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        trame.remove(QChar(<span class="charliteral">&#39;\n&#39;</span>));</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 1; i &lt; trame.length(); i++)     <span class="comment">// Parcours la trame et vérifie si le contenu après le caractère de type est bien un chiffre (filtre les erreurs exemple : &quot;$TX4\n&quot;).</span></div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        {</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">if</span>(!trame[i].isDigit() &amp;&amp; trame[i] != <span class="stringliteral">&quot;.&quot;</span> &amp;&amp; trame[i] != <span class="stringliteral">&quot;-&quot;</span>)</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                trameValide = <span class="keyword">false</span>;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        trameValide = <span class="keyword">false</span>;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">if</span>(trameValide)</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">if</span>(trame.startsWith(<span class="charliteral">&#39;T&#39;</span>))</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <a class="code" href="class_mesures.html#a77652c2332a9234bf08b463d1d389aa5">stockeDonnees</a>(<span class="stringliteral">&quot;temperature&quot;</span>, trame.remove(<span class="charliteral">&#39;T&#39;</span>));</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(trame.startsWith(<span class="charliteral">&#39;R&#39;</span>))</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <a class="code" href="class_mesures.html#a77652c2332a9234bf08b463d1d389aa5">stockeDonnees</a>(<span class="stringliteral">&quot;irradiation&quot;</span>, trame.remove(<span class="charliteral">&#39;R&#39;</span>));</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(trame.startsWith(<span class="charliteral">&#39;D&#39;</span>))</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <a class="code" href="class_mesures.html#a77652c2332a9234bf08b463d1d389aa5">stockeDonnees</a>(<span class="stringliteral">&quot;distance&quot;</span>, trame.remove(<span class="charliteral">&#39;D&#39;</span>));</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">else</span></div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            trameValide = <span class="keyword">false</span>;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">if</span>(!trameValide)</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;ERREUR ! Trame invalide&quot;</span>;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div><div class="ttc" id="class_mesures_html_a77652c2332a9234bf08b463d1d389aa5"><div class="ttname"><a href="class_mesures.html#a77652c2332a9234bf08b463d1d389aa5">Mesures::stockeDonnees</a></div><div class="ttdeci">void stockeDonnees(QString type, QString donnee)</div><div class="ttdoc">Stocke la donnee passée en argument. </div><div class="ttdef"><b>Definition:</b> mesures.cpp:124</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="a89af5f279d21cf10f5d6bd58bbc33173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89af5f279d21cf10f5d6bd58bbc33173">&#9670;&nbsp;</a></span>compteur</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTimer* Mesures::compteur</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_mesures.html#ae969e38402b8d19fe9b484f368200578">getFrequenceArchivage()</a>, <a class="el" href="class_mesures.html#aa24ed1e055242fab5adab3f8f057c9b1">Mesures()</a>, et <a class="el" href="class_mesures.html#ac1d2ea97f648264ebd690fba8f7020cc">modifieFrequenceArchivage()</a>.</p>
+
+</div>
+</div>
+<a id="a276f71168b1dcecf2051631d19aa8eeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a276f71168b1dcecf2051631d19aa8eeb">&#9670;&nbsp;</a></span>distance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Mesures::distance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_mesures.html#aa40d78428855bab861cc9a57582c8d42">getDistance()</a>, et <a class="el" href="class_mesures.html#a77652c2332a9234bf08b463d1d389aa5">stockeDonnees()</a>.</p>
+
+</div>
+</div>
+<a id="a77cde7672dac5e544b7288364ec7c7b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77cde7672dac5e544b7288364ec7c7b5">&#9670;&nbsp;</a></span>irradiation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Mesures::irradiation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_mesures.html#a9eb8d49c9f60b3801110a5c3d0c50149">envoieMesuresBDD()</a>, <a class="el" href="class_mesures.html#af260c8f685e3519681b3ca0086d70b31">getIrradiation()</a>, et <a class="el" href="class_mesures.html#a77652c2332a9234bf08b463d1d389aa5">stockeDonnees()</a>.</p>
+
+</div>
+</div>
+<a id="a2688d0da4acf9d91ea0befd6ed0bd140"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2688d0da4acf9d91ea0befd6ed0bd140">&#9670;&nbsp;</a></span>temperature</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Mesures::temperature</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_mesures.html#a9eb8d49c9f60b3801110a5c3d0c50149">envoieMesuresBDD()</a>, <a class="el" href="class_mesures.html#a5e5e61c6bbdd2fd891b66ee494183dcd">getTemperature()</a>, et <a class="el" href="class_mesures.html#a77652c2332a9234bf08b463d1d389aa5">stockeDonnees()</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li><a class="el" href="mesures_8h_source.html">mesures.h</a></li>
+<li><a class="el" href="mesures_8cpp.html">mesures.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 05:35:33 pour Projet ROV&#39;NET par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

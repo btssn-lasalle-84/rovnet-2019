@@ -1,0 +1,130 @@
+\hypertarget{ihmrov_8h}{}\subsection{Référence du fichier ihmrov.\+h}
+\label{ihmrov_8h}\index{ihmrov.\+h@{ihmrov.\+h}}
+
+
+Déclaration de la classe \hyperlink{class_rov}{Rov}.  
+
+
+{\ttfamily \#include \char`\"{}camera.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}controlerov.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}rov.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Qt\+Widgets$>$}\newline
+{\ttfamily \#include $<$Q\+Combo\+Box$>$}\newline
+{\ttfamily \#include $<$Q\+Dialog$>$}\newline
+{\ttfamily \#include $<$Q\+Timer$>$}\newline
+{\ttfamily \#include $<$Q\+Application$>$}\newline
+{\ttfamily \#include $<$Q\+List\+View$>$}\newline
+{\ttfamily \#include $<$Q\+File\+System\+Model$>$}\newline
+{\ttfamily \#include $<$Q\+Stacked\+Widget$>$}\newline
+{\ttfamily \#include $<$Q\+Debug$>$}\newline
+{\ttfamily \#include $<$Q\+Menu\+Bar$>$}\newline
+{\ttfamily \#include $<$Q\+Menu$>$}\newline
+{\ttfamily \#include $<$qwt\+\_\+thermo.\+h$>$}\newline
+{\ttfamily \#include $<$Q\+Main\+Window$>$}\newline
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_i_h_m_rov}{I\+H\+M\+Rov}
+\begin{DoxyCompactList}\small\item\em Déclaration de la classe \hyperlink{class_rov}{Rov}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ihmrov_8h_ab599af93fd63f0c5df05b03aa7448eb9}{A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+I\+T\+RE}~\char`\"{}Projet \hyperlink{class_rov}{Rov}\textquotesingle{}net -\/ B\+TS SN IR 2019 (E6.\+2)\char`\"{}
+\item 
+\#define \hyperlink{ihmrov_8h_afbc72a1675bd9c5173820a3b874f1fa6}{A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+O\+NS}~\char`\"{}Version \+: 1.\+0 \textbackslash{}n\+Jacques Reynier \& Boffredo Nicolas\char`\"{}
+\item 
+\#define \hyperlink{ihmrov_8h_ad0750d12e2f5f404ec458d4066a53fa4}{P\+E\+R\+I\+O\+DE}~1000
+\item 
+\#define \hyperlink{ihmrov_8h_a811ff9a6b410f748f13757277a45d1cd}{W\+I\+D\+G\+E\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+I\+N\+D\+I\+S\+P\+O\+N\+I\+B\+LE}~0
+\item 
+\#define \hyperlink{ihmrov_8h_a01e28fb5361c4789cfefd3682ad1c25b}{W\+I\+D\+G\+E\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+D\+I\+S\+P\+O\+N\+I\+B\+LE}~1
+\item 
+\#define \hyperlink{ihmrov_8h_aa986e54d0a0e08e8e32fc991c2186c09}{D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+L\+O\+IN}~40
+\item 
+\#define \hyperlink{ihmrov_8h_a90b48491a3e4dbe15f8255efe530e41a}{D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+P\+R\+O\+C\+HE}~25
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Nicolas B\+O\+F\+F\+R\+E\+DO \& Jacques R\+E\+Y\+N\+I\+ER
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+Jeudi 13 Juin 2019 
+\end{DoxyDate}
+
+
+\subsubsection{Documentation des macros}
+\mbox{\Hypertarget{ihmrov_8h_afbc72a1675bd9c5173820a3b874f1fa6}\label{ihmrov_8h_afbc72a1675bd9c5173820a3b874f1fa6}} 
+\index{ihmrov.\+h@{ihmrov.\+h}!A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+O\+NS@{A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+O\+NS}}
+\index{A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+O\+NS@{A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+O\+NS}!ihmrov.\+h@{ihmrov.\+h}}
+\paragraph{\texorpdfstring{A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+O\+NS}{APPLICATION\_INFORMATIONS}}
+{\footnotesize\ttfamily \#define A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+O\+NS~\char`\"{}Version \+: 1.\+0 \textbackslash{}n\+Jacques Reynier \& Boffredo Nicolas\char`\"{}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a45a10161fde8c6373918ec30f16a8b5e}{I\+H\+M\+Rov\+::ouvrir\+Aide()}.
+
+\mbox{\Hypertarget{ihmrov_8h_ab599af93fd63f0c5df05b03aa7448eb9}\label{ihmrov_8h_ab599af93fd63f0c5df05b03aa7448eb9}} 
+\index{ihmrov.\+h@{ihmrov.\+h}!A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+I\+T\+RE@{A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+I\+T\+RE}}
+\index{A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+I\+T\+RE@{A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+I\+T\+RE}!ihmrov.\+h@{ihmrov.\+h}}
+\paragraph{\texorpdfstring{A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+I\+T\+RE}{APPLICATION\_TITRE}}
+{\footnotesize\ttfamily \#define A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+I\+T\+RE~\char`\"{}Projet \hyperlink{class_rov}{Rov}\textquotesingle{}net -\/ B\+TS SN IR 2019 (E6.\+2)\char`\"{}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a94d31f4e748f3e4549eab42c8bc7e367}{I\+H\+M\+Rov\+::enregistrer\+Parametres()}, \hyperlink{class_i_h_m_rov_a229194814bfb1fc94ab3cc86d6411921}{I\+H\+M\+Rov\+::enregistrer\+Parametres\+Campagne()}, \hyperlink{class_i_h_m_rov_a5dac1fb4612866cc61f699a415e0ef6b}{I\+H\+M\+Rov\+::\+I\+H\+M\+Rov()}, et \hyperlink{class_i_h_m_rov_a45a10161fde8c6373918ec30f16a8b5e}{I\+H\+M\+Rov\+::ouvrir\+Aide()}.
+
+\mbox{\Hypertarget{ihmrov_8h_aa986e54d0a0e08e8e32fc991c2186c09}\label{ihmrov_8h_aa986e54d0a0e08e8e32fc991c2186c09}} 
+\index{ihmrov.\+h@{ihmrov.\+h}!D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+L\+O\+IN@{D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+L\+O\+IN}}
+\index{D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+L\+O\+IN@{D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+L\+O\+IN}!ihmrov.\+h@{ihmrov.\+h}}
+\paragraph{\texorpdfstring{D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+L\+O\+IN}{DISTANCE\_LOIN}}
+{\footnotesize\ttfamily \#define D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+L\+O\+IN~40}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a7e55a10ef08b8a771fa692ec1d150d33}{I\+H\+M\+Rov\+::actualiser\+Indication\+Distance()}.
+
+\mbox{\Hypertarget{ihmrov_8h_a90b48491a3e4dbe15f8255efe530e41a}\label{ihmrov_8h_a90b48491a3e4dbe15f8255efe530e41a}} 
+\index{ihmrov.\+h@{ihmrov.\+h}!D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+P\+R\+O\+C\+HE@{D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+P\+R\+O\+C\+HE}}
+\index{D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+P\+R\+O\+C\+HE@{D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+P\+R\+O\+C\+HE}!ihmrov.\+h@{ihmrov.\+h}}
+\paragraph{\texorpdfstring{D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+P\+R\+O\+C\+HE}{DISTANCE\_PROCHE}}
+{\footnotesize\ttfamily \#define D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+P\+R\+O\+C\+HE~25}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a7e55a10ef08b8a771fa692ec1d150d33}{I\+H\+M\+Rov\+::actualiser\+Indication\+Distance()}.
+
+\mbox{\Hypertarget{ihmrov_8h_ad0750d12e2f5f404ec458d4066a53fa4}\label{ihmrov_8h_ad0750d12e2f5f404ec458d4066a53fa4}} 
+\index{ihmrov.\+h@{ihmrov.\+h}!P\+E\+R\+I\+O\+DE@{P\+E\+R\+I\+O\+DE}}
+\index{P\+E\+R\+I\+O\+DE@{P\+E\+R\+I\+O\+DE}!ihmrov.\+h@{ihmrov.\+h}}
+\paragraph{\texorpdfstring{P\+E\+R\+I\+O\+DE}{PERIODE}}
+{\footnotesize\ttfamily \#define P\+E\+R\+I\+O\+DE~1000}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_a64002e867300c8aff2ebd4568acc107e}{I\+H\+M\+Rov\+::initialiser\+Chronometre()}.
+
+\mbox{\Hypertarget{ihmrov_8h_a01e28fb5361c4789cfefd3682ad1c25b}\label{ihmrov_8h_a01e28fb5361c4789cfefd3682ad1c25b}} 
+\index{ihmrov.\+h@{ihmrov.\+h}!W\+I\+D\+G\+E\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+D\+I\+S\+P\+O\+N\+I\+B\+LE@{W\+I\+D\+G\+E\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+D\+I\+S\+P\+O\+N\+I\+B\+LE}}
+\index{W\+I\+D\+G\+E\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+D\+I\+S\+P\+O\+N\+I\+B\+LE@{W\+I\+D\+G\+E\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+D\+I\+S\+P\+O\+N\+I\+B\+LE}!ihmrov.\+h@{ihmrov.\+h}}
+\paragraph{\texorpdfstring{W\+I\+D\+G\+E\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+D\+I\+S\+P\+O\+N\+I\+B\+LE}{WIDGET\_CAMERA\_DISPONIBLE}}
+{\footnotesize\ttfamily \#define W\+I\+D\+G\+E\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+D\+I\+S\+P\+O\+N\+I\+B\+LE~1}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_abbfcdc154a6ae7f941d186f6c90a5a2b}{I\+H\+M\+Rov\+::actualise\+Icones\+Etat()}.
+
+\mbox{\Hypertarget{ihmrov_8h_a811ff9a6b410f748f13757277a45d1cd}\label{ihmrov_8h_a811ff9a6b410f748f13757277a45d1cd}} 
+\index{ihmrov.\+h@{ihmrov.\+h}!W\+I\+D\+G\+E\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+I\+N\+D\+I\+S\+P\+O\+N\+I\+B\+LE@{W\+I\+D\+G\+E\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+I\+N\+D\+I\+S\+P\+O\+N\+I\+B\+LE}}
+\index{W\+I\+D\+G\+E\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+I\+N\+D\+I\+S\+P\+O\+N\+I\+B\+LE@{W\+I\+D\+G\+E\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+I\+N\+D\+I\+S\+P\+O\+N\+I\+B\+LE}!ihmrov.\+h@{ihmrov.\+h}}
+\paragraph{\texorpdfstring{W\+I\+D\+G\+E\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+I\+N\+D\+I\+S\+P\+O\+N\+I\+B\+LE}{WIDGET\_CAMERA\_INDISPONIBLE}}
+{\footnotesize\ttfamily \#define W\+I\+D\+G\+E\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+I\+N\+D\+I\+S\+P\+O\+N\+I\+B\+LE~0}
+
+
+
+Référencé par \hyperlink{class_i_h_m_rov_abbfcdc154a6ae7f941d186f6c90a5a2b}{I\+H\+M\+Rov\+::actualise\+Icones\+Etat()}.
+

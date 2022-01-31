@@ -1,0 +1,30 @@
+\hypertarget{deplacement_8h_source}{}\subsection{deplacement.\+h}
+
+\begin{DoxyCode}
+00001 
+00014 \textcolor{preprocessor}{#ifndef DEPLACEMENT\_H}
+00015 \textcolor{preprocessor}{#define DEPLACEMENT\_H}
+00016 
+00017 \textcolor{preprocessor}{#include <QObject>}
+00018 
+\Hypertarget{deplacement_8h_source_l00031}\hyperlink{class_deplacement}{00031} \textcolor{keyword}{class }\hyperlink{class_deplacement}{Deplacement} : \textcolor{keyword}{public} QObject
+00032 \{
+00033     Q\_OBJECT
+00034 
+00035     \textcolor{keyword}{private}:
+\Hypertarget{deplacement_8h_source_l00036}\hyperlink{class_deplacement_a419b8bb201dc4a4e927beed68923f8eb}{00036}         QString \hyperlink{class_deplacement_a419b8bb201dc4a4e927beed68923f8eb}{valeurAvancerPrecedente}; 
+\Hypertarget{deplacement_8h_source_l00037}\hyperlink{class_deplacement_a9d9b191747038f0f410626f38c4e75be}{00037}         QString \hyperlink{class_deplacement_a9d9b191747038f0f410626f38c4e75be}{valeurTournerPrecedente}; 
+00038 
+00039     \textcolor{keyword}{public}:
+00040         \hyperlink{class_deplacement_a473f623358ffa95ac7385b49f128d23c}{Deplacement}(QObject *parent = \textcolor{keyword}{nullptr});
+00041 
+00042     \textcolor{keyword}{public} slots:
+00048         \textcolor{keywordtype}{void} \hyperlink{class_deplacement_a164cc606a6c5b8d55c1e5475d4d112e0}{tourneDroiteGauche}(\textcolor{keywordtype}{double} valeur);
+00054         \textcolor{keywordtype}{void} \hyperlink{class_deplacement_a65a1c6adfe5114d3cfefa631e0c91618}{rouleAvantArriere}(\textcolor{keywordtype}{double} valeur);
+00055 
+00056     signals:
+00061         \textcolor{keywordtype}{void} \hyperlink{class_deplacement_ae1a6d4a98304dee19d426ceeb6b7d5bb}{trameCree}(QString trame);
+00062 \};
+00063 
+00064 \textcolor{preprocessor}{#endif // DEPLACEMENT\_H}
+\end{DoxyCode}

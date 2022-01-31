@@ -1,0 +1,70 @@
+\hypertarget{rov_8h_source}{}\subsection{rov.\+h}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef ROV\_H}
+00002 \textcolor{preprocessor}{#define ROV\_H}
+00003 
+00017 \textcolor{preprocessor}{#include <QObject>}
+00018 
+00019 \textcolor{preprocessor}{#include "\hyperlink{communicationrov_8h}{communicationrov.h}"}
+00020 \textcolor{preprocessor}{#include "\hyperlink{mesures_8h}{mesures.h}"}
+00021 \textcolor{preprocessor}{#include "\hyperlink{camera_8h}{camera.h}"}
+00022 \textcolor{preprocessor}{#include "\hyperlink{archives_8h}{archives.h}"}
+00023 
+00024 \textcolor{keyword}{class }\hyperlink{class_base_de_donnees}{BaseDeDonnees};
+00025 
+\Hypertarget{rov_8h_source_l00038}\hyperlink{class_rov}{00038} \textcolor{keyword}{class }\hyperlink{class_rov}{Rov} : \textcolor{keyword}{public} QObject
+00039 \{
+00040     Q\_OBJECT
+00041 
+00042     \textcolor{keyword}{private}:
+\Hypertarget{rov_8h_source_l00043}\hyperlink{class_rov_a8e7aaa17ee2134f26d57241d11ab2a99}{00043}         \hyperlink{class_communication_rov}{CommunicationRov} * \hyperlink{class_rov_a8e7aaa17ee2134f26d57241d11ab2a99}{communicationRov};  
+\Hypertarget{rov_8h_source_l00044}\hyperlink{class_rov_af37589b38493e4bd99702587db2d28a8}{00044}         \hyperlink{class_mesures}{Mesures} *\hyperlink{class_rov_af37589b38493e4bd99702587db2d28a8}{mesures};                     
+\Hypertarget{rov_8h_source_l00045}\hyperlink{class_rov_ad0461ecece812497ee9b4a962f168c18}{00045}         \hyperlink{class_camera}{Camera} *\hyperlink{class_rov_ad0461ecece812497ee9b4a962f168c18}{camera};                       
+\Hypertarget{rov_8h_source_l00046}\hyperlink{class_rov_ad41ed46f169f28da226a979f70c4d8a4}{00046}         \hyperlink{class_archives}{Archives} *\hyperlink{class_rov_ad41ed46f169f28da226a979f70c4d8a4}{archives};                   
+\Hypertarget{rov_8h_source_l00047}\hyperlink{class_rov_a5a9a824cd100947c75d0951eb9e1f90c}{00047}         \hyperlink{class_base_de_donnees}{BaseDeDonnees} *\hyperlink{class_rov_a5a9a824cd100947c75d0951eb9e1f90c}{baseDeDonnees};         
+00048 
+\Hypertarget{rov_8h_source_l00049}\hyperlink{class_rov_aaaed58cd7ee9edbeab5251cd413a1bae}{00049}         QString \hyperlink{class_rov_aaaed58cd7ee9edbeab5251cd413a1bae}{idCampagne};                      
+\Hypertarget{rov_8h_source_l00050}\hyperlink{class_rov_a3d424033e0ff00f480a711358ef4fde6}{00050}         QVector<QString> \hyperlink{class_rov_a3d424033e0ff00f480a711358ef4fde6}{listeNomsOperateurs};    
+\Hypertarget{rov_8h_source_l00051}\hyperlink{class_rov_a1e059749c13ed4ee9c0ec9168e79a3be}{00051}         QVector<QString> \hyperlink{class_rov_a1e059749c13ed4ee9c0ec9168e79a3be}{listePrenomsOperateurs}; 
+\Hypertarget{rov_8h_source_l00052}\hyperlink{class_rov_a659da5fe3636356b006a8e08a8433dd3}{00052}         \textcolor{keywordtype}{bool} \hyperlink{class_rov_a659da5fe3636356b006a8e08a8433dd3}{archivageActif};                     
+00053 
+00054         \textcolor{keywordtype}{bool} \hyperlink{class_rov_a53f656be57fa1eb7b93e03095a597439}{creerDossierArchives}(QString cheminDossierCampagne);
+00055         \textcolor{keywordtype}{void} \hyperlink{class_rov_a490eefb90bf28e83f181d770f0f52446}{recupererListeNomsOperateurs}();
+00056         \textcolor{keywordtype}{void} \hyperlink{class_rov_a84dece742f5c4c903ada4f25c869597f}{recupererListePrenomsOperateurs}();
+00057 
+00058     \textcolor{keyword}{public}:
+00059         \textcolor{keyword}{explicit} \hyperlink{class_rov_a5dddd3bd156c134848078296087d090c}{Rov}(QObject *parent = \textcolor{keyword}{nullptr}); 
+00060         \hyperlink{class_rov_a6e41f712195b9af74fd75b781745d1b5}{~Rov}();                                  
+00061 
+00062         \hyperlink{class_communication_rov}{CommunicationRov} * \hyperlink{class_rov_ad30543625f584e28bf785a80c59506dc}{getCommunicationRov}() \textcolor{keyword}{const}; 
+00063         \hyperlink{class_mesures}{Mesures}* \hyperlink{class_rov_a0edd5f7db785bd856b8723fe49ca7848}{getMesures}() \textcolor{keyword}{const};                    
+00064         \hyperlink{class_camera}{Camera}* \hyperlink{class_rov_aae07e8ca2c4b3be6a0a378b6f072c60b}{getCamera}() \textcolor{keyword}{const};                      
+00065 
+00066         QVector<QString> \hyperlink{class_rov_ab585cb1f82344ba0a64a28488910b262}{getListeNomsOperateurs}();
+00067         QVector<QString> \hyperlink{class_rov_a128cae6dc19025017dea26663adde765}{getListePrenomsOperateurs}();
+00068 
+00069         \textcolor{keywordtype}{void} \hyperlink{class_rov_a0eba2119b89406948976ae92781c4629}{setCamera}(\hyperlink{class_camera}{Camera} *camera);
+00070 
+00071         \hyperlink{class_archives}{Archives}* \hyperlink{class_rov_af0936fd10d04851d53f28575ecd1da3f}{getArchives}() \textcolor{keyword}{const};
+00072         \textcolor{keywordtype}{void} \hyperlink{class_rov_acb3ecbb04ace455526206d3c05b712fd}{setArchives}(\hyperlink{class_archives}{Archives} *archives);
+00073 
+00074         \textcolor{keywordtype}{void} \hyperlink{class_rov_a9bbaec4a59dae307440bfeefbc56190b}{setIdCampagne}(QString idCampagne); 
+00075         QString \hyperlink{class_rov_aaf98d93ef9b164a2e1766494d9577b57}{getIdCampagne}(); 
+00076 
+00077         \textcolor{keywordtype}{bool} \hyperlink{class_rov_ae1306036b067e9ad50a09f9dd607a092}{creerNouvelleCampagne}(QString nom, QString description, QString 
+      idOperateur);
+00078         \textcolor{keywordtype}{bool} \hyperlink{class_rov_a970f36e93f9dbd22734db571b21ceb04}{creerDossiersNouvelleCampagne}(QString nomNouvelleCampagne);
+00079 
+00080         \textcolor{keywordtype}{void} \hyperlink{class_rov_abbe2eb87a00b651c8259c0c7abca3edd}{setArchivageActif}(\textcolor{keywordtype}{bool});   
+00081         \textcolor{keywordtype}{bool} \hyperlink{class_rov_ac24b94eaac569252bdc0b1919489a761}{getArchivageActif}() \textcolor{keyword}{const}; 
+00082 
+00083     signals:
+00084 
+00085     \textcolor{keyword}{public} slots:        
+00086         \textcolor{keywordtype}{void} \hyperlink{class_rov_adab08abfde381c2915695489b34da6b4}{stockeMesuresBDD}(\textcolor{keywordtype}{double} temperature, \textcolor{keywordtype}{double} irradiation);  
+00087         \textcolor{keywordtype}{void} \hyperlink{class_rov_a738965ca84678b506b3d6a326c48e9e3}{connecteArchivageMesures}(\textcolor{keywordtype}{bool} archivageActif);             
+00088 \};
+00089 
+00090 \textcolor{preprocessor}{#endif // ROV\_H}
+\end{DoxyCode}
